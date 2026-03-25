@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pulse | AI News & Benchmarks | aipulse.buzz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◉</span>
+                <span>AI Pulse.buzz</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#news">News</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-badge">Last Updated: March 2026</div>
+            <h1>The State of AI</h1>
+            <p class="hero-subtitle">Latest model releases, benchmark scores, and pricing. No fluff.<br><small>aipulse.buzz</small></p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">7</span>
+                    <span class="stat-label">Major releases in Feb 2026</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">24+</span>
+                    <span class="stat-label">Models tracked</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">16</span>
+                    <span class="stat-label">Benchmarks covered</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="news" class="section">
+        <div class="container">
+            <h2 class="section-title">Latest Releases</h2>
+            
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-meta">
+                        <span class="news-date">Feb 19, 2026</span>
+                        <span class="news-tag">Google</span>
+                    </div>
+                    <h3>Gemini 3.1 Pro</h3>
+                    <p class="news-summary">Google retakes the benchmark crown. 77.1% on ARC-AGI-2 (more than double Gemini 3 Pro), 94.3% on GPQA Diamond. Leading on 13 of 16 benchmarks with 1M context window maintained.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">77.1% ARC-AGI-2</span>
+                        <span class="highlight">94.3% GPQA</span>
+                        <span class="highlight">1M context</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Feb 17, 2026</span>
+                        <span class="news-tag">Anthropic</span>
+                    </div>
+                    <h3>Claude Sonnet 4.6</h3>
+                    <p class="news-summary">Near-Opus performance at Sonnet pricing. Best-in-class agentic capabilities with enhanced tool use.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">HK$23/M input</span>
+                        <span class="highlight">1M context (beta)</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Feb 17, 2026</span>
+                        <span class="news-tag">xAI</span>
+                    </div>
+                    <h3>Grok 4.20</h3>
+                    <p class="news-summary">Four AI agents running in parallel. New architecture for distributed reasoning. Real-time trading performance: 1,505-1,535 Arena Elo.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">4-agent parallel</span>
+                        <span class="highlight">256K-2M context</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Feb 5, 2026</span>
+                        <span class="news-tag">OpenAI</span>
+                    </div>
+                    <h3>GPT-5.3 Codex</h3>
+                    <p class="news-summary">Agentic coding specialist. 77.3% on Terminal-Bench 2.0 for autonomous DevOps tasks. Multi-agent enabled variant available.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">77.3% Terminal-Bench</span>
+                        <span class="highlight">400K context</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Feb 2026</span>
+                        <span class="news-tag">Alibaba</span>
+                    </div>
+                    <h3>Qwen 3.5</h3>
+                    <p class="news-summary">Open-weight model closing the gap with proprietary systems. Strong performance at fraction of the cost.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">HK$3/M input</span>
+                        <span class="highlight">1M context</span>
+                        <span class="highlight">Open weight</span>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Feb 11, 2026</span>
+                        <span class="news-tag">Zhipu AI</span>
+                    </div>
+                    <h3>GLM-5</h3>
+                    <p class="news-summary">New entrant to the frontier. Highest-rated on OpenRouter at launch. Competitive across reasoning and coding benchmarks.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">New release</span>
+                        <span class="highlight">OpenRouter top</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="leaderboard" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Benchmark Leaderboard</h2>
+            <p class="section-subtitle">Overall ranking by composite benchmark average (MMLU, HumanEval, GPQA, SWE-bench, HellaSwag, AIME 2025)</p>
+            
+            <div class="table-container">
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Model</th>
+                            <th>Developer</th>
+                            <th>Overall</th>
+                            <th>MMLU</th>
+                            <th>GPQA</th>
+                            <th>SWE-bench</th>
+                            <th>Context</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="rank-1">
+                            <td><span class="rank-badge">1</span></td>
+                            <td><strong>GPT-5.2</strong></td>
+                            <td>OpenAI</td>
+                            <td><span class="score">90.3</span></td>
+                            <td>—</td>
+                            <td>92.4%</td>
+                            <td>80.0%</td>
+                            <td>400K</td>
+                        </tr>
+                        <tr class="rank-2">
+                            <td><span class="rank-badge">2</span></td>
+                            <td><strong>Gemini 3.1 Pro</strong></td>
+                            <td>Google</td>
+                            <td><span class="score">90.22</span></td>
+                            <td>—</td>
+                            <td><strong>94.3%</strong></td>
+                            <td>80.6%</td>
+                            <td><strong>1M</strong></td>
+                        </tr>
+                        <tr class="rank-3">
+                            <td><span class="rank-badge">3</span></td>
+                            <td><strong>Claude Opus 4.6</strong></td>
+                            <td>Anthropic</td>
+                            <td><span class="score">89.6</span></td>
+                            <td>—</td>
+                            <td>91.3%</td>
+                            <td><strong>80.8%</strong></td>
+                            <td>200K</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">4</span></td>
+                            <td><strong>Claude Opus 4.5</strong></td>
+                            <td>Anthropic</td>
+                            <td><span class="score">88.82</span></td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>80.9%</td>
+                            <td>200K</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">5</span></td>
+                            <td><strong>GPT-5.3 Codex</strong></td>
+                            <td>OpenAI</td>
+                            <td><span class="score">88.62</span></td>
+                            <td>—</td>
+                            <td>92.4%</td>
+                            <td>—</td>
+                            <td>400K</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">6</span></td>
+                            <td><strong>Kimi K2.5</strong></td>
+                            <td>Moonshot</td>
+                            <td><span class="score">—</span></td>
+                            <td><strong>92.0</strong></td>
+                            <td>87.6%</td>
+                            <td>—</td>
+                            <td>262K</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">7</span></td>
+                            <td><strong>MiniMax M2.5</strong></td>
+                            <td>MiniMax</td>
+                            <td><span class="score">—</span></td>
+                            <td>—</td>
+                            <td>85.2%</td>
+                            <td><strong>80.2%</strong></td>
+                            <td>205K</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">8</span></td>
+                            <td><strong>Qwen 3.5</strong></td>
+                            <td>Alibaba</td>
+                            <td><span class="score">—</span></td>
+                            <td>—</td>
+                            <td>88.4%</td>
+                            <td>76.4%</td>
+                            <td>1M</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="benchmark-legend">
+                <h4>Key Benchmarks</h4>
+                <div class="legend-grid">
+                    <div class="legend-item">
+                        <strong>ARC-AGI-2</strong>
+                        <span>Novel reasoning puzzles that can't be memorized</span>
+                    </div>
+                    <div class="legend-item">
+                        <strong>GPQA Diamond</strong>
+                        <span>PhD-level science questions</span>
+                    </div>
+                    <div class="legend-item">
+                        <strong>SWE-bench</strong>
+                        <span>Real GitHub issue resolution</span>
+                    </div>
+                    <div class="legend-item">
+                        <strong>HumanEval</strong>
+                        <span>Functional coding problems</span>
+                    </div>
+                    <div class="legend-item">
+                        <strong>MMLU</strong>
+                        <span>Multi-task language understanding</span>
+                    </div>
+                    <div class="legend-item">
+                        <strong>AIME 2025</strong>
+                        <span>High school math competition</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="models" class="section">
+        <div class="container">
+            <h2 class="section-title">Model Spotlight</h2>
+            
+            <div class="spotlight-grid">
+                <div class="spotlight-card">
+                    <div class="spotlight-header">
+                        <h3>Gemini 3.1 Pro</h3>
+                        <span class="spotlight-badge">Benchmark Leader</span>
+                    </div>
+                    <div class="spotlight-benchmarks">
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">ARC-AGI-2</span>
+                            <div class="bar"><div class="bar-fill" style="width: 77.1%"><span>77.1%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">GPQA Diamond</span>
+                            <div class="bar"><div class="bar-fill" style="width: 94.3%"><span>94.3%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">SWE-bench</span>
+                            <div class="bar"><div class="bar-fill" style="width: 80.6%"><span>80.6%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">Terminal-Bench</span>
+                            <div class="bar"><div class="bar-fill" style="width: 68.5%"><span>68.5%</span></div></div>
+                        </div>
+                    </div>
+                    <p class="spotlight-note">Best for: Agentic work, multi-step reasoning, large-context tasks</p>
+                </div>
+
+                <div class="spotlight-card">
+                    <div class="spotlight-header">
+                        <h3>Claude Opus 4.6</h3>
+                        <span class="spotlight-badge">Coding King</span>
+                    </div>
+                    <div class="spotlight-benchmarks">
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">SWE-bench</span>
+                            <div class="bar"><div class="bar-fill" style="width: 80.8%"><span>80.8%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">GPQA Diamond</span>
+                            <div class="bar"><div class="bar-fill" style="width: 91.3%"><span>91.3%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">ARC-AGI-2</span>
+                            <div class="bar"><div class="bar-fill" style="width: 68.8%"><span>68.8%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">Humanity's Last Exam</span>
+                            <div class="bar"><div class="bar-fill" style="width: 53.1%"><span>53.1%</span></div></div>
+                        </div>
+                    </div>
+                    <p class="spotlight-note">Best for: Complex coding, deep reasoning, research tasks</p>
+                </div>
+
+                <div class="spotlight-card">
+                    <div class="spotlight-header">
+                        <h3>Kimi K2.5</h3>
+                        <span class="spotlight-badge open">Open Weight</span>
+                    </div>
+                    <div class="spotlight-benchmarks">
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">HumanEval</span>
+                            <div class="bar"><div class="bar-fill" style="width: 99%"><span>99.0%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">MMLU</span>
+                            <div class="bar"><div class="bar-fill" style="width: 92%"><span>92.0</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">MATH-500</span>
+                            <div class="bar"><div class="bar-fill" style="width: 98%"><span>98.0%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">AIME 2025</span>
+                            <div class="bar"><div class="bar-fill" style="width: 96.1%"><span>96.1%</span></div></div>
+                        </div>
+                    </div>
+                    <p class="spotlight-note">Best for: Coding, math, on-premise deployment (1T params, 32B active)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">API Pricing</h2>
+            <p class="section-subtitle">Per 1 million tokens (USD)</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h4>Value Tier</h4>
+                    <div class="pricing-model">
+                        <span class="model-name">Qwen 3.5</span>
+                        <span class="model-price">$0.40 <small>/ $1.20</small></span>
+                    </div>
+                    <div class="pricing-model">
+                        <span class="model-name">Gemini 2.5 Flash Lite</span>
+                        <span class="model-price">$0.10 <small>/ $0.40</small></span>
+                    </div>
+                    <div class="pricing-model">
+                        <span class="model-name">Gemini 2.5 Flash</span>
+                        <span class="model-price">$0.30 <small>/ $2.50</small></span>
+                    </div>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h4>Standard Tier</h4>
+                    <div class="pricing-model">
+                        <span class="model-name">Gemini 3.1 Pro</span>
+                        <span class="model-price">$2.00 <small>/ $12.00</small></span>
+                    </div>
+                    <div class="pricing-model">
+                        <span class="model-name">Claude Sonnet 4.6</span>
+                        <span class="model-price">$3.00 <small>/ $15.00</small></span>
+                    </div>
+                    <div class="pricing-model">
+                        <span class="model-name">GPT-5.3 Codex</span>
+                        <span class="model-price">~$1.25 <small>/ ~$10.00</small></span>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <h4>Premium Tier</h4>
+                    <div class="pricing-model">
+                        <span class="model-name">Claude Opus 4.6</span>
+                        <span class="model-price">$5.00 <small>/ $25.00</small></span>
+                    </div>
+                    <div class="pricing-model">
+                        <span class="model-name">GPT-5.2</span>
+                        <span class="model-price">Premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p>Consumer chat plans: Gemini Advanced ~HK$148/mo, Claude Pro ~HK$133/mo, ChatGPT Plus ~HK$125/mo</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Data compiled from official sources, benchmark leaderboards, and independent evaluations.</p>
+            <p class="footer-update">Site auto-updates weekly. Last sync: March 2026. | aipulse.buzz</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
