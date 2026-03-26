@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pulse | News Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◉</span>
+                <span>AI Pulse.buzz</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html#leaderboard">Leaderboard</a></li>
+                <li><a href="index.html#models">Models</a></li>
+                <li><a href="index.html#pricing">Pricing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="detail-page">
+        <div class="container">
+            <a href="index.html#news" class="back-link">← Back to News</a>
+            
+            <article id="detail-content" class="detail-article">
+                <!-- Content loaded dynamically via JavaScript -->
+                <div class="loading">Loading article...</div>
+            </article>
+
+            <section class="related-news">
+                <h3>More AI News</h3>
+                <div id="related-grid" class="related-grid">
+                    <!-- Related articles loaded dynamically -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Data compiled from official sources, benchmark leaderboards, and independent evaluations.</p>
+            <p class="footer-update">Site auto-updates weekly. Last sync: March 2026. | aipulse.buzz</p>
+        </div>
+    </footer>
+
+    <script src="news-data.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>

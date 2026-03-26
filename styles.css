@@ -179,6 +179,10 @@ body {
     border-radius: var(--radius);
     padding: 24px;
     transition: transform 0.2s, border-color 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
 }
 
 .news-card:hover {
