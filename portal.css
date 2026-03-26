@@ -1,0 +1,399 @@
+/* Portal/Landing Page Styles */
+
+.portal-page {
+    background: linear-gradient(135deg, var(--bg-primary) 0%, #0d1117 50%, var(--bg-primary) 100%);
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.portal-hero {
+    padding: 140px 0 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.portal-hero::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.portal-hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.portal-hero .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.portal-hero .hero-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Topics Grid */
+.portal-grid-section {
+    padding: 40px 0 80px;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Topic Cards */
+.topic-card {
+    position: relative;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.topic-card:hover {
+    transform: translateY(-8px);
+    border-color: transparent;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Card-specific hover glows */
+.news-card:hover {
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+}
+
+.models-card:hover {
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+}
+
+.benchmarks-card:hover {
+    box-shadow: 0 20px 40px rgba(34, 197, 94, 0.2);
+}
+
+.gaming-card:hover {
+    box-shadow: 0 20px 40px rgba(236, 72, 153, 0.2);
+}
+
+.finance-card:hover {
+    box-shadow: 0 20px 40px rgba(245, 158, 11, 0.2);
+}
+
+.coming-soon-card:hover {
+    box-shadow: 0 20px 40px rgba(107, 114, 128, 0.2);
+}
+
+/* Topic Image/Icon Section */
+.topic-image {
+    position: relative;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.topic-icon {
+    font-size: 5rem;
+    z-index: 2;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+    transition: transform 0.4s ease;
+}
+
+.topic-card:hover .topic-icon {
+    transform: scale(1.1);
+}
+
+/* Glow Effects */
+.topic-glow {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+    transition: opacity 0.4s ease;
+}
+
+.topic-card:hover .topic-glow {
+    opacity: 0.7;
+}
+
+.news-glow {
+    background: #3b82f6;
+}
+
+.models-glow {
+    background: #8b5cf6;
+}
+
+.benchmarks-glow {
+    background: #22c55e;
+}
+
+.gaming-glow {
+    background: #ec4899;
+}
+
+.finance-glow {
+    background: #f59e0b;
+}
+
+.coming-glow {
+    background: #6b7280;
+}
+
+/* Gradient Backgrounds for Cards */
+.news-card .topic-image {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
+}
+
+.models-card .topic-image {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+}
+
+.benchmarks-card .topic-image {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%);
+}
+
+.gaming-card .topic-image {
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%);
+}
+
+.finance-card .topic-image {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+}
+
+.coming-soon-card .topic-image {
+    background: linear-gradient(135deg, rgba(107, 114, 128, 0.1) 0%, rgba(107, 114, 128, 0.05) 100%);
+}
+
+/* Topic Content */
+.topic-content {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--bg-primary);
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    width: fit-content;
+}
+
+.topic-badge.coming {
+    color: var(--text-muted);
+    background: rgba(107, 114, 128, 0.2);
+}
+
+.news-card .topic-badge {
+    color: #3b82f6;
+}
+
+.models-card .topic-badge {
+    color: #8b5cf6;
+}
+
+.benchmarks-card .topic-badge {
+    color: #22c55e;
+}
+
+.gaming-card .topic-badge {
+    color: #ec4899;
+}
+
+.finance-card .topic-badge {
+    color: #f59e0b;
+}
+
+.topic-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.topic-content p {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex: 1;
+    margin-bottom: 16px;
+}
+
+/* Arrow / Hint */
+.topic-arrow {
+    font-size: 1.5rem;
+    color: var(--accent);
+    transition: transform 0.3s ease;
+}
+
+.topic-card:hover .topic-arrow {
+    transform: translateX(8px);
+}
+
+.topic-hint {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Stats Section */
+.portal-stats {
+    padding: 60px 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.portal-stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, #888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+}
+
+.stat-desc {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+}
+
+/* Footer */
+.portal-footer {
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.footer-brand .logo-icon {
+    color: var(--accent);
+    font-size: 1.75rem;
+}
+
+.footer-tagline {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.footer-copyright {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* Navbar adjustment for portal */
+.portal-navbar {
+    background: rgba(10, 10, 10, 0.9);
+}
+
+.portal-navbar .nav-links {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .portal-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .stats-row {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .portal-hero {
+        padding: 120px 0 40px;
+    }
+    
+    .portal-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .stats-row {
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .topic-image {
+        height: 140px;
+    }
+    
+    .topic-icon {
+        font-size: 4rem;
+    }
+}
