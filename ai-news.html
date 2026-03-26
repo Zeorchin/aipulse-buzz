@@ -29,95 +29,251 @@
         <div class="container">
             <div class="hero-badge">Last Updated: March 2026</div>
             <h1>AI News</h1>
-            <p class="hero-subtitle">Latest model releases, industry updates, and breakthrough announcements<br><small>From the frontier of artificial intelligence</small></p>
+            <p class="hero-subtitle">Breaking updates on model releases, company announcements, and industry shifts<br><small>From the frontier of artificial intelligence</small></p>
             <a href="index.html" class="back-link">← Back to Portal</a>
         </div>
     </header>
 
-    <section id="news" class="section">
+    <section id="breaking" class="section">
+        <div class="container">
+            <h2 class="section-title">Breaking News</h2>
+            
+            <div class="news-grid">
+                <!-- OpenAI Sora Discontinued -->
+                <article class="news-card featured breaking">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 24, 2026</span>
+                        <span class="news-tag breaking-tag">Breaking</span>
+                    </div>
+                    <h3>OpenAI Shuts Down Sora Video Platform</h3>
+                    <p class="news-summary">OpenAI officially discontinues Sora, the viral AI video generation platform launched last year. The shutdown ends the $1 billion Disney partnership and marks a strategic pivot away from consumer video generation. Users can no longer generate videos via ChatGPT or the standalone Sora app.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">Disney Deal Cancelled</span>
+                        <span class="highlight">$1B Partnership Ended</span>
+                        <span class="highlight">Strategic Pivot</span>
+                    </div>
+                    <a href="detail.html?model=sora-shutdown" class="read-more">Read full story →</a>
+                </article>
+
+                <!-- Qwen 3.5 Max LMArena #1 -->
+                <article class="news-card featured">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 10, 2026</span>
+                        <span class="news-tag">Alibaba</span>
+                    </div>
+                    <h3>Qwen 3.5 Max Debuts at #1 on LMArena</h3>
+                    <p class="news-summary">Alibaba's Qwen3.5-Max-Preview launched with a stunning 1464 Elo rating on LMArena, beating GPT-5.4 and Grok-4.1. The model outperformed all major domestic competitors including Doubao 2.0, GLM-5, and Kimi 2.5. Full release expected soon with further improvements.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">#1 LMArena Ranking</span>
+                        <span class="highlight">1464 Elo Score</span>
+                        <span class="highlight">Beats GPT-5.4</span>
+                    </div>
+                    <a href="detail.html?model=qwen-3-5-max" class="read-more">Read full story →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="section section-alt">
         <div class="container">
             <h2 class="section-title">Latest Releases</h2>
             
             <div class="news-grid">
-                <a href="detail.html?model=gemini-3-1-pro" class="news-card featured">
+                <!-- GPT-5.4 -->
+                <article class="news-card">
                     <div class="news-meta">
-                        <span class="news-date">Feb 19, 2026</span>
-                        <span class="news-tag">Google</span>
-                    </div>
-                    <h3>Gemini 3.1 Pro</h3>
-                    <p class="news-summary">Google retakes the benchmark crown. 77.1% on ARC-AGI-2 (more than double Gemini 3 Pro), 94.3% on GPQA Diamond. Leading on 13 of 16 benchmarks with 1M context window maintained.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">77.1% ARC-AGI-2</span>
-                        <span class="highlight">94.3% GPQA</span>
-                        <span class="highlight">1M context</span>
-                    </div>
-                </a>
-
-                <a href="detail.html?model=claude-sonnet-4-6" class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Feb 17, 2026</span>
-                        <span class="news-tag">Anthropic</span>
-                    </div>
-                    <h3>Claude Sonnet 4.6</h3>
-                    <p class="news-summary">Near-Opus performance at Sonnet pricing. Best-in-class agentic capabilities with enhanced tool use.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">HK$23/M input</span>
-                        <span class="highlight">1M context (beta)</span>
-                    </div>
-                </a>
-
-                <a href="detail.html?model=grok-4-20" class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Feb 17, 2026</span>
-                        <span class="news-tag">xAI</span>
-                    </div>
-                    <h3>Grok 4.20</h3>
-                    <p class="news-summary">Four AI agents running in parallel. New architecture for distributed reasoning. Real-time trading performance: 1,505-1,535 Arena Elo.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">4-agent parallel</span>
-                        <span class="highlight">256K-2M context</span>
-                    </div>
-                </a>
-
-                <a href="detail.html?model=gpt-5-3-codex" class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Feb 5, 2026</span>
+                        <span class="news-date">Mar 5, 2026</span>
                         <span class="news-tag">OpenAI</span>
                     </div>
-                    <h3>GPT-5.3 Codex</h3>
-                    <p class="news-summary">Agentic coding specialist. 77.3% on Terminal-Bench 2.0 for autonomous DevOps tasks. Multi-agent enabled variant available.</p>
+                    <h3>OpenAI GPT-5.4 with Native Computer Use</h3>
+                    <p class="news-summary">OpenAI's latest flagship features native computer use capabilities, allowing the model to control browsers and desktop applications. Achieves 83% on GDPval benchmark across 44 occupations. 1M token context window, 33% fewer factual errors than GPT-5.2.</p>
                     <div class="news-highlights">
-                        <span class="highlight">77.3% Terminal-Bench</span>
-                        <span class="highlight">400K context</span>
+                        <span class="highlight">Native Computer Use</span>
+                        <span class="highlight">1M Context</span>
+                        <span class="highlight">83% GDPval</span>
                     </div>
-                </a>
+                    <a href="detail.html?model=gpt-5-4" class="read-more">Read more →</a>
+                </article>
 
-                <a href="detail.html?model=qwen-3-5" class="news-card">
+                <!-- Claude 1M Context -->
+                <article class="news-card">
                     <div class="news-meta">
-                        <span class="news-date">Feb 2026</span>
-                        <span class="news-tag">Alibaba</span>
+                        <span class="news-date">Mar 14, 2026</span>
+                        <span class="news-tag">Anthropic</span>
                     </div>
-                    <h3>Qwen 3.5</h3>
-                    <p class="news-summary">Open-weight model closing the gap with proprietary systems. Strong performance at fraction of the cost.</p>
+                    <h3>Claude 4.6 Gets 1M Context at Standard Pricing</h3>
+                    <p class="news-summary">Anthropic makes the full 1 million token context window generally available for Claude Opus 4.6 and Sonnet 4.6 at standard pricing with no surcharge. Also includes 78.3% recall rate on MRCR v2 benchmark at 1M tokens.</p>
                     <div class="news-highlights">
-                        <span class="highlight">HK$3/M input</span>
-                        <span class="highlight">1M context</span>
-                        <span class="highlight">Open weight</span>
+                        <span class="highlight">1M Tokens Standard</span>
+                        <span class="highlight">No Surcharge</span>
+                        <span class="highlight">78.3% MRCR</span>
                     </div>
-                </a>
+                    <a href="detail.html?model=claude-1m-context" class="read-more">Read more →</a>
+                </article>
 
-                <a href="detail.html?model=glm-5" class="news-card">
+                <!-- DeepSeek V4 -->
+                <article class="news-card">
                     <div class="news-meta">
-                        <span class="news-date">Feb 11, 2026</span>
-                        <span class="news-tag">Zhipu AI</span>
+                        <span class="news-date">Mar 2026</span>
+                        <span class="news-tag">DeepSeek</span>
                     </div>
-                    <h3>GLM-5</h3>
-                    <p class="news-summary">New entrant to the frontier. Highest-rated on OpenRouter at launch. Competitive across reasoning and coding benchmarks.</p>
+                    <h3>DeepSeek V4: The Trillion-Parameter Wait</h3>
+                    <p class="news-summary">DeepSeek's highly anticipated V4 model with 1T parameters and multimodal capabilities has seen multiple delayed launch windows. A "V4 Lite" appeared on March 9 but full release remains pending. Expected to feature native image/video generation.</p>
                     <div class="news-highlights">
-                        <span class="highlight">New release</span>
-                        <span class="highlight">OpenRouter top</span>
+                        <span class="highlight">1T Parameters</span>
+                        <span class="highlight">Multimodal</span>
+                        <span class="highlight">Coming Soon</span>
                     </div>
-                </a>
+                    <a href="detail.html?model=deepseek-v4" class="read-more">Read more →</a>
+                </article>
+
+                <!-- NVIDIA Nemotron 3 -->
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 11, 2026</span>
+                        <span class="news-tag">NVIDIA</span>
+                    </div>
+                    <h3>NVIDIA Nemotron 3 Super Released</h3>
+                    <p class="news-summary">NVIDIA launches Nemotron 3 Super with 120B hybrid Mamba-Transformer MoE architecture. Features only 12B active parameters, 1M context window, and 2.2x throughput vs GPT-OSS-120B. Designed for enterprise and government deployments.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">120B MoE</span>
+                        <span class="highlight">1M Context</span>
+                        <span class="highlight">2.2x Speed</span>
+                    </div>
+                    <a href="detail.html?model=nemotron-3" class="read-more">Read more →</a>
+                </article>
+
+                <!-- MiniMax M2.7 -->
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 19, 2026</span>
+                        <span class="news-tag">MiniMax</span>
+                    </div>
+                    <h3>MiniMax M2.7 with Agent Capabilities</h3>
+                    <p class="news-summary">MiniMax releases M2.7 with autonomous debugging and research agent harnesses. The model supports complex workflows in software engineering and office productivity. Available via MiniMax Agent and API Platform.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">Agent Framework</span>
+                        <span class="highlight">Autonomous Debug</span>
+                        <span class="highlight">API Available</span>
+                    </div>
+                    <a href="detail.html?model=minimax-m2-7" class="read-more">Read more →</a>
+                </article>
+
+                <!-- Gemini 3.1 Flash-Lite -->
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 4, 2026</span>
+                        <span class="news-tag">Google</span>
+                    </div>
+                    <h3>Gemini 3.1 Flash-Lite: Ultra-Cost-Efficient</h3>
+                    <p class="news-summary">Google introduces Gemini 3.1 Flash-Lite optimized for large-scale developer workloads. Delivers faster latency than 2.5 Flash at just $0.25/M input tokens and $1.50/M output tokens - the most cost-efficient Gemini model yet.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">$0.25/M Input</span>
+                        <span class="highlight">Fast Latency</span>
+                        <span class="highlight">Scale Optimized</span>
+                    </div>
+                    <a href="detail.html?model=gemini-flash-lite" class="read-more">Read more →</a>
+                </article>
+
+                <!-- Mistral Small 4 -->
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 2026</span>
+                        <span class="news-tag">Mistral</span>
+                    </div>
+                    <h3>Mistral Small 4: Efficient Open Model</h3>
+                    <p class="news-summary">Mistral releases Small 4 with 119B parameters but only 6.5B active per forward pass. Supports image and text inputs, offers hybrid reasoning, and is Apache 2.0 licensed. Designed for efficient self-hosting on modest hardware.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">119B MoE</span>
+                        <span class="highlight">Apache 2.0</span>
+                        <span class="highlight">Self-Host Friendly</span>
+                    </div>
+                    <a href="detail.html?model=mistral-small-4" class="read-more">Read more →</a>
+                </article>
+
+                <!-- GPT-4o Discontinued -->
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Feb 13, 2026</span>
+                        <span class="news-tag">OpenAI</span>
+                    </div>
+                    <h3>OpenAI Retires GPT-4o Series</h3>
+                    <p class="news-summary">OpenAI officially discontinues GPT-4o, GPT-4.1, GPT-4.1-mini, and o4-mini from ChatGPT. Only 0.1% of users were still selecting these models. GPT-5.1 and GPT-5.2 introduced as successors with customizable personality options.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">End of Era</span>
+                        <span class="highlight">GPT-5 Successors</span>
+                        <span class="highlight">Personality Controls</span>
+                    </div>
+                    <a href="detail.html?model=gpt-4o-retired" class="read-more">Read more →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="industry" class="section">
+        <div class="container">
+            <h2 class="section-title">Industry Updates</h2>
+            
+            <div class="news-grid">
+                <!-- Disney OpenAI Split -->
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 24, 2026</span>
+                        <span class="news-tag">Business</span>
+                    </div>
+                    <h3>Disney Ends $1B OpenAI Partnership</h3>
+                    <p class="news-summary">Following Sora shutdown, Disney terminates its groundbreaking partnership with OpenAI that included licensing 200+ characters. The three-year deal would have allowed Sora to generate videos featuring Disney, Marvel, Pixar, and Star Wars characters.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">Deal Cancelled</span>
+                        <span class="highlight">200+ Characters</span>
+                        <span class="highlight">Strategic Shift</span>
+                    </div>
+                </article>
+
+                <!-- China AI Market Share -->
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 2026</span>
+                        <span class="news-tag">Market</span>
+                    </div>
+                    <h3>Chinese AI Hits 30% Global Download Share</h3>
+                    <p class="news-summary">Chinese open-source AI models now account for 30% of all global AI downloads, surpassing US at 15.7%. DeepSeek, Qwen, and GLM models driving adoption. Five Chinese companies now in LMArena global top 10, with Alibaba ranking #1 in China.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">30% Global Share</span>
+                        <span class="highlight">5 in Top 10</span>
+                        <span class="highlight">Open Source Leader</span>
+                    </div>
+                </article>
+
+                <!-- OpenAI Acquires Promptfoo -->
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 9, 2026</span>
+                        <span class="news-tag">Acquisition</span>
+                    </div>
+                    <h3>OpenAI Acquires Promptfoo for AI Security</h3>
+                    <p class="news-summary">OpenAI acquires Promptfoo, an open-source platform for systematic AI safety testing. The platform will be integrated into OpenAI's Frontier enterprise agent platform for automated security testing. Promptfoo will remain open source.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">Security Focus</span>
+                        <span class="highlight">Enterprise Agents</span>
+                        <span class="highlight">Open Source Stays</span>
+                    </div>
+                </article>
+
+                <!-- NVIDIA GTC 2026 -->
+                <article class="news-card">
+                    <div class="news-meta">
+                        <span class="news-date">Mar 16, 2026</span>
+                        <span class="news-tag">Conference</span>
+                    </div>
+                    <h3>NVIDIA GTC 2026: AI Infrastructure Focus</h3>
+                    <p class="news-summary">NVIDIA's GTC keynote unveiled NemoClaw for running OpenClaw agents, announced Cerebras CS-3 systems coming to AWS Bedrock, and showcased the latest in AI factories and physical AI. Major focus on agentic AI infrastructure.</p>
+                    <div class="news-highlights">
+                        <span class="highlight">NemoClaw</span>
+                        <span class="highlight">Cerebras on AWS</span>
+                        <span class="highlight">Agentic AI</span>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
