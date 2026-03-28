@@ -476,6 +476,428 @@ const newsData = {
             "Enterprise-focused with on-premise options",
             "Competitive GLM architecture innovations"
         ]
+    },
+    
+    "gpt-5-4": {
+        id: "gpt-5-4",
+        title: "GPT-5.4",
+        developer: "OpenAI",
+        date: "Mar 5, 2026",
+        tag: "OpenAI",
+        tagColor: "#10a37f",
+        subtitle: "Native computer use and 1M context window mark a new era of AI autonomy.",
+        summary: "OpenAI's GPT-5.4 introduces native computer use capabilities, allowing the model to control browsers and desktop applications autonomously. With a 1 million token context window, 83% success rate on professional tasks, and 33% fewer factual errors than GPT-5.2.",
+        content: `
+            <p>OpenAI has released GPT-5.4, marking a significant milestone in AI capability with the introduction of native computer use (NCU) directly into the model architecture. This release represents a pivot from conversational AI to autonomous task execution.</p>
+            
+            <h2>Native Computer Use Revolution</h2>
+            <p>GPT-5.4 is the first general-purpose frontier model to include native computer use capabilities baked directly into its architecture. The model can:</p>
+            <ul>
+                <li>Observe desktop environments visually through screenshots</li>
+                <li>Execute actions like clicking, typing, and navigating UIs</li>
+                <li>Run a "build-run-verify-fix" loop for autonomous correction</li>
+                <li>Control browsers to perform web-based tasks</li>
+            </ul>
+            
+            <p>On OSWorld benchmark, which tests computer use capabilities, GPT-5.4 achieved 75.0%—exceeding the human baseline of 72.4% for the first time in an AI system.</p>
+            
+            <h2>Professional Task Performance</h2>
+            <p>On GDPval, a benchmark measuring real-world knowledge work across 44 occupations, GPT-5.4 achieved 83.0% success rate—matching or exceeding human professionals in the majority of tested scenarios.</p>
+            
+            <h2>Technical Specifications</h2>
+            <ul>
+                <li><strong>Context Window:</strong> 1,000,000 tokens (largest ever from OpenAI)</li>
+                <li><strong>Output Length:</strong> Up to 128,000 tokens</li>
+                <li><strong>Error Reduction:</strong> 33% fewer factual errors vs GPT-5.2</li>
+                <li><strong>Computer Use:</strong> Native API support for desktop control</li>
+                <li><strong>Tool Search:</strong> On-demand tool lookup instead of loading all definitions</li>
+            </ul>
+            
+            <h2>Enterprise Applications</h2>
+            <p>Companies are already deploying GPT-5.4 for:</p>
+            <ul>
+                <li>Automated browser tasks and form filling</li>
+                <li>Cross-platform data entry and synchronization</li>
+                <li>Multi-step procurement and purchasing workflows</li>
+                <li>Customer service automation with desktop applications</li>
+            </ul>
+            
+            <h2>Availability & Pricing</h2>
+            <p>GPT-5.4 is available via OpenAI API and ChatGPT Plus/Pro. Standard pricing is $2.50 per million input tokens and $15.00 per million output tokens. Pricing doubles for contexts exceeding 272K tokens.</p>
+        `,
+        stats: [
+            { label: "GDPval", value: "83%" },
+            { label: "OSWorld", value: "75%" },
+            { label: "Context", value: "1M" },
+            { label: "Error Reduction", value: "33%" }
+        ],
+        pricing: {
+            input: "$2.50",
+            output: "$15.00",
+            context: "1M tokens"
+        },
+        specs: {
+            "Context Window": "1M tokens",
+            "Max Output": "128K tokens",
+            "Computer Use": "Native",
+            "Availability": "API & ChatGPT"
+        },
+        highlights: [
+            "First OpenAI model with native computer use",
+            "1 million token context window",
+            "75% on OSWorld beating human baseline",
+            "33% fewer factual errors than GPT-5.2",
+            "Tool Search for efficient agent workflows"
+        ]
+    },
+    
+    "mimo-v2-pro": {
+        id: "mimo-v2-pro",
+        title: "MiMo-V2-Pro",
+        developer: "Xiaomi",
+        date: "Mar 20, 2026",
+        tag: "Xiaomi",
+        tagColor: "#ff6900",
+        subtitle: "The stealth 1-trillion parameter model that tested anonymously as 'Hunter Alpha'.",
+        summary: "Xiaomi revealed MiMo-V2-Pro, a 1 trillion parameter model that secretly tested as 'Hunter Alpha' on OpenRouter. The model processed over 1 trillion tokens during anonymous testing, ranked #8 globally, and caused Xiaomi's stock to surge 5.8%.",
+        content: `
+            <p>Xiaomi has made a dramatic entry into the frontier AI race with MiMo-V2-Pro, a 1 trillion parameter model that was secretly tested on OpenRouter under the mysterious name "Hunter Alpha" before its official reveal.</p>
+            
+            <h2>The Stealth Launch</h2>
+            <p>On March 11, a model called "Hunter Alpha" appeared on OpenRouter with no developer attribution. The specs matched what the AI community had been expecting from DeepSeek V4:</p>
+            <ul>
+                <li>1 trillion parameters</li>
+                <li>1 million token context</li>
+                <li>Agent-focused architecture</li>
+                <li>Free access during testing</li>
+            </ul>
+            
+            <p>Developers were convinced it was DeepSeek. The model identified itself as "a Chinese AI model primarily trained in Chinese" with a May 2025 knowledge cutoff—matching DeepSeek's pattern.</p>
+            
+            <h2>The Reveal</h2>
+            <p>On March 18, Xiaomi revealed the truth: Hunter Alpha was MiMo-V2-Pro, developed by their MiMo AI division led by former DeepSeek researcher Luo Fuli. The numbers from the stealth test were remarkable:</p>
+            <ul>
+                <li>Over 1 trillion tokens processed during anonymous testing</li>
+                <li>Topped OpenRouter's daily usage charts multiple times</li>
+                <li>Ranked 8th globally on the Artificial Analysis Intelligence Index</li>
+                <li>2nd among Chinese models</li>
+            </ul>
+            
+            <h2>Market Impact</h2>
+            <p>The revelation caused immediate market reaction. Xiaomi's Hong Kong shares surged 5.8% following the announcement, adding billions to the company's market cap. The success validated Xiaomi's AI strategy and positioned them as a serious contender in the global AI race.</p>
+            
+            <h2>Architecture & Capabilities</h2>
+            <p>MiMo-V2-Pro is built on a Mixture-of-Experts (MoE) architecture with 1 trillion total parameters. The model excels at:</p>
+            <ul>
+                <li>Complex reasoning tasks</li>
+                <li>Code generation and analysis</li>
+                <li>Multilingual capabilities (especially Chinese)</li>
+                <li>Agentic workflows</li>
+            </ul>
+            
+            <h2>Availability</h2>
+            <p>MiMo-V2-Pro is currently available through Xiaomi's first-party API. The company plans to expand access through partnerships and enterprise licensing in the coming months.</p>
+        `,
+        stats: [
+            { label: "Parameters", value: "1T" },
+            { label: "Global Rank", value: "#8" },
+            { label: "Tokens Processed", value: "1T+" },
+            { label: "Stock Impact", value: "+5.8%" }
+        ],
+        pricing: {
+            input: "TBD",
+            output: "TBD",
+            context: "1M tokens"
+        },
+        specs: {
+            "Architecture": "MoE",
+            "Parameters": "1 trillion",
+            "Context Window": "1M tokens",
+            "Leadership": "Luo Fuli (ex-DeepSeek)"
+        },
+        highlights: [
+            "1 trillion parameter MoE architecture",
+            "Stealth tested as 'Hunter Alpha' on OpenRouter",
+            "Ranked #8 globally during anonymous testing",
+            "Led by former DeepSeek researcher Luo Fuli",
+            "Xiaomi stock surged 5.8% on reveal"
+        ]
+    },
+    
+    "minimax-m2-7": {
+        id: "minimax-m2-7",
+        title: "MiniMax M2.7",
+        developer: "MiniMax",
+        date: "Mar 18, 2026",
+        tag: "MiniMax",
+        tagColor: "#6366f1",
+        subtitle: "Self-evolving AI model trained through 100+ autonomous iterations.",
+        summary: "MiniMax unveiled M2.7, featuring a revolutionary self-evolution training process with over 100 iterations. The Mixture-of-Experts model achieves top-tier performance in coding and reasoning while maintaining cost-effective pricing.",
+        content: `
+            <p>MiniMax has introduced M2.7, a breakthrough model that utilizes a novel self-evolution training process involving over 100 autonomous iterations to achieve significant performance gains without proportional increases in compute.</p>
+            
+            <h2>Self-Evolution Training</h2>
+            <p>The defining feature of M2.7 is its training methodology. Unlike traditional models that train on static datasets, M2.7 underwent a self-evolution process where:</p>
+            <ul>
+                <li>The model generates its own training examples</li>
+                <li>It evaluates and filters its outputs for quality</li>
+                <li>High-quality outputs are fed back into training</li>
+                <li>This cycle repeated for over 100 iterations</li>
+            </ul>
+            
+            <h2>Mixture-of-Experts Architecture</h2>
+            <p>M2.7 employs a sparse MoE architecture that activates only a subset of its parameters for each token, making inference more efficient while maintaining large model capabilities. This design allows:</p>
+            <ul>
+                <li>Higher effective capacity with lower computational cost</li>
+                <li>Specialized expert networks for different tasks</li>
+                <li>Efficient scaling to larger parameter counts</li>
+            </ul>
+            
+            <h2>Performance Benchmarks</h2>
+            <p>M2.7 demonstrates top-tier performance across multiple domains:</p>
+            <ul>
+                <li><strong>Coding:</strong> Competitive with leading models on HumanEval and LiveCodeBench</li>
+                <li><strong>Reasoning:</strong> Strong performance on mathematical and logical tasks</li>
+                <li><strong>Language:</strong> Excellent multilingual capabilities</li>
+            </ul>
+            
+            <h2>Cost-Effective Pricing</h2>
+            <p>MiniMax has positioned M2.7 as a cost-effective alternative to Western frontier models, offering competitive performance at significantly lower price points. This makes advanced AI accessible to a broader range of developers and businesses.</p>
+            
+            <h2>Availability</h2>
+            <p>M2.7 is available through MiniMax's API platform and select enterprise partnerships. The company continues to iterate on the self-evolution methodology for future releases.</p>
+        `,
+        stats: [
+            { label: "Iterations", value: "100+" },
+            { label: "Coding", value: "Top Tier" },
+            { label: "Architecture", value: "MoE" },
+            { label: "Pricing", value: "Competitive" }
+        ],
+        pricing: {
+            input: "Competitive",
+            output: "Competitive",
+            context: "Standard"
+        },
+        specs: {
+            "Training": "Self-Evolution",
+            "Iterations": "100+",
+            "Architecture": "MoE",
+            "Focus": "Coding & Reasoning"
+        },
+        highlights: [
+            "Revolutionary self-evolution training process",
+            "100+ autonomous training iterations",
+            "Top-tier coding performance",
+            "Cost-effective pricing structure",
+            "Efficient Mixture-of-Experts architecture"
+        ]
+    },
+    
+    "meta-mtia": {
+        id: "meta-mtia",
+        title: "Meta MTIA AI Chips",
+        developer: "Meta",
+        date: "Mar 11, 2026",
+        tag: "Meta",
+        tagColor: "#0668E1",
+        subtitle: "Four new chip generations to reduce dependence on NVIDIA for AI inference.",
+        summary: "Meta revealed four new generations of custom AI chips—the MTIA 300, 400, 450, and 500. The MTIA 400 is already in internal testing with competitive performance, while the 450 and 500 series target mass deployment by end of 2027.",
+        content: `
+            <p>Meta has unveiled an ambitious roadmap of custom AI silicon with four new generations of MTIA (Meta Training and Inference Accelerator) chips, representing a 25x increase in compute FLOPS and signaling a major shift to reduce dependence on NVIDIA.</p>
+            
+            <h2>The MTIA Roadmap</h2>
+            <p>Meta revealed a comprehensive four-generation chip strategy:</p>
+            <ul>
+                <li><strong>MTIA 300:</strong> Current generation, in production use</li>
+                <li><strong>MTIA 400:</strong> Already in internal testing, showing competitive performance</li>
+                <li><strong>MTIA 450:</strong> Targeting mass deployment in 2027</li>
+                <li><strong>MTIA 500:</strong> Flagship generation for end of 2027</li>
+            </ul>
+            
+            <h2>Performance Improvements</h2>
+            <p>The new chip generations deliver substantial performance gains:</p>
+            <ul>
+                <li>25x increase in compute FLOPS across the series</li>
+                <li>Optimized specifically for Meta's AI workloads</li>
+                <li>Improved power efficiency for data center deployment</li>
+                <li>Better inference throughput for ranking and recommendation models</li>
+            </ul>
+            
+            <h2>Strategic Independence</h2>
+            <p>This aggressive silicon strategy is designed to reduce Meta's dependence on NVIDIA GPUs, which have been the dominant hardware for AI training and inference. By developing custom chips optimized for their specific workloads, Meta aims to:</p>
+            <ul>
+                <li>Reduce hardware costs at scale</li>
+                <li>Customize architectures for their AI models</li>
+                <li>Improve energy efficiency in data centers</li>
+                <li>Gain more control over their AI infrastructure</li>
+            </ul>
+            
+            <h2>Deployment Timeline</h2>
+            <p>The MTIA 400 is already in testing with competitive results. The 450 and 500 series are scheduled for mass deployment across Meta's data centers by the end of 2027, marking a significant transition in their infrastructure.</p>
+            
+            <h2>Industry Impact</h2>
+            <p>Meta's move follows similar custom silicon initiatives by Google (TPU) and Amazon (Trainium/Inferentia). As AI becomes more central to tech companies' operations, custom silicon is becoming a competitive necessity rather than a luxury.</p>
+        `,
+        stats: [
+            { label: "Generations", value: "4" },
+            { label: "FLOPS Increase", value: "25x" },
+            { label: "MTIA 400 Status", value: "Testing" },
+            { label: "Full Deploy", value: "2027" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Chips": "MTIA 300-500",
+            "FLOPS Gain": "25x",
+            "400 Status": "In Testing",
+            "500 Deploy": "End 2027"
+        },
+        highlights: [
+            "Four new chip generations announced",
+            "25x compute FLOPS increase",
+            "MTIA 400 already in competitive testing",
+            "Full deployment by end of 2027",
+            "Major step toward NVIDIA independence"
+        ]
+    },
+    
+    "trump-ai-framework": {
+        id: "trump-ai-framework",
+        title: "National AI Legislative Framework",
+        developer: "US Government",
+        date: "Mar 20, 2026",
+        tag: "Policy",
+        tagColor: "#dc2626",
+        subtitle: "Trump administration proposes federal AI governance to preempt state regulations.",
+        summary: "The Trump administration released a National AI Legislative Framework designed to centralize federal governance, accelerate AI deployment, and address child safety and data center energy consumption. The framework aims to preempt state-level regulations.",
+        content: `
+            <p>On March 20, 2026, the Trump administration released its anticipated "National Policy Framework for Artificial Intelligence"—a four-page blueprint calling for Congress to enact a unified federal AI standard that would preempt conflicting state laws.</p>
+            
+            <h2>Framework Objectives</h2>
+            <p>The framework aims to establish a comprehensive federal approach to AI governance with focus on:</p>
+            <ul>
+                <li><strong>Centralized Governance:</strong> Creating unified federal oversight of AI development and deployment</li>
+                <li><strong>Acceleration:</strong> Speeding up AI adoption across government and industry</li>
+                <li><strong>Child Safety:</strong> Addressing risks to children from AI technologies</li>
+                <li><strong>Energy Infrastructure:</strong> Managing data center power consumption and grid impact</li>
+            </ul>
+            
+            <h2>Preemption of State Laws</h2>
+            <p>A key provision of the framework is the preemption of state-level AI regulations that conflict with federal standards. This aims to create a consistent regulatory environment nationwide, rather than the patchwork of state laws that has been emerging.</p>
+            
+            <h2>Industry Reactions</h2>
+            <p>The framework has received mixed reactions from the tech industry:</p>
+            <ul>
+                <li>Large tech companies generally support federal preemption to avoid compliance complexity</li>
+                <li>Some worry the framework prioritizes speed over safety</li>
+                <li>Privacy advocates express concerns about weakened consumer protections</li>
+                <li>Energy sector questions the data center provisions</li>
+            </ul>
+            
+            <h2>Legislative Path</h2>
+            <p>The framework is a legislative recommendation rather than an executive action. It requires Congressional approval to become law. With midterm elections approaching in 2026, the proposal sets up AI policy as a key political battleground.</p>
+            
+            <h2>Global Context</h2>
+            <p>The U.S. framework contrasts with the EU's AI Act approach, which emphasizes risk classification and strict compliance requirements. The Trump administration's approach prioritizes innovation and competitive positioning against China over precautionary regulation.</p>
+        `,
+        stats: [
+            { label: "Focus", value: "Federal" },
+            { label: "Key Issue", value: "Preemption" },
+            { label: "Status", value: "Proposal" },
+            { label: "Focus Areas", value: "4" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Type": "Legislative Framework",
+            "Status": "Proposed",
+            "Key Feature": "Federal Preemption",
+            "Target": "Congressional Action"
+        },
+        highlights: [
+            "Four-page federal AI governance blueprint",
+            "Calls for preempting state AI regulations",
+            "Addresses child safety and energy concerns",
+            "Prioritizes AI acceleration over restriction",
+            "Sets up AI as 2026 election issue"
+        ]
+    },
+    
+    "anthropic-market-share": {
+        id: "anthropic-market-share",
+        title: "Anthropic Business Market Share",
+        developer: "Anthropic",
+        date: "Mar 19, 2026",
+        tag: "Business",
+        tagColor: "#d4a574",
+        subtitle: "Anthropic captures 25% of business AI market as enterprise customers shift from OpenAI.",
+        summary: "Anthropic has captured nearly 25% of the business AI subscription market as OpenAI lost share. The shift is attributed to customer preference for Anthropic's stance against military applications and its focus on AI safety.",
+        content: `
+            <p>Anthropic has achieved a significant milestone in the enterprise AI market, capturing nearly 25% of the business AI subscription market as customers increasingly choose Claude over competing offerings from OpenAI.</p>
+            
+            <h2>Market Shift</h2>
+            <p>The enterprise AI market has seen a notable rebalancing, with Anthropic gaining ground rapidly:</p>
+            <ul>
+                <li>Anthropic now holds ~25% of business AI subscriptions</li>
+                <li>OpenAI has seen its market share decline from dominant levels</li>
+                <li>Google and other players also competing for enterprise customers</li>
+                <li>The shift reflects maturation of enterprise AI purchasing</li>
+            </ul>
+            
+            <h2>Factors Driving the Shift</h2>
+            <p>Several factors have contributed to Anthropic's enterprise success:</p>
+            <ul>
+                <li><strong>Safety Stance:</strong> Anthropic's public commitment to AI safety and refusal to work on military applications</li>
+                <li><strong>Constitutional AI:</strong> Transparent approach to AI alignment and safety research</li>
+                <li><strong>Product Quality:</strong> Claude's strong performance on coding and reasoning tasks</li>
+                <li><strong>Enterprise Focus:</strong> Better support for business use cases and compliance needs</li>
+            </ul>
+            
+            <h2>Enterprise Preferences</h2>
+            <p>Enterprise customers are increasingly prioritizing:</p>
+            <ul>
+                <li>AI safety and responsible development practices</li>
+                <li>Transparent model behavior and limitations</li>
+                <li>Data privacy and security guarantees</li>
+                <li>Vendor stability and long-term commitment</li>
+            </ul>
+            
+            <h2>Implications</h2>
+            <p>This market shift suggests that enterprise AI purchasing is maturing beyond raw capability to encompass ethical considerations, safety practices, and vendor reliability. Companies are thinking more carefully about which AI partners align with their values.</p>
+            
+            <h2>Future Outlook</h2>
+            <p>With Claude Code becoming the most-used AI coding tool and Claude Opus 4.6 leading benchmarks, Anthropic appears well-positioned to maintain its enterprise momentum even as competition intensifies.</p>
+        `,
+        stats: [
+            { label: "Market Share", value: "25%" },
+            { label: "Segment", value: "Business" },
+            { label: "Key Factor", value: "Safety Stance" },
+            { label: "Trend", value: "Growing" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Market": "Enterprise AI",
+            "Share": "~25%",
+            "Shift From": "OpenAI",
+            "Driver": "Safety Focus"
+        },
+        highlights: [
+            "Captured 25% of business AI subscription market",
+            "Growth driven by safety stance and ethics",
+            "Enterprise customers prioritizing responsible AI",
+            "Claude Code leads developer adoption at 95%",
+            "Market maturing beyond raw capability"
+        ]
     }
 };
 
