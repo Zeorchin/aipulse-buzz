@@ -1,0 +1,73 @@
+/* Ad Container Styles for AI Pulse */
+
+.ad-container {
+    margin: 2rem auto;
+    text-align: center;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.ad-label {
+    font-size: 0.7rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Header ad banner */
+.ad-header {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e9ecef;
+    margin: 0;
+}
+
+/* In-content ads */
+.ad-in-content {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+/* Sidebar ads */
+.ad-sidebar {
+    position: sticky;
+    top: 100px;
+    margin: 2rem 0;
+}
+
+/* Responsive ad sizing */
+@media (max-width: 768px) {
+    .ad-container {
+        min-height: 50px;
+        margin: 1rem auto;
+    }
+    
+    .ad-header {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .ad-header {
+        background: #1a1a1a;
+        border-bottom-color: #333;
+    }
+    
+    .ad-in-content {
+        background: #1a1a1a;
+        border-color: #333;
+    }
+    
+    .ad-label {
+        color: #888;
+    }
+}
