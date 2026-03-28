@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming | AI Pulse</title>
+    <title>Gaming Hub | AI Pulse</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9041541077881789" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="additional-styles.css">
     <link rel="stylesheet" href="ads.css">
+    <link rel="stylesheet" href="gaming.css">
 </head>
-<body>
-    <nav class="navbar">
+<body class="gaming-page">
+    <nav class="navbar gaming-navbar">
         <div class="container">
             <a href="index.html" class="logo">
                 <span class="logo-icon">◉</span>
@@ -21,54 +22,216 @@
             <ul class="nav-links">
                 <li><a href="ai-news.html">News</a></li>
                 <li><a href="ai-models.html">Models</a></li>
+                <li><a href="gaming.html" class="active">Gaming</a></li>
                 <li><a href="ai-benchmarks.html">Benchmarks</a></li>
-                <li><a href="ai-finance.html">Finance</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="gaming-hero">
         <div class="container">
-            <div class="hero-badge">Coming Soon</div>
-            <h1>Gaming Hub</h1>
-            <p class="hero-subtitle">Game guides, walkthroughs, and gaming culture<br><small>Inspired by game8.co - A new gaming destination</small></p>
-            <a href="index.html" class="back-link">← Back to Portal</a>
+            <div class="hero-content">
+                <h1>Gaming Hub</h1>
+                <p class="hero-subtitle">Comprehensive guides, tier lists, and walkthroughs for your favorite games</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Search games, guides, characters..." id="gameSearch">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="section">
+    <!-- Featured Games Section -->
+    <section class="featured-games">
         <div class="container">
-            <div class="coming-soon-content">
-                <div class="construction-icon">🎮</div>
-                <h2>Under Construction</h2>
-                <p>We're building an exciting gaming section featuring:</p>
+            <h2 class="section-title">Featured Games</h2>
+            <div class="games-grid">
                 
-                <div class="feature-list">
-                    <div class="feature-item">
-                        <span class="feature-icon">📖</span>
-                        <h4>Game Guides</h4>
-                        <p>Comprehensive walkthroughs and tips</p>
+                <!-- Pokemon Pokopia -->
+                <a href="games/pokemon-pokopia.html" class="game-card">
+                    <div class="game-image">
+                        <div class="game-icon">🎌</div>
+                        <div class="game-badge">New</div>
                     </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">⚔️</span>
-                        <h4>Build Guides</h4>
-                        <p>Character builds and loadouts</p>
+                    <div class="game-info">
+                        <h3>Pokemon Pokopia</h3>
+                        <p class="game-genre">Life Simulation • Multiplayer</p>
+                        <div class="game-tags">
+                            <span class="tag">Decoration</span>
+                            <span class="tag">Social</span>
+                        </div>
+                        <div class="guide-links">
+                            <span class="guide-count">📖 12 Guides</span>
+                        </div>
                     </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">🏆</span>
-                        <h4>Achievement Guides</h4>
-                        <p>How to unlock everything</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">📰</span>
-                        <h4>Gaming News</h4>
-                        <p>Latest releases and updates</p>
-                    </div>
-                </div>
+                </a>
 
-                <div class="notify-section">
-                    <p>Want to be notified when we launch?</p>
-                    <p class="hint">Check back soon for updates!</p>
+                <!-- Wuthering Waves -->
+                <a href="games/wuthering-waves.html" class="game-card">
+                    <div class="game-image">
+                        <div class="game-icon">🌊</div>
+                        <div class="game-badge hot">Hot</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Wuthering Waves</h3>
+                        <p class="game-genre">Action RPG • Open World</p>
+                        <div class="game-tags">
+                            <span class="tag">Tier List</span>
+                            <span class="tag">Builds</span>
+                        </div>
+                        <div class="guide-links">
+                            <span class="guide-count">📖 28 Guides</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- The Seven Deadly Sins: Origin -->
+                <a href="games/seven-deadly-sins-origin.html" class="game-card">
+                    <div class="game-image">
+                        <div class="game-icon">⚔️</div>
+                        <div class="game-badge">RPG</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>The Seven Deadly Sins: Origin</h3>
+                        <p class="game-genre">Action RPG • Anime</p>
+                        <div class="game-tags">
+                            <span class="tag">Characters</span>
+                            <span class="tag">Story</span>
+                        </div>
+                        <div class="guide-links">
+                            <span class="guide-count">📖 15 Guides</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Arknights: Endfield -->
+                <a href="games/arknights-endfield.html" class="game-card">
+                    <div class="game-image">
+                        <div class="game-icon">🏭</div>
+                        <div class="game-badge new">Released</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Arknights: Endfield</h3>
+                        <p class="game-genre">Strategy RPG • Base Building</p>
+                        <div class="game-tags">
+                            <span class="tag">Factory</span>
+                            <span class="tag">Combat</span>
+                        </div>
+                        <div class="guide-links">
+                            <span class="guide-count">📖 20 Guides</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Pokemon TCG Pocket -->
+                <a href="games/pokemon-tcg-pocket.html" class="game-card">
+                    <div class="game-image">
+                        <div class="game-icon">🃏</div>
+                        <div class="game-badge popular">Popular</div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Pokemon TCG Pocket</h3>
+                        <p class="game-genre">Card Game • Strategy</p>
+                        <div class="game-tags">
+                            <span class="tag">Deck Building</span>
+                            <span class="tag">Trading</span>
+                        </div>
+                        <div class="guide-links">
+                            <span class="guide-count">📖 35 Guides</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links-section">
+        <div class="container">
+            <h2 class="section-title">Popular Guides</h2>
+            <div class="quick-links-grid">
+                <a href="games/wuthering-waves.html#tier-list" class="quick-link">
+                    <span class="quick-icon">🏆</span>
+                    <span class="quick-text">Tier Lists</span>
+                </a>
+                <a href="games/pokemon-tcg-pocket.html#decks" class="quick-link">
+                    <span class="quick-icon">🎴</span>
+                    <span class="quick-text">Meta Decks</span>
+                </a>
+                <a href="games/arknights-endfield.html#characters" class="quick-link">
+                    <span class="quick-icon">👥</span>
+                    <span class="quick-text">Characters</span>
+                </a>
+                <a href="games/wuthering-waves.html#builds" class="quick-link">
+                    <span class="quick-icon">⚙️</span>
+                    <span class="quick-text">Build Guides</span>
+                </a>
+                <a href="games/pokemon-tcg-pocket.html#cards" class="quick-link">
+                    <span class="quick-icon">📊</span>
+                    <span class="quick-text">Card Database</span>
+                </a>
+                <a href="games/seven-deadly-sins-origin.html#walkthrough" class="quick-link">
+                    <span class="quick-icon">🗺️</span>
+                    <span class="quick-text">Walkthroughs</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Updates -->
+    <section class="latest-updates">
+        <div class="container">
+            <h2 class="section-title">Latest Updates</h2>
+            <div class="updates-list">
+                <div class="update-item">
+                    <span class="update-date">Mar 28</span>
+                    <span class="update-game">Wuthering Waves</span>
+                    <a href="#" class="update-title">Version 1.3 Tier List Updated - New Characters Ranked</a>
+                </div>
+                <div class="update-item">
+                    <span class="update-date">Mar 27</span>
+                    <span class="update-game">Pokemon TCG Pocket</span>
+                    <a href="#" class="update-title">Mega Rising Expansion - Best Decks Guide</a>
+                </div>
+                <div class="update-item">
+                    <span class="update-date">Mar 25</span>
+                    <span class="update-game">Arknights: Endfield</span>
+                    <a href="#" class="update-title">Complete Factory Blueprint Guide Added</a>
+                </div>
+                <div class="update-item">
+                    <span class="update-date">Mar 22</span>
+                    <span class="update-game">Pokemon Pokopia</span>
+                    <a href="#" class="update-title">Island Decoration Ideas - Community Showcase</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 class="section-title">Gaming Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <span class="tool-icon">🎯</span>
+                    <h4>Tier List Maker</h4>
+                    <p>Create and share your own tier lists</p>
+                </div>
+                <div class="tool-card">
+                    <span class="tool-icon">🧮</span>
+                    <h4>Damage Calculator</h4>
+                    <p>Calculate optimal damage output</p>
+                </div>
+                <div class="tool-card">
+                    <span class="tool-icon">📅</span>
+                    <h4>Event Calendar</h4>
+                    <p>Track in-game events and rewards</p>
+                </div>
+                <div class="tool-card">
+                    <span class="tool-icon">💾</span>
+                    <h4>Team Builder</h4>
+                    <p>Save and share team compositions</p>
                 </div>
             </div>
         </div>
@@ -76,11 +239,18 @@
 
     <footer class="footer">
         <div class="container">
-            <p>Building the ultimate gaming resource destination.</p>
-            <p class="footer-update">Coming 2026 | aipulse.buzz</p>
+            <p>Your ultimate destination for gaming guides and strategies.</p>
+            <p class="footer-update">Last updated: March 2026 | aipulse.buzz</p>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script>
+        // Simple search functionality
+        document.getElementById('gameSearch').addEventListener('keyup', function(e) {
+            if (e.key === 'Enter') {
+                alert('Search feature coming soon!');
+            }
+        });
+    </script>
 </body>
 </html>
