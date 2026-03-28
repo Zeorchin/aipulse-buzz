@@ -113,6 +113,10 @@
     box-shadow: 0 20px 40px rgba(245, 158, 11, 0.2);
 }
 
+.articles-card:hover {
+    box-shadow: 0 20px 40px rgba(255, 107, 53, 0.25);
+}
+
 .coming-soon-card:hover {
     box-shadow: 0 20px 40px rgba(107, 114, 128, 0.2);
 }
@@ -173,6 +177,10 @@
     background: #f59e0b;
 }
 
+.articles-glow {
+    background: #ff6b35;
+}
+
 .coming-glow {
     background: #6b7280;
 }
@@ -196,6 +204,10 @@
 
 .finance-card .topic-image {
     background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+}
+
+.articles-card .topic-image {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(255, 107, 53, 0.05) 100%);
 }
 
 .coming-soon-card .topic-image {
@@ -247,6 +259,11 @@
 
 .finance-card .topic-badge {
     color: #f59e0b;
+}
+
+.articles-card .topic-badge {
+    color: #ff6b35;
+    background: rgba(255, 107, 53, 0.15);
 }
 
 .topic-content h2 {

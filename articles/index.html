@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Articles | AI Pulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../portal.css">
+    <link rel="stylesheet" href="articles.css">
+</head>
+<body class="portal-page">
+    <nav class="navbar portal-navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">◉</span>
+                <span>AI Pulse.buzz</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../ai-news.html">News</a>
+                <a href="../ai-models.html">Models</a>
+                <a href="index.html" class="active">Articles</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="portal-hero articles-hero">
+        <div class="container">
+            <div class="hero-badge">📝 Insights</div>
+            <h1>AI <span class="gradient-text">Articles</span></h1>
+            <p class="hero-subtitle">Deep dives into AI technology, productivity tools, and the future of intelligent assistants</p>
+        </div>
+    </header>
+
+    <main class="articles-section">
+        <div class="container">
+            <div class="articles-grid">
+                <!-- Featured Article: OpenClaw -->
+                <article class="article-card featured">
+                    <a href="openclaw.html" class="article-image-link">
+                        <div class="article-image">
+                            <img src="../images/openclaw-lobster.jpg" alt="OpenClaw AI Assistant">
+                            <div class="article-mascot">🦞</div>
+                        </div>
+                    </a>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">AI Assistants</span>
+                            <span class="article-date">March 28, 2026</span>
+                        </div>
+                        <h2><a href="openclaw.html">How OpenClaw Changes the Way We Work and Live</a></h2>
+                        <p class="article-excerpt">Discover how OpenClaw, the open-source AI assistant with its iconic lobster mascot, revolutionizes productivity by handling repetitive tasks, integrating seamlessly with your tools, and providing truly personal assistance while maintaining complete privacy.</p>
+                        <div class="article-footer">
+                            <span class="read-time">⏱️ 8 min read</span>
+                            <a href="openclaw.html" class="read-more">Read Article →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Placeholder for future articles -->
+                <div class="article-card coming-soon">
+                    <div class="article-image placeholder">
+                        <div class="placeholder-icon">🚀</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-category">Coming Soon</span>
+                        </div>
+                        <h2>More Articles on the Way</h2>
+                        <p class="article-excerpt">Stay tuned for more insightful articles about AI technology, tools, and trends.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="portal-footer">
+        <div class="container">
+            <div class="footer-brand">
+                <span class="logo-icon">◉</span>
+                <span>AI Pulse.buzz</span>
+            </div>
+            <p class="footer-tagline">Your daily dose of AI intelligence</p>
+            <p class="footer-copyright">© 2026 AI Pulse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.article-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 150);
+            });
+        });
+    </script>
+</body>
+</html>
