@@ -898,6 +898,684 @@ const newsData = {
             "Claude Code leads developer adoption at 95%",
             "Market maturing beyond raw capability"
         ]
+    },
+    
+    "openclaw-v2026-3-22": {
+        id: "openclaw-v2026-3-22",
+        title: "OpenClaw v2026.3.22 Release",
+        developer: "OpenClaw",
+        date: "Mar 23, 2026",
+        tag: "OpenClaw",
+        tagColor: "#10b981",
+        subtitle: "Major update with 45 new features, ClawHub native integration, and GPT-5.4 default routing.",
+        summary: "OpenClaw released version 2026.3.22 with 45 new features, 13 breaking changes, and 82 bug fixes. The update introduces native ClawHub integration, default routing to GPT-5.4, SSH sandboxing, and expanded model support including Anthropic Vertex AI and MiniMax M2.7.",
+        content: `
+            <p>OpenClaw has released version 2026.3.22, representing one of the most significant updates in the project's history. This release includes 45 new features, 13 breaking changes, and 82 bug fixes that substantially enhance the framework's capabilities.</p>
+            
+            <h2>ClawHub Native Integration</h2>
+            <p>The headline feature of this release is native integration of the ClawHub skills marketplace. Users can now discover and install over 13,729 community-contributed skills directly through OpenClaw, making it easier than ever to extend agent capabilities. The update prioritizes ClawHub over npm for skill installations.</p>
+            
+            <h2>Model Ecosystem Expansion</h2>
+            <p>OpenClaw v2026.3.22 significantly expands supported model providers:</p>
+            <ul>
+                <li><strong>Default:</strong> Now routes to GPT-5.40</li>
+                <li><strong>Anthropic:</strong> Added Vertex AI support</li>
+                <li><strong>MiniMax:</strong> Full M2.70 integration</li>
+                <li><strong>Zhipu:</strong> GLM-5.00 support added</li>
+                <li><strong>Xiaomi:</strong> MiMo-V2-Pro and Omni models</li>
+            </ul>
+            
+            <h2>SSH Sandboxing</h2>
+            <p>Security receives a major boost with core SSH sandbox backend implementation. The feature includes secret-backed key inputs for secure remote execution, ensuring that agent operations maintain strict isolation and credential protection.</p>
+            
+            <h2>Platform Improvements</h2>
+            <p>Additional enhancements include:</p>
+            <ul>
+                <li>Gateway startup optimization reducing cold starts to seconds</li>
+                <li>Improved Telegram polling with hard-timeout for stuck updates</li>
+                <li>Enhanced Feishu integration with interactive cards</li>
+                <li>Matrix plugin improvements for private networks</li>
+                <li>Better error handling and silent error replies</li>
+            </ul>
+            
+            <h2>Growth Metrics</h2>
+            <p>The OpenClaw ecosystem continues explosive growth:</p>
+            <ul>
+                <li>GitHub Stars: 250,829 (up 136% from January)</li>
+                <li>Available Skills: 13,729 (up 380% from 2,857)</li>
+                <li>Supported LLMs: 22 (up from 12)</li>
+            </ul>
+        `,
+        stats: [
+            { label: "New Features", value: "45" },
+            { label: "Bug Fixes", value: "82" },
+            { label: "Skills", value: "13K+" },
+            { label: "Stars", value: "250K+" }
+        ],
+        pricing: {
+            input: "Free",
+            output: "Free",
+            context: "N/A"
+        },
+        specs: {
+            "License": "MIT",
+            "Default Model": "GPT-5.4",
+            "Skills": "13,729+",
+            "Platforms": "Any OS"
+        },
+        highlights: [
+            "45 new features in latest release",
+            "Native ClawHub integration with 13K+ skills",
+            "Default routing to GPT-5.4",
+            "SSH sandboxing for secure execution",
+            "Support for 22 different LLM providers"
+        ]
+    },
+    
+    "nemoclaw": {
+        id: "nemoclaw",
+        title: "NVIDIA NemoClaw",
+        developer: "NVIDIA",
+        date: "Mar 16, 2026",
+        tag: "NVIDIA",
+        tagColor: "#76b900",
+        subtitle: "Enterprise agent runtime built on OpenClaw with native sandboxing and privacy controls.",
+        summary: "At GTC 2026, Jensen Huang called OpenClaw 'the most popular open source project in the history of humanity.' NVIDIA announced NemoClaw, a secure enterprise agent runtime built on OpenClaw with native sandboxing, least-privilege model, and integrated privacy router.",
+        content: `
+            <p>During his GTC 2026 keynote, NVIDIA CEO Jensen Huang made a bold statement: "OpenClaw is the most popular open source project in the history of humanity." This recognition of the open-source agent framework preceded NVIDIA's announcement of NemoClaw—a secure enterprise runtime built directly on OpenClaw.</p>
+            
+            <h2>Enterprise Security Features</h2>
+            <p>NemoClaw extends OpenClaw with enterprise-grade security controls:</p>
+            <ul>
+                <li><strong>Native Sandboxing:</strong> Each agent runs in an isolated environment</li>
+                <li><strong>Least-Privilege Model:</strong> Agents receive only strictly necessary permissions</li>
+                <li><strong>Privacy Router:</strong> Automatic filtering of sensitive data before LLM processing</li>
+                <li><strong>Complete Audit Trail:</strong> Every agent action is tracked and logged</li>
+            </ul>
+            
+            <h2>Security Partnerships</h2>
+            <p>NVIDIA has partnered with leading security vendors for NemoClaw:</p>
+            <ul>
+                <li>Cisco</li>
+                <li>CrowdStrike</li>
+                <li>Google Security</li>
+                <li>Microsoft Security</li>
+                <li>TrendAI</li>
+            </ul>
+            
+            <h2>Strategic Significance</h2>
+            <p>NemoClaw represents NVIDIA's direct entry into the enterprise agentic AI software market. By building on OpenClaw rather than creating a proprietary alternative, NVIDIA:</p>
+            <ul>
+                <li>Leverages a proven open-source foundation</li>
+                <li>Benefits from community contributions</li>
+                <li>Provides enterprises with transparency</li>
+                <li>Avoids vendor lock-in concerns</li>
+            </ul>
+            
+            <h2>GTC 2026 Integration</h2>
+            <p>At GTC 2026, attendees could build their own AI assistant using the NemoClaw framework in hands-on workshops. This immediate practical exposure was designed to accelerate enterprise adoption following the conference.</p>
+            
+            <h2>Agent Toolkit</h2>
+            <p>Complementing NemoClaw, NVIDIA introduced the Agent Toolkit for building and deploying secure agents. The toolkit includes pre-built components for common enterprise workflows and security templates.</p>
+        `,
+        stats: [
+            { label: "Sandboxing", value: "Native" },
+            { label: "Security Partners", value: "5" },
+            { label: "Base", value: "OpenClaw" },
+            { label: "License", value: "Enterprise" }
+        ],
+        pricing: {
+            input: "Enterprise",
+            output: "Enterprise",
+            context: "Enterprise"
+        },
+        specs: {
+            "Base Platform": "OpenClaw",
+            "Security": "Native Sandboxing",
+            "Privacy": "Integrated Router",
+            "Audit": "Complete Trail"
+        },
+        highlights: [
+            "Built on OpenClaw framework",
+            "Native sandboxing for each agent",
+            "Least-privilege permission model",
+            "Automatic sensitive data filtering",
+            "Partnerships with 5 security leaders"
+        ]
+    },
+    
+    "tencent-openclaw": {
+        id: "tencent-openclaw",
+        title: "Tencent WeChat OpenClaw Integration",
+        developer: "Tencent",
+        date: "Mar 22, 2026",
+        tag: "Tencent",
+        tagColor: "#00a4ff",
+        subtitle: "WeChat's 1+ billion users can now interact with AI agents via ClawBot integration.",
+        summary: "Tencent plugged OpenClaw directly into WeChat via ClawBot, allowing 1+ billion users to interact with AI agents as easily as messaging a contact. The integration represents China's aggressive push into the AI agent race alongside Alibaba and Baidu.",
+        content: `
+            <p>Tencent has made a major move in China's AI agent race by integrating OpenClaw directly into WeChat, the country's dominant messaging platform with over 1 billion monthly active users. The integration, called ClawBot, allows users to interact with AI agents as naturally as messaging any other contact.</p>
+            
+            <h2>WeChat Integration</h2>
+            <p>WeChat is not just a messaging app in China—it's the center of daily life encompassing:</p>
+            <ul>
+                <li>Chat and social networking</li>
+                <li>Work and business communications</li>
+                <li>Payments and financial services</li>
+                <li>Shopping and e-commerce</li>
+                <li>Government services</li>
+                <li>Transportation and travel</li>
+            </ul>
+            
+            <p>Adding OpenClaw agents to this ecosystem means AI assistance is now available throughout users' daily digital lives, not just in separate AI apps.</p>
+            
+            <h2>How ClawBot Works</h2>
+            <p>Users can add ClawBot as a WeChat contact and interact with it through normal chat messages. The bot can:</p>
+            <ul>
+                <li>Answer questions and provide information</li>
+                <li>Execute tasks via OpenClaw skills</li>
+                <li>Integrate with WeChat's existing services</li>
+                <li>Process payments and transactions</li>
+                <li>Connect to external APIs and services</li>
+            </ul>
+            
+            <h2>China's Agent Race</h2>
+            <p>This move places Tencent alongside other Chinese tech giants:</p>
+            <ul>
+                <li><strong>Alibaba:</strong> Qwen models and Tongyi Qianwen assistant</li>
+                <li><strong>Baidu:</strong> Ernie Bot and agentic AI initiatives</li>
+                <li><strong>Xiaomi:</strong> MiMo AI division with MiMo-V2-Pro</li>
+                <li><strong>MiniMax:</strong> Self-evolving M2.7 model</li>
+            </ul>
+            
+            <h2>Strategic Implications</h2>
+            <p>The WeChat integration represents a shift from AI as a standalone application to AI as an invisible layer throughout digital life. For OpenClaw, it validates the framework's scalability and international adoption.</p>
+        `,
+        stats: [
+            { label: "WeChat Users", value: "1B+" },
+            { label: "Integration", value: "Native" },
+            { label: "Bot Name", value: "ClawBot" },
+            { label: "Region", value: "China" }
+        ],
+        pricing: {
+            input: "Varies",
+            output: "Varies",
+            context: "Varies"
+        },
+        specs: {
+            "Platform": "WeChat",
+            "Users": "1+ Billion",
+            "Framework": "OpenClaw",
+            "Integration": "Native"
+        },
+        highlights: [
+            "1+ billion WeChat users get AI agent access",
+            "Native integration via ClawBot",
+            "Part of China's AI agent race",
+            "AI becomes invisible layer in daily life",
+            "Validates OpenClaw's scalability"
+        ]
+    },
+    
+    "openclaw-milestone": {
+        id: "openclaw-milestone",
+        title: "OpenClaw 250K GitHub Stars Milestone",
+        developer: "OpenClaw",
+        date: "Mar 2026",
+        tag: "Open Source",
+        tagColor: "#10b981",
+        subtitle: "Fastest-growing open-source project in history reaches 250,000+ GitHub stars.",
+        summary: "OpenClaw has become one of the fastest-growing open-source projects in history, surpassing 250,000 GitHub stars in March 2026. The project started with just 9,000 stars in November 2025 and has seen 136% growth, with 13,729+ community skills now available on ClawHub.",
+        content: `
+            <p>OpenClaw has achieved a remarkable milestone, surpassing 250,000 GitHub stars in March 2026. This makes it one of the fastest-growing open-source projects in history, with growth that outpaces even legendary projects like React, Vue.js, and TensorFlow during their initial rise.</p>
+            
+            <h2>Growth Trajectory</h2>
+            <p>OpenClaw's star growth has been explosive:</p>
+            <ul>
+                <li><strong>November 2025:</strong> 9,000 stars</li>
+                <li><strong>January 2026:</strong> 106,124 stars</li>
+                <li><strong>February 2026:</strong> 180,000 stars</li>
+                <li><strong>March 2026:</strong> 250,829+ stars</li>
+            </ul>
+            
+            <p>This represents 136% growth from January to March 2026 alone.</p>
+            
+            <h2>Why the Explosive Growth?</h2>
+            <p>Several factors contribute to OpenClaw's popularity:</p>
+            <ul>
+                <li><strong>Self-Hosted:</strong> Users maintain complete control over their data</li>
+                <li><strong>Multi-Platform:</strong> Works with WhatsApp, Telegram, Discord, Slack</li>
+                <li><strong>Extensible:</strong> 13,729+ skills available on ClawHub</li>
+                <li><strong>Model Agnostic:</strong> Supports 22+ different LLM providers</li>
+                <li><strong>Open Source:</strong> MIT license allows full transparency</li>
+            </ul>
+            
+            <h2>Ecosystem Growth</h2>
+            <p>The ecosystem around OpenClaw has expanded dramatically:</p>
+            <ul>
+                <li>Available Skills: 13,729 (up from 2,857 in January)</li>
+                <li>Supported LLMs: 22 (up from 12)</li>
+                <li>Community Contributors: Thousands</li>
+                <li>Enterprise Adopters: Growing rapidly</li>
+            </ul>
+            
+            <h2>Recognition</h2>
+            <p>The project has received recognition from major industry figures:</p>
+            <ul>
+                <li>Jensen Huang (NVIDIA) called it "the most popular open source project in the history of humanity"</li>
+                <li>Featured prominently at GTC 2026</li>
+                <li>Integrated by Tencent into WeChat</li>
+                <li>Base for NVIDIA's NemoClaw enterprise platform</li>
+            </ul>
+        `,
+        stats: [
+            { label: "GitHub Stars", value: "250K+" },
+            { label: "Growth Rate", value: "136%" },
+            { label: "Skills", value: "13,729" },
+            { label: "Supported LLMs", value: "22" }
+        ],
+        pricing: {
+            input: "Free",
+            output: "Free",
+            context: "N/A"
+        },
+        specs: {
+            "License": "MIT",
+            "Stars": "250,829",
+            "Skills Growth": "380%",
+            "Status": "Active"
+        },
+        highlights: [
+            "250,000+ GitHub stars milestone",
+            "136% growth rate (Jan-Mar 2026)",
+            "13,729+ community skills available",
+            "Support for 22 LLM providers",
+            "Fastest-growing open-source project"
+        ]
+    },
+    
+    "gtc-2026": {
+        id: "gtc-2026",
+        title: "NVIDIA GTC 2026 Key Announcements",
+        developer: "NVIDIA",
+        date: "Mar 16-19, 2026",
+        tag: "NVIDIA",
+        tagColor: "#76b900",
+        subtitle: "Vera Rubin platform, Feynman architecture, NemoClaw, and $1T+ in infrastructure orders.",
+        summary: "NVIDIA's GTC 2026 unveiled the Vera Rubin platform (3.3x faster than Blackwell), Feynman chip architecture, NemoClaw for enterprise agents, and Isaac Sim for robotics. Jensen Huang announced $1T+ in infrastructure orders and $26B investment in open-weight models.",
+        content: `
+            <p>NVIDIA's GPU Technology Conference (GTC) 2026 was one of the most significant AI events of the year, with CEO Jensen Huang unveiling a comprehensive vision for the future of AI infrastructure, agents, and physical AI.</p>
+            
+            <h2>Vera Rubin Platform</h2>
+            <p>The Vera Rubin architecture succeeds Blackwell and delivers:</p>
+            <ul>
+                <li>3.3x more powerful on inference workloads</li>
+                <li>72 GPUs per rack interconnected via NVLink</li>
+                <li>Combined GPU-HBM (CG-HBM) memory design</li>
+                <li>Second half of 2026 availability</li>
+            </ul>
+            
+            <p>Named after astronomer Vera Rubin who confirmed dark matter's existence, the platform represents a significant leap in AI compute density.</p>
+            
+            <h2>Feynman Architecture</h2>
+            <p>NVIDIA teased the Feynman architecture as the next generation beyond Vera Rubin. While details remain limited, it signals NVIDIA's continued rapid pace of innovation in AI silicon.</p>
+            
+            <h2>NemoClaw</h2>
+            <p>Built on OpenClaw, NemoClaw is NVIDIA's enterprise agent platform featuring:</p>
+            <ul>
+                <li>Native sandboxing for agent isolation</li>
+                <li>Least-privilege security model</li>
+                <li>Integrated privacy router</li>
+                <li>Complete audit trails</li>
+            </ul>
+            
+            <h2>Physical AI</h2>
+            <p>Huang declared "Physical AI is the next big wave after LLMs." Key announcements:</p>
+            <ul>
+                <li><strong>Isaac Sim:</strong> Robot simulator for virtual training</li>
+                <li><strong>Omniverse:</strong> Updated for robotics use cases</li>
+                <li><strong>Partnerships:</strong> Boston Dynamics, Figure, Tesla Optimus</li>
+            </ul>
+            
+            <h2>Open-Weight Investment</h2>
+            <p>NVIDIA announced a $26 billion investment over five years to build its own open-weight AI models. This represents a strategic shift toward owning more of the AI stack beyond just hardware.</p>
+            
+            <h2>Infrastructure Orders</h2>
+            <p>Huang revealed $1 trillion+ in infrastructure orders in the pipeline, demonstrating the massive scale of AI deployment happening across industries.</p>
+        `,
+        stats: [
+            { label: "Inference Gain", value: "3.3x" },
+            { label: "Investment", value: "$26B" },
+            { label: "Orders", value: "$1T+" },
+            { label: "Attendees", value: "Tens of K" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Platform": "Vera Rubin",
+            "GPUs/Rack": "72",
+            "Availability": "H2 2026",
+            "Next Gen": "Feynman"
+        },
+        highlights: [
+            "Vera Rubin 3.3x faster than Blackwell",
+            "$26B investment in open-weight models",
+            "$1T+ in infrastructure orders pipeline",
+            "NemoClaw enterprise agent platform",
+            "Physical AI partnerships with robotics leaders"
+        ]
+    },
+    
+    "deepseek-v4": {
+        id: "deepseek-v4",
+        title: "DeepSeek V4",
+        developer: "DeepSeek",
+        date: "Mar 3, 2026",
+        tag: "DeepSeek",
+        tagColor: "#4f46e5",
+        subtitle: "1 trillion parameters with MODEL1 architecture and 40% memory reduction.",
+        summary: "DeepSeek V4 introduced MODEL1 architecture with tiered KV cache storage, cutting memory use by 40%. The 1 trillion parameter model uses only 32 billion active parameters per token and achieves 1.8x inference speedup with sparse FP8 decoding.",
+        content: `
+            <p>DeepSeek has launched V4, a major advancement that introduces the MODEL1 architecture along with several technical innovations that improve efficiency without sacrificing capability. The model was strategically timed with China's Two Sessions political event.</p>
+            
+            <h2>MODEL1 Architecture</h2>
+            <p>The headline innovation is MODEL1, featuring tiered KV cache storage that distributes data across:</p>
+            <ul>
+                <li>GPU memory (fastest)</li>
+                <li>CPU memory (intermediate)</li>
+                <li>Disk storage (capacity)</li>
+            </ul>
+            
+            <p>This tiered approach cuts overall memory usage by 40% while maintaining performance.</p>
+            
+            <h2>Parameter Efficiency</h2>
+            <p>DeepSeek V4 demonstrates remarkable parameter efficiency:</p>
+            <ul>
+                <li><strong>Total Parameters:</strong> 1 trillion</li>
+                <li><strong>Active per Token:</strong> Only 32 billion</li>
+                <li><strong>Comparison:</strong> Fewer active parameters than V3 despite being vastly larger</li>
+            </ul>
+            
+            <h2>Sparse FP8 Decoding</h2>
+            <p>V4 implements sparse FP8 decoding that achieves:</p>
+            <ul>
+                <li>1.8x inference speedup</li>
+                <li>Minimal accuracy loss</li>
+                <li>Reduced memory bandwidth requirements</li>
+            </ul>
+            
+            <h2>Enhanced Training</h2>
+            <p>The model incorporates an enhanced pre-training curriculum that improves training efficiency by 30%, reducing the computational resources needed for development.</p>
+            
+            <h2>Conditional Memory</h2>
+            <p>The Engram architecture enables efficient retrieval in contexts exceeding 1 million tokens, allowing the model to maintain coherence over extremely long documents and conversations.</p>
+            
+            <h2>Strategic Timing</h2>
+            <p>The launch around China's Two Sessions signals DeepSeek's continued importance in China's AI strategy and its competition with Western models.</p>
+        `,
+        stats: [
+            { label: "Parameters", value: "1T" },
+            { label: "Active", value: "32B" },
+            { label: "Memory Cut", value: "40%" },
+            { label: "Speedup", value: "1.8x" }
+        ],
+        pricing: {
+            input: "Competitive",
+            output: "Competitive",
+            context: "1M+ tokens"
+        },
+        specs: {
+            "Architecture": "MODEL1",
+            "Total Params": "1 trillion",
+            "Active Params": "32 billion",
+            "Decoding": "Sparse FP8"
+        },
+        highlights: [
+            "1 trillion parameter MoE architecture",
+            "40% memory reduction with tiered KV cache",
+            "Only 32B active parameters per token",
+            "1.8x inference speedup with sparse FP8",
+            "Efficient 1M+ token context handling"
+        ]
+    },
+    
+    "claude-opus-4-6": {
+        id: "claude-opus-4-6",
+        title: "Claude Opus 4.6 1M Context GA",
+        developer: "Anthropic",
+        date: "Mar 14, 2026",
+        tag: "Anthropic",
+        tagColor: "#d4a574",
+        subtitle: "One million token context window now generally available at standard pricing.",
+        summary: "Anthropic made Claude Opus 4.6's 1 million token context window generally available at standard pricing. It scores 78.3% on MRCR v2 benchmark at 1M tokens—the highest recall rate among frontier models, with no surcharge for long contexts.",
+        content: `
+            <p>Anthropic has made the 1 million token context window for Claude Opus 4.6 generally available at standard pricing, a move that significantly changes the economics of working with large documents and codebases.</p>
+            
+            <h2>No Long-Context Surcharge</h2>
+            <p>Unlike competitors who charge premiums for extended context, Anthropic offers:</p>
+            <ul>
+                <li>Same per-token pricing at any context length</li>
+                <li>No hidden fees for 1M token requests</li>
+                <li>Cost predictability for enterprises</li>
+            </ul>
+            
+            <p>This means a 900,000 token request costs the same per token as a 9,000 token one—a significant advantage over models that double pricing beyond certain thresholds.</p>
+            
+            <h2>MRCR v2 Performance</h2>
+            <p>On the MRCR v2 benchmark (Multi-hop Reasoning with Context Recall), which tests retrieval accuracy at long context lengths:</p>
+            <ul>
+                <li><strong>Claude Opus 4.6:</strong> 78.3% at 1M tokens</li>
+                <li><strong>Status:</strong> Highest recall rate among frontier models</li>
+                <li><strong>Significance:</strong> Proves the model actually uses the full context</li>
+            </ul>
+            
+            <h2>Adaptive Thinking</h2>
+            <p>Opus 4.6 introduces "adaptive thinking" where the model decides when deeper reasoning is needed without user configuration. Developers can choose from four effort levels:</p>
+            <ul>
+                <li>Low</li>
+                <li>Medium</li>
+                <li>High</li>
+                <li>Max</li>
+            </ul>
+            
+            <h2>Context Compaction</h2>
+            <p>The model supports automatic context compaction, summarizing older context when conversations approach limits to maintain coherence without truncation.</p>
+            
+            <h2>Enterprise Impact</h2>
+            <p>The combination of 1M context and flat pricing enables new use cases:</p>
+            <ul>
+                <li>Processing entire codebases in a single prompt</li>
+                <li>Analyzing complete legal documents</li>
+                <li>Maintaining extended conversation history</li>
+                <li>Cross-document analysis</li>
+            </ul>
+        `,
+        stats: [
+            { label: "MRCR v2", value: "78.3%" },
+            { label: "Context", value: "1M" },
+            { label: "Pricing", value: "Flat" },
+            { label: "Recall", value: "Best" }
+        ],
+        pricing: {
+            input: "$15.00",
+            output: "$75.00",
+            context: "1M tokens"
+        },
+        specs: {
+            "Context": "1M tokens",
+            "MRCR v2": "78.3%",
+            "Pricing": "Standard (no surcharge)",
+            "Thinking": "Adaptive"
+        },
+        highlights: [
+            "1 million token context at standard pricing",
+            "78.3% on MRCR v2 benchmark",
+            "Highest recall rate among frontier models",
+            "No long-context surcharge",
+            "Adaptive thinking with 4 effort levels"
+        ]
+    },
+    
+    "nemotron-3": {
+        id: "nemotron-3",
+        title: "NVIDIA Nemotron 3 Super",
+        developer: "NVIDIA",
+        date: "Mar 11, 2026",
+        tag: "NVIDIA",
+        tagColor: "#76b900",
+        subtitle: "120B parameter hybrid Mamba-Transformer MoE with 2.2x throughput.",
+        summary: "NVIDIA launched Nemotron 3 Super, a 120B parameter hybrid Mamba-Transformer MoE with only 12B active parameters. The model offers 2.2x throughput vs GPT-OSS-120B, 1M context window, and is fully open for enterprise deployment.",
+        content: `
+            <p>NVIDIA has released Nemotron 3 Super, a powerful open-weight model that combines the Mamba state-space architecture with traditional Transformers in a Mixture-of-Experts design optimized for enterprise inference workloads.</p>
+            
+            <h2>Hybrid Architecture</h2>
+            <p>Nemotron 3 Super uses a novel hybrid approach:</p>
+            <ul>
+                <li><strong>Mamba Layers:</strong> For efficient long-sequence processing</li>
+                <li><strong>Transformer Layers:</strong> For high-quality attention mechanisms</li>
+                <li><strong>Total Parameters:</strong> 120 billion</li>
+                <li><strong>Active per Token:</strong> Only 12 billion</li>
+            </ul>
+            
+            <h2>Performance Gains</h2>
+            <p>The architecture delivers significant efficiency improvements:</p>
+            <ul>
+                <li>2.2x throughput compared to GPT-OSS-120B</li>
+                <li>Reduced memory requirements</li>
+                <li>Better scaling for batch inference</li>
+                <li>1 million token context window</li>
+            </ul>
+            
+            <h2>Nemotron Coalition</h2>
+            <p>NVIDIA announced the Nemotron Coalition at GTC 2026, partnering with:</p>
+            <ul>
+                <li>Mistral</li>
+                <li>Perplexity</li>
+                <li>Cursor</li>
+                <li>Other AI companies</li>
+            </ul>
+            
+            <p>The coalition aims to advance open frontier models and establish standards for enterprise deployment.</p>
+            
+            <h2>Enterprise Focus</h2>
+            <p>Nemotron 3 Super is designed for enterprise workloads:</p>
+            <ul>
+                <li>Optimized for NVIDIA hardware</li>
+                <li>Supports TensorRT-LLM</li>
+                <li>Compatible with NVIDIA's inference stack</li>
+                <li>Commercial-friendly licensing</li>
+            </ul>
+            
+            <h2>Availability</h2>
+            <p>The model is available through NVIDIA's AI platforms and compatible with popular inference frameworks. It can be self-hosted or run on NVIDIA's cloud infrastructure.</p>
+        `,
+        stats: [
+            { label: "Parameters", value: "120B" },
+            { label: "Active", value: "12B" },
+            { label: "Throughput", value: "2.2x" },
+            { label: "Context", value: "1M" }
+        ],
+        pricing: {
+            input: "Open",
+            output: "Open",
+            context: "1M tokens"
+        },
+        specs: {
+            "Architecture": "Hybrid MoE",
+            "Total Params": "120B",
+            "Active Params": "12B",
+            "Context": "1M tokens"
+        },
+        highlights: [
+            "120B parameter hybrid Mamba-Transformer",
+            "Only 12B active parameters per token",
+            "2.2x throughput vs GPT-OSS-120B",
+            "1 million token context window",
+            "Part of Nemotron Coalition"
+        ]
+    },
+    
+    "mistral-small-4": {
+        id: "mistral-small-4",
+        title: "Mistral Small 4",
+        developer: "Mistral AI",
+        date: "Mar 20, 2026",
+        tag: "Mistral",
+        tagColor: "#f97316",
+        subtitle: "119B parameter MoE with 6.5B active, Apache 2.0 licensed for efficient self-hosting.",
+        summary: "Mistral AI released Small 4, a 119B parameter MoE model with only 6.5B active parameters per forward pass. Licensed under Apache 2.0, it supports image and text inputs with hybrid reasoning, designed for efficient self-hosting on modest hardware.",
+        content: `
+            <p>Mistral AI has released Small 4, an efficient open-weight model that prioritizes accessibility and self-hosting while maintaining competitive performance. The Apache 2.0 license makes it particularly attractive for commercial applications.</p>
+            
+            <h2>Efficient Architecture</h2>
+            <p>Small 4 uses a sparse Mixture-of-Experts design:</p>
+            <ul>
+                <li><strong>Total Parameters:</strong> 119 billion</li>
+                <li><strong>Active per Forward Pass:</strong> Only 6.5 billion</li>
+                <li><strong>Efficiency:</strong> ~5.5% of parameters active at once</li>
+                <li><strong>Result:</strong> Runs efficiently on modest hardware</li>
+            </ul>
+            
+            <h2>Apache 2.0 License</h2>
+            <p>The permissive Apache 2.0 license allows:</p>
+            <ul>
+                <li>Commercial use without restrictions</li>
+                <li>Modification and redistribution</li>
+                <li>Patent protection for users</li>
+                <li>Integration into proprietary products</li>
+            </ul>
+            
+            <h2>Multimodal Capabilities</h2>
+            <p>Small 4 supports both text and image inputs:</p>
+            <ul>
+                <li>Document understanding</li>
+                <li>Visual question answering</li>
+                <li>Image analysis and description</li>
+                <li>Multimodal reasoning</li>
+            </ul>
+            
+            <h2>Hybrid Reasoning</h2>
+            <p>The model features hybrid reasoning capabilities that adapt to task complexity, balancing speed and depth of thinking based on the requirements of each query.</p>
+            
+            <h2>Self-Hosting Focus</h2>
+            <p>Mistral designed Small 4 for easy self-deployment:</p>
+            <ul>
+                <li>Runs on consumer GPUs</li>
+                <li>Compatible with popular inference engines</li>
+                <li>Quantization-friendly architecture</li>
+                <li>Low memory requirements for the parameter count</li>
+            </ul>
+            
+            <h2>Forge Platform</h2>
+            <p>Alongside Small 4, Mistral launched Forge—a platform for fully custom model training with zero vendor lock-in, allowing enterprises to fine-tune on their proprietary data.</p>
+        `,
+        stats: [
+            { label: "Parameters", value: "119B" },
+            { label: "Active", value: "6.5B" },
+            { label: "License", value: "Apache 2.0" },
+            { label: "Modality", value: "Text+Image" }
+        ],
+        pricing: {
+            input: "Free (Self-host)",
+            output: "Free (Self-host)",
+            context: "Standard"
+        },
+        specs: {
+            "Architecture": "Sparse MoE",
+            "Total Params": "119B",
+            "Active Params": "6.5B",
+            "License": "Apache 2.0"
+        },
+        highlights: [
+            "119B parameter MoE architecture",
+            "Only 6.5B active parameters (5.5%)",
+            "Apache 2.0 license for full freedom",
+            "Multimodal text and image support",
+            "Designed for efficient self-hosting"
+        ]
     }
 };
 
