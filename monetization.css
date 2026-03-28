@@ -1,0 +1,235 @@
+/* Monetization Styles - Affiliate Links & Ads */
+
+/* Affiliate Button Base Styles */
+.affiliate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    width: 100%;
+    justify-content: center;
+}
+
+.affiliate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.affiliate-btn .affiliate-icon {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Provider-specific button colors */
+.affiliate-btn[data-provider="openai"] {
+    background: linear-gradient(135deg, #10a37f 0%, #0d8c6d 100%);
+}
+
+.affiliate-btn[data-provider="openai"]:hover {
+    box-shadow: 0 4px 12px rgba(16, 163, 127, 0.4);
+}
+
+.affiliate-btn[data-provider="anthropic"] {
+    background: linear-gradient(135deg, #d4a574 0%, #c9956b 100%);
+    color: #1a1a1a;
+}
+
+.affiliate-btn[data-provider="anthropic"]:hover {
+    box-shadow: 0 4px 12px rgba(212, 165, 116, 0.4);
+}
+
+.affiliate-btn[data-provider="google"],
+.affiliate-btn[data-provider="googleCloud"] {
+    background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+}
+
+.affiliate-btn[data-provider="google"]:hover,
+.affiliate-btn[data-provider="googleCloud"]:hover {
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+}
+
+.affiliate-btn[data-provider="xai"] {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+}
+
+.affiliate-btn[data-provider="xai"]:hover {
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+.affiliate-btn[data-provider="alibaba"] {
+    background: linear-gradient(135deg, #ff6a00 0%, #ff8a30 100%);
+}
+
+.affiliate-btn[data-provider="alibaba"]:hover {
+    box-shadow: 0 4px 12px rgba(255, 106, 0, 0.4);
+}
+
+.affiliate-btn[data-provider="aws"] {
+    background: linear-gradient(135deg, #ff9900 0%, #ffc107 100%);
+    color: #232f3e;
+}
+
+.affiliate-btn[data-provider="aws"]:hover {
+    box-shadow: 0 4px 12px rgba(255, 153, 0, 0.4);
+}
+
+.affiliate-btn[data-provider="azure"] {
+    background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%);
+}
+
+.affiliate-btn[data-provider="azure"]:hover {
+    box-shadow: 0 4px 12px rgba(0, 120, 212, 0.4);
+}
+
+/* Secondary/ghost button style */
+.affiliate-btn.affiliate-btn-secondary {
+    background: transparent;
+    border: 1.5px solid currentColor;
+    color: inherit;
+}
+
+.affiliate-btn.affiliate-btn-secondary:hover {
+    background: rgba(102, 126, 234, 0.1);
+}
+
+/* Inline affiliate links in text */
+.affiliate-link {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px dotted #667eea;
+    transition: all 0.2s;
+}
+
+.affiliate-link:hover {
+    color: #764ba2;
+    border-bottom-style: solid;
+}
+
+.affiliate-link::after {
+    content: "↗";
+    font-size: 0.75em;
+    margin-left: 2px;
+    opacity: 0.6;
+}
+
+/* Affiliate disclosure banner */
+.affiliate-disclosure {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 12px 16px;
+    margin: 20px 0;
+    font-size: 0.85rem;
+    color: #666;
+    border-radius: 0 6px 6px 0;
+}
+
+.affiliate-disclosure a {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+/* Model card affiliate section */
+.model-affiliate {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e9ecef;
+}
+
+.model-card .affiliate-btn {
+    margin-top: 8px;
+}
+
+/* Resource/affiliate box for articles */
+.affiliate-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 24px 0;
+}
+
+.affiliate-box h4 {
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.affiliate-box p {
+    margin: 0 0 16px 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.affiliate-box .affiliate-btn {
+    margin: 0;
+    width: auto;
+    display: inline-flex;
+}
+
+.affiliate-box small {
+    display: block;
+    margin-top: 12px;
+    color: #888;
+    font-size: 0.75rem;
+}
+
+/* Footer disclosure */
+.footer-affiliate {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .affiliate-disclosure {
+        background: #1a1a1a;
+        border-left-color: #667eea;
+        color: #aaa;
+    }
+    
+    .affiliate-box {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        border-color: #333;
+    }
+    
+    .affiliate-box h4 {
+        color: #eee;
+    }
+    
+    .affiliate-box p {
+        color: #aaa;
+    }
+    
+    .footer-affiliate {
+        color: #666;
+    }
+    
+    .model-affiliate {
+        border-top-color: #333;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .affiliate-btn {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+    
+    .affiliate-box {
+        padding: 16px;
+        margin: 16px 0;
+    }
+}
