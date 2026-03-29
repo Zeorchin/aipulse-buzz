@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elekid - Pokédex | Pokopia Guide</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pokemon-detail.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-links">
+                    <a href="../index.html">← Back to Home</a>
+                </div>
+                <div class="header-actions">
+                    <a href="../index.html#pokedex">Pokédex</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <a href="../index.html" class="logo"><img src="../images/pokopia-logo.png" alt="Pokopia Guide" style="height: 70px; width: auto;"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pokemon Detail -->
+    <main class="pokemon-detail">
+        <div class="container">
+            <!-- Navigation -->
+            <div class="pokemon-nav">
+                <a href="blissey.html" class="nav-btn prev">← Blissey</a>
+                <a href="../index.html#pokedex" class="back-to-list">View All Pokémon</a>
+                <a href="electabuzz.html" class="nav-btn next">Electabuzz →</a>
+            </div>
+
+            <!-- Main Info Card -->
+            <div class="detail-card">
+                <div class="detail-header">
+                    <span class="detail-number">#239</span>
+                    <h1 class="detail-name">Elekid</h1>
+                    <div class="detail-types">
+                        <span class="type-badge type-electric">Electric</span>
+                    </div>
+                </div>
+
+                <div class="detail-body">
+                    <div class="detail-image-section">
+                        <img class="detail-image" src="https://www.serebii.net/pokemonpokopia/pokemon/239.png" alt="Elekid" loading="lazy">
+                    </div>
+
+                    <div class="detail-info-section">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Specialty</span>
+                                <span class="info-value specialty">Generate</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Pokédex Number</span>
+                                <span class="info-value">103</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Types</span>
+                                <span class="info-value">Electric</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-description">
+                            <h2>About Elekid</h2>
+                            <p>Elekid is a Electric type Pokémon with the Generate specialty. 
+                            This Pokémon can help you in Pokopia by using its specialty skills.</p>
+                            
+                            <h3>Habitat Preferences</h3>
+                            <p>Based on its specialty and type, Elekid prefers habitats that match its natural environment. 
+                            Check the Habitat Dex for specific building requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habitat Section -->
+            <div class="detail-section">
+                <h2>Habitats & Locations</h2>
+                <div class="habitat-grid">
+                    <div class="habitat-card">
+                        <h3>Preferred Habitat</h3>
+                        <p>Information about ideal habitat for Elekid will be added soon.</p>
+                        <a href="../habitat/index.html" class="btn-secondary">View Habitat Guide</a>
+                    </div>
+                    <div class="habitat-card">
+                        <h3>Where to Find</h3>
+                        <p>Location details for Elekid will be added soon.</p>
+                        <a href="../areas/index.html" class="btn-secondary">View Areas</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="detail-actions">
+                <button class="btn-favorite" onclick="toggleFavoriteDetail(this)" data-pokemon="elekid">
+                    <span class="heart">♡</span> Add to Favorites
+                </button>
+                <a href="../index.html#pokedex" class="btn-primary">Back to Pokédex</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Pokemon Pokopia is a trademark of Nintendo, Game Freak, and The Pokemon Company.</p>
+            <p>This is a fan-made guide website. Not affiliated with Nintendo or Game Freak.</p>
+            <p>&copy; 2026 Pokopia Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFavoriteDetail(btn) {
+            const heart = btn.querySelector('.heart');
+            if (heart.textContent === '♡') {
+                heart.textContent = '♥';
+                btn.classList.add('active');
+                localStorage.setItem('favorite_' + btn.dataset.pokemon, 'true');
+            } else {
+                heart.textContent = '♡';
+                btn.classList.remove('active');
+                localStorage.removeItem('favorite_' + btn.dataset.pokemon);
+            }
+        }
+
+        // Check if this Pokemon is favorited
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.querySelector('.btn-favorite');
+            if (btn && localStorage.getItem('favorite_' + btn.dataset.pokemon)) {
+                btn.querySelector('.heart').textContent = '♥';
+                btn.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
