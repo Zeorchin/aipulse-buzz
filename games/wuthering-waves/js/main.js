@@ -619,5 +619,41 @@ document.querySelectorAll('.character-grid .character-card').forEach(card => {
     wrapper.appendChild(card);
 });
 
+// Filter character cards
+function filterCharacterCards() {
+    const searchInput = document.getElementById('character-search');
+    const elementFilter = document.getElementById('element-filter');
+    const rarityFilter = document.getElementById('rarity-filter');
+    
+    if (!searchInput || !elementFilter || !rarityFilter) return;
+    
+    const searchTerm = searchInput.value.toLowerCase();
+    const elementValue = elementFilter.value.toLowerCase();
+    const rarityValue = rarityFilter.value;
+    
+    const cards = document.querySelectorAll('.character-card-grid .character-card');
+    
+    cards.forEach(card => {
+        const name = card.querySelector('.character-card-name').textContent.toLowerCase();
+        const element = card.getAttribute('data-element');
+        const rarity = card.getAttribute('data-rarity');
+        
+        const matchesSearch = name.includes(searchTerm);
+        const matchesElement = !elementValue || element === elementValue;
+        const matchesRarity = !rarityValue || rarity === rarityValue;
+        
+        if (matchesSearch && matchesElement && matchesRarity) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Initialize character card filters
+if (document.getElementById('character-search')) {
+    filterCharacterCards();
+}
+
 console.log('Wuthering Waves Guide loaded successfully!');
 console.log('Current Version:', versionData.current);

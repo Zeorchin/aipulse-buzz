@@ -286,76 +286,143 @@
         </section>
 
         <!-- Characters Table Section -->
+        <!-- All Characters Section -->
         <section id="characters-table" class="content-section">
             <h2>All Characters</h2>
-            <p class="section-desc">List of all characters in Wuthering Waves with their element, weapon, and rarity</p>
+            <p class="section-desc">Complete character list for Wuthering Waves</p>
             
-            <div class="search-box">
-                <input type="text" id="character-search" placeholder="Search character name..." onkeyup="filterCharacters()">
+            <!-- Character Filters -->
+            <div class="filters-container">
+                <div class="search-box">
+                    <input type="text" id="character-search" placeholder="Search character name..." onkeyup="filterCharacterCards()">
+                </div>
+                
+                <div class="filter-group">
+                    <select id="element-filter" onchange="filterCharacterCards()">
+                        <option value="">All Elements</option>
+                        <option value="glacio">Glacio</option>
+                        <option value="fusion">Fusion</option>
+                        <option value="electro">Electro</option>
+                        <option value="aero">Aero</option>
+                        <option value="spectro">Spectro</option>
+                        <option value="havoc">Havoc</option>
+                    </select>
+                    
+                    <select id="rarity-filter" onchange="filterCharacterCards()">
+                        <option value="">All Rarities</option>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★</option>
+                    </select>
+                </div>
             </div>
 
-            <table class="character-table" id="character-table">
-                <thead>
-                    <tr>
-                        <th>Character</th>
-                        <th>Element</th>
-                        <th>Weapon</th>
-                        <th>Rarity</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- 5 STAR CHARACTERS -->
-                    <tr><td><a href="characters/character.html?char=lingyang"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_14.png" alt="Lingyang"> Lingyang</a></td><td><span class="element-icon glacio">Glacio</span></td><td>Gauntlets</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=zhezhi"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_27_UI.png" alt="Zhezhi"> Zhezhi</a></td><td><span class="element-icon glacio">Glacio</span></td><td>Rectifier</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=carlotta"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_32_UI.png" alt="Carlotta"> Carlotta</a></td><td><span class="element-icon glacio">Glacio</span></td><td>Pistols</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=encore"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_8.png" alt="Encore"> Encore</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Rectifier</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=changli"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_26_UI.png" alt="Changli"> Changli</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=brant"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_44_UI.png" alt="Brant"> Brant</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=lupa"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_46_UI.png" alt="Lupa"> Lupa</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Broadblade</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=galbrena"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_55_UI.png" alt="Galbrena"> Galbrena</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Pistols</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=mornye"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_61_UI.png" alt="Mornye"> Mornye</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Broadblade</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=aemeath"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_53_UI.png" alt="Aemeath"> Aemeath</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=calcharo"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_18.png" alt="Calcharo"> Calcharo</a></td><td><span class="element-icon electro">Electro</span></td><td>Broadblade</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=yinlin"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_17.png" alt="Yinlin"> Yinlin</a></td><td><span class="element-icon electro">Electro</span></td><td>Rectifier</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=xiangliyao"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_25_UI.png" alt="Xiangli Yao"> Xiangli Yao</a></td><td><span class="element-icon electro">Electro</span></td><td>Gauntlets</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=lumi"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_30_UI.png" alt="Lumi"> Lumi</a></td><td><span class="element-icon electro">Electro</span></td><td>Broadblade</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=augusta"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_51_UI.png" alt="Augusta"> Augusta</a></td><td><span class="element-icon electro">Electro</span></td><td>Broadblade</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=buling"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_58_UI.png" alt="Buling"> Buling</a></td><td><span class="element-icon glacio">Glacio</span></td><td>Sword</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=jiyan"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_11.png" alt="Jiyan"> Jiyan</a></td><td><span class="element-icon aero">Aero</span></td><td>Broadblade</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=jianxin"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_23_UI.png" alt="Jianxin"> Jianxin</a></td><td><span class="element-icon aero">Aero</span></td><td>Gauntlets</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=ciaccona"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_37_UI.png" alt="Ciaccona"> Ciaccona</a></td><td><span class="element-icon aero">Aero</span></td><td>Pistols</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=rover-aero"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_5.png" alt="Rover (Aero)"> Rover (Aero)</a></td><td><span class="element-icon aero">Aero</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=cartethyia"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_40_UI.png" alt="Cartethyia"> Cartethyia</a></td><td><span class="element-icon aero">Aero</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=iuno"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_48_UI.png" alt="Iuno"> Iuno</a></td><td><span class="element-icon aero">Aero</span></td><td>Gauntlets</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=qiuyuan"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_56_UI.png" alt="Qiuyuan"> Qiuyuan</a></td><td><span class="element-icon aero">Aero</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=sigrika"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_65_UI.png" alt="Sigrika"> Sigrika</a></td><td><span class="element-icon aero">Aero</span></td><td>Gauntlets</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=verina"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_3.png" alt="Verina"> Verina</a></td><td><span class="element-icon spectro">Spectro</span></td><td>Rectifier</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=rover-spectro"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_5.png" alt="Rover (Spectro)"> Rover (Spectro)</a></td><td><span class="element-icon spectro">Spectro</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=phoebe"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_45_UI.png" alt="Phoebe"> Phoebe</a></td><td><span class="element-icon spectro">Spectro</span></td><td>Rectifier</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=zani"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_38_UI.png" alt="Zani"> Zani</a></td><td><span class="element-icon spectro">Spectro</span></td><td>Gauntlets</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=lynae"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_60_UI.png" alt="Lynae"> Lynae</a></td><td><span class="element-icon spectro">Spectro</span></td><td>Pistols</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=luukherssen"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_54_UI.png" alt="Luuk Herssen"> Luuk Herssen</a></td><td><span class="element-icon spectro">Spectro</span></td><td>Gauntlets</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=camellya"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_29_UI.png" alt="Camellya"> Camellya</a></td><td><span class="element-icon havoc">Havoc</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=rover-havoc"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_4.png" alt="Rover (Havoc)"> Rover (Havoc)</a></td><td><span class="element-icon havoc">Havoc</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=roccia"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_33_UI.png" alt="Roccia"> Roccia</a></td><td><span class="element-icon havoc">Havoc</span></td><td>Gauntlets</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=cantarella"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_34_UI.png" alt="Cantarella"> Cantarella</a></td><td><span class="element-icon havoc">Havoc</span></td><td>Rectifier</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=phrolova"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_41_UI.png" alt="Phrolova"> Phrolova</a></td><td><span class="element-icon havoc">Havoc</span></td><td>Rectifier</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=chisa"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_57_UI.png" alt="Chisa"> Chisa</a></td><td><span class="element-icon havoc">Havoc</span></td><td>Broadblade</td><td>★★★★★</td></tr>
-                    <!-- 4 STAR CHARACTERS -->
-                    <tr><td><a href="characters/character.html?char=sanhua"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_7.png" alt="Sanhua"> Sanhua</a></td><td><span class="element-icon glacio">Glacio</span></td><td>Sword</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=baizhi"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_6.png" alt="Baizhi"> Baizhi</a></td><td><span class="element-icon glacio">Glacio</span></td><td>Rectifier</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=youhu"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_31_UI.png" alt="Youhu"> Youhu</a></td><td><span class="element-icon glacio">Glacio</span></td><td>Gauntlets</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=chixia"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_2.png" alt="Chixia"> Chixia</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Pistols</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=mortefi"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_13.png" alt="Mortefi"> Mortefi</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Pistols</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=changli"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_26_UI.png" alt="Changli"> Changli</a></td><td><span class="element-icon fusion">Fusion</span></td><td>Sword</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=yuanwu"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_15.png" alt="Yuanwu"> Yuanwu</a></td><td><span class="element-icon electro">Electro</span></td><td>Gauntlets</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=xiangliyao"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_25_UI.png" alt="Xiangli Yao"> Xiangli Yao</a></td><td><span class="element-icon electro">Electro</span></td><td>Gauntlets</td><td>★★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=yangyang"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_1.png" alt="Yangyang"> Yangyang</a></td><td><span class="element-icon aero">Aero</span></td><td>Sword</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=aalto"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_12.png" alt="Aalto"> Aalto</a></td><td><span class="element-icon aero">Aero</span></td><td>Pistols</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=danjin"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_10.png" alt="Danjin"> Danjin</a></td><td><span class="element-icon havoc">Havoc</span></td><td>Sword</td><td>★★★★</td></tr>
-                    <tr><td><a href="characters/character.html?char=taoqi"><img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_9.png" alt="Taoqi"> Taoqi</a></td><td><span class="element-icon havoc">Havoc</span></td><td>Broadblade</td><td>★★★★</td></tr>
-                </tbody>
-            </table>
+            <!-- Character Card Grid -->
+            <div class="character-card-grid" id="character-card-grid">
+                <!-- 5 STAR CHARACTERS -->
+                <a href="characters/character.html?char=sigrika" class="character-card" data-element="aero" data-rarity="5">
+                    <div class="character-card-image">
+                        <img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_65_UI.png" alt="Sigrika">
+                    </div>
+                    <div class="character-card-content">
+                        <h3 class="character-card-name">Sigrika</h3>
+                        <div class="character-card-badges">
+                            <span class="element-badge aero">Aero</span>
+                            <span class="rarity-badge five">★★★★★</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="characters/character.html?char=carlotta" class="character-card" data-element="glacio" data-rarity="5">
+                    <div class="character-card-image">
+                        <img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_32_UI.png" alt="Carlotta">
+                    </div>
+                    <div class="character-card-content">
+                        <h3 class="character-card-name">Carlotta</h3>
+                        <div class="character-card-badges">
+                            <span class="element-badge glacio">Glacio</span>
+                            <span class="rarity-badge five">★★★★★</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="characters/character.html?char=roccia" class="character-card" data-element="havoc" data-rarity="5">
+                    <div class="character-card-image">
+                        <img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_33_UI.png" alt="Roccia">
+                    </div>
+                    <div class="character-card-content">
+                        <h3 class="character-card-name">Roccia</h3>
+                        <div class="character-card-badges">
+                            <span class="element-badge havoc">Havoc</span>
+                            <span class="rarity-badge five">★★★★★</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="characters/character.html?char=jinhsi" class="character-card" data-element="electro" data-rarity="5">
+                    <div class="character-card-image">
+                        <img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_24_UI.png" alt="Jinhsi">
+                    </div>
+                    <div class="character-card-content">
+                        <h3 class="character-card-name">Jinhsi</h3>
+                        <div class="character-card-badges">
+                            <span class="element-badge electro">Electro</span>
+                            <span class="rarity-badge five">★★★★★</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="characters/character.html?char=changli" class="character-card" data-element="fusion" data-rarity="5">
+                    <div class="character-card-image">
+                        <img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_26_UI.png" alt="Changli">
+                    </div>
+                    <div class="character-card-content">
+                        <h3 class="character-card-name">Changli</h3>
+                        <div class="character-card-badges">
+                            <span class="element-badge fusion">Fusion</span>
+                            <span class="rarity-badge five">★★★★★</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="characters/character.html?char=shorekeeper" class="character-card" data-element="spectro" data-rarity="5">
+                    <div class="character-card-image">
+                        <img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_28_UI.png" alt="Shorekeeper">
+                    </div>
+                    <div class="character-card-content">
+                        <h3 class="character-card-name">Shorekeeper</h3>
+                        <div class="character-card-badges">
+                            <span class="element-badge spectro">Spectro</span>
+                            <span class="rarity-badge five">★★★★★</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="characters/character.html?char=verina" class="character-card" data-element="spectro" data-rarity="5">
+                    <div class="character-card-image">
+                        <img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_3.png" alt="Verina">
+                    </div>
+                    <div class="character-card-content">
+                        <h3 class="character-card-name">Verina</h3>
+                        <div class="character-card-badges">
+                            <span class="element-badge spectro">Spectro</span>
+                            <span class="rarity-badge five">★★★★★</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="characters/character.html?char=yinlin" class="character-card" data-element="electro" data-rarity="5">
+                    <div class="character-card-image">
+                        <img src="https://wuthering.gg/images/IconRoleHead150/T_IconRoleHead150_17.png" alt="Yinlin">
+                    </div>
+                    <div class="character-card-content">
+                        <h3 class="character-card-name">Yinlin</h3>
+                        <div class="character-card-badges">
+                            <span class="element-badge electro">Electro</span>
+                            <span class="rarity-badge five">★★★★★</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </section>
 
         <!-- Best Teams Section -->
