@@ -31,7 +31,7 @@
         <div class="container">
             <div class="hero-badge">Performance Rankings</div>
             <h1>AI Benchmarks</h1>
-            <p class="hero-subtitle">Comprehensive test results and leaderboard rankings<br><small>16 benchmarks covering reasoning, coding, knowledge, and more</small></p>
+            <p class="hero-subtitle">Comprehensive test results and leaderboard rankings<br><small>19 benchmarks covering reasoning, coding, computer use, and real-world tasks</small></p>
             <a href="index.html" class="back-link">← Back to Portal</a>
         </div>
     </header>
@@ -58,13 +58,13 @@
                     <tbody>
                         <tr class="rank-1">
                             <td><span class="rank-badge">1</span></td>
-                            <td><strong>GPT-5.2</strong></td>
+                            <td><strong>GPT-5.4</strong></td>
                             <td>OpenAI</td>
-                            <td><span class="score">90.3</span></td>
+                            <td><span class="score">91.5</span></td>
                             <td>—</td>
-                            <td>92.4%</td>
-                            <td>80.0%</td>
-                            <td>400K</td>
+                            <td>92.8%</td>
+                            <td>81.2%</td>
+                            <td><strong>1M</strong></td>
                         </tr>
                         <tr class="rank-2">
                             <td><span class="rank-badge">2</span></td>
@@ -88,13 +88,13 @@
                         </tr>
                         <tr>
                             <td><span class="rank-badge">4</span></td>
-                            <td><strong>Claude Opus 4.5</strong></td>
-                            <td>Anthropic</td>
-                            <td><span class="score">88.82</span></td>
+                            <td><strong>GPT-5.2</strong></td>
+                            <td>OpenAI</td>
+                            <td><span class="score">90.3</span></td>
                             <td>—</td>
-                            <td>—</td>
-                            <td>80.9%</td>
-                            <td>200K</td>
+                            <td>92.4%</td>
+                            <td>80.0%</td>
+                            <td>400K</td>
                         </tr>
                         <tr>
                             <td><span class="rank-badge">5</span></td>
@@ -103,11 +103,21 @@
                             <td><span class="score">88.62</span></td>
                             <td>—</td>
                             <td>92.4%</td>
-                            <td>—</td>
+                            <td>79.8%</td>
                             <td>400K</td>
                         </tr>
                         <tr>
                             <td><span class="rank-badge">6</span></td>
+                            <td><strong>Claude Sonnet 4.6</strong></td>
+                            <td>Anthropic</td>
+                            <td><span class="score">88.4</span></td>
+                            <td>—</td>
+                            <td>87.0%</td>
+                            <td>78.0%</td>
+                            <td>1M (β)</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">7</span></td>
                             <td><strong>Kimi K2.5</strong></td>
                             <td>Moonshot</td>
                             <td><span class="score">—</span></td>
@@ -117,17 +127,17 @@
                             <td>262K</td>
                         </tr>
                         <tr>
-                            <td><span class="rank-badge">7</span></td>
-                            <td><strong>MiniMax M2.5</strong></td>
+                            <td><span class="rank-badge">8</span></td>
+                            <td><strong>MiniMax M2.7</strong></td>
                             <td>MiniMax</td>
-                            <td><span class="score">—</span></td>
+                            <td><span class="score">87.8</span></td>
                             <td>—</td>
-                            <td>85.2%</td>
-                            <td><strong>80.2%</strong></td>
+                            <td>86.5%</td>
+                            <td>79.5%</td>
                             <td>205K</td>
                         </tr>
                         <tr>
-                            <td><span class="rank-badge">8</span></td>
+                            <td><span class="rank-badge">9</span></td>
                             <td><strong>Qwen 3.5</strong></td>
                             <td>Alibaba</td>
                             <td><span class="score">—</span></td>
@@ -135,6 +145,26 @@
                             <td>88.4%</td>
                             <td>76.4%</td>
                             <td>1M</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">10</span></td>
+                            <td><strong>MiMo-V2-Pro</strong></td>
+                            <td>Xiaomi</td>
+                            <td><span class="score">87.2</span></td>
+                            <td>—</td>
+                            <td>85.8%</td>
+                            <td>77.8%</td>
+                            <td>1M</td>
+                        </tr>
+                        <tr>
+                            <td><span class="rank-badge">11</span></td>
+                            <td><strong>Mistral Small 4</strong></td>
+                            <td>Mistral</td>
+                            <td><span class="score">86.5</span></td>
+                            <td>—</td>
+                            <td>84.2%</td>
+                            <td>76.0%</td>
+                            <td>128K</td>
                         </tr>
                     </tbody>
                 </table>
@@ -164,6 +194,18 @@
                         <span>Multi-task language understanding across 57 subjects</span>
                     </div>
                     <div class="legend-item">
+                        <strong>OSWorld</strong>
+                        <span>Computer use: controlling desktop apps and browsers autonomously</span>
+                    </div>
+                    <div class="legend-item">
+                        <strong>GDPval</strong>
+                        <span>Real-world knowledge work across 44 professional occupations</span>
+                    </div>
+                    <div class="legend-item">
+                        <strong>Terminal-Bench</strong>
+                        <span>Autonomous DevOps tasks in terminal/shell environments</span>
+                    </div>
+                    <div class="legend-item">
                         <strong>AIME 2025</strong>
                         <span>High school math competition problems</span>
                     </div>
@@ -177,6 +219,32 @@
             <h2 class="section-title">Model Spotlights</h2>
             
             <div class="spotlight-grid">
+                <div class="spotlight-card">
+                    <div class="spotlight-header">
+                        <h3>GPT-5.4</h3>
+                        <span class="spotlight-badge">Computer Use Pioneer</span>
+                    </div>
+                    <div class="spotlight-benchmarks">
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">OSWorld</span>
+                            <div class="bar"><div class="bar-fill" style="width: 75%"><span>75.0% ★</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">GDPval</span>
+                            <div class="bar"><div class="bar-fill" style="width: 83%"><span>83.0%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">SWE-bench</span>
+                            <div class="bar"><div class="bar-fill" style="width: 81.2%"><span>81.2%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">GPQA Diamond</span>
+                            <div class="bar"><div class="bar-fill" style="width: 92.8%"><span>92.8%</span></div></div>
+                        </div>
+                    </div>
+                    <p class="spotlight-note">Best for: Autonomous computer use, browser automation, desktop workflows, long-context reasoning</p>
+                </div>
+
                 <div class="spotlight-card">
                     <div class="spotlight-header">
                         <h3>Gemini 3.1 Pro</h3>
@@ -231,6 +299,32 @@
 
                 <div class="spotlight-card">
                     <div class="spotlight-header">
+                        <h3>Claude Sonnet 4.6</h3>
+                        <span class="spotlight-badge">Best Value</span>
+                    </div>
+                    <div class="spotlight-benchmarks">
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">SWE-bench</span>
+                            <div class="bar"><div class="bar-fill" style="width: 78%"><span>78.0%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">GPQA Diamond</span>
+                            <div class="bar"><div class="bar-fill" style="width: 87%"><span>87.0%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">MMLU</span>
+                            <div class="bar"><div class="bar-fill" style="width: 88%"><span>88.4%</span></div></div>
+                        </div>
+                        <div class="benchmark-bar">
+                            <span class="benchmark-name">Context Window</span>
+                            <div class="bar"><div class="bar-fill" style="width: 100%"><span>1M (β)</span></div></div>
+                        </div>
+                    </div>
+                    <p class="spotlight-note">Best for: Near-Opus performance at 60% of the price, long context, agentic tasks</p>
+                </div>
+
+                <div class="spotlight-card">
+                    <div class="spotlight-header">
                         <h3>Kimi K2.5</h3>
                         <span class="spotlight-badge open">Open Weight</span>
                     </div>
@@ -267,6 +361,10 @@
                 <div class="pricing-card">
                     <h4>Value Tier</h4>
                     <div class="pricing-model">
+                        <span class="model-name">GPT-5.4 Nano</span>
+                        <span class="model-price">$0.20 <small>/ $0.80</small></span>
+                    </div>
+                    <div class="pricing-model">
                         <span class="model-name">Qwen 3.5</span>
                         <span class="model-price">$0.40 <small>/ $1.20</small></span>
                     </div>
@@ -282,6 +380,10 @@
 
                 <div class="pricing-card featured">
                     <h4>Standard Tier</h4>
+                    <div class="pricing-model">
+                        <span class="model-name">GPT-5.4</span>
+                        <span class="model-price">$2.50 <small>/ $15.00</small></span>
+                    </div>
                     <div class="pricing-model">
                         <span class="model-name">Gemini 3.1 Pro</span>
                         <span class="model-price">$2.00 <small>/ $12.00</small></span>
@@ -304,7 +406,19 @@
                     </div>
                     <div class="pricing-model">
                         <span class="model-name">GPT-5.2</span>
-                        <span class="model-price">Premium</span>
+                        <span class="model-price">$1.25 <small>/ $10.00</small></span>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <h4>Fast Tier</h4>
+                    <div class="pricing-model">
+                        <span class="model-name">GPT-5.4 Mini</span>
+                        <span class="model-price">$0.75 <small>/ $4.50</small></span>
+                    </div>
+                    <div class="pricing-model">
+                        <span class="model-name">2x faster than Mini predecessor</span>
+                        <span class="model-price">400K context</span>
                     </div>
                 </div>
             </div>
@@ -318,7 +432,7 @@
     <footer class="footer">
         <div class="container">
             <p>Data compiled from official sources, benchmark leaderboards, and independent evaluations.</p>
-            <p class="footer-update">Site auto-updates weekly. Last sync: March 2026. | aipulse.buzz</p>
+            <p class="footer-update">Site auto-updates weekly. Last sync: March 29, 2026. | aipulse.buzz</p>
         </div>
     </footer>
 
