@@ -1576,6 +1576,582 @@ const newsData = {
             "Multimodal text and image support",
             "Designed for efficient self-hosting"
         ]
+    },
+
+    "google-turboquant": {
+        id: "google-turboquant",
+        title: "Google TurboQuant",
+        developer: "Google",
+        date: "Mar 26, 2026",
+        tag: "Google",
+        tagColor: "#4285f4",
+        subtitle: "New compression algorithm slashes AI memory usage by 6x with zero accuracy loss.",
+        summary: "Google's TurboQuant algorithm reduces large language model memory requirements by at least six times without sacrificing accuracy. This breakthrough could dramatically reduce AI deployment costs and enable larger models on consumer hardware.",
+        content: `
+            <p>Google has unveiled TurboQuant, a revolutionary compression algorithm that promises to transform how large language models are deployed. By shrinking the data stored by LLMs, TurboQuant achieves a minimum 6x reduction in memory usage with absolutely zero loss in accuracy.</p>
+            
+            <h2>The Memory Problem</h2>
+            <p>Large language models have become increasingly memory-intensive. A 70B parameter model can require over 140GB of VRAM in standard precision, putting advanced AI out of reach for many developers and organizations. Quantization methods have existed, but they typically trade accuracy for efficiency.</p>
+            
+            <h2>TurboQuant Innovation</h2>
+            <p>TurboQuant represents a fundamental breakthrough in model compression:</p>
+            <ul>
+                <li><strong>6x+ Memory Reduction:</strong> Compresses model weights without quality loss</li>
+                <li><strong>Zero Accuracy Loss:</strong> Maintains full model capability</li>
+                <li><strong>Hardware Agnostic:</strong> Works across GPU, CPU, and specialized accelerators</li>
+                <li><strong>Runtime Efficient:</strong> Minimal overhead for decompression during inference</li>
+            </ul>
+            
+            <h2>Impact on AI Deployment</h2>
+            <p>This technology could democratize access to powerful AI:</p>
+            <ul>
+                <li>Run 70B models on consumer GPUs with 24GB VRAM</li>
+                <li>Deploy larger models on edge devices</li>
+                <li>Reduce cloud infrastructure costs significantly</li>
+                <li>Enable more efficient fine-tuning workflows</li>
+            </ul>
+            
+            <h2>Availability</h2>
+            <p>Google has published research details and plans to integrate TurboQuant into their Vertex AI platform. Open-source implementations are expected to follow, potentially becoming a standard optimization technique across the industry.</p>
+        `,
+        stats: [
+            { label: "Memory Reduction", value: "6x+" },
+            { label: "Accuracy Loss", value: "0%" },
+            { label: "Speed Impact", value: "Minimal" },
+            { label: "Availability", value: "2026" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Technology": "Compression Algorithm",
+            "Memory Savings": "6x minimum",
+            "Accuracy": "100% Preserved",
+            "Platform": "Universal"
+        },
+        highlights: [
+            "6x memory reduction with zero accuracy loss",
+            "Enables large models on consumer hardware",
+            "Works across all major AI accelerators",
+            "Dramatically reduces deployment costs",
+            "Potential industry-standard optimization"
+        ]
+    },
+
+    "apple-gemini-deal": {
+        id: "apple-gemini-deal",
+        title: "Apple-Gemini Training Deal",
+        developer: "Apple & Google",
+        date: "Mar 26, 2026",
+        tag: "Industry",
+        tagColor: "#6366f1",
+        subtitle: "Apple gets complete access to Gemini for training smaller on-device AI models.",
+        summary: "As part of their January 2026 deal, Apple now has complete access to Google's Gemini in its data centers. This enables Apple to distill 'student' AI models specifically tuned for iPhones, iPads, and Macs with reduced computing requirements.",
+        content: `
+            <p>The landmark partnership between Apple and Google is bearing fruit. According to reports, Apple now has 'complete access' to Gemini within its own data centers, enabling a new generation of highly optimized on-device AI models.</p>
+            
+            <h2>The Distillation Strategy</h2>
+            <p>Apple is using Gemini as a teacher model to train smaller, specialized AI models:</p>
+            <ul>
+                <li><strong>Knowledge Distillation:</strong> Transfer capabilities from Gemini to compact student models</li>
+                <li><strong>Device Optimization:</strong> Models tuned specifically for Apple Silicon (A18, M4, etc.)</li>
+                <li><strong>Reduced Compute:</strong> Smaller models require less power and run faster on-device</li>
+                <li><strong>Privacy First:</strong> Training happens in Apple's secure data centers</li>
+            </ul>
+            
+            <h2>What This Means for Users</h2>
+            <p>Future Apple devices could feature:</p>
+            <ul>
+                <li>More capable Siri with Gemini-level intelligence</li>
+                <li>Advanced writing and creativity tools</li>
+                <li>Smarter photo and video editing</li>
+                <li>Real-time translation and transcription</li>
+                <li>All processing possible on-device for privacy</li>
+            </ul>
+            
+            <h2>Strategic Significance</h2>
+            <p>This deal represents a major shift in Big Tech dynamics. Rather than building foundation models from scratch—a process costing billions—Apple is leveraging Google's existing technology while focusing on optimization and integration. It's a pragmatic approach that could accelerate Apple's AI capabilities by years.</p>
+            
+            <h2>Timeline</h2>
+            <p>Expectations are for the first Gemini-distilled Apple AI features to appear in iOS 19 and macOS 16, launching in late 2026 alongside new iPhone and Mac hardware.</p>
+        `,
+        stats: [
+            { label: "Access Level", value: "Complete" },
+            { label: "Training Method", value: "Distillation" },
+            { label: "Target Devices", value: "iPhone/Mac" },
+            { label: "Expected Launch", value: "iOS 19" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Partnership": "Apple + Google",
+            "Teacher Model": "Gemini",
+            "Training Location": "Apple Data Centers",
+            "Output": "On-device models"
+        },
+        highlights: [
+            "Apple gets complete Gemini access in its data centers",
+            "Knowledge distillation for smaller on-device models",
+            "Optimized specifically for Apple Silicon chips",
+            "Accelerates Apple's AI capabilities by years",
+            "Expected in iOS 19 and macOS 16"
+        ]
+    },
+
+    "intel-arc-pro-b70": {
+        id: "intel-arc-pro-b70",
+        title: "Intel Arc Pro B70",
+        developer: "Intel",
+        date: "Mar 25, 2026",
+        tag: "Hardware",
+        tagColor: "#0071c5",
+        subtitle: "Intel's 'Big Battlemage' GPU brings 32GB VRAM to AI workloads for under $1,000.",
+        summary: "Intel announced the Arc Pro B70 desktop GPU with 32GB of VRAM and up to 32 Xe2 cores, priced at $949. Designed specifically for AI inference and professional workloads, it offers a compelling alternative to NVIDIA's professional cards.",
+        content: `
+            <p>Intel has officially entered the AI GPU market with the Arc Pro B70, codenamed "Big Battlemage." This professional GPU targets AI inference, content creation, and workstation workloads—offering massive VRAM at a fraction of NVIDIA's prices.</p>
+            
+            <h2>Key Specifications</h2>
+            <ul>
+                <li><strong>VRAM:</strong> 32GB GDDR6—enough for large AI models</li>
+                <li><strong>Compute Cores:</strong> Up to 32 Xe2 cores</li>
+                <li><strong>Price:</strong> $949 for reference design</li>
+                <li><strong>Target:</strong> AI inference, professional visualization</li>
+            </ul>
+            
+            <p>A slightly cut-down B65 Pro variant with 20 Xe2 cores will also be available exclusively through Intel's board partners.</p>
+            
+            <h2>AI Workload Performance</h2>
+            <p>The 32GB VRAM is the headline feature for AI users:</p>
+            <ul>
+                <li>Run 70B parameter models locally with quantization</li>
+                <li>Handle large-batch inference for production deployments</li>
+                <li>Process high-resolution AI-generated content</li>
+                <li>Multiple AI models simultaneously</li>
+            </ul>
+            
+            <h2>Market Positioning</h2>
+            <p>At $949, the B70 dramatically undercuts NVIDIA's professional offerings. While it may not match RTX 4090 performance for training, the massive VRAM makes it ideal for inference workloads—where most AI compute actually happens in production.</p>
+            
+            <h2>Gaming Potential?</h2>
+            <p>Intel emphasized the Pro designation, but enthusiasts are already speculating about gaming-focused Battlemage cards. A 32GB gaming GPU would be unprecedented in the consumer space.</p>
+        `,
+        stats: [
+            { label: "VRAM", value: "32GB" },
+            { label: "Cores", value: "32 Xe2" },
+            { label: "Price", value: "$949" },
+            { label: "Target", value: "AI Inference" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "GPU": "Arc Pro B70",
+            "VRAM": "32GB GDDR6",
+            "Cores": "32 Xe2",
+            "Price": "$949"
+        },
+        highlights: [
+            "32GB VRAM for large AI models",
+            "Under $1,000 price point",
+            "32 Xe2 compute cores",
+            "Designed for AI inference workloads",
+            "Alternative to expensive NVIDIA cards"
+        ]
+    },
+
+    "nvidia-nemoclaw": {
+        id: "nvidia-nemoclaw",
+        title: "NVIDIA NemoClaw",
+        developer: "NVIDIA",
+        date: "Mar 16, 2026",
+        tag: "NVIDIA",
+        tagColor: "#76b900",
+        subtitle: "Secure enterprise version of OpenClaw runs agents in isolated sandbox environments.",
+        summary: "At GTC 2026, NVIDIA announced NemoClaw—a secure, enterprise-ready version of the OpenClaw agentic AI platform. It adds policy-based security guardrails, network isolation, and privacy protections via an isolated sandbox environment.",
+        content: `
+            <p>NVIDIA is making a major move into enterprise agentic AI with NemoClaw, announced at GTC 2026. This platform takes the open-source OpenClaw framework and adds the security, privacy, and governance features that enterprises require.</p>
+            
+            <h2>What is NemoClaw?</h2>
+            <p>NemoClaw uses NVIDIA's Agent Toolkit to optimize OpenClaw deployment:</p>
+            <ul>
+                <li><strong>OpenShell Integration:</strong> Provides open models for autonomous agents</li>
+                <li><strong>Isolated Sandbox:</strong> Runs agents in secure, contained environments</li>
+                <li><strong>Policy Guardrails:</strong> Enforces security, network, and privacy policies</li>
+                <li><strong>Single Command Setup:</strong> Optimized installation via NVIDIA Agent Toolkit</li>
+            </ul>
+            
+            <h2>Enterprise Security Features</h2>
+            <p>NemoClaw addresses the key concern with AI agents—uncontrolled access:</p>
+            <ul>
+                <li>Network isolation prevents unauthorized external connections</li>
+                <li>Policy-based permissions control what agents can access</li>
+                <li>Data privacy enforcement keeps sensitive information contained</li>
+                <li>Audit logging for compliance and monitoring</li>
+            </ul>
+            
+            <h2>The Missing Infrastructure Layer</h2>
+            <p>NVIDIA describes NemoClaw as "the missing infrastructure layer beneath claws"—providing agents with the access they need to be productive while maintaining enterprise-grade security boundaries. It's the platform that could make agentic AI truly enterprise-ready.</p>
+            
+            <h2>Availability</h2>
+            <p>NemoClaw is available through NVIDIA's AI Enterprise platform, with integration into their broader ecosystem of tools and hardware.</p>
+        `,
+        stats: [
+            { label: "Platform", value: "OpenClaw+" },
+            { label: "Security", value: "Sandbox" },
+            { label: "Setup", value: "1 Command" },
+            { label: "Launch", value: "GTC 2026" }
+        ],
+        pricing: {
+            input: "Enterprise",
+            output: "Enterprise",
+            context: "Enterprise"
+        },
+        specs: {
+            "Base Platform": "OpenClaw",
+            "Security": "Isolated Sandbox",
+            "Toolkit": "NVIDIA Agent Toolkit",
+            "Policy": "Policy-Based Guardrails"
+        },
+        highlights: [
+            "Enterprise-ready version of OpenClaw",
+            "Isolated sandbox for security",
+            "Policy-based security guardrails",
+            "Single-command deployment",
+            "Brings agentic AI to enterprises"
+        ]
+    },
+
+    "nvidia-space-datacenter": {
+        id: "nvidia-space-datacenter",
+        title: "NVIDIA Space Data Centers",
+        developer: "NVIDIA",
+        date: "Mar 16, 2026",
+        tag: "NVIDIA",
+        tagColor: "#76b900",
+        subtitle: "AI data centers in space: Vera Rubin Space 1 to deploy orbital compute infrastructure.",
+        summary: "NVIDIA revealed plans for Vera Rubin Space 1—a computer designed for orbital deployment. The company is working on cooling systems for space data centers where only radiation, not conduction or convection, can dissipate heat.",
+        content: `
+            <p>In a surprise GTC 2026 announcement, NVIDIA revealed it's developing AI data centers for space. The Vera Rubin Space 1 project aims to put compute infrastructure in orbit, opening new frontiers for AI processing.</p>
+            
+            <h2>The Challenge of Space Computing</h2>
+            <p>Space presents unique engineering challenges for data centers:</p>
+            <ul>
+                <li><strong>No Conduction:</strong> Can't transfer heat through physical contact in vacuum</li>
+                <li><strong>No Convection:</strong> No air to carry heat away from components</li>
+                <li><strong>Only Radiation:</strong> Heat must dissipate via infrared radiation only</li>
+                <li><strong>Power Constraints:</strong> Limited solar power availability</li>
+            </ul>
+            
+            <p>NVIDIA's engineers are actively working on novel cooling solutions to address these constraints.</p>
+            
+            <h2>Why Space Data Centers?</h2>
+            <p>The benefits of orbital AI infrastructure include:</p>
+            <ul>
+                <li>Global coverage for satellite data processing</li>
+                <li>Reduced latency for space-based applications</li>
+                <li>Scientific computing in microgravity environments</li>
+                <li>Secure, physically isolated compute for sensitive workloads</li>
+            </ul>
+            
+            <h2>Vera Rubin Legacy</h2>
+            <p>The project is named after Vera Rubin, the astronomer who discovered dark matter. This naming honors the scientific legacy while pointing to space exploration applications for AI.</p>
+            
+            <h2>Timeline</h2>
+            <p>NVIDIA hasn't announced a specific launch date, but the project is actively in development with engineering teams focused on the unique thermal and power challenges.</p>
+        `,
+        stats: [
+            { label: "Project", value: "Vera Rubin" },
+            { label: "Environment", value: "Space" },
+            { label: "Cooling", value: "Radiation" },
+            { label: "Status", value: "In Dev" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Project Name": "Vera Rubin Space 1",
+            "Location": "Orbital",
+            "Cooling Method": "Radiation Only",
+            "Challenge": "Thermal Management"
+        },
+        highlights: [
+            "AI data centers planned for orbit",
+            "Named after astronomer Vera Rubin",
+            "Novel radiation-based cooling required",
+            "Process satellite data with lower latency",
+            "Active development underway"
+        ]
+    },
+
+    "samsung-ai-chip-expansion": {
+        id: "samsung-ai-chip-expansion",
+        title: "Samsung $73B AI Chip Investment",
+        developer: "Samsung",
+        date: "Mar 19, 2026",
+        tag: "Industry",
+        tagColor: "#1428a0",
+        subtitle: "Massive 22% spending increase aims to overtake SK Hynix as NVIDIA's memory supplier.",
+        summary: "Samsung announced a $73 billion investment in AI chip production and R&D for 2026. The 22% spending increase targets advanced memory and future robotics, as demand for agentic AI surges.",
+        content: `
+            <p>Samsung is going all-in on AI chip manufacturing. The company announced plans to spend $73 billion in 2026—a 22% increase year-over-year—to expand production and research into high-bandwidth memory and advanced processors.</p>
+            
+            <h2>Catching SK Hynix</h2>
+            <p>Samsung's primary goal is overtaking SK Hynix as the dominant supplier of AI memory to NVIDIA:</p>
+            <ul>
+                <li>HBM (High Bandwidth Memory) for AI accelerators</li>
+                <li>Advanced packaging technologies</li>
+                <li>Next-generation memory architectures</li>
+            </ul>
+            
+            <p>SK Hynix has dominated this market, but Samsung's massive investment signals serious intent to reclaim leadership.</p>
+            
+            <h2>Beyond Memory: Robotics</h2>
+            <p>The investment isn't just about memory chips. Samsung is funneling significant funds toward:</p>
+            <ul>
+                <li>Advanced robotics systems</li>
+                <li>AI-powered automation</li>
+                <li>Future-oriented manufacturing</li>
+            </ul>
+            
+            <h2>Agentic AI Driving Demand</h2>
+            <p>Co-CEO Jun Young-hyun cited "agentic AI" as the primary demand driver. As autonomous AI systems become mainstream, the need for specialized memory and compute chips is exploding. Samsung is positioning to capture this growth.</p>
+            
+            <h2>Market Impact</h2>
+            <p>This investment solidifies Samsung's position as a major AI infrastructure player alongside NVIDIA, Intel, and AMD. The competition in AI memory is intensifying, which could eventually lead to better prices and availability for AI hardware.</p>
+        `,
+        stats: [
+            { label: "Investment", value: "$73B" },
+            { label: "Increase", value: "22%" },
+            { label: "Year", value: "2026" },
+            { label: "Target", value: "SK Hynix" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Investment": "$73 Billion",
+            "YoY Increase": "22%",
+            "Focus": "HBM Memory + Robotics",
+            "Goal": "Overtake SK Hynix"
+        },
+        highlights: [
+            "$73 billion AI chip investment",
+            "22% spending increase year-over-year",
+            "Targeting SK Hynix's market leadership",
+            "Advanced robotics R&D included",
+            "Agentic AI driving demand surge"
+        ]
+    },
+
+    "meta-ai-moderation": {
+        id: "meta-ai-moderation",
+        title: "Meta AI Content Moderation",
+        developer: "Meta",
+        date: "Mar 20, 2026",
+        tag: "Meta",
+        tagColor: "#0668E1",
+        subtitle: "AI systems will replace human content moderators over the next few years.",
+        summary: "Meta announced wide rollout of AI moderation systems for Facebook and Instagram, planning to 'reduce reliance on third-party vendors' for content enforcement. The move affects thousands of human moderators.",
+        content: `
+            <p>Meta is making a major shift in how it handles content moderation. The company announced that AI systems will increasingly take over content review work, reducing dependence on the human contractors who currently handle much of this difficult job.</p>
+            
+            <h2>The AI Moderation Rollout</h2>
+            <p>Meta's AI support assistant is now being deployed across Facebook and Instagram:</p>
+            <ul>
+                <li>Wide rollout of AI moderation systems</li>
+                <li>Reduction in third-party vendor contracts</li>
+                <li>Human reviewers remain for complex cases</li>
+                <li>AI handles repetitive and graphic content</li>
+            </ul>
+            
+            <h2>What AI Will Handle</h2>
+            <p>According to Meta, AI systems are suited for:</p>
+            <ul>
+                <li>Repetitive reviews of graphic content</li>
+                <li>Illicit drug sales detection</li>
+                <li>Scam and fraud identification</li>
+                <li>Areas where bad actors constantly change tactics</li>
+            </ul>
+            
+            <h2>Impact on Human Moderators</h2>
+            <p>This shift affects thousands of content moderators who've risked PTSD and other mental health consequences reviewing disturbing content. While Meta says humans will still be involved, the scale of AI replacement could be significant.</p>
+            
+            <h2>Controversy and Concerns</h2>
+            <p>The announcement has sparked debate:</p>
+            <ul>
+                <li>Worker advocates concerned about job losses</li>
+                <li>Questions about AI accuracy in nuanced cases</li>
+                <li>Concerns about appeals processes</li>
+                <li>Past AI moderation failures at Meta</li>
+            </ul>
+        `,
+        stats: [
+            { label: "Platforms", value: "FB + IG" },
+            { label: "Timeline", value: "Years" },
+            { label: "Impact", value: "Major" },
+            { label: "Human Role", value: "Reduced" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Scope": "Facebook & Instagram",
+            "Approach": "AI-First Moderation",
+            "Human Review": "Selective Retention",
+            "Target Areas": "Drugs, Scams, Graphic"
+        },
+        highlights: [
+            "AI to replace most human moderators",
+            "Affects Facebook and Instagram",
+            "Rollout over next few years",
+            "Humans remain for complex cases",
+            "Major shift in content moderation"
+        ]
+    },
+
+    "meta-avocado-delay": {
+        id: "meta-avocado-delay",
+        title: "Meta Avocado AI Delayed",
+        developer: "Meta",
+        date: "Mar 13, 2026",
+        tag: "Meta",
+        tagColor: "#0668E1",
+        subtitle: "Next-gen AI model postponed to May due to performance falling short of rivals.",
+        summary: "Meta's 'Avocado' AI model has been delayed from March to at least May 2026. The model reportedly underperforms compared to Google and OpenAI offerings, despite billions in investment and leadership from ex-Scale CEO Alexandr Wang.",
+        content: `
+            <p>Meta's next major AI model needs more time to ripen. Codenamed "Avocado," the model has been delayed from its March launch to at least May 2026, according to reports citing performance concerns.</p>
+            
+            <h2>The Performance Gap</h2>
+            <p>Avocado is reportedly falling short of expectations:</p>
+            <ul>
+                <li>Performance below Google and OpenAI models</li>
+                <li>Not competitive on key benchmarks</li>
+                <li>Needs additional training and refinement</li>
+            </ul>
+            
+            <h2>Meta's AI Investment</h2>
+            <p>This delay is a setback for Meta's massive AI push:</p>
+            <ul>
+                <li>Billions invested in AI infrastructure</li>
+                <li>First major release since hiring Alexandr Wang</li>
+                <li>Wang joined from Scale AI to revamp Meta's efforts</li>
+            </ul>
+            
+            <h2>Competitive Landscape</h2>
+            <p>Meta faces intense competition from:</p>
+            <ul>
+                <li>Google's Gemini 3.1 Pro</li>
+                <li>OpenAI's GPT-5 series</li>
+                <li>Anthropic's Claude Opus 4.6</li>
+                <li>Chinese models like DeepSeek and Qwen</li>
+            </ul>
+            
+            <h2>What's Next</h2>
+            <p>The delay suggests Meta is taking quality seriously rather than rushing to market. With Wang's leadership, expectations are high for Avocado to be competitive when it finally launches in May or later.</p>
+        `,
+        stats: [
+            { label: "Original Date", value: "Mar 2026" },
+            { label: "New Date", value: "May 2026+" },
+            { label: "Reason", value: "Performance" },
+            { label: "Leader", value: "A. Wang" }
+        ],
+        pricing: {
+            input: "TBD",
+            output: "TBD",
+            context: "TBD"
+        },
+        specs: {
+            "Codename": "Avocado",
+            "Delay": "2+ months",
+            "Issue": "Underperformance",
+            "Leadership": "Alexandr Wang"
+        },
+        highlights: [
+            "Meta's Avocado AI delayed to May",
+            "Performance falling short of rivals",
+            "Led by ex-Scale CEO Alexandr Wang",
+            "First major release under new leadership",
+            "Setback in Meta's AI competition"
+        ]
+    },
+
+    "adobe-ceo-departure": {
+        id: "adobe-ceo-departure",
+        title: "Adobe CEO Shantanu Narayen Steps Down",
+        developer: "Adobe",
+        date: "Mar 12, 2026",
+        tag: "Industry",
+        tagColor: "#ff0000",
+        subtitle: "After 18 years, Narayen departs saying 'the next era of creativity is being written by AI.'",
+        summary: "Adobe CEO Shantanu Narayen is stepping down after nearly two decades. In his farewell, he emphasized Adobe's role in shaping AI-powered creativity, stating the company has 'never waited for the future to arrive.'",
+        content: `
+            <p>A chapter in tech history is closing. Adobe CEO Shantanu Narayen announced his departure after 18 years leading the creative software giant, marking the end of an era that saw Adobe transform from a boxed software company to a cloud and AI powerhouse.</p>
+            
+            <h2>Narayen's Farewell Message</h2>
+            <p>In his departing statement, Narayen reflected on AI's impact:</p>
+            <blockquote>
+                <p>"The next era of creativity is being written right now—shaped by AI, by new workflows and by entirely new forms of expression. Adobe has never waited for the future to arrive. We've anticipated it. We've built it. And we've led it."</p>
+            </blockquote>
+            
+            <h2>Adobe's AI Transformation</h2>
+            <p>Under Narayen's leadership, Adobe embraced AI:</p>
+            <ul>
+                <li>Adobe Firefly generative AI platform</li>
+                <li>AI features across Creative Cloud</li>
+                <li>Photoshop's generative fill and expand</li>
+                <li>Illustrator's AI-powered tools</li>
+                <li>Shift to AI-enhanced creative workflows</li>
+            </ul>
+            
+            <h2>The Legacy</h2>
+            <p>Narayen's 18-year tenure saw:</p>
+            <ul>
+                <li>Transition from perpetual licenses to Creative Cloud subscriptions</li>
+                <li>Stock price growth from ~$40 to over $500</li>
+                <li>Acquisition of major platforms (Figma, pending regulatory approval)</li>
+                <li>Positioning Adobe as an AI creativity leader</li>
+            </ul>
+            
+            <h2>What's Next</h2>
+            <p>Adobe hasn't announced Narayen's successor. The company faces challenges including regulatory scrutiny of the Figma acquisition and intense competition in AI creative tools from OpenAI, Midjourney, and others.</p>
+        `,
+        stats: [
+            { label: "Tenure", value: "18 Years" },
+            { label: "Focus", value: "AI Era" },
+            { label: "Legacy", value: "Cloud Shift" },
+            { label: "Future", value: "TBD" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "CEO": "Shantanu Narayen",
+            "Tenure": "18 Years",
+            "Legacy": "Creative Cloud + AI",
+            "Focus": "AI-Powered Creativity"
+        },
+        highlights: [
+            "CEO steps down after 18 years",
+            "Championed AI-powered creativity",
+            "Led transition to Creative Cloud",
+            "Adobe positioned as AI leader",
+            "Successor not yet announced"
+        ]
     }
 };
 
