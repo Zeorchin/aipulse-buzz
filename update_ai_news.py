@@ -15,7 +15,7 @@ from pathlib import Path
 from html import escape
 
 # Configuration
-REPO_PATH = Path("/home/zee/Desktop/aipulse-buzz")
+REPO_PATH = Path("/home/zee/aipulse-buzz")
 HTML_FILE = REPO_PATH / "ai-news.html"
 MAX_NEWS_ITEMS = 8  # Number of news items to fetch
 
