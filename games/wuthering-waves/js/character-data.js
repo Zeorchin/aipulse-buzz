@@ -22,13 +22,13 @@ const characters = {
             { name: "MF Howler Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_E_002_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy. This effect can be triggered 1 times every 20s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Emerald of Genesis", atk: 587, critRate: 24.3, desc: "Increases Energy Regen by 12.8%. When Resonance Skill is cast, increases ATK by 6%, stacking up to 2 time(s).", img: "https://wuthering.gg/images/Items/T_IconWeapon21020015_UI.png" },
         echoSet: [
-            { name: "Lampylumen Myriad", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_994_UI.png" },
+            { name: "Impermanence Heron", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_995_UI.png" },
+            { name: "Glacio Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_141_UI.png" },
             { name: "Tambourinist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
-            { name: "Autopuppet Scout", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_031_UI.png" },
-            { name: "Glacio Prism", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_141_UI.png" },
-            { name: "Clang Bang", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_051_UI.png" }
+            { name: "Clang Bang", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_051_UI.png" },
+            { name: "Excarat", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_271_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Glacio DMG\n5-Piece: Increases ATK by 15% for 30s after using Echo Skill",
         skills: {
@@ -119,13 +119,13 @@ const characters = {
             { name: "FF Howler Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_E_002_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increases ATK by 20% for 12s after using Resonance Skill. When hitting enemies, there is a 60% chance to deal 1 additional hit of DMG equal to 60% of ATK.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160001_UI.png" },
+        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increases ATK by 20% for 12s after using Resonance Skill. When hitting enemies, there is a 60% chance to deal 1 additional hit of DMG equal to 60% of ATK.", img: "https://wuthering.gg/images/Items/T_IconWeapon21040015_UI.png" },
         echoSet: [
-            { name: "Lampylumen Myriad", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_994_UI.png" },
+            { name: "Sentry Construct", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_301_UI.png" },
+            { name: "Glacio Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_141_UI.png" },
             { name: "Tambourinist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
-            { name: "Roseshroom", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_311_UI.png" },
-            { name: "Glacio Prism", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_141_UI.png" },
-            { name: "Sabyr Boar", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_261_UI.png" }
+            { name: "Sabyr Boar", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_261_UI.png" },
+            { name: "Glacio Predator", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31019_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Glacio DMG\n5-Piece: Increases ATK by 15% for 30s after using Echo Skill"
     },
@@ -152,13 +152,13 @@ const characters = {
             { name: "FF Howler Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_E_002_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increases ATK by 20% for 12s after using Resonance Skill. When hitting enemies, there is a 60% chance to deal 1 additional hit of DMG equal to 60% of ATK.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160001_UI.png" },
+        bestWeapon: { name: "Rime-Draped Sprouts", atk: 587, critDmg: 48.6, desc: "Increases ATK by 12%. Using Resonance Skill gives 12% Basic Attack DMG Bonus for 6s, stacking up to 3 times.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050026_UI.png" },
         echoSet: [
-            { name: "Lampylumen Myriad", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_994_UI.png" },
+            { name: "Nightmare: Lampylumen Myriad", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_994_UI.png" },
             { name: "Glacio Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_141_UI.png" },
-            { name: "Cyan-Feathered Heron", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_131_UI.png" },
+            { name: "Tambourinist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Excarat", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_271_UI.png" },
-            { name: "Gulpuff", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_111_UI.png" }
+            { name: "Cyan-Feathered Heron", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_131_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Glacio DMG\n5-Piece: After hitting an enemy with a weapon skill, deal 1 additional Glacio DMG hit equal to 30% of ATK"
     },
@@ -185,13 +185,13 @@ const characters = {
             { name: "MF Howler Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_E_002_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy. This effect can be triggered 1 times every 20s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy. This effect can be triggered 1 times every 20s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21040015_UI.png" },
         echoSet: [
-            { name: "Fallacy of No Return", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_301_UI.png" },
+            { name: "Bell-Borne Geochelone", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_992_UI.png" },
+            { name: "Glacio Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_141_UI.png" },
             { name: "Stonewall Bracer", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_181_UI.png" },
-            { name: "Rocksteady Guardian", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31059_UI.png" },
             { name: "Whiff Whaff", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_071_UI.png" },
-            { name: "Fusion Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_980_UI.png" }
+            { name: "Cruisewing", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_251_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Healing Bonus\n5-Piece: Increases the ATK of all party members by 15% for 30s upon healing allies."
     },
@@ -218,7 +218,7 @@ const characters = {
             { name: "FF Howler Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_E_002_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "The Last Dance", atk: 277, critRate: 16, desc: "After casting a weapon skill, gain 12% ATK for 8s. Max 3 stacks.", img: "https://wuthering.gg/images/Items/T_IconWeapon21140006_UI.png" },
+        bestWeapon: { name: "The Last Dance", atk: 277, critRate: 16, desc: "After casting a weapon skill, gain 12% ATK for 8s. Max 3 stacks.", img: "https://wuthering.gg/images/Items/T_IconWeapon21030017_UI.png" },
         echoSet: [
             { name: "Sentry Construct", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_301_UI.png" },
             { name: "Abyssal Patricius", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_301_UI.png" },
@@ -251,7 +251,7 @@ const characters = {
             { name: "MF Combustion Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_E_003_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Cadenza", atk: 264, critRate: 12, desc: "After using Resonance Skill, the next attack triggers an additional attack dealing 48% of ATK as Fusion DMG.", img: "https://wuthering.gg/images/Items/T_IconWeapon21140001_UI.png" },
+        bestWeapon: { name: "Commando of Conviction", atk: 412, atkPercent: 30.4, desc: "When Intro Skill is cast, increases ATK by 15%, lasting for 15s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21030015_UI.png" },
         echoSet: [
             { name: "Inferno Rider", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
             { name: "Fusion Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_151_UI.png" },
@@ -284,7 +284,7 @@ const characters = {
             { name: "FF Combustion Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_003_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Stringmaster", atk: 282, energyRegen: 46, desc: "After casting Intro Skill, gain 1 stack of Melody. Each stack increases ATK by 8%. Max 3 stacks.", img: "https://wuthering.gg/images/Items/T_IconWeapon21090002_UI.png" },
+        bestWeapon: { name: "Stringmaster", atk: 282, energyRegen: 46, desc: "After casting Intro Skill, gain 1 stack of Melody. Each stack increases ATK by 8%. Max 3 stacks.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050016_UI.png" },
         echoSet: [
             { name: "Inferno Rider", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
             { name: "Viridblaze Saurian", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_291_UI.png" },
@@ -317,7 +317,7 @@ const characters = {
             { name: "FF Thunder Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_E_001_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s. While in battle, gain 4% Energy Regen every 3s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s. While in battle, gain 4% Energy Regen every 3s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21010026_UI.png" },
         echoSet: [
             { name: "Thundering Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_222_UI.png" },
             { name: "Electro Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_031_UI.png" },
@@ -365,7 +365,7 @@ const characters = {
             { name: "FF Thunder Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_E_001_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Bayonet", atk: 282, critRate: 12, desc: "When Resonance Skill is cast, increase Electro DMG by 24% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21140004_UI.png" },
+        bestWeapon: { name: "Stringmaster", atk: 500, critRate: 35.9, desc: "Increases the DMG Bonus by 12%. When dealing Resonance Skill DMG, increases ATK by 12%.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050016_UI.png" },
         echoSet: [
             { name: "Thundering Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_222_UI.png" },
             { name: "Flautist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
@@ -398,11 +398,11 @@ const characters = {
             { name: "FF Gale Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s. While in battle, gain 4% Energy Regen every 3s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s. While in battle, gain 4% Energy Regen every 3s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21010016_UI.png" },
         echoSet: [
-            { name: "Tempest Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
+            { name: "Nightmare: Feilian Beringal", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_996_UI.png" },
             { name: "Feilian Beringal", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_996_UI.png" },
-            { name: "Galescourge Stalker", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31037_UI.png" },
+            { name: "Aero Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_011_UI.png" },
             { name: "Sabyr Boar", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_261_UI.png" },
             { name: "Dwarf Cassowary", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_326_UI.png" }
         ],
@@ -431,7 +431,7 @@ const characters = {
             { name: "FF Gale Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy. This effect can be triggered 1 times every 20s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Verity's Handle", atk: 587, critRate: 24.3, desc: "Gain 12% Attribute DMG Bonus. When using Resonance Liberation, gain 48% Resonance Liberation DMG Bonus for 8s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21040015_UI.png" },
         echoSet: [
             { name: "Bell-Borne Geochelone", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_992_UI.png" },
             { name: "Spearback", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_061_UI.png" },
@@ -479,11 +479,11 @@ const characters = {
             { name: "FF Radiant Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_005_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Hollow Glory", atk: 282, energyRegen: 46, desc: "After healing an ally, increase their ATK by 18% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21090003_UI.png" },
+        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increase HP by 12%. Restore 8 Concerto Energy when casting Resonance Liberation. When casting Resonance Skill that heals, increase nearby party members' ATK by 14% for 30s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
         echoSet: [
-            { name: "Bell-Borne Geochelone", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_992_UI.png" },
+            { name: "Fallacy of No Return", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_301_UI.png" },
+            { name: "Spectro Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_161_UI.png" },
             { name: "Stonewall Bracer", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_181_UI.png" },
-            { name: "Hoochief", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_989_UI.png" },
             { name: "Fission Junrock", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Snip Snap", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_081_UI.png" }
         ],
@@ -513,7 +513,7 @@ const characters = {
             { name: "FF Radiant Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_005_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Emerald", atk: 294, critRate: 8, desc: "Increases ATK by 20%. After using Resonance Skill, gain 30% Spectro DMG for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160004_UI.png" },
+        bestWeapon: { name: "Ages of Harvest", atk: 587, critRate: 24.3, desc: "Grants 12% Attribute DMG Bonus. Casting Intro Skill gives 24% Resonance Skill DMG Bonus for 12s. Casting Resonance Skill gives 24% Resonance Skill DMG Bonus for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21010026_UI.png" },
         echoSet: [
             { name: "Jué", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_34024_0_UI.png" },
             { name: "Lightcrusher", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" },
@@ -561,11 +561,11 @@ const characters = {
             { name: "FF Havoc Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_006_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Blazing Brilliance", atk: 294, critRate: 8, desc: "After using Resonance Skill, gain 20% Havoc DMG and 20% ATK for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160005_UI.png" },
+        bestWeapon: { name: "Blazing Brilliance", atk: 294, critRate: 8, desc: "After using Resonance Skill, gain 20% Havoc DMG and 20% ATK for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21020017_UI.png" },
         echoSet: [
-            { name: "Dreamless", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" },
+            { name: "Nightmare: Crownless", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_9991_UI.png" },
+            { name: "Havoc Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_171_UI.png" },
             { name: "Tambourinist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
-            { name: "Havoc Dreadmane", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_984_UI.png" },
             { name: "Havoc Warrior", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_051_UI.png" },
             { name: "Excarat", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_271_UI.png" }
         ],
@@ -609,7 +609,7 @@ const characters = {
             { name: "FF Radiant Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_005_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Hollow Glory", atk: 282, energyRegen: 46, desc: "After healing an ally, increase their ATK by 18% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21090003_UI.png" },
+        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increase HP by 12%. Restore 8 Concerto Energy when casting Resonance Liberation. When casting Resonance Skill that heals, increase nearby party members' ATK by 14% for 30s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050027_UI.png" },
         echoSet: [
             { name: "Fallacy of No Return", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_301_UI.png" },
             { name: "Rocksteady Guardian", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31059_UI.png" },
@@ -642,7 +642,7 @@ const characters = {
             { name: "MF Havoc Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_O_006_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Wall of the Autumn", atk: 264, def: 203, desc: "Increase DEF by 20%. When hit, restore HP equal to 10% of DEF.", img: "https://wuthering.gg/images/Items/T_IconWeapon21130001_UI.png" },
+        bestWeapon: { name: "Wall of the Autumn", atk: 387, def: 30.4, desc: "Increase DEF by 20%. When hit, restore HP equal to 10% of DEF.", img: "https://wuthering.gg/images/Items/T_IconWeapon21010024_UI.png" },
         echoSet: [
             { name: "Bell-Borne Geochelone", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_992_UI.png" },
             { name: "Spearback", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_061_UI.png" },
@@ -675,11 +675,11 @@ const characters = {
             { name: "MF Combustion Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_E_003_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Cadenza", atk: 264, critRate: 12, desc: "After using Resonance Skill, the next attack triggers an additional attack dealing 48% of ATK as Fusion DMG.", img: "https://wuthering.gg/images/Items/T_IconWeapon21140001_UI.png" },
+        bestWeapon: { name: "Commando of Conviction", atk: 412, atkPercent: 30.4, desc: "When Intro Skill is cast, increases ATK by 15%, lasting for 15s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21030015_UI.png" },
         echoSet: [
-            { name: "Impermanence Heron", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_995_UI.png" },
-            { name: "Spearback", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_061_UI.png" },
-            { name: "Carapace", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_031_UI.png" },
+            { name: "Hecate", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_988_UI.png" },
+            { name: "Fusion Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_151_UI.png" },
+            { name: "Viridblaze Saurian", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_291_UI.png" },
             { name: "Cruisewing", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_251_UI.png" },
             { name: "Diamondclaw", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_241_UI.png" }
         ],
@@ -708,7 +708,7 @@ const characters = {
             { name: "FF Combustion Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_003_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Blazing Brilliance", atk: 587, critDmg: 48.6, desc: "ATK increased by 12%. The wielder gains 1 stack of Searing Feather upon dealing damage, stacking up to 14 stacks.", img: "https://wuthering.gg/images/Items/T_IconWeapon21020016_UI.png" },
         echoSet: [
             { name: "Inferno Rider", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
             { name: "Havoc Dreadmane", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_984_UI.png" },
@@ -741,11 +741,11 @@ const characters = {
             { name: "MF Thunder Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_E_001_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Abyss Plume", atk: 264, critRate: 12, desc: "After Resonance Skill hits, increase ATK by 12% for 8s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21140003_UI.png" },
+        bestWeapon: { name: "Commando of Conviction", atk: 412, atkPercent: 30.4, desc: "When Intro Skill is cast, increases ATK by 15%, lasting for 15s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21040044_UI.png" },
         echoSet: [
-            { name: "Impermanence Heron", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_995_UI.png" },
-            { name: "Bell-Borne Geochelone", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_992_UI.png" },
-            { name: "Sabyr Boar", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_261_UI.png" },
+            { name: "Nightmare: Tempest Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
+            { name: "Electro Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_031_UI.png" },
+            { name: "Voltscourge Stalker", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31038_UI.png" },
             { name: "Zig Zag", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_231_UI.png" },
             { name: "Cruisewing", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_251_UI.png" }
         ],
@@ -775,7 +775,7 @@ const characters = {
             { name: "FF Thunder Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_E_001_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Verity's Handle", atk: 587, critRate: 24.3, desc: "Gain 12% Attribute DMG Bonus. When using Resonance Liberation, gain 48% Resonance Liberation DMG Bonus for 8s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21040016_UI.png" },
         echoSet: [
             { name: "Thundering Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_222_UI.png" },
             { name: "Flautist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
@@ -808,10 +808,10 @@ const characters = {
             { name: "MF Gale Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Emerald of Genesis", atk: 587, critRate: 24.3, desc: "Increases Energy Regen by 12.8%. When Resonance Skill is cast, increases ATK by 6%, stacking up to 2 time(s).", img: "https://wuthering.gg/images/Items/T_IconWeapon21020015_UI.png" },
         echoSet: [
-            { name: "Impermanence Heron", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_995_UI.png" },
-            { name: "Spearback", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_061_UI.png" },
+            { name: "Bell-Borne Geochelone", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_992_UI.png" },
+            { name: "Aero Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_011_UI.png" },
             { name: "Carapace", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_031_UI.png" },
             { name: "Zig Zag", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_231_UI.png" },
             { name: "Diamondclaw", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_241_UI.png" }
@@ -841,7 +841,7 @@ const characters = {
             { name: "MF Gale Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "The Last Dance", atk: 277, critRate: 16, desc: "After casting a weapon skill, gain 12% ATK for 8s. Max 3 stacks.", img: "https://wuthering.gg/images/Items/T_IconWeapon21140006_UI.png" },
+        bestWeapon: { name: "Commando of Conviction", atk: 412, atkPercent: 30.4, desc: "When Intro Skill is cast, increases ATK by 15%, lasting for 15s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21030015_UI.png" },
         echoSet: [
             { name: "Impermanence Heron", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_995_UI.png" },
             { name: "Carapace", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_031_UI.png" },
@@ -874,11 +874,11 @@ const characters = {
             { name: "MF Havoc Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_O_006_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Brilliant Fixation", atk: 264, critRate: 12, desc: "Increase Crit Rate by 12%. When HP is below 60%, gain additional 12% Crit Rate.", img: "https://wuthering.gg/images/Items/T_IconWeapon21140002_UI.png" },
+        bestWeapon: { name: "Commando of Conviction", atk: 412, atkPercent: 30.4, desc: "When Intro Skill is cast, increases ATK by 15%, lasting for 15s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21020015_UI.png" },
         echoSet: [
-            { name: "Dreamless", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" },
+            { name: "Nightmare: Crownless", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_9991_UI.png" },
+            { name: "Havoc Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_171_UI.png" },
             { name: "Roseshroom", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_311_UI.png" },
-            { name: "Tambourinist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Excarat", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_271_UI.png" },
             { name: "Chirpuff", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_101_UI.png" }
         ],
@@ -907,7 +907,7 @@ const characters = {
             { name: "FF Combustion Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_003_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Unflickering Valor", atk: 412.5, energyRegen: 77.04, desc: "Increase Crit. Rate by 8%. Casting Resonance Liberation gives 24% Basic Attack DMG Bonus.", img: "https://wuthering.gg/images/Items/T_IconWeapon21020025_UI.png" },
         echoSet: [
             { name: "Inferno Rider", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
             { name: "Fusion Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_151_UI.png" },
@@ -940,13 +940,13 @@ const characters = {
             { name: "FF Combustion Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_003_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Stringmaster", atk: 282, energyRegen: 46, desc: "After casting Intro Skill, gain 1 stack of Melody.", img: "https://wuthering.gg/images/Items/T_IconWeapon21090002_UI.png" },
+        bestWeapon: { name: "Wildfire Mark", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. Casting Intro Skill or Resonance Liberation grants 32% Echo Skill DMG Amplification for 15s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21010036_UI.png" },
         echoSet: [
-            { name: "Inferno Rider", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
+            { name: "Lioness of Glory", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
             { name: "Fusion Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_151_UI.png" },
-            { name: "Fusion Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_980_UI.png" },
+            { name: "Viridblaze Saurian", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_291_UI.png" },
             { name: "Lava Larva", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_322_UI.png" },
-            { name: "Viridblaze Saurian", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_291_UI.png" }
+            { name: "Fusion Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_980_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Fusion DMG\n5-Piece: After using Echo Skill, gain 15% ATK for 15s"
     },
@@ -973,13 +973,13 @@ const characters = {
             { name: "FF Combustion Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_003_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "The Last Dance", atk: 277, critRate: 16, desc: "After casting a weapon skill, gain 12% ATK for 8s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21140006_UI.png" },
+        bestWeapon: { name: "The Last Dance", atk: 277, critRate: 16, desc: "After casting a weapon skill, gain 12% ATK for 8s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21030036_UI.png" },
         echoSet: [
-            { name: "Inferno Rider", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
+            { name: "Lorelei", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
             { name: "Fusion Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_151_UI.png" },
-            { name: "Fusion Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_980_UI.png" },
+            { name: "Viridblaze Saurian", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_291_UI.png" },
             { name: "Lava Larva", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_322_UI.png" },
-            { name: "Viridblaze Saurian", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_291_UI.png" }
+            { name: "Fusion Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_980_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Fusion DMG\n5-Piece: After using Echo Skill, gain 15% ATK for 15s"
     },
@@ -1006,13 +1006,13 @@ const characters = {
             { name: "FF Combustion Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_003_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Blazing Justice", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. Casting Basic Attack grants: Dealing damage ignores 8% of the target's DEF.", img: "https://wuthering.gg/images/Items/T_IconWeapon21010066_UI.png" },
         echoSet: [
-            { name: "Inferno Rider", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
+            { name: "Reactor Husk", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
             { name: "Fusion Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_151_UI.png" },
-            { name: "Fusion Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_980_UI.png" },
+            { name: "Stonewall Bracer", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_181_UI.png" },
             { name: "Lava Larva", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_322_UI.png" },
-            { name: "Viridblaze Saurian", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_291_UI.png" }
+            { name: "Fusion Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_980_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Fusion DMG\n5-Piece: After using Echo Skill, gain 15% ATK for 15s"
     },
@@ -1039,7 +1039,7 @@ const characters = {
             { name: "FF Combustion Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_003_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increases ATK by 20% for 12s after using Resonance Skill.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160001_UI.png" },
+        bestWeapon: { name: "Trailblazing Star", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. Casting Intro Skill increases Fusion DMG Bonus by 24% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21020076_UI.png" },
         echoSet: [
             { name: "Sigillum", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_34025_0_UI.png" },
             { name: "Kronablight", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_32059_UI.png" },
@@ -1072,11 +1072,11 @@ const characters = {
             { name: "FF Thunder Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_E_001_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Thunderflare Dominion", atk: 587, critRate: 24.3, desc: "Gain 12% Heavy Attack DMG Bonus. When dealing damage with Heavy Attacks, increases DEF ignore by 6%, stacking up to 5 times.", img: "https://wuthering.gg/images/Items/T_IconWeapon21010046_UI.png" },
         echoSet: [
-            { name: "Thundering Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_222_UI.png" },
+            { name: "The False Sovereign", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_222_UI.png" },
             { name: "Electro Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_031_UI.png" },
-            { name: "Voltscourge Stalker", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31038_UI.png" },
+            { name: "Flautist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Fission Junrock", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Traffic Illuminator", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_9992_UI.png" }
         ],
@@ -1105,11 +1105,11 @@ const characters = {
             { name: "FF Gale Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy.", img: "https://wuthering.gg/images/Items/T_IconWeapon21030026_UI.png" },
         echoSet: [
-            { name: "Tempest Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
+            { name: "Reminiscence: Fleurdelys", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
             { name: "Feilian Beringal", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_996_UI.png" },
-            { name: "Galescourge Stalker", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31037_UI.png" },
+            { name: "Aero Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_011_UI.png" },
             { name: "Sabyr Boar", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_261_UI.png" },
             { name: "Dwarf Cassowary", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_326_UI.png" }
         ],
@@ -1138,11 +1138,11 @@ const characters = {
             { name: "FF Gale Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Defier's Thorn", atk: 587, hp: 49.5, desc: "Increases Max HP by 12%. When Resonance Skill is cast, increases ATK by 12% for 6s, stacking up to 2 times.", img: "https://wuthering.gg/images/Items/T_IconWeapon21020056_UI.png" },
         echoSet: [
-            { name: "Tempest Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
+            { name: "Reminiscence: Fleurdelys", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
             { name: "Feilian Beringal", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_996_UI.png" },
-            { name: "Galescourge Stalker", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31037_UI.png" },
+            { name: "Aero Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_011_UI.png" },
             { name: "Sabyr Boar", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_261_UI.png" },
             { name: "Dwarf Cassowary", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_326_UI.png" }
         ],
@@ -1171,11 +1171,11 @@ const characters = {
             { name: "FF Gale Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Moongazer's Sigil", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. Casting Intro Skill or Resonance Liberation increases Resonance Liberation DMG by 20% for 15s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21040046_UI.png" },
         echoSet: [
-            { name: "Tempest Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
+            { name: "Lady of the Sea", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
             { name: "Feilian Beringal", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_996_UI.png" },
-            { name: "Galescourge Stalker", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31037_UI.png" },
+            { name: "Aero Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_011_UI.png" },
             { name: "Sabyr Boar", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_261_UI.png" },
             { name: "Dwarf Cassowary", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_326_UI.png" }
         ],
@@ -1204,11 +1204,11 @@ const characters = {
             { name: "FF Gale Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increases ATK by 20% for 12s after using Resonance Skill.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160001_UI.png" },
+        bestWeapon: { name: "Emerald Sentence", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. When casting Basic Attacks or Resonance Skills, increases Resonance Skill DMG Bonus by 12% for 4s, stacking up to 3 times.", img: "https://wuthering.gg/images/Items/T_IconWeapon21020066_UI.png" },
         echoSet: [
-            { name: "Tempest Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
+            { name: "Reminiscence: Fenrico", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
             { name: "Feilian Beringal", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_996_UI.png" },
-            { name: "Galescourge Stalker", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31037_UI.png" },
+            { name: "Aero Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_011_UI.png" },
             { name: "Sabyr Boar", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_261_UI.png" },
             { name: "Dwarf Cassowary", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_326_UI.png" }
         ],
@@ -1237,11 +1237,11 @@ const characters = {
             { name: "FF Gale Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Solsworn Ciphers", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. Casting Intro Skill or Echo Skill grants 32% Echo Skill DMG Amplification for 15s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21040066_UI.png" },
         echoSet: [
-            { name: "Tempest Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
+            { name: "Nameless Explorer", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_996_UI.png" },
             { name: "Feilian Beringal", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_996_UI.png" },
-            { name: "Galescourge Stalker", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_31037_UI.png" },
+            { name: "Aero Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_011_UI.png" },
             { name: "Sabyr Boar", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_261_UI.png" },
             { name: "Dwarf Cassowary", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_326_UI.png" }
         ],
@@ -1270,13 +1270,13 @@ const characters = {
             { name: "FF Radiant Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_005_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increases ATK by 20% for 12s after using Resonance Skill.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160001_UI.png" },
+        bestWeapon: { name: "Stringmaster", atk: 500, critRate: 35.9, desc: "Increases the DMG Bonus by 12%. When dealing Resonance Skill DMG, increases ATK by 12%, stacking up to 2.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050029_UI.png" },
         echoSet: [
-            { name: "Mourning Aix", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
+            { name: "Capitaneus", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
             { name: "Spectro Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_161_UI.png" },
-            { name: "Dreamless", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" },
-            { name: "Lumiscale Construct", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_325_UI.png" },
-            { name: "Lightcrusher", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" }
+            { name: "Lumiscale Construct", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_325_UI.png" },
+            { name: "Lightcrusher", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" },
+            { name: "Dreamless", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Spectro DMG\n5-Piece: After using Echo Skill, deal additional 30% ATK as Spectro DMG to enemies"
     },
@@ -1303,13 +1303,13 @@ const characters = {
             { name: "FF Radiant Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_005_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Blazing Justice", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. Casting Basic Attack grants: Dealing damage ignores 8% of the target's DEF.", img: "https://wuthering.gg/images/Items/T_IconWeapon21040019_UI.png" },
         echoSet: [
-            { name: "Mourning Aix", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
+            { name: "Capitaneus", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
             { name: "Spectro Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_161_UI.png" },
-            { name: "Dreamless", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" },
-            { name: "Lumiscale Construct", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_325_UI.png" },
-            { name: "Lightcrusher", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" }
+            { name: "Lumiscale Construct", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_325_UI.png" },
+            { name: "Lightcrusher", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" },
+            { name: "Dreamless", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Spectro DMG\n5-Piece: After using Echo Skill, deal additional 30% ATK as Spectro DMG to enemies"
     },
@@ -1336,13 +1336,13 @@ const characters = {
             { name: "FF Radiant Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_005_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Spectrum Blaster", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. When dealing damage with Basic Attacks, increases Basic Attack DMG Bonus by 12% for 6s, stacking up to 3 times.", img: "https://wuthering.gg/images/Items/T_IconWeapon21030046_UI.png" },
         echoSet: [
-            { name: "Mourning Aix", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
+            { name: "Hyvatia", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
             { name: "Spectro Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_161_UI.png" },
-            { name: "Dreamless", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" },
-            { name: "Lumiscale Construct", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_325_UI.png" },
-            { name: "Lightcrusher", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" }
+            { name: "Lumiscale Construct", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_325_UI.png" },
+            { name: "Lightcrusher", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" },
+            { name: "Dreamless", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Spectro DMG\n5-Piece: After healing, grant target 20% ATK for 20s"
     },
@@ -1369,13 +1369,13 @@ const characters = {
             { name: "FF Radiant Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_005_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Stringmaster", atk: 500, critRate: 35.9, desc: "Increases the DMG Bonus by 12%. When dealing Resonance Skill DMG, increases ATK by 12%, stacking up to 2.", img: "https://wuthering.gg/images/Items/T_IconWeapon_21040056_UI.png" },
         echoSet: [
-            { name: "Mourning Aix", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
+            { name: "Twin Nova - Nebulous Cannon", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
             { name: "Spectro Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_161_UI.png" },
-            { name: "Dreamless", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" },
-            { name: "Lumiscale Construct", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_325_UI.png" },
-            { name: "Lightcrusher", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" }
+            { name: "Lumiscale Construct", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_325_UI.png" },
+            { name: "Lightcrusher", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" },
+            { name: "Dreamless", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" }
         ],
         echoBonus: "2-Piece: +10% Spectro DMG\n5-Piece: After using Echo Skill, deal additional 30% ATK as Spectro DMG to enemies"
     },
@@ -1402,11 +1402,11 @@ const characters = {
             { name: "FF Havoc Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_006_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Blazing Justice", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. Casting Basic Attack grants: Dealing damage ignores 8% of the target's DEF.", img: "https://wuthering.gg/images/Items/T_IconWeapon21040018_UI.png" },
         echoSet: [
-            { name: "Crownless", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_9991_UI.png" },
+            { name: "Nightmare: Impermanence Heron", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_995_UI.png" },
             { name: "Havoc Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_171_UI.png" },
-            { name: "Havoc Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_984_UI.png" },
+            { name: "Tambourinist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Havoc Warrior", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_051_UI.png" },
             { name: "Roseshroom", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_311_UI.png" }
         ],
@@ -1435,11 +1435,11 @@ const characters = {
             { name: "FF Havoc Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_006_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Whispers of Sirens", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. When dealing damage to a target with Havoc DMG, increases Crit Rate by 8% for 6s, stacking up to 3 times.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050030_UI.png" },
         echoSet: [
-            { name: "Crownless", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_9991_UI.png" },
+            { name: "Lorelei", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_9991_UI.png" },
             { name: "Havoc Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_171_UI.png" },
-            { name: "Havoc Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_984_UI.png" },
+            { name: "Tambourinist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Havoc Warrior", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_051_UI.png" },
             { name: "Roseshroom", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_311_UI.png" }
         ],
@@ -1468,11 +1468,11 @@ const characters = {
             { name: "FF Havoc Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_006_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increases ATK by 20% for 12s after using Resonance Skill.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160001_UI.png" },
+        bestWeapon: { name: "Lethean Elegy", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. When dealing Havoc DMG, increases the wielder's ATK by 3%, stacking up to 10 times.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050066_UI.png" },
         echoSet: [
-            { name: "Crownless", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_9991_UI.png" },
+            { name: "Hecate", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_988_UI.png" },
             { name: "Havoc Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_171_UI.png" },
-            { name: "Havoc Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_984_UI.png" },
+            { name: "Tambourinist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Havoc Warrior", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_051_UI.png" },
             { name: "Roseshroom", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_311_UI.png" }
         ],
@@ -1501,11 +1501,11 @@ const characters = {
             { name: "FF Havoc Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_006_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Moongazer's Sigil", atk: 587, critRate: 24.3, desc: "Increases ATK by 12%. Casting Intro Skill or Resonance Liberation increases Resonance Liberation DMG by 20% for 15s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21010056_UI.png" },
         echoSet: [
-            { name: "Crownless", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_9991_UI.png" },
+            { name: "Nightmare: Impermanence Heron", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_995_UI.png" },
             { name: "Havoc Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_171_UI.png" },
-            { name: "Havoc Dreadmane", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_984_UI.png" },
+            { name: "Tambourinist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Havoc Warrior", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_051_UI.png" },
             { name: "Roseshroom", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_311_UI.png" }
         ],
@@ -1534,11 +1534,11 @@ const characters = {
             { name: "FF Thunder Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_E_001_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Lustrous Razor", atk: 587, energyRegen: 77.2, desc: "Increases Energy Regen by 12.8%. When Resonance Skill is released, increases Resonance Liberation DMG by 7%, stacking up to 3 times.", img: "https://wuthering.gg/images/Items/T_IconWeapon21010026_UI.png" },
         echoSet: [
             { name: "Impermanence Heron", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_995_UI.png" },
-            { name: "Spearback", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_061_UI.png" },
-            { name: "Stonewall Bracer", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_181_UI.png" },
+            { name: "Electro Predator", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_031_UI.png" },
+            { name: "Flautist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
             { name: "Whiff Whaff", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_071_UI.png" },
             { name: "Diamondclaw", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_241_UI.png" }
         ],
@@ -1567,10 +1567,10 @@ const characters = {
             { name: "MF Howler Core", qty: 3, img: "https://wuthering.gg/images/Items/T_IconMout_E_002_3_UI.png" },
             { name: "Shell Credit", qty: 60000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Variation", atk: 337.5, energyRegen: 51.84, desc: "When Resonance Skill is cast, restores 16 Concerto Energy.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050024_UI.png" },
+        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increase HP by 12%. Restore 8 Concerto Energy when casting Resonance Liberation. When casting Resonance Skill that heals, increase nearby party members' ATK by 14% for 30s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050015_UI.png" },
         echoSet: [
-            { name: "Fallacy of No Return", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_301_UI.png" },
-            { name: "Stonewall Bracer", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_181_UI.png" },
+            { name: "Bell-Borne Geochelone", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_992_UI.png" },
+            { name: "Glacio Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_141_UI.png" },
             { name: "Hoochief", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_989_UI.png" },
             { name: "Cruisewing", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_251_UI.png" },
             { name: "Tick Tack", pieces: 1, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_091_UI.png" }
@@ -1600,7 +1600,7 @@ const characters = {
             { name: "FF Gale Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_004_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Emerald of Genesis", atk: 587, critRate: 24.3, desc: "Increases Energy Regen by 12.8%. When Resonance Skill is cast, increases ATK by 6%, stacking up to 2 time(s).", img: "https://wuthering.gg/images/Items/T_IconWeapon21020015_UI.png" },
         echoSet: [
             { name: "Tempest Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_221_UI.png" },
             { name: "Feilian Beringal", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_996_UI.png" },
@@ -1633,7 +1633,7 @@ const characters = {
             { name: "FF Radiant Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_005_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Emerald of Genesis", atk: 587, critRate: 24.3, desc: "Increases Energy Regen by 12.8%. When Resonance Skill is cast, increases ATK by 6%, stacking up to 2 time(s).", img: "https://wuthering.gg/images/Items/T_IconWeapon21020015_UI.png" },
         echoSet: [
             { name: "Jué", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
             { name: "Lightcrusher", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_324_UI.png" },
@@ -1666,7 +1666,7 @@ const characters = {
             { name: "FF Havoc Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_006_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21160003_UI.png" },
+        bestWeapon: { name: "Emerald of Genesis", atk: 587, critRate: 24.3, desc: "Increases Energy Regen by 12.8%. When Resonance Skill is cast, increases ATK by 6%, stacking up to 2 time(s).", img: "https://wuthering.gg/images/Items/T_IconWeapon21020016_UI.png" },
         echoSet: [
             { name: "Dreamless", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_998_UI.png" },
             { name: "Roseshroom", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_311_UI.png" },
