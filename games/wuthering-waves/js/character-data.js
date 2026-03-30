@@ -365,7 +365,7 @@ const characters = {
             { name: "FF Thunder Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_E_001_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Bayonet", atk: 282, critRate: 12, desc: "When Resonance Skill is cast, increase Electro DMG by 24% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050016_UI.png" },
+        bestWeapon: { name: "Stringmaster", atk: 500, critRate: 35.9, desc: "Increases the DMG Bonus by 12%. When dealing Resonance Skill DMG, increases ATK by 12%.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050016_UI.png" },
         echoSet: [
             { name: "Thundering Mephis", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_222_UI.png" },
             { name: "Flautist", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_021_UI.png" },
@@ -907,7 +907,7 @@ const characters = {
             { name: "FF Combustion Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_003_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Verdant Summit", atk: 294, critRate: 8, desc: "After using Resonance Skill, increase ATK by 20% for 12s.", img: "https://wuthering.gg/images/Items/T_IconWeapon21020025_UI.png" },
+        bestWeapon: { name: "Unflickering Valor", atk: 412.5, energyRegen: 77.04, desc: "Increase Crit. Rate by 8%. Casting Resonance Liberation gives 24% Basic Attack DMG Bonus.", img: "https://wuthering.gg/images/Items/T_IconWeapon21020025_UI.png" },
         echoSet: [
             { name: "Inferno Rider", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_321_UI.png" },
             { name: "Fusion Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_151_UI.png" },
@@ -1270,7 +1270,7 @@ const characters = {
             { name: "FF Radiant Core", qty: 4, img: "https://wuthering.gg/images/Items/T_IconMout_O_005_4_UI.png" },
             { name: "Shell Credit", qty: 80000, img: "https://wuthering.gg/images/Items/T_IconA_hsb_UI.png" }
         ],
-        bestWeapon: { name: "Stellar Symphony", atk: 294, critRate: 12, desc: "Increases ATK by 20% for 12s after using Resonance Skill.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050029_UI.png" },
+        bestWeapon: { name: "Stringmaster", atk: 500, critRate: 35.9, desc: "Increases the DMG Bonus by 12%. When dealing Resonance Skill DMG, increases ATK by 12%, stacking up to 2.", img: "https://wuthering.gg/images/Items/T_IconWeapon21050029_UI.png" },
         echoSet: [
             { name: "Mourning Aix", pieces: 4, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_997_UI.png" },
             { name: "Spectro Prism", pieces: 3, img: "https://wuthering.gg/images/IconMonsterGoods/T_IconMonsterGoods160_161_UI.png" },
