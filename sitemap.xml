@@ -41,14 +41,74 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- Gaming Hub -->
   <url>
     <loc>https://aipulse.buzz/gaming.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Game Guides - Wuthering Waves -->
+  <url>
+    <loc>https://aipulse.buzz/games/wuthering-waves/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
+  <url>
+    <loc>https://aipulse.buzz/games/wuthering-waves/index.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Game Guides - Pokemon Pokopia -->
+  <url>
+    <loc>https://aipulse.buzz/games/pokemon-pokopia/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://aipulse.buzz/games/pokemon-pokopia/index.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Other Game Pages -->
+  <url>
+    <loc>https://aipulse.buzz/games/arknights-endfield.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aipulse.buzz/games/pokemon-tcg-pocket.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aipulse.buzz/games/seven-deadly-sins-origin.html</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <!-- Articles Section -->
+  <url>
+    <loc>https://aipulse.buzz/articles/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <url>
     <loc>https://aipulse.buzz/articles/index.html</loc>
     <lastmod>2026-04-02</lastmod>
@@ -56,6 +116,7 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Individual Articles -->
   <url>
     <loc>https://aipulse.buzz/articles/openclaw.html</loc>
     <lastmod>2026-03-28</lastmod>
@@ -103,21 +164,6 @@
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  
-  <!-- Gaming Pages -->
-  <url>
-    <loc>https://aipulse.buzz/games/wuthering-waves/index.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://aipulse.buzz/games/pokemon-pokopia/index.html</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   
 </urlset>
