@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena & PvP | Seven Deadly Sins Origin Guide</title>
+    <meta name="description" content="Arena & PvP guide for Seven Deadly Sins: Origin. Arena strategies, rankings, and rewards.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://sunderarmor.com/GENSHIN/GameIcons/7dsorigin-game-icon.png">
+    <link rel="stylesheet" href="database.css">
+    <style>
+        .pvp-mode {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .pvp-mode h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .pvp-mode p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .pvp-rewards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .pvp-reward {
+            padding: 0.35rem 0.75rem;
+            background: var(--secondary);
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .arena-leaderboard {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .leaderboard-header {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+            padding: 1.5rem;
+            color: #fff;
+        }
+        .leaderboard-header h3 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        .leaderboard-header p {
+            margin: 0.5rem 0 0;
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        .leaderboard-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.2s;
+        }
+        .leaderboard-item:hover {
+            background: var(--secondary);
+        }
+        .leaderboard-item:last-child {
+            border-bottom: none;
+        }
+        .lb-rank {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            border-radius: 8px;
+            margin-right: 1rem;
+            font-size: 0.9rem;
+        }
+        .lb-rank.gold { background: linear-gradient(135deg, #ffc107, #ff9800); color: #000; }
+        .lb-rank.silver { background: linear-gradient(135deg, #9e9e9e, #757575); color: #fff; }
+        .lb-rank.bronze { background: linear-gradient(135deg, #ff5722, #e64a19); color: #fff; }
+        .lb-rank.normal { background: var(--secondary); }
+        .lb-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+        }
+        .lb-avatar-img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+            border: 2px solid var(--border);
+        }
+        .lb-info {
+            flex: 1;
+        }
+        .lb-info h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.15rem;
+        }
+        .lb-info p {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin: 0;
+        }
+        .lb-reward {
+            text-align: right;
+        }
+        .lb-reward span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .tip-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: var(--secondary);
+            border-radius: 10px;
+        }
+        .tip-item span {
+            font-size: 1.2rem;
+        }
+        .tip-item p {
+            margin: 0;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚔️</span>
+                Seven Deadly Sins Origin Guide
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html#recommended" class="nav-item">Recommended</a>
+                <a href="weapons.html" class="nav-item">Weapons</a>
+                <a href="armor.html" class="nav-item">Armor</a>
+                <a href="items.html" class="nav-item">Items</a>
+                <a href="quests.html" class="nav-item">Quests</a>
+                <a href="arena.html" class="nav-item">Arena</a>
+                <a href="codes.html" class="nav-item">Codes</a>
+                <a href="tips.html" class="nav-item">Tips</a>
+                <a href="achievements.html" class="nav-item">Achievements</a>
+                <a href="faq.html" class="nav-item">FAQ</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+                <a href="sitemap.html" class="nav-item">Sitemap</a>
+                <a href="beginner.html" class="nav-item">Beginner</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="theme-btn" id="themeBtn">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="login-btn" id="loginBtn">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search arena...">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <main class="database-page">
+        <div class="page-header">
+            <a href="index.html" class="back-link">← Back to Wiki</a>
+            <h1>⚔️ Arena & PvP</h1>
+            <p class="page-subtitle">Battle other players and climb the rankings</p>
+        </div>
+
+        <div class="pvp-mode">
+            <h3>🏟️ Classic Arena</h3>
+            <p>Test your team against other players in automated battles. Set your defense team and challenge opponents to climb the rankings. Battles are simulated based on character stats and AI.</p>
+            <div class="pvp-rewards">
+                <span class="pvp-reward">💎 Arena Coins</span>
+                <span class="pvp-reward">📜 Hero Fragments</span>
+                <span class="pvp-reward">⚡ Skill Books</span>
+                <span class="pvp-reward">💰 Gold</span>
+            </div>
+        </div>
+
+        <div class="pvp-mode">
+            <h3>⚔️ Real-Time PvP</h3>
+            <p>Battle against other players in real-time! Use your skills and strategy to defeat opponents. Watch replays of your battles and learn from top players.</p>
+            <div class="pvp-rewards">
+                <span class="pvp-reward">🏆 PvP Tokens</span>
+                <span class="pvp-reward">⭐ SSR Tickets</span>
+                <span class="pvp-reward">💎 Gems</span>
+                <span class="pvp-reward">🎖️ Titles</span>
+            </div>
+        </div>
+
+        <div class="pvp-mode">
+            <h3>👥 3v3 Team Battle</h3>
+            <p>Form a team of 3 players and compete against other teams. Coordinate with guild members or friends to dominate the battlefield.</p>
+            <div class="pvp-rewards">
+                <span class="pvp-reward">🎁 Team Rewards</span>
+                <span class="pvp-reward">💎 Extra Gems</span>
+                <span class="pvp-reward">🏅 Season Titles</span>
+            </div>
+        </div>
+
+        <div class="arena-leaderboard">
+            <div class="leaderboard-header">
+                <h3>🏆 Arena Rankings</h3>
+                <p>Season ends in 3 days</p>
+            </div>
+            <ul class="leaderboard-list">
+                <li class="leaderboard-item">
+                    <div class="lb-rank gold">1</div>
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_meliodas_001.png" alt="Player" class="lb-avatar-img">
+                    <div class="lb-info">
+                        <h4>DragonSlayer</h4>
+                        <p>Meliodas | Win Rate: 95%</p>
+                    </div>
+                    <div class="lb-reward">
+                        <span>5,000 Gems</span>
+                    </div>
+                </li>
+                <li class="leaderboard-item">
+                    <div class="lb-rank silver">2</div>
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_jericho_001.png" alt="Player" class="lb-avatar-img">
+                    <div class="lb-info">
+                        <h4>ShadowNinja</h4>
+                        <p>Jericho | Win Rate: 92%</p>
+                    </div>
+                    <div class="lb-reward">
+                        <span>3,500 Gems</span>
+                    </div>
+                </li>
+                <li class="leaderboard-item">
+                    <div class="lb-rank bronze">3</div>
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_guila_001.png" alt="Player" class="lb-avatar-img">
+                    <div class="lb-info">
+                        <h4>FireMage</h4>
+                        <p>Guila | Win Rate: 89%</p>
+                    </div>
+                    <div class="lb-reward">
+                        <span>2,500 Gems</span>
+                    </div>
+                </li>
+                <li class="leaderboard-item">
+                    <div class="lb-rank normal">4</div>
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_king_001.png" alt="Player" class="lb-avatar-img">
+                    <div class="lb-info">
+                        <h4>IceQueen</h4>
+                        <p>King | Win Rate: 85%</p>
+                    </div>
+                    <div class="lb-reward">
+                        <span>1,500 Gems</span>
+                    </div>
+                </li>
+                <li class="leaderboard-item">
+                    <div class="lb-rank normal">5</div>
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_gil_thunder_001.png" alt="Player" class="lb-avatar-img">
+                    <div class="lb-info">
+                        <h4>ThunderBolt</h4>
+                        <p>Gil Thunder | Win Rate: 82%</p>
+                    </div>
+                    <div class="lb-reward">
+                        <span>1,000 Gems</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pvp-mode" style="margin-top: 2rem;">
+            <h3>💡 Arena Tips</h3>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <span>🎯</div>
+                    <p><strong>Speed First:</strong> Having faster units lets you act before enemies</p>
+                </div>
+                <div class="tip-item">
+                    <span>🛡️</div>
+                    <p><strong>Team Balance:</strong> Include at least one tank and one healer</p>
+                </div>
+                <div class="tip-item">
+                    <span>🔥</div>
+                    <p><strong>Element Match:</strong> Check enemy elements and counter accordingly</p>
+                </div>
+                <div class="tip-item">
+                    <span>⭐</div>
+                    <p><strong>Watch Replays:</strong> Learn from losses and adjust your strategy</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span class="logo-icon">⚔️</span> Seven Deadly Sins Origin Guide</div>
+            <p>Your ultimate gaming guide resource.</p>
+            <nav class="footer-nav">
+                <a href="faq.html">FAQ</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="copyright">&copy; 2026 Seven Deadly Sins Origin Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

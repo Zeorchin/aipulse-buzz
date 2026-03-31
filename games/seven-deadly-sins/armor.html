@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armor & Accessories | Seven Deadly Sins Origin Guide</title>
+    <meta name="description" content="Armor and accessories database for Seven Deadly Sins: Origin. All gear sets with stats and bonuses.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://sunderarmor.com/GENSHIN/GameIcons/7dsorigin-game-icon.png">
+    <link rel="stylesheet" href="database.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚔️</span>
+                Seven Deadly Sins Origin Guide
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html#recommended" class="nav-item">Recommended</a>
+                <a href="index.html#characters" class="nav-item">Characters</a>
+                <a href="weapons.html" class="nav-item">Weapons</a>
+                <a href="armor.html" class="nav-item">Armor</a>
+                <a href="items.html" class="nav-item">Items</a>
+                <a href="quests.html" class="nav-item">Quests</a>
+                <a href="guild.html" class="nav-item">Guild</a>
+                <a href="arena.html" class="nav-item">Arena</a>
+                <a href="codes.html" class="nav-item">Codes</a>
+                <a href="tips.html" class="nav-item">Tips</a>
+                <a href="achievements.html" class="nav-item">Achievements</a>
+                <a href="faq.html" class="nav-item">FAQ</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+                <a href="sitemap.html" class="nav-item">Sitemap</a>
+                <a href="beginner.html" class="nav-item">Beginner</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="theme-btn" id="themeBtn">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="login-btn" id="loginBtn">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search armor...">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <main class="database-page">
+        <div class="page-header">
+            <a href="index.html" class="back-link">← Back to Wiki</a>
+            <h1>🛡️ Armor & Accessories</h1>
+            <p class="page-subtitle">All armor sets and accessories in The Seven Deadly Sins: Origin</p>
+            
+            <div class="weapon-type-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="helmet">⛑️ Helmet</button>
+                <button class="filter-btn" data-filter="chest">🦺 Chest</button>
+                <button class="filter-btn" data-filter="gloves">🧤 Gloves</button>
+                <button class="filter-btn" data-filter="boots">👢 Boots</button>
+                <button class="filter-btn" data-filter="accessory">💍 Accessory</button>
+            </div>
+            
+            <div class="rarity-filters">
+                <button class="rarity-btn active" data-rarity="all">All Rarities</button>
+                <button class="rarity-btn ssr" data-rarity="ssr">SSR</button>
+                <button class="rarity-btn sr" data-rarity="sr">SR</button>
+                <button class="rarity-btn r" data-rarity="r">R</button>
+            </div>
+        </div>
+
+        <div class="weapon-showcase">
+            <h2>Featured Sets</h2>
+            <div class="featured-weapons">
+                <div class="weapon-card ssr">
+                    <img src="https://sunderarmor.com/7DSO/Live/GearSets/equippassive_armor_s.png" alt="Deadly Fragment" class="weapon-img">
+                    <div class="weapon-info">
+                        <span class="weapon-rarity ssr">SSR</span>
+                        <h3>Deadly Fragment</h3>
+                        <p class="weapon-type">Crit Build Set</p>
+                        <div class="weapon-stats">
+                            <span>⚔️ Normal Skill DMG: +10%</span>
+                            <span>💥 Crit DMG: +15%</span>
+                        </div>
+                        <p class="weapon-ability">2-Piece: Normal Skill Damage +10%<br>4-Piece: Crit Damage +15%, 6% chance for Crit Chance +50%</p>
+                    </div>
+                </div>
+                
+                <div class="weapon-card ssr">
+                    <img src="https://sunderarmor.com/7DSO/Live/GearSets/equippassive_armor_b.png" alt="Cries of Souls" class="weapon-img">
+                    <div class="weapon-info">
+                        <span class="weapon-rarity ssr">SSR</span>
+                        <h3>Cries of Souls</h3>
+                        <p class="weapon-type">Earth Set</p>
+                        <div class="weapon-stats">
+                            <span>🌍 Earth ATK: +100</span>
+                            <span>🛡️ DEF: +20%</span>
+                        </div>
+                        <p class="weapon-ability">2-Piece: Earth Attack +100<br>4-Piece: Earth Damage +20%, Perseverance bonus</p>
+                    </div>
+                </div>
+                
+                <div class="weapon-card ssr">
+                    <img src="https://sunderarmor.com/7DSO/Live/GearSets/equippassive_armor_a.png" alt="Edge of the Void" class="weapon-img">
+                    <div class="weapon-info">
+                        <span class="weapon-rarity ssr">SSR</span>
+                        <h3>Edge of the Void</h3>
+                        <p class="weapon-type">Utility Set</p>
+                        <div class="weapon-stats">
+                            <span>⚔️ Defense Shatter: +5%</span>
+                            <span>💥 All DMG: +7.5%</span>
+                        </div>
+                        <p class="weapon-ability">2-Piece: Defense Shatter +5%<br>4-Piece: All Damage +7.5%, Tag Gauge restoration</p>
+                    </div>
+                </div>
+                
+                <div class="weapon-card ssr">
+                    <img src="https://sunderarmor.com/7DSO/Live/GearSets/equippassive_armor_e.png" alt="Grudge of the Spider Nest" class="weapon-img">
+                    <div class="weapon-info">
+                        <span class="weapon-rarity ssr">SSR</span>
+                        <h3>Grudge of the Spider Nest</h3>
+                        <p class="weapon-type">Fire Set</p>
+                        <div class="weapon-stats">
+                            <span>🔥 Fire ATK: +10%</span>
+                            <span>⚔️ Normal Skill DMG: +15%</span>
+                        </div>
+                        <p class="weapon-ability">3-Piece: Fire Attack +10%<br>5-Piece: Fire Damage +25%, Buff Duration +24%</p>
+                    </div>
+                </div>
+                
+                <div class="weapon-card ssr">
+                    <img src="https://sunderarmor.com/7DSO/Live/GearSets/equippassive_armor_h.png" alt="Lavender Shadow" class="weapon-img">
+                    <div class="weapon-info">
+                        <span class="weapon-rarity ssr">SSR</span>
+                        <h3>Lavender Shadow</h3>
+                        <p class="weapon-type">Support Set</p>
+                        <div class="weapon-stats">
+                            <span>✨ Burst Efficiency: +15%</span>
+                            <span>💥 Ultimate DMG: +20%</span>
+                        </div>
+                        <p class="weapon-ability">3-Piece: Burst Efficiency +15%<br>4-Piece: Ultimate Damage +20% to allies</p>
+                    </div>
+                </div>
+                
+                <div class="weapon-card ssr">
+                    <img src="https://sunderarmor.com/7DSO/Live/GearSets/equippassive_armor_d.png" alt="The Watcher" class="weapon-img">
+                    <div class="weapon-info">
+                        <span class="weapon-rarity ssr">SSR</span>
+                        <h3>The Watcher</h3>
+                        <p class="weapon-type">Defense Set</p>
+                        <div class="weapon-stats">
+                            <span>🛡️ All DMG: +5%</span>
+                            <span>⚔️ Defense: +15%</span>
+                        </div>
+                        <p class="weapon-ability">2-Piece: All Damage +5%<br>4-Piece: Defense +15%, Bleed chance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <div class="armor-image archangel"></div>
+                    <div class="weapon-info">
+                        <span class="weapon-rarity ssr">SSR</span>
+                        <h3>Archangel's Blessing</h3>
+                        <p class="weapon-type">Accessory Set</p>
+                        <div class="weapon-stats">
+                            <span>✨ MP: +300</span>
+                            <span>🧪 RES: +25%</span>
+                        </div>
+                        <p class="weapon-ability">2-Piece: +20% Healing<br>4-Piece: Skill Cooldown -15%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weapon-list">
+            <h2>All Equipment</h2>
+            <div class="weapon-grid">
+                <div class="weapon-item" data-type="helmet" data-rarity="ssr">
+                    <span class="item-rarity ssr">SSR</span>
+                    <span class="item-icon">⛑️</span>
+                    <div class="item-details">
+                        <h4>Dragon Helm</h4>
+                        <p>Helmet • DEF: 180 • HP: +800</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="helmet" data-rarity="sr">
+                    <span class="item-rarity sr">SR</span>
+                    <span class="item-icon">⛑️</span>
+                    <div class="item-details">
+                        <h4>Steel Helmet</h4>
+                        <p>Helmet • DEF: 120 • HP: +500</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="chest" data-rarity="ssr">
+                    <span class="item-rarity ssr">SSR</span>
+                    <span class="item-icon">🦺</span>
+                    <div class="item-details">
+                        <h4>Demon Breastplate</h4>
+                        <p>Chest • DEF: 250 • HP: +1,200</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="chest" data-rarity="ssr">
+                    <span class="item-rarity ssr">SSR</span>
+                    <span class="item-icon">🦺</span>
+                    <div class="item-details">
+                        <h4>Sacred Robe</h4>
+                        <p>Chest • DEF: 150 • MP: +400</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="chest" data-rarity="sr">
+                    <span class="item-rarity sr">SR</span>
+                    <span class="item-icon">🦺</span>
+                    <div class="item-details">
+                        <h4>Chainmail Vest</h4>
+                        <p>Chest • DEF: 180 • HP: +800</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="gloves" data-rarity="ssr">
+                    <span class="item-rarity ssr">SSR</span>
+                    <span class="item-icon">🧤</span>
+                    <div class="item-details">
+                        <h4>Fist of Fury</h4>
+                        <p>Gloves • ATK: +80 • CRIT: +8%</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="gloves" data-rarity="sr">
+                    <span class="item-rarity sr">SR</span>
+                    <span class="item-icon">🧤</span>
+                    <div class="item-details">
+                        <h4>Leather Gloves</h4>
+                        <p>Gloves • ATK: +50 • ATK: +5%</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="boots" data-rarity="ssr">
+                    <span class="item-rarity ssr">SSR</span>
+                    <span class="item-icon">👢</span>
+                    <div class="item-details">
+                        <h4>Wind Walker Boots</h4>
+                        <p>Boots • SPD: +15 • EVASION: +10%</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="boots" data-rarity="sr">
+                    <span class="item-rarity sr">SR</span>
+                    <span class="item-icon">👢</span>
+                    <div class="item-details">
+                        <h4>Iron Greaves</h4>
+                        <p>Boots • DEF: +60 • HP: +300</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="accessory" data-rarity="ssr">
+                    <span class="item-rarity ssr">SSR</span>
+                    <span class="item-icon">💍</span>
+                    <div class="item-details">
+                        <h4>Ring of Eternity</h4>
+                        <p>Accessory • HP: +1,500 • DEF: +10%</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="accessory" data-rarity="ssr">
+                    <span class="item-rarity ssr">SSR</span>
+                    <span class="item-icon">💎</span>
+                    <div class="item-details">
+                        <h4>Amulet of Power</h4>
+                        <p>Accessory • ATK: +200 • CRIT: +12%</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="accessory" data-rarity="sr">
+                    <span class="item-rarity sr">SR</span>
+                    <span class="item-icon">💍</span>
+                    <div class="item-details">
+                        <h4>Silver Ring</h4>
+                        <p>Accessory • MP: +200 • MP Regen: +5%</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="helmet" data-rarity="r">
+                    <span class="item-rarity r">R</span>
+                    <span class="item-icon">⛑️</span>
+                    <div class="item-details">
+                        <h4>Cloth Headband</h4>
+                        <p>Helmet • DEF: 45 • HP: +150</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="chest" data-rarity="r">
+                    <span class="item-rarity r">R</span>
+                    <span class="item-icon">👕</span>
+                    <div class="item-details">
+                        <h4>Traveler's Tunic</h4>
+                        <p>Chest • DEF: 80 • HP: +300</p>
+                    </div>
+                </div>
+                <div class="weapon-item" data-type="boots" data-rarity="r">
+                    <span class="item-rarity r">R</span>
+                    <span class="item-icon">👢</span>
+                    <div class="item-details">
+                        <h4>Leather Shoes</h4>
+                        <p>Boots • SPD: +5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span class="logo-icon">⚔️</span> Seven Deadly Sins Origin Guide</div>
+            <p>Your ultimate gaming guide resource.</p>
+            <nav class="footer-nav">
+                <a href="faq.html">FAQ</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="copyright">&copy; 2026 Seven Deadly Sins Origin Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="database.js"></script>
+</body>
+</html>

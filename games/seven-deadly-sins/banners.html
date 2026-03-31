@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banners | Seven Deadly Sins Origin Guide</title>
+    <meta name="description" content="Current banners and gacha information for Seven Deadly Sins: Origin. Featured characters and weapons.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://sunderarmor.com/GENSHIN/GameIcons/7dsorigin-game-icon.png">
+    <link rel="stylesheet" href="database.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚔️</span>
+                Seven Deadly Sins Origin Guide
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html#recommended" class="nav-item">Recommended</a>
+                <a href="index.html#characters" class="nav-item">Characters</a>
+                <a href="weapons.html" class="nav-item">Weapons</a>
+                <a href="armor.html" class="nav-item">Armor</a>
+                <a href="items.html" class="nav-item">Items</a>
+                <a href="quests.html" class="nav-item">Quests</a>
+                <a href="guild.html" class="nav-item">Guild</a>
+                <a href="arena.html" class="nav-item">Arena</a>
+                <a href="codes.html" class="nav-item">Codes</a>
+                <a href="tips.html" class="nav-item">Tips</a>
+                <a href="achievements.html" class="nav-item">Achievements</a>
+                <a href="faq.html" class="nav-item">FAQ</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+                <a href="sitemap.html" class="nav-item">Sitemap</a>
+                <a href="beginner.html" class="nav-item">Beginner</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="theme-btn" id="themeBtn">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="login-btn" id="loginBtn">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search banners...">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <main class="database-page">
+        <div class="page-header">
+            <a href="index.html" class="back-link">← Back to Wiki</a>
+            <h1>🎰 Banner Guide</h1>
+            <p class="page-subtitle">Current, upcoming, and permanent banners</p>
+            
+            <div class="weapon-type-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="character">👤 Character</button>
+                <button class="filter-btn" data-filter="weapon">⚔️ Weapon</button>
+                <button class="filter-btn" data-filter="limited">⏰ Limited</button>
+            </div>
+        </div>
+
+        <div class="banner-showcase">
+            <h2>Current Banners</h2>
+            <div class="banner-grid">
+                <div class="banner-detail-card">
+                    <div class="banner-hero">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_meliodas_001.png" alt="Meliodas" class="banner-card">
+                        <span class="banner-status current">Active</span>
+                    </div>
+                    <div class="banner-content">
+                        <h3>Meliodas Pick Up Banner</h3>
+                        <p class="banner-dates">📅 March 16 - March 31, 2026</p>
+                        <div class="banner-rateup">
+                            <p class="rateup-label">Rate Up Characters</p>
+                            <div class="rateup-chars">
+                                <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_meliodas_001.png" alt="Meliodas" class="rateup-img">
+                                <span class="rateup-char">Meliodas</span>
+                            </div>
+                        </div>
+                        <div class="banner-pity">
+                            <span class="pity-label">Pity</span>
+                            <span class="pity-value">120 Pulls</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="banner-detail-card">
+                    <div class="banner-hero">
+                        <img src="https://sunderarmor.com/7DSO/weapon/short_sword1h_0501.png" alt="Gluttonous Soul Longsword" class="banner-card">
+                        <span class="banner-status current">Active</span>
+                    </div>
+                    <div class="banner-content">
+                        <h3>Weapon Banner</h3>
+                        <p class="banner-dates">📅 March 16 - April 15, 2026</p>
+                        <div class="banner-rateup">
+                            <p class="rateup-label">Rate Up Weapons</p>
+                            <div class="rateup-chars">
+                                <img src="https://sunderarmor.com/7DSO/weapon/short_sword1h_0501.png" alt="Weapon" class="rateup-img">
+                                <span class="rateup-char">SSR Weapons</span>
+                            </div>
+                        </div>
+                        <div class="banner-pity">
+                            <span class="pity-label">Pity</span>
+                            <span class="pity-value">80 Pulls</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-showcase">
+            <h2>Upcoming Banners</h2>
+            <div class="banner-grid">
+                <div class="banner-detail-card">
+                    <div class="banner-hero">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_jericho_001.png" alt="Jericho" class="banner-card">
+                        <span class="banner-status upcoming">Coming Soon</span>
+                    </div>
+                    <div class="banner-content">
+                        <h3>Jericho Banner</h3>
+                        <p class="banner-dates">📅 Expected: Early April 2026</p>
+                        <div class="banner-rateup">
+                            <p class="rateup-label">Rate Up Characters</p>
+                            <div class="rateup-chars">
+                                <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_jericho_001.png" alt="Jericho" class="rateup-img">
+                                <span class="rateup-char">Jericho</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="banner-detail-card">
+                    <div class="banner-hero">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_king_001.png" alt="King" class="banner-card">
+                        <span class="banner-status upcoming">Coming Soon</span>
+                    </div>
+                    <div class="banner-content">
+                        <h3>King Banner</h3>
+                        <p class="banner-dates">📅 Expected: Mid April 2026</p>
+                        <div class="banner-rateup">
+                            <p class="rateup-label">Rate Up Characters</p>
+                            <div class="rateup-chars">
+                                <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_king_001.png" alt="King" class="rateup-img">
+                                <span class="rateup-char">King</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-showcase">
+            <h2>Permanent Banners</h2>
+            <div class="banner-grid">
+                <div class="banner-detail-card">
+                    <div class="banner-hero">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_diane_001.png" alt="Diane" class="banner-card">
+                        <span class="banner-status" style="background: #5f6368; color: #fff;">Permanent</span>
+                    </div>
+                    <div class="banner-content">
+                        <h3>New Encounters</h3>
+                        <p class="banner-dates">📅 Always Available</p>
+                        <div class="banner-rateup">
+                            <p class="rateup-label">Features</p>
+                            <div class="rateup-chars">
+                                <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_diane_001.png" alt="Diane" class="rateup-img">
+                                <span class="rateup-char" style="background: #2196f3;">Standard Pool</span>
+                            </div>
+                        </div>
+                        <div class="banner-pity">
+                            <span class="pity-label">Pity</span>
+                            <span class="pity-value">200 Pulls</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="banner-detail-card">
+                    <div class="banner-hero">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_gil_thunder_001.png" alt="Gil Thunder" class="banner-card">
+                        <span class="banner-status" style="background: #5f6368; color: #fff;">Permanent</span>
+                    </div>
+                    <div class="banner-content">
+                        <h3>The Call of the Stars</h3>
+                        <p class="banner-dates">📅 Always Available</p>
+                        <div class="banner-rateup">
+                            <p class="rateup-label">Features</p>
+                            <div class="rateup-chars">
+                                <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_gil_thunder_001.png" alt="Gil Thunder" class="rateup-img">
+                                <span class="rateup-char" style="background: #9c27b0;">All SSR Characters</span>
+                            </div>
+                        </div>
+                        <div class="banner-pity">
+                            <span class="pity-label">Pity</span>
+                            <span class="pity-value">300 Pulls</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tier-explanation" style="margin-top: 2rem;">
+            <h2>Banner Tips</h2>
+            <div class="explanation-grid">
+                <div class="explanation-item">
+                    <span class="tier-badge s" style="background: #34a853;">💰</span>
+                    <div>
+                        <h4>Save for Rate Up</h4>
+                        <p>Limited banners have higher SSR rates for featured characters.</p>
+                    </div>
+                </div>
+                <div class="explanation-item">
+                    <span class="tier-badge a" style="background: #fbbc04;">🎯</span>
+                    <div>
+                        <h4>Use Pity Wisely</h4>
+                        <p>Don't waste pulls on permanent banners - wait for limited ones.</p>
+                    </div>
+                </div>
+                <div class="explanation-item">
+                    <span class="tier-badge b" style="background: #e91e63;">🔄</span>
+                    <div>
+                        <h4>Reroll Early</h4>
+                        <p>Create new accounts to get better starting characters.</p>
+                    </div>
+                </div>
+                <div class="explanation-item">
+                    <span class="tier-badge c" style="background: #2196f3;">📊</span>
+                    <div>
+                        <h4>Check Meta</h4>
+                        <p>Look at tier lists before spending your gems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guide-section" style="margin-top: 2rem;">
+            <h2>💡 Banner Tips</h2>
+            <div class="tips-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+                <div class="tip-card" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem;">
+                    <h4 style="color: #4caf50; margin-bottom: 0.5rem;">✓ Do</h4>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); font-size: 0.9rem; line-height: 1.8;">
+                        <li>Save gems for rate-up banners</li>
+                        <li>Use the pity system wisely</li>
+                        <li>Pull during celebration events</li>
+                        <li>Check character reviews first</li>
+                    </ul>
+                </div>
+                <div class="tip-card" style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem;">
+                    <h4 style="color: #f44336; margin-bottom: 0.5rem;">✗ Don't</h4>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: var(--text-light); font-size: 0.9rem; line-height: 1.8;">
+                        <li>Waste gems on day one banners</li>
+                        <li>Skip limited characters</li>
+                        <li>Pull without saving for pity</li>
+                        <li>Ignore weapon banners</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span class="logo-icon">⚔️</span> Seven Deadly Sins Origin Guide</div>
+            <p>Your ultimate gaming guide resource.</p>
+            <nav class="footer-nav">
+                <a href="faq.html">FAQ</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="copyright">&copy; 2026 Seven Deadly Sins Origin Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

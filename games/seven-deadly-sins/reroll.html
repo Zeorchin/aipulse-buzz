@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reroll tier list for Seven Deadly Sins: Origin. Best characters to aim for when rerolling - Jericho, Meliodas, King, Elaine.">
+    <title>Reroll Tier List | Seven Deadly Sins Origin Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reroll.css">
+    <link rel="icon" href="https://sunderarmor.com/GENSHIN/GameIcons/7dsorigin-game-icon.png">
+    <style>
+        /* Hide ALL images first */
+        img { display: none !important; }
+        
+        /* ONLY show images in these specific containers */
+        .reroll-page .character-card img,
+        .reroll-page .char-header img {
+            display: block !important;
+        }
+        
+        /* Hide ALL banner-related elements */
+        .banner-img, .banner-card, .banner-info, .banner-image, 
+        img[alt="Pets"], img[alt="Events"], img[alt="Quests"],
+        img[alt="Characters"], img[alt="Weapons"], img[alt="Armor"], img[alt="Bosses"],
+        img[src*="Pet"], img[src*="Skoll"],
+        img[style*="width:140px"], img[style*="left:10px"] {
+            display: none !important;
+            visibility: hidden !important;
+            width: 0 !important;
+            height: 0 !important;
+            position: absolute !important;
+            left: -9999px !important;
+            opacity: 0 !important;
+        }
+    </style>
+    <script>
+        // Run BEFORE page renders
+        document.addEventListener('DOMContentLoaded', function() {
+            var allImg = document.querySelectorAll('img');
+            allImg.forEach(function(img) {
+                var src = img.src || '';
+                var alt = img.alt || '';
+                var style = img.getAttribute('style') || '';
+                
+                // Block these patterns
+                if (src.indexOf('Pet') !== -1 || 
+                    src.indexOf('Skoll') !== -1 ||
+                    src.indexOf('slot_gil_thunder') !== -1 ||
+                    src.indexOf('banner-img') !== -1 ||
+                    style.indexOf('left:10px') !== -1 ||
+                    style.indexOf('width:140px') !== -1 ||
+                    alt === 'Pets' || alt === 'Events' || alt === 'Quests' ||
+                    alt === 'Characters' || alt === 'Weapons' || alt === 'Armor' || alt === 'Bosses') {
+                    img.style.display = 'none';
+                    img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚔️</span>
+                Seven Deadly Sins Origin Guide
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="tier-list.html" class="nav-item">Characters</a>
+                <a href="weapons.html" class="nav-item">Weapons</a>
+                <a href="beginner.html" class="nav-item">Beginner</a>
+                <a href="codes.html" class="nav-item">Codes</a>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-btn" id="themeBtn">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="reroll-page">
+        <div class="page-header">
+            <a href="index.html" class="back-link">← Back to Wiki</a>
+            <h1>Reroll Tier List</h1>
+            <p class="page-subtitle">Best characters to aim for when rerolling in Seven Deadly Sins: Origin</p>
+        </div>
+
+        <nav class="article-nav">
+            <ul>
+                <li><a href="#ss-tier">SS Tier</a></li>
+                <li><a href="#s-tier">S Tier</a></li>
+                <li><a href="#a-tier">A Tier</a></li>
+                <li><a href="#b-tier">B Tier</a></li>
+                <li><a href="#c-tier">C Tier</a></li>
+                <li><a href="#d-tier">D Tier</a></li>
+                <li><a href="#criteria">Evaluation</a></li>
+                <li><a href="#should-reroll">Should You Reroll?</a></li>
+            </ul>
+        </nav>
+
+        <div class="highlight-box" id="quick-ref">
+            <h3>Top Reroll Picks: Meliodas & Jericho</h3>
+            <p><strong>Meliodas</strong> is a high-DPS Darkness Attacker with strong Burst damage. As a Darkness Element unit, he maintains consistent output.</p>
+            <p><strong>Jericho</strong> specializes in Dual Swords, providing efficient Burst Gauge generation and high sustained damage.</p>
+            <h3>King and Elaine Are Highly Versatile</h3>
+            <p>Both can flex into multiple roles: Attacker, Healer, and Support depending on weapon equipped.</p>
+            <h3>Exploration Helpers</h3>
+            <p><strong>Drake</strong> reveals nearby chests | <strong>Mannie</strong> reveals Star Fragments | <strong>Hendrickson/Dreyfus</strong> improve gathering</p>
+        </div>
+
+        <div class="tier-section ss-tier" id="ss-tier">
+            <div class="tier-header">
+                <span class="tier-rank">SS</span>
+                <h2>Top Priority - Must Get</h2>
+            </div>
+            
+            <div class="character-card">
+                <div class="char-header">
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_jericho_001.png" alt="Jericho" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
+                    <div class="char-info">
+                        <h3>Jericho</h3>
+                        <span class="char-element cold">❄️ Cold</span>
+                    </div>
+                </div>
+                <div class="weapon-builds">
+                    <p><strong>Dual Swords / Cold</strong> - Supporter that applies Frozen Saber</p>
+                    <p><strong>Lance / Cold</strong> - Tank that grants Barrier</p>
+                    <p><strong>Rapier / Cold</strong> - Debuffer</p>
+                </div>
+            </div>
+            
+            <div class="character-card">
+                <div class="char-header">
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_meliodas_001.png" alt="Meliodas" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
+                    <div class="char-info">
+                        <h3>Meliodas</h3>
+                        <span class="char-element darkness">🌑 Darkness</span>
+                    </div>
+                </div>
+                <div class="weapon-builds">
+                    <p><strong>Longsword / Darkness</strong> - High DPS during Burst</p>
+                    <p><strong>Axe / Darkness</strong> - DPS that deals Demon Energy</p>
+                    <p><strong>Dual Swords / Darkness</strong> - True potential during Burst</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tier-section s-tier" id="s-tier">
+            <div class="tier-header">
+                <span class="tier-rank">S</span>
+                <h2>High Priority - Very Strong</h2>
+            </div>
+            
+            <div class="character-card">
+                <div class="char-header">
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_elaine_001.png" alt="Elaine" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
+                    <div class="char-info">
+                        <h3>Elaine</h3>
+                        <span class="char-element wind">🌬️ Wind</span>
+                    </div>
+                </div>
+                <p><strong>Wand / Wind</strong> - DPS that increases Crit Chance during Burst</p>
+                <p><strong>Staff / Holy</strong> - Supporter that speeds up Burst</p>
+            </div>
+            
+            <div class="character-card">
+                <div class="char-header">
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_king_001.png" alt="King" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
+                    <div class="char-info">
+                        <h3>King</h3>
+                        <span class="char-element holy">☀️ Holy</span>
+                    </div>
+                </div>
+                <p><strong>Staff / Holy</strong> - Massive damage by stacking buffs</p>
+                <p><strong>Grimoire</strong> - Healer with Barrier and healing</p>
+            </div>
+            
+            <div class="character-card">
+                <div class="char-header">
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_diane_001.png" alt="Diane" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
+                    <div class="char-info">
+                        <h3>Diane</h3>
+                        <span class="char-element earth">🌍 Earth</span>
+                    </div>
+                </div>
+                <p><strong>Axe / Earth</strong> - Increased damage during Earth Burst</p>
+                <p><strong>Gauntlets</strong> - Tank that increases Defense</p>
+            </div>
+            
+            <div class="character-card">
+                <div class="char-header">
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_drake_001.png" alt="Drake" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
+                    <div class="char-info">
+                        <h3>Drake</h3>
+                        <span class="char-element lightning">⚡ Lightning</span>
+                    </div>
+                </div>
+                <p><strong>Greatsword / Lightning</strong> - DPS with self-buffs</p>
+                <p style="color:var(--accent);">Adventure Skill: Reveals nearby chests!</p>
+            </div>
+            
+            <div class="character-card">
+                <div class="char-header">
+                    <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_manny_001.png" alt="Mannie" style="width:80px;height:80px;border-radius:12px;object-fit:cover;">
+                    <div class="char-info">
+                        <h3>Mannie</h3>
+                        <span class="char-element holy">☀️ Holy</span>
+                    </div>
+                </div>
+                <p><strong>Staff / Holy</strong> - Buffs Ultimate and Crit Damage</p>
+                <p style="color:var(--accent);">Adventure Skill: Reveals nearby Star Fragments!</p>
+            </div>
+        </div>
+
+        <div class="tier-section a-tier" id="a-tier">
+            <div class="tier-header">
+                <span class="tier-rank">A</span>
+                <h2>Good Choices</h2>
+            </div>
+            
+            <div class="character-card">
+                <h3>Dreyfus</h3>
+                <p>Rapier / Physical - Enhances DoT</p>
+                <p style="color:var(--accent);">Adventure Skill: Increases ore collection</p>
+            </div>
+            
+            <div class="character-card">
+                <h3>Hendrickson</h3>
+                <p>Longsword / Holy - Healer with healing area</p>
+                <p style="color:var(--accent);">Adventure Skill: Increases gathering efficiency</p>
+            </div>
+        </div>
+
+        <div class="tier-section b-tier" id="b-tier">
+            <div class="tier-header">
+                <span class="tier-rank">B</span>
+                <h2>Average - Acceptable</h2>
+            </div>
+            <div class="character-card">
+                <h3>Tristan, Tioreh, Gilthunder, Guila</h3>
+                <p>Obtainable through tutorial - lower priority for reroll</p>
+            </div>
+        </div>
+
+        <div class="tier-section c-tier" id="c-tier">
+            <div class="tier-header">
+                <span class="tier-rank">C</span>
+                <h2>Low Priority</h2>
+            </div>
+            <div class="character-card">
+                <h3>Howzer, Bug, Slater</h3>
+            </div>
+        </div>
+
+        <div class="tier-section d-tier" id="d-tier">
+            <div class="tier-header">
+                <span class="tier-rank">D</span>
+                <h2>Avoid</h2>
+            </div>
+            <div class="character-card">
+                <h3>Dredrin, Griamore</h3>
+            </div>
+        </div>
+
+        <div class="content-section" id="criteria">
+            <h2>Evaluation Criteria</h2>
+            <p>Focus on early-game convenience, synergy with tutorial heroes, and boss performance.</p>
+            <p>Adventure Skills are highly valued - Drake, Mannie, Hendrickson, Dreyfus help with exploration.</p>
+            <p>Free characters (Tristan, Tioreh, Slater, Howzer) get lower priority since they're guaranteed.</p>
+        </div>
+
+        <div class="content-section" id="should-reroll">
+            <h2>Should You Reroll?</h2>
+            <p><strong>Mobile:</strong> Easiest - guest account allows quick rerolls. 57 pulls per attempt, ~15 min each.</p>
+            <p><strong>PC/PS5:</strong> Requires multiple accounts - more time-consuming.</p>
+        </div>
+
+        <div class="content-section" id="when-stop">
+            <h2>When to Stop Rerolling</h2>
+            <p><strong>Aim for Jericho or Meliodas</strong> - both fit any party composition.</p>
+            <p>You get 300+ free pulls by playing. Featured character guaranteed after 120 pulls, SSR after 80.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Seven Deadly Sins Origin Guide. Not affiliated with Netmarble.</p>
+    </footer>
+</body>
+</html>

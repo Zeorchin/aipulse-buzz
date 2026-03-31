@@ -1,0 +1,220 @@
+.reroll-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: visible;
+}
+
+.page-header {
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+.highlight-box,
+.tier-section,
+.content-section {
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+.article-nav {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    width: 180px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    margin: 0;
+}
+
+.article-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+}
+
+.article-nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.article-nav a:hover {
+    color: var(--accent);
+    background: var(--primary-light);
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, var(--accent) 0%, #6a11cb 100%);
+    border-radius: 16px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.highlight-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.highlight-box h3:first-child {
+    margin-top: 0;
+}
+
+.highlight-box p {
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+.tier-section {
+    margin-bottom: 40px;
+}
+
+.tier-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tier-rank {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.ss-tier .tier-rank {
+    background: linear-gradient(135deg, #ffd700, #ff8c00);
+}
+
+.s-tier .tier-rank {
+    background: linear-gradient(135deg, #ff4757, #ff6b81);
+}
+
+.a-tier .tier-rank {
+    background: linear-gradient(135deg, #2ed573, #7bed9f);
+}
+
+.b-tier .tier-rank {
+    background: linear-gradient(135deg, #ffa502, #ffbe76);
+}
+
+.c-tier .tier-rank {
+    background: linear-gradient(135deg, #747d8c, #a4b0be);
+}
+
+.d-tier .tier-rank {
+    background: linear-gradient(135deg, #57606f, #2f3542);
+}
+
+.tier-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+}
+
+.character-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.char-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.char-info h3 {
+    font-size: 1.4rem;
+    margin: 0 0 8px 0;
+    color: var(--text-primary);
+}
+
+.char-element {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.char-element.fire { background: rgba(255,69,0,0.15); color: #ff4500; }
+.char-element.water { background: rgba(30,144,255,0.15); color: #1e90ff; }
+.char-element.wind { background: rgba(124,252,0,0.15); color: #228b22; }
+.char-element.earth { background: rgba(139,69,19,0.15); color: #8b4513; }
+.char-element.holy { background: rgba(255,215,0,0.15); color: #daa520; }
+.char-element.darkness { background: rgba(75,0,130,0.15); color: #4b0082; }
+.char-element.cold { background: rgba(135,206,250,0.15); color: #87ceeb; }
+.char-element.lightning { background: rgba(255,215,0,0.15); color: #ffd700; }
+
+.weapon-builds p {
+    margin: 8px 0;
+    color: var(--text-secondary);
+}
+
+.content-section {
+    margin-bottom: 40px;
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.content-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .article-nav {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .page-header,
+    .highlight-box,
+    .tier-section,
+    .content-section {
+        margin-left: 0;
+    }
+    
+    .reroll-page .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .char-header {
+        flex-wrap: wrap;
+    }
+}

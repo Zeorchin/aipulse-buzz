@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All characters ranked by power in Seven Deadly Sins: Origin. S-tier, A-tier, B-tier, C-tier lists with element filters.">
+    <title>Character Tier List | Seven Deadly Sins Origin Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://sunderarmor.com/GENSHIN/GameIcons/7dsorigin-game-icon.png">
+    <link rel="stylesheet" href="tier-list.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚔️</span>
+                Seven Deadly Sins Origin Guide
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html#recommended" class="nav-item">Recommended</a>
+                <a href="index.html#characters" class="nav-item">Characters</a>
+                <a href="index.html#weapons" class="nav-item">Weapons</a>
+                <a href="armor.html" class="nav-item">Armor</a>
+                <a href="items.html" class="nav-item">Items</a>
+                <a href="quests.html" class="nav-item">Quests</a>
+                <a href="guild.html" class="nav-item">Guild</a>
+                <a href="arena.html" class="nav-item">Arena</a>
+                <a href="codes.html" class="nav-item">Codes</a>
+                <a href="tips.html" class="nav-item">Tips</a>
+                <a href="achievements.html" class="nav-item">Achievements</a>
+                <a href="faq.html" class="nav-item">FAQ</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+                <a href="sitemap.html" class="nav-item">Sitemap</a>
+                <a href="beginner.html" class="nav-item">Beginner</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="theme-btn" id="themeBtn">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="login-btn" id="loginBtn">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <main class="tier-list-page">
+        <div class="page-header">
+            <a href="index.html" class="back-link">← Back to Wiki</a>
+            <h1>Character Tier List</h1>
+            <p class="page-subtitle">All characters ranked by overall power and viability in current meta</p>
+            
+            <div class="tier-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ssr">SSR Only</button>
+                <button class="filter-btn" data-filter="fire">🔥 Fire</button>
+                <button class="filter-btn" data-filter="ice">❄️ Ice</button>
+                <button class="filter-btn" data-filter="lightning">⚡ Lightning</button>
+                <button class="filter-btn" data-filter="wind">💨 Wind</button>
+                <button class="filter-btn" data-filter="earth">🌍 Earth</button>
+                <button class="filter-btn" data-filter="holy">✨ Holy</button>
+                <button class="filter-btn" data-filter="dark">🌙 Dark</button>
+            </div>
+        </div>
+
+        <div class="tier-list-container">
+            <div class="tier-row s-tier">
+                <div class="tier-label">
+                    <span class="tier-rank">S</span>
+                    <span class="tier-desc">Meta Defining</span>
+                </div>
+                <div class="tier-chars">
+                    <a href="character.html?char=meliodas" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_meliodas_001.png" alt="Meliodas" class="char-img">
+                        <span class="char-name">Meliodas</span>
+                        <span class="char-element fire">🔥</span>
+                    </a>
+                    <a href="character.html?char=king" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_king_001.png" alt="King" class="char-img">
+                        <span class="char-name">King</span>
+                        <span class="char-element wind">💨</span>
+                    </a>
+                    <a href="character.html?char=diane" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_diane_001.png" alt="Diane" class="char-img">
+                        <span class="char-name">Diane</span>
+                        <span class="char-element earth">🌍</span>
+                    </a>
+                    <a href="character.html?char=jericho" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_jericho_001.png" alt="Jericho" class="char-img">
+                        <span class="char-name">Jericho</span>
+                        <span class="char-element ice">❄️</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tier-row a-tier">
+                <div class="tier-label">
+                    <span class="tier-rank">A</span>
+                    <span class="tier-desc">Strong Picks</span>
+                </div>
+                <div class="tier-chars">
+                    <a href="character.html?char=gilthunder" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_gil_thunder_001.png" alt="Gil Thunder" class="char-img">
+                        <span class="char-name">Gil Thunder</span>
+                        <span class="char-element lightning">⚡</span>
+                    </a>
+                    <a href="character.html?char=howzer" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_howzer_001.png" alt="Howzer" class="char-img">
+                        <span class="char-name">Howzer</span>
+                        <span class="char-element wind">💨</span>
+                    </a>
+                    <a href="character.html?char=guila" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_guila_001.png" alt="Guila" class="char-img">
+                        <span class="char-name">Guila</span>
+                        <span class="char-element fire">🔥</span>
+                    </a>
+                    <a href="character.html?char=drake" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_drake_001.png" alt="Drake" class="char-img">
+                        <span class="char-name">Drake</span>
+                        <span class="char-element lightning">⚡</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tier-row b-tier">
+                <div class="tier-label">
+                    <span class="tier-rank">B</span>
+                    <span class="tier-desc">Viable</span>
+                </div>
+                <div class="tier-chars">
+                    <a href="character.html?char=slader" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_slader_001.png" alt="Slader" class="char-img">
+                        <span class="char-name">Slader</span>
+                        <span class="char-element physical">⚔️</span>
+                    </a>
+                    <a href="character.html?char=tristan" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_tristan_001.png" alt="Tristan" class="char-img">
+                        <span class="char-name">Tristan</span>
+                        <span class="char-element earth">🌍</span>
+                    </a>
+                    <a href="character.html?char=tioreh" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_tioreh_001.png" alt="Tioreh" class="char-img">
+                        <span class="char-name">Tioreh</span>
+                        <span class="char-element wind">💨</span>
+                    </a>
+                    <a href="character.html?char=elaine" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_elaine_001.png" alt="Elaine" class="char-img">
+                        <span class="char-name">Elaine</span>
+                        <span class="char-element wind">💨</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tier-row c-tier">
+                <div class="tier-label">
+                    <span class="tier-rank">C</span>
+                    <span class="tier-desc">Situational</span>
+                </div>
+                <div class="tier-chars">
+                    <a href="character.html?char=manny" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_manny_001.png" alt="Manny" class="char-img">
+                        <span class="char-name">Manny</span>
+                        <span class="char-element holy">✨</span>
+                    </a>
+                    <a href="character.html?char=griamore" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_griamore_001.png" alt="Griamore" class="char-img">
+                        <span class="char-name">Griamore</span>
+                        <span class="char-element earth">🌍</span>
+                    </a>
+                    <a href="character.html?char=hendrickson" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_hendrickson_001.png" alt="Hendrickson" class="char-img">
+                        <span class="char-name">Hendrickson</span>
+                        <span class="char-element holy">✨</span>
+                    </a>
+                    <a href="character.html?char=dreyfus" class="tier-char">
+                        <img src="https://sunderarmor.com/7DSO/Live/portraits/slot_dreyfus_001.png" alt="Dreyfus" class="char-img">
+                        <span class="char-name">Dreyfus</span>
+                        <span class="char-element physical">⚔️</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tier-explanation">
+            <h2>How Tier List Works</h2>
+            <div class="explanation-grid">
+                <div class="explanation-item">
+                    <span class="tier-badge s">S</span>
+                    <div>
+                        <h4>S Tier - Meta Defining</h4>
+                        <p>Best characters in the current meta. Essential for competitive play and high-level content.</p>
+                    </div>
+                </div>
+                <div class="explanation-item">
+                    <span class="tier-badge a">A</span>
+                    <div>
+                        <h4>A Tier - Strong Picks</h4>
+                        <p>Excellent characters that can fit into most team compositions. Very reliable.</p>
+                    </div>
+                </div>
+                <div class="explanation-item">
+                    <span class="tier-badge b">B</span>
+                    <div>
+                        <h4>B Tier - Viable</h4>
+                        <p>Good characters that work well in specific teams or against certain content.</p>
+                    </div>
+                </div>
+                <div class="explanation-item">
+                    <span class="tier-badge c">C</span>
+                    <div>
+                        <h4>C Tier - Situational</h4>
+                        <p> niche use cases or early-game. May be replaced by better options later.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="criteria-section">
+            <h2>Rating Criteria</h2>
+            <div class="criteria-list">
+                <div class="criteria-item">
+                    <span class="criteria-icon">⚔️</span>
+                    <div>
+                        <h4>Damage Output (25%)</h4>
+                        <p>Character's raw damage potential and DPS capabilities.</p>
+                    </div>
+                </div>
+                <div class="criteria-item">
+                    <span class="criteria-icon">💪</span>
+                    <div>
+                        <h4>Utility (20%)</h4>
+                        <p>Support abilities, buffs, debuffs, and crowd control.</p>
+                    </div>
+                </div>
+                <div class="criteria-item">
+                    <span class="criteria-icon">🛡️</span>
+                    <div>
+                        <h4>Survivability (20%)</h4>
+                        <p>HP, defense, shields, and self-healing capabilities.</p>
+                    </div>
+                </div>
+                <div class="criteria-item">
+                    <span class="criteria-icon">⚡</span>
+                    <div>
+                        <h4>Speed & Scaling (20%)</h4>
+                        <p>How well the character scales with investment and battle pace.</p>
+                    </div>
+                </div>
+                <div class="criteria-item">
+                    <span class="criteria-icon">🎯</span>
+                    <div>
+                        <h4>Versatility (15%)</h4>
+                        <p>Performance across different game modes and team compositions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="update-notice">
+            <span class="notice-icon">📢</span>
+            <div>
+                <strong>Last Updated:</strong> March 26, 2026
+                <br>
+                <small>Tier list based on current meta and may change with game updates.</small>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">⚔️</span>
+                <span>Seven Deadly Sins Origin Guide</span>
+            </div>
+            <p>Your ultimate gaming guide resource. Not affiliated with Netmarble.</p>
+            <nav class="footer-nav">
+                <a href="faq.html">FAQ</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="copyright">&copy; 2026 Seven Deadly Sins Origin Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tier-list.js"></script>
+</body>
+</html>

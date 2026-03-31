@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips & Tricks | Seven Deadly Sins Origin Guide</title>
+    <meta name="description" content="Tips and tricks for Seven Deadly Sins: Origin. Pro strategies, hidden mechanics, and gameplay tips.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://sunderarmor.com/GENSHIN/GameIcons/7dsorigin-game-icon.png">
+    <link rel="stylesheet" href="database.css">
+    <style>
+        .tips-category {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .tips-category h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .tip-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--secondary);
+            border-radius: 10px;
+            margin-bottom: 0.75rem;
+            transition: all 0.2s;
+        }
+        .tip-item:last-child {
+            margin-bottom: 0;
+        }
+        .tip-item:hover {
+            transform: translateX(4px);
+        }
+        .tip-number {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 0.85rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .tip-content h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+        }
+        .tip-content p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin: 0;
+            line-height: 1.5;
+        }
+        .do-dont {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .do-column, .dont-column {
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .do-column {
+            background: rgba(76, 175, 80, 0.1);
+            border: 1px solid #4caf50;
+        }
+        .dont-column {
+            background: rgba(244, 67, 54, 0.1);
+            border: 1px solid #f44336;
+        }
+        .do-column h4 { color: #4caf50; }
+        .dont-column h4 { color: #f44336; }
+        .do-column ul, .dont-column ul {
+            margin: 0.5rem 0 0;
+            padding-left: 1.25rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+        .do-column li { margin-bottom: 0.35rem; }
+        .dont-column li { margin-bottom: 0.35rem; }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚔️</span>
+                Seven Deadly Sins Origin Guide
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html#recommended" class="nav-item">Recommended</a>
+                <a href="weapons.html" class="nav-item">Weapons</a>
+                <a href="armor.html" class="nav-item">Armor</a>
+                <a href="items.html" class="nav-item">Items</a>
+                <a href="tips.html" class="nav-item">Tips</a>
+                <a href="achievements.html" class="nav-item">Achievements</a>
+                <a href="faq.html" class="nav-item">FAQ</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+                <a href="sitemap.html" class="nav-item">Sitemap</a>
+                <a href="beginner.html" class="nav-item">Beginner</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="theme-btn" id="themeBtn">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="login-btn" id="loginBtn">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search tips...">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <main class="database-page">
+        <div class="page-header">
+            <a href="index.html" class="back-link">← Back to Wiki</a>
+            <h1>💡 Tips & Tricks</h1>
+            <p class="page-subtitle">Expert advice to maximize your progress</p>
+        </div>
+
+        <div class="tips-category">
+            <h2>⚔️ Combat Tips</h2>
+            <div class="tip-item">
+                <span class="tip-number">1</span>
+                <div class="tip-content">
+                    <h4>Speed is Everything</h4>
+                    <p>Always prioritize speed on your DPS units. Going first means you can eliminate enemies before they act.</p>
+                </div>
+            </div>
+            <div class="tip-item">
+                <span class="tip-number">2</span>
+                <div class="tip-content">
+                    <h4>Elemental Advantage</h4>
+                    <p>Fire beats Ice, Ice beats Wind, Wind beats Earth, Earth beats Lightning, Lightning beats Fire. Check enemy elements before battle!</p>
+                </div>
+            </div>
+            <div class="tip-item">
+                <span class="tip-number">3</span>
+                <div class="tip-content">
+                    <h4>Team Composition</h4>
+                    <p>Always have at least one tank, one healer, and one DPS. The remaining spots can be support or secondary damage dealers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips-category">
+            <h2>💰 Economy Tips</h2>
+            <div class="tip-item">
+                <span class="tip-number">1</span>
+                <div class="tip-content">
+                    <h4>Daily Energy Management</h4>
+                    <p>Use all your energy every day, but prioritize hard dungeons over easy stages. Efficiency matters more than farming easy content.</p>
+                </div>
+            </div>
+            <div class="tip-item">
+                <span class="tip-number">2</span>
+                <div class="tip-content">
+                    <h4>Save for Pity</h4>
+                    <p>Always save enough gems for 120 pulls to guarantee the rate-up character. It's better to skip a banner than to waste gems without pity.</p>
+                </div>
+            </div>
+            <div class="tip-item">
+                <span class="tip-number">3</span>
+                <div class="tip-content">
+                    <h4>Shop Prioritization</h4>
+                    <p>Buy awakening stones and skill books from the guild shop first. These are harder to obtain than regular materials.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips-category">
+            <h2>📈 Progression Tips</h2>
+            <div class="tip-item">
+                <span class="tip-number">1</span>
+                <div class="tip-content">
+                    <h4>Focus on 5 Heroes</h4>
+                    <p>Don't spread your resources too thin. Level up 5 heroes fully before investing in others. A maxed team beats a mediocre full roster.</p>
+                </div>
+            </div>
+            <div class="tip-item">
+                <span class="tip-number">2</span>
+                <div class="tip-content">
+                    <h4>Equipment Matters</h4>
+                    <p>Keep your gear upgraded. A well-equipped SR hero outperforms an ungeared SSR. Upgrade your best equipment regularly.</p>
+                </div>
+            </div>
+            <div class="tip-item">
+                <span class="tip-number">3</span>
+                <div class="tip-content">
+                    <h4>Join an Active Guild</h4>
+                    <p>Guild bonuses add up quickly. An active guild with daily donations can give you hundreds of free gems and materials weekly.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips-category">
+            <h2>✅ Do's and Don'ts</h2>
+            <div class="do-dont">
+                <div class="do-column">
+                    <h4>✅ Do</h4>
+                    <ul>
+                        <li>Complete all daily quests</li>
+                        <li>Save gems for limited banners</li>
+                        <li>Upgrade your main team's skills</li>
+                        <li>Join guild wars for rewards</li>
+                        <li>Watch ads for free rewards</li>
+                        <li>Save hero scrolls for events</li>
+                    </ul>
+                </div>
+                <div class="dont-column">
+                    <h4>❌ Don't</h4>
+                    <ul>
+                        <li>Waste gems on energy refills</li>
+                        <li>Pull on every banner</li>
+                        <li>Neglect skill upgrades</li>
+                        <li>Ignore elemental advantages</li>
+                        <li>Sell SSR equipment</li>
+                        <li>Skip guild donations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span class="logo-icon">⚔️</span> Seven Deadly Sins Origin Guide</div>
+            <p>Your ultimate gaming guide resource.</p>
+            <nav class="footer-nav">
+                <a href="faq.html">FAQ</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="copyright">&copy; 2026 Seven Deadly Sins Origin Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

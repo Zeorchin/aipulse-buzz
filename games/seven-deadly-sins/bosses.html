@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosses | Seven Deadly Sins Origin Guide</title>
+    <meta name="description" content="Boss strategy guide for Seven Deadly Sins: Origin. All boss fights with tips and rewards.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://sunderarmor.com/GENSHIN/GameIcons/7dsorigin-game-icon.png">
+    <link rel="stylesheet" href="database.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚔️</span>
+                Seven Deadly Sins Origin Guide
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html#recommended" class="nav-item">Recommended</a>
+                <a href="index.html#characters" class="nav-item">Characters</a>
+                <a href="weapons.html" class="nav-item">Weapons</a>
+                <a href="armor.html" class="nav-item">Armor</a>
+                <a href="items.html" class="nav-item">Items</a>
+                <a href="quests.html" class="nav-item">Quests</a>
+                <a href="guild.html" class="nav-item">Guild</a>
+                <a href="arena.html" class="nav-item">Arena</a>
+                <a href="codes.html" class="nav-item">Codes</a>
+                <a href="tips.html" class="nav-item">Tips</a>
+                <a href="achievements.html" class="nav-item">Achievements</a>
+                <a href="faq.html" class="nav-item">FAQ</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+                <a href="sitemap.html" class="nav-item">Sitemap</a>
+                <a href="beginner.html" class="nav-item">Beginner</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="theme-btn" id="themeBtn">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="login-btn" id="loginBtn">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search bosses...">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <main class="database-page">
+        <div class="page-header">
+            <a href="index.html" class="back-link">← Back to Wiki</a>
+            <h1>👹 Boss Database</h1>
+            <p class="page-subtitle">All bosses in The Seven Deadly Sins: Origin</p>
+            
+            <div class="weapon-type-filters boss-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="story">📜 Story Bosses</button>
+                <button class="filter-btn" data-filter="world">🌍 World Bosses</button>
+                <button class="filter-btn" data-filter="dungeon">🏰 Dungeon Bosses</button>
+                <button class="filter-btn" data-filter="elite">💀 Elite Bosses</button>
+            </div>
+        </div>
+
+        <div class="boss-showcase">
+            <h2>Featured Bosses</h2>
+            <div class="boss-grid">
+                <div class="boss-card">
+                    <div class="boss-image story"></div>
+                    <div class="boss-info">
+                        <span class="boss-type story">Story</span>
+                        <h3>Twigo</h3>
+                        <p class="boss-location">📍 Liones Castle</p>
+                        <div class="boss-drops">
+                            <span class="drop-item">💰 500 Gold</span>
+                            <span class="drop-item">⭐ EXP Scroll</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="boss-card">
+                    <div class="boss-image elite"></div>
+                    <div class="boss-info">
+                        <span class="boss-type elite">Elite</span>
+                        <h3>Helbram</h3>
+                        <p class="boss-location">📍 Fairy King's Forest</p>
+                        <div class="boss-drops">
+                            <span class="drop-item">💎 50 Gems</span>
+                            <span class="drop-item">🎭 Helbram's Hair</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="boss-card">
+                    <div class="boss-image world"></div>
+                    <div class="boss-info">
+                        <span class="boss-type world">World</span>
+                        <h3>Elder Dragon</h3>
+                        <p class="boss-location">📍 Dragon's Grave</p>
+                        <div class="boss-drops">
+                            <span class="drop-item">🐉 Dragon Scale</span>
+                            <span class="drop-item">💰 2000 Gold</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weapon-list">
+            <h2>All Bosses</h2>
+            <div class="weapon-grid">
+                <div class="boss-item weapon-item" data-type="story">
+                    <span class="item-rarity sr">Story</span>
+                    <span class="item-icon">👹</span>
+                    <div class="item-details">
+                        <h4>Twigo</h4>
+                        <p>Liones Castle</p>
+                    </div>
+                </div>
+                <div class="boss-item weapon-item" data-type="elite">
+                    <span class="item-rarity ssr">Elite</span>
+                    <span class="item-icon">👹</span>
+                    <div class="item-details">
+                        <h4>Helbram</h4>
+                        <p>Fairy King's Forest</p>
+                    </div>
+                </div>
+                <div class="boss-item weapon-item" data-type="world">
+                    <span class="item-rarity ssr">World</span>
+                    <span class="item-icon">🐉</span>
+                    <div class="item-details">
+                        <h4>Elder Dragon</h4>
+                        <p>Dragon's Grave</p>
+                    </div>
+                </div>
+                <div class="boss-item weapon-item" data-type="dungeon">
+                    <span class="item-rarity sr">Dungeon</span>
+                    <span class="item-icon">👹</span>
+                    <div class="item-details">
+                        <h4>Gray Demon</h4>
+                        <p>Demon King's Castle</p>
+                    </div>
+                </div>
+                <div class="boss-item weapon-item" data-type="elite">
+                    <span class="item-rarity sr">Elite</span>
+                    <span class="item-icon">👹</span>
+                    <div class="item-details">
+                        <h4>Red Demon</h4>
+                        <p>Carnival Arena</p>
+                    </div>
+                </div>
+                <div class="boss-item weapon-item" data-type="world">
+                    <span class="item-rarity sr">World</span>
+                    <span class="item-icon">👹</span>
+                    <div class="item-details">
+                        <h4>Albion Mutant</h4>
+                        <p>Desert of Memories</p>
+                    </div>
+                </div>
+                <div class="boss-item weapon-item" data-type="story">
+                    <span class="item-rarity sr">Story</span>
+                    <span class="item-icon">👹</span>
+                    <div class="item-details">
+                        <h4>Hendrickson</h4>
+                        <p>Vaizel</p>
+                    </div>
+                </div>
+                <div class="boss-item weapon-item" data-type="dungeon">
+                    <span class="item-rarity ssr">Dungeon</span>
+                    <span class="item-icon">👹</span>
+                    <div class="item-details">
+                        <h4>Corrupted Warden Orgot</h4>
+                        <p>Fort Solgres</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span class="logo-icon">⚔️</span> Seven Deadly Sins Origin Guide</div>
+            <p>Your ultimate gaming guide resource.</p>
+            <nav class="footer-nav">
+                <a href="faq.html">FAQ</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="copyright">&copy; 2026 Seven Deadly Sins Origin Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="database.js"></script>
+</body>
+</html>

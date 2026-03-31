@@ -1,0 +1,444 @@
+.database-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-subtitle {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.weapon-type-filters,
+.rarity-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.filter-btn,
+.rarity-btn {
+    padding: 0.5rem 1rem;
+    background: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active,
+.rarity-btn:hover,
+.rarity-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+.rarity-btn.ssr { border-color: #ffc107; color: #ffc107; }
+.rarity-btn.ssr.active { background: #ffc107; color: #000; }
+.rarity-btn.sr { border-color: #9c27b0; color: #9c27b0; }
+.rarity-btn.sr.active { background: #9c27b0; color: #fff; }
+.rarity-btn.r { border-color: #2196f3; color: #2196f3; }
+.rarity-btn.r.active { background: #2196f3; color: #fff; }
+
+/* Weapon Showcase */
+.weapon-showcase {
+    margin-bottom: 3rem;
+}
+
+.weapon-showcase h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.featured-weapons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.weapon-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.weapon-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px var(--shadow);
+}
+
+.weapon-card.ssr {
+    border-left: 4px solid #ffc107;
+}
+
+.weapon-image {
+    height: 140px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.weapon-img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 12px 12px 0 0;
+}
+
+.armor-image { height: 140px; background: linear-gradient(135deg, #667eea, #764ba2); }
+.armor-image.knights-gear { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.armor-image.demon-armor { background: linear-gradient(135deg, #434343, #000000); }
+.archangel { background: linear-gradient(135deg, #f093fb, #f5576c); }
+
+.weapon-info {
+    padding: 1.25rem;
+}
+
+.weapon-rarity {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.weapon-rarity.ssr {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #000;
+}
+
+.weapon-rarity.sr {
+    background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+    color: #fff;
+}
+
+.weapon-info h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+}
+
+.weapon-type {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+.weapon-stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.weapon-ability {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    padding: 0.75rem;
+    background: var(--secondary);
+    border-radius: 8px;
+}
+
+/* Weapon List */
+.weapon-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.weapon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.weapon-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.weapon-item:hover {
+    border-color: var(--primary);
+    transform: translateX(4px);
+}
+
+.item-rarity {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.item-rarity.ssr {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #000;
+}
+
+.item-rarity.sr {
+    background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+    color: #fff;
+}
+
+.item-rarity.r {
+    background: linear-gradient(135deg, #2196f3, #1976d2);
+    color: #fff;
+}
+
+.item-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    text-align: center;
+}
+
+.item-details h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+}
+
+.item-details p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+/* Boss Page Styles */
+.boss-showcase {
+    margin-bottom: 3rem;
+}
+
+.boss-showcase h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.boss-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.boss-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.boss-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px var(--shadow);
+}
+
+.boss-image {
+    height: 120px;
+    background: linear-gradient(135deg, #eb3349, #f45c43);
+}
+
+.boss-image.story { background: linear-gradient(135deg, #667eea, #764ba2); }
+.boss-image.world { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.boss-image.dungeon { background: linear-gradient(135deg, #56ab2f, #a8e063); }
+.boss-image.elite { background: linear-gradient(135deg, #eb3349, #f45c43); }
+
+.boss-info {
+    padding: 1.25rem;
+}
+
+.boss-type {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.boss-type.story { background: #667eea; color: #fff; }
+.boss-type.world { background: #f5576c; color: #fff; }
+.boss-type.dungeon { background: #56ab2f; color: #fff; }
+.boss-type.elite { background: #eb3349; color: #fff; }
+
+.boss-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.boss-location {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+}
+
+.boss-drops {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.drop-item {
+    padding: 0.25rem 0.5rem;
+    background: var(--secondary);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: var(--text);
+}
+
+/* Banners Page */
+.banner-showcase h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.banner-detail-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.banner-hero {
+    height: 180px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    overflow: hidden;
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+.banner-hero.meliodas { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+.banner-hero.weapon { background: linear-gradient(135deg, #7f7fd5, #86a8e7); }
+.banner-hero.permanent { background: linear-gradient(135deg, #11998e, #38ef7d); }
+
+.rateup-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+}
+
+.banner-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.banner-status.current { background: #34a853; color: #fff; }
+.banner-status.ended { background: #80868b; color: #fff; }
+.banner-status.upcoming { background: #fbbc04; color: #000; }
+
+.banner-content {
+    padding: 1.5rem;
+}
+
+.banner-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner-dates {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.banner-rateup {
+    margin-bottom: 1rem;
+}
+
+.rateup-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+}
+
+.rateup-chars {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.rateup-char {
+    padding: 0.35rem 0.75rem;
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #000;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.banner-pity {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background: var(--secondary);
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.pity-label { color: var(--text-light); }
+.pity-value { font-weight: 600; color: var(--primary); }
+
+@media (max-width: 768px) {
+    .featured-weapons,
+    .boss-grid,
+    .banner-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .weapon-grid {
+        grid-template-columns: 1fr;
+    }
+}

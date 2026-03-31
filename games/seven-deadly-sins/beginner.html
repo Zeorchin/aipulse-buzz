@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete beginner's guide for Seven Deadly Sins: Origin. Getting started, team building, progression tips, and more.">
+    <title>Beginner's Guide | Seven Deadly Sins Origin Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://sunderarmor.com/GENSHIN/GameIcons/7dsorigin-game-icon.png">
+    <link rel="stylesheet" href="database.css">
+    <style>
+        .guide-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .guide-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .guide-section h3 {
+            font-size: 1.15rem;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--primary);
+        }
+        .guide-section p, .guide-section li {
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+        .guide-section ul {
+            padding-left: 1.5rem;
+        }
+        .guide-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        .tip-box {
+            background: linear-gradient(135deg, rgba(17, 153, 142, 0.1), rgba(56, 239, 125, 0.1));
+            border-left: 4px solid var(--primary);
+            padding: 1rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1rem 0;
+        }
+        .tip-box.warning {
+            background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 87, 34, 0.1));
+            border-left-color: #ff9800;
+        }
+        .tip-box.danger {
+            background: linear-gradient(135deg, rgba(244, 67, 54, 0.1), rgba(183, 28, 28, 0.1));
+            border-left-color: #f44336;
+        }
+        .stat-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .stat-table th, .stat-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        .stat-table th {
+            background: var(--secondary);
+            font-weight: 600;
+        }
+        .stat-table tr:hover td {
+            background: var(--secondary);
+        }
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .resource-card {
+            background: var(--secondary);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+        .resource-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .resource-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        .resource-card p {
+            font-size: 0.85rem;
+            margin: 0;
+        }
+        .step-list {
+            counter-reset: step;
+            list-style: none;
+            padding: 0;
+        }
+        .step-list li {
+            counter-increment: step;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .step-list li:last-child {
+            border-bottom: none;
+        }
+        .step-list li::before {
+            content: counter(step);
+            background: var(--primary);
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚔️</span>
+                Seven Deadly Sins Origin Guide
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html#recommended" class="nav-item">Recommended</a>
+                <a href="weapons.html" class="nav-item">Weapons</a>
+                <a href="armor.html" class="nav-item">Armor</a>
+                <a href="items.html" class="nav-item">Items</a>
+                <a href="quests.html" class="nav-item">Quests</a>
+                <a href="guild.html" class="nav-item">Guild</a>
+                <a href="arena.html" class="nav-item">Arena</a>
+                <a href="codes.html" class="nav-item">Codes</a>
+                <a href="tips.html" class="nav-item">Tips</a>
+                <a href="achievements.html" class="nav-item">Achievements</a>
+                <a href="faq.html" class="nav-item">FAQ</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+                <a href="sitemap.html" class="nav-item">Sitemap</a>
+                <a href="beginner.html" class="nav-item">Beginner</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="theme-btn" id="themeBtn">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="login-btn" id="loginBtn">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search guides...">
+                <button class="search-close" id="searchClose">&times;</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <main class="database-page">
+        <div class="page-header">
+            <a href="index.html" class="back-link">← Back to Wiki</a>
+            <h1>📖 Beginner's Guide</h1>
+            <p class="page-subtitle">Everything new players need to know about The Seven Deadly Sins: Origin</p>
+        </div>
+
+        <div class="guide-section">
+            <h2>🎮 Getting Started</h2>
+            <p>Welcome to The Seven Deadly Sins: Origin! This guide will help you understand the core mechanics and progress efficiently through the game.</p>
+            
+            <h3>Your First Steps</h3>
+            <ol class="step-list">
+                <li>
+                    <div>
+                        <strong>Complete the Main Story</strong>
+                        <p>Progress through the main story quests to unlock new features, characters, and game modes. The early chapters are designed to teach you core mechanics.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>Build Your Team</strong>
+                        <p>You'll receive several free characters early on. Focus on leveling up your main DPS and healer. Check our <a href="tier-list.html">Tier List</a> for character rankings.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>Upgrade Your Gear</strong>
+                        <p>Equipment matters! Keep your weapons and armor updated. Visit <a href="weapons.html">Weapons</a> and <a href="armor.html">Armor</a> pages for recommended builds.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <strong>Join a Guild</strong>
+                        <p>Once you reach Level 20, join a guild for bonus rewards, guild raids, and community support.</p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="guide-section">
+            <h2>💰 Currency & Resources</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="icon">💎</div>
+                    <h4>Gems</h4>
+                    <p>Premium currency for summons and items</p>
+                </div>
+                <div class="resource-card">
+                    <div class="icon">🪙</div>
+                    <h4>Gold</h4>
+                    <p>Used for upgrades and crafting</p>
+                </div>
+                <div class="resource-card">
+                    <div class="icon">📜</div>
+                    <h4>Hero Scrolls</h4>
+                    <p>Free character summons</p>
+                </div>
+                <div class="resource-card">
+                    <div class="icon">⚡</div>
+                    <h4>Energy</h4>
+                    <p>Required for quests and farming</p>
+                </div>
+            </div>
+
+            <h3>How to Get Resources</h3>
+            <ul>
+                <li><strong>Gems:</strong> Daily login rewards, achievements, story progression, in-app purchases</li>
+                <li><strong>Gold:</strong> Dungeons, selling items, guild donations, daily quests</li>
+                <li><strong>Hero Scrolls:</strong> Events, login rewards, guild shop, milestone rewards</li>
+                <li><strong>Energy:</strong> Regenerates 1 every 5 minutes, refills with gems</li>
+            </ul>
+
+            <div class="tip-box">
+                <strong>💡 Tip:</strong> Save your gems for banner pity pulls! The guaranteed SSR at 120 summons makes it worth waiting.
+            </div>
+        </div>
+
+        <div class="guide-section">
+            <h2>⚔️ Combat Basics</h2>
+            <p>Understanding the combat system is crucial for success in both story content and PvP.</p>
+
+            <h3>Character Roles</h3>
+            <table class="stat-table">
+                <tr>
+                    <th>Role</th>
+                    <th>Description</th>
+                    <th>Best For</th>
+                </tr>
+                <tr>
+                    <td><strong>🗡️ DPS</strong></td>
+                    <td>High damage dealers</td>
+                    <td>Farming, boss killing</td>
+                </tr>
+                <tr>
+                    <td><strong>🛡️ Tank</strong></td>
+                    <td>High defense, protects team</td>
+                    <td>Difficult content, raids</td>
+                </tr>
+                <tr>
+                    <td><strong>✨ Healer</strong></td>
+                    <td>Restores HP, provides buffs</td>
+                    <td>Extended battles</td>
+                </tr>
+                <tr>
+                    <td><strong>🏹 Support</strong></td>
+                    <td>Debuffs enemies, buffs allies</td>
+                    <td>Team compositions</td>
+                </tr>
+            </table>
+
+            <h3>Elemental System</h3>
+            <ul>
+                <li><strong>Fire</strong> 🔥 beats <strong>Ice</strong> ❄️</li>
+                <li><strong>Ice</strong> ❄️ beats <strong>Wind</strong> 💨</li>
+                <li><strong>Wind</strong> 💨 beats <strong>Earth</strong> 🪨</li>
+                <li><strong>Earth</strong> 🪨 beats <strong>Lightning</strong> ⚡</li>
+                <li><strong>Lightning</strong> ⚡ beats <strong>Fire</strong> 🔥</li>
+            </ul>
+
+            <div class="tip-box warning">
+                <strong>⚠️ Warning:</strong> Always check enemy elements before entering battle. Using the wrong element reduces damage by 50%!
+            </div>
+        </div>
+
+        <div class="guide-section">
+            <h2>📈 Progression Tips</h2>
+
+            <h3>Daily Checklist</h3>
+            <ul>
+                <li>Complete all daily quests</li>
+                <li>Use all daily energy</li>
+                <li>Collect login rewards</li>
+                <li>Check guild rewards</li>
+                <li>Claim arena rewards</li>
+            </ul>
+
+            <h3>Weekly Goals</h3>
+            <ul>
+                <li>Complete weekly dungeon challenges</li>
+                <li>Participate in guild raid</li>
+                <li>Clear tower floors</li>
+                <li>Stock up on upgrade materials</li>
+            </ul>
+
+            <div class="tip-box danger">
+                <strong>❌ Avoid These Mistakes:</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                    <li>Wasting gems on energy refills early game</li>
+                    <li>Pulling on every banner without saving for pity</li>
+                    <li>Ignoring gear upgrades</li>
+                    <li>Not upgrading your hero's skills</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="guide-section">
+            <h2>🏆 Gacha & Summons</h2>
+            <p>The banner system in Seven Deadly Sins: Origin follows a pity mechanism that guarantees results.</p>
+
+            <h3>Pity System</h3>
+            <table class="stat-table">
+                <tr>
+                    <th>Pull Count</th>
+                    <th>Guarantee</th>
+                </tr>
+                <tr>
+                    <td>10 Pulls</td>
+                    <td>At least 1 SR or higher</td>
+                </tr>
+                <tr>
+                    <td>50 Pulls</td>
+                    <td>At least 1 SSR</td>
+                </tr>
+                <tr>
+                    <td>120 Pulls</td>
+                    <td>Rate-up character guaranteed</td>
+                </tr>
+            </table>
+
+            <h3>Best Banners to Pull</h3>
+            <ul>
+                <li><strong>Character Banners:</strong> Focus on limited banners with rate-up SSRs</li>
+                <li><strong>Weapon Banners:</strong> Good for completing your gear sets</li>
+                <li><strong>Festival Banners:</strong> Usually have best rates and bonuses</li>
+            </ul>
+
+            <div class="tip-box">
+                <strong>💡 Tip:</strong> Check our <a href="banners.html">Banners Page</a> for current and upcoming banner schedules!
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span class="logo-icon">⚔️</span> Seven Deadly Sins Origin Guide</div>
+            <p>Your ultimate gaming guide resource.</p>
+            <nav class="footer-nav">
+                <a href="faq.html">FAQ</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <p class="copyright">&copy; 2026 Seven Deadly Sins Origin Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

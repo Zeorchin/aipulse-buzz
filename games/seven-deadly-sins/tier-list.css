@@ -1,0 +1,357 @@
+.tier-list-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-subtitle {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tier-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    background: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+/* Tier List Container */
+.tier-list-container {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.tier-row {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+}
+
+.tier-row:last-child {
+    border-bottom: none;
+}
+
+.tier-label {
+    width: 160px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.tier-rank {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.s-tier .tier-rank { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+.a-tier .tier-rank { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.b-tier .tier-rank { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.c-tier .tier-rank { background: linear-gradient(135deg, #667eea, #764ba2); }
+
+.tier-desc {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.tier-chars {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--secondary);
+    min-height: 100px;
+    align-items: center;
+}
+
+.tier-char {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.3s;
+    width: 90px;
+}
+
+.tier-char:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px var(--shadow);
+}
+
+.char-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #ddd, #bbb);
+}
+
+.char-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    border: 2px solid var(--border);
+}
+
+.char-icon.meliodas { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+.char-icon.escanor { background: linear-gradient(135deg, #ff9800, #f57c00); }
+.char-icon.ban { background: linear-gradient(135deg, #673ab7, #512da8); }
+.char-icon.elizabeth { background: linear-gradient(135deg, #e91e63, #c2185b); }
+.char-icon.king { background: linear-gradient(135deg, #8bc34a, #689f38); }
+.char-icon.gowther { background: linear-gradient(135deg, #9c27b0, #7b1fa2); }
+.char-icon.merlin { background: linear-gradient(135deg, #03a9f4, #0288d1); }
+.char-icon.diane { background: linear-gradient(135deg, #795548, #5d4037); }
+.char-icon.guild a { background: linear-gradient(135deg, #ff5722, #e64a19); }
+.char-icon.howzer { background: linear-gradient(135deg, #ffeb3b, #fbc02d); }
+.char-icon.gilthunder { background: linear-gradient(135deg, #ffeb3b, #ffc107); }
+.char-icon.hendrickson { background: linear-gradient(135deg, #4a148c, #311b92); }
+.char-icon.mannie { background: linear-gradient(135deg, #a5d6a7, #81c784); }
+.char-icon.slater { background: linear-gradient(135deg, #78909c, #546e7a); }
+.char-icon.griamore { background: linear-gradient(135deg, #bcaaa4, #8d6e63); }
+.char-icon.daisy { background: linear-gradient(135deg, #f8bbd9, #f48fb1); }
+.char-icon.clotho { background: linear-gradient(135deg, #b3e5fc, #81d4fa); }
+.char-icon.guilda { background: linear-gradient(135deg, #ff5722, #e64a19); }
+.char-icon.tristan { background: linear-gradient(135deg, #8d6e63, #6d4c41); }
+.char-icon.tioreh { background: linear-gradient(135deg, #c8e6c9, #a5d6a7); }
+.char-icon.mannen { background: linear-gradient(135deg, #424242, #212121); }
+
+.tier-char .char-name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+}
+
+.tier-char .char-element {
+    font-size: 1rem;
+}
+
+/* Tier Explanation */
+.tier-explanation {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tier-explanation h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.explanation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.explanation-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--secondary);
+    border-radius: 8px;
+}
+
+.tier-badge {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.tier-badge.s { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+.tier-badge.a { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.tier-badge.b { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.tier-badge.c { background: linear-gradient(135deg, #667eea, #764ba2); }
+
+.explanation-item h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.explanation-item p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+/* Criteria Section */
+.criteria-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.criteria-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.criteria-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.criteria-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--secondary);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.criteria-item:hover {
+    transform: translateY(-2px);
+}
+
+.criteria-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.criteria-item h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.criteria-item p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+/* Update Notice */
+.update-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-light), rgba(26, 115, 232, 0.1));
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+}
+
+.notice-icon {
+    font-size: 1.5rem;
+}
+
+.update-notice strong {
+    color: var(--primary);
+}
+
+.update-notice small {
+    color: var(--text-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tier-list-page {
+        padding: 1rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .tier-row {
+        flex-direction: column;
+    }
+    
+    .tier-label {
+        width: 100%;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
+        justify-content: flex-start;
+    }
+    
+    .tier-chars {
+        justify-content: center;
+    }
+    
+    .tier-char {
+        width: 80px;
+    }
+}
