@@ -2152,6 +2152,236 @@ const newsData = {
             "Adobe positioned as AI leader",
             "Successor not yet announced"
         ]
+    },
+    
+    "openai-sora-discontinued": {
+        id: "openai-sora-discontinued",
+        title: "OpenAI Discontinues Sora",
+        developer: "OpenAI",
+        date: "Mar 24, 2026",
+        tag: "OpenAI",
+        tagColor: "#10a37f",
+        subtitle: "AI video generation app and API shut down after just six months.",
+        summary: "OpenAI announced the discontinuation of Sora, its AI video generation platform, along with the Sora API. The move ends a $1 billion partnership with Disney and signals a strategic pivot toward coding tools and enterprise products ahead of a potential IPO.",
+        content: `
+            <p>OpenAI has officially announced the discontinuation of Sora, its AI video generation app and API, just six months after launch. The March 24, 2026 announcement marks a significant strategic shift for the company as it prepares for a potential IPO.</p>
+            
+            <h2>The Shutdown</h2>
+            <p>OpenAI confirmed it will wind down all standalone products using its video models:</p>
+            <ul>
+                <li>Sora iOS and Android apps removed from stores</li>
+                <li>Sora API entering "maintenance-only" phase</li>
+                <li>No new API keys being issued</li>
+                <li>Total service shutdown scheduled for September 24, 2026</li>
+            </ul>
+            
+            <p>The official Sora account posted on X: "We're saying goodbye to the Sora app. To everyone who created with Sora, shared it, and built community around it: thank you."</p>
+            
+            <h2>$1 Billion Disney Deal Ends</h2>
+            <p>The shutdown terminates a landmark $1 billion partnership with Disney signed in December 2025, which would have brought over 200 Disney characters into the Sora ecosystem. Disney confirmed it was exiting the agreement within 30 minutes of the announcement.</p>
+            
+            <h2>Why Sora Failed</h2>
+            <p>Multiple factors contributed to the decision:</p>
+            <ul>
+                <li><strong>Unsustainable Costs:</strong> Reports suggest Sora was "melting GPUs" at $15 million daily in inference costs</li>
+                <li><strong>Poor Retention:</strong> Less than 8% retention rate after 30 days for Pro users</li>
+                <li><strong>Limited Reach:</strong> Restricted availability excluded many markets including Europe</li>
+                <li><strong>Strong Competition:</strong> Google Veo 3.1 and Kling 2.5 offered superior alternatives</li>
+                <li><strong>IPO Preparation:</strong> Company needs to show lean operations for public markets</li>
+            </ul>
+            
+            <h2>Strategic Pivot</h2>
+            <p>OpenAI is redirecting resources to:</p>
+            <ul>
+                <li>Project "Spud" — next-generation desktop superapp</li>
+                <li>Advanced robotics initiatives</li>
+                <li>Codex AI coding agent</li>
+                <li>Enterprise-focused products</li>
+            </ul>
+            
+            <h2>User Impact</h2>
+            <p>Professional creators who integrated Sora 2 Pro into their production pipelines are now scrambling for alternatives. The abrupt shutdown serves as a cautionary tale about vendor lock-in for creative professionals.</p>
+        `,
+        stats: [
+            { label: "Daily Cost", value: "$15M" },
+            { label: "Retention", value: "<8%" },
+            { label: "Disney Deal", value: "$1B" },
+            { label: "Final Shutdown", value: "Sep 24" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Status": "Discontinued",
+            "Launch": "Sep 2025",
+            "Shutdown": "Sep 2026",
+            "Disney Deal": "Terminated"
+        },
+        highlights: [
+            "Sora app and API being discontinued",
+            "$1 billion Disney partnership ended",
+            "$15 million daily GPU costs unsustainable",
+            "Less than 8% user retention after 30 days",
+            "Strategic pivot toward IPO preparation"
+        ]
+    },
+    
+    "mcp-97-million": {
+        id: "mcp-97-million",
+        title: "MCP Hits 97 Million Installs",
+        developer: "Anthropic",
+        date: "Mar 28, 2026",
+        tag: "Industry",
+        tagColor: "#6366f1",
+        subtitle: "Model Context Protocol becomes the de facto standard for AI agent integration.",
+        summary: "Anthropic's Model Context Protocol (MCP) reached 97 million monthly SDK downloads in March 2026. Originally launched in November 2024, MCP has been adopted by every major AI provider including OpenAI, Google, Microsoft, and Amazon, cementing its role as the universal 'USB-C for AI'.",
+        content: `
+            <p>The Model Context Protocol (MCP) has achieved a major milestone, reaching 97 million monthly SDK downloads across Python and TypeScript in March 2026. This represents unprecedented growth for an AI infrastructure protocol, establishing MCP as the definitive standard for agent-tool connectivity.</p>
+            
+            <h2>Explosive Growth</h2>
+            <p>MCP's adoption curve has been extraordinary:</p>
+            <ul>
+                <li><strong>November 2024:</strong> Initial release by Anthropic (~2M installs)</li>
+                <li><strong>March 2025:</strong> OpenAI adopts MCP across its platform</li>
+                <li><strong>December 2025:</strong> Donated to Agentic AI Foundation under Linux Foundation</li>
+                <li><strong>March 2026:</strong> 97 million monthly installs (4,750% growth in 16 months)</li>
+            </ul>
+            
+            <h2>Universal Provider Support</h2>
+            <p>By March 2026, every major AI provider supports MCP:</p>
+            <ul>
+                <li>Anthropic (original creator)</li>
+                <li>OpenAI (Agents SDK, Responses API, ChatGPT desktop)</li>
+                <li>Google DeepMind (Gemini models)</li>
+                <li>Microsoft (Windows 11, GitHub)</li>
+                <li>Amazon, xAI, Mistral, Cohere</li>
+            </ul>
+            
+            <h2>Ecosystem Scale</h2>
+            <p>The MCP server registry now includes:</p>
+            <ul>
+                <li>5,800+ publicly available servers</li>
+                <li>10,000+ active MCP servers in production</li>
+                <li>300+ MCP clients</li>
+                <li>4,000+ published servers covering SaaS, CRM, cloud providers</li>
+            </ul>
+            
+            <h2>What is MCP?</h2>
+            <p>Model Context Protocol is an open standard that defines how AI systems connect to external tools, data sources, and services. Think of it as "USB-C for AI" — a universal connector that eliminates the N×M integration problem where N AI applications needed M custom connectors.</p>
+            
+            <h2>Security Standards</h2>
+            <p>The MCP working group published Security Standard v1.1 in March 2026, addressing:</p>
+            <ul>
+                <li>Prompt injection via tool outputs</li>
+                <li>Server authentication requirements</li>
+                <li>Scope limitation patterns</li>
+            </ul>
+            
+            <h2>Industry Impact</h2>
+            <p>MCP compatibility is now the baseline expectation for AI tools. Any tool without MCP support increasingly feels like an island in a connected archipelago. The protocol has moved from experimental to production infrastructure.</p>
+        `,
+        stats: [
+            { label: "Installs", value: "97M" },
+            { label: "Growth", value: "4,750%" },
+            { label: "Servers", value: "5,800+" },
+            { label: "Timeline", value: "16 mo" }
+        ],
+        pricing: {
+            input: "Free",
+            output: "Free",
+            context: "N/A"
+        },
+        specs: {
+            "Protocol": "Model Context Protocol",
+            "Origin": "Anthropic (Nov 2024)",
+            "Status": "Industry Standard",
+            "Governance": "Linux Foundation"
+        },
+        highlights: [
+            "97 million monthly SDK downloads",
+            "Universal support from all major AI providers",
+            "4,750% growth in just 16 months",
+            "5,800+ MCP servers available",
+            "The 'USB-C for AI' integration standard"
+        ]
+    },
+    
+    "openai-chatgpt-ads": {
+        id: "openai-chatgpt-ads",
+        title: "OpenAI Adds Ads to ChatGPT",
+        developer: "OpenAI",
+        date: "Mar 27, 2026",
+        tag: "OpenAI",
+        tagColor: "#10a37f",
+        subtitle: "Free users now see sponsored content as OpenAI seeks new revenue streams.",
+        summary: "OpenAI began testing ads in ChatGPT for free users in March 2026. Travel-related queries trigger ads from partners like Booking.com. The move contradicts CEO Sam Altman's previous statements that he 'hates ads' and considers them a 'last resort' business model.",
+        content: `
+            <p>OpenAI has started displaying advertisements to free-tier ChatGPT users, marking a significant shift in the company's monetization strategy. The change comes just months after CEO Sam Altman stated he "hates ads" and would only use them as a "last resort."</p>
+            
+            <h2>The Ad Rollout</h2>
+            <p>Ads began appearing in ChatGPT in early March 2026:</p>
+            <ul>
+                <li>Currently in testing phase for US free users</li>
+                <li>Travel queries trigger ads most frequently</li>
+                <li>Example: Palm Springs trip planning shows Booking.com ads</li>
+                <li>Ads appear at the bottom of chat responses</li>
+            </ul>
+            
+            <p>When users click an ad link, it automatically searches for relevant deals (e.g., Palm Springs hotels for travel queries).</p>
+            
+            <h2>Altman's Changing Stance</h2>
+            <p>In a 2024 Harvard Business School discussion, Altman was clear about his feelings on ads:</p>
+            <blockquote>"I hate ads. I kind of think of ads as like a last resort for us for a business model. I would do it if it meant that was the only way to get everybody in the world access to great services. But, if we can find something that doesn't do that, I'd prefer that."</blockquote>
+            
+            <p>With 2026 being the year of Sora's discontinuation and ChatGPT ad integration, it appears OpenAI has reached that "last resort."</p>
+            
+            <h2>Why Now?</h2>
+            <p>Several factors likely drove the decision:</p>
+            <ul>
+                <li><strong>Free User Costs:</strong> Free tier users are expensive to serve</li>
+                <li><strong>IPO Preparation:</strong> Need to demonstrate revenue growth</li>
+                <li><strong>Competition:</strong> Pressure from Google and others</li>
+                <li><strong>Ad Market Opportunity:</strong> Billions in search ad spend shifting to AI</li>
+            </ul>
+            
+            <h2>Privacy Claims</h2>
+            <p>OpenAI states that:</p>
+            <ul>
+                <li>Ads do not impact ChatGPT answer content</li>
+                <li>Full conversations are not shared with advertisers</li>
+                <li>Ads are influenced by query topic and chat history</li>
+                <li>Memory-stored user information affects ad targeting</li>
+            </ul>
+            
+            <h2>Market Reaction</h2>
+            <p>Marketing experts see this as a major shift: "The billions of dollars currently spent on search ads are going to be channeled to this new form of ad, so it's a huge multibillion-dollar market emerging," says Olivier Toubia of Columbia Business School.</p>
+        `,
+        stats: [
+            { label: "Status", value: "Testing" },
+            { label: "Target", value: "Free Users" },
+            { label: "Top Category", value: "Travel" },
+            { label: "Altman Stance", value: "Reversed" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Rollout": "US Testing (Mar 2026)",
+            "Target": "Free Tier Users",
+            "Format": "Sponsored Links",
+            "Altman 2024": "'I hate ads'"
+        },
+        highlights: [
+            "Ads now appearing for free ChatGPT users",
+            "Travel queries trigger sponsored content",
+            "Contradicts CEO's 'I hate ads' statements",
+            "Follows Sora discontinuation in cost-cutting",
+            "Targets multibillion-dollar search ad market"
+        ]
     }
 };
 
