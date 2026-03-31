@@ -6,9 +6,9 @@
     <title>AI News | AI Pulse</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9041541077881789" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="additional-styles.css">
+    <link rel="stylesheet" href="news-styles.css">
     <link rel="stylesheet" href="ads.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
                 <span>AI Pulse.buzz</span>
             </a>
             <ul class="nav-links">
-                <li><a href="ai-news.html">News</a></li>
+                <li><a href="ai-news.html" class="active">News</a></li>
                 <li><a href="ai-models.html">Models</a></li>
                 <li><a href="ai-benchmarks.html">Benchmarks</a></li>
                 <li><a href="ai-finance.html">Finance</a></li>
@@ -27,509 +27,486 @@
         </div>
     </nav>
 
-    <header class="hero">
+    <header class="news-hero">
+        <div class="news-hero-bg"></div>
         <div class="container">
-            <div class="hero-badge">Last Updated: March 31, 2026</div>
-            <h1>AI News</h1>
-            <p class="hero-subtitle">Breaking updates on model releases, company announcements, and industry shifts<br><small>From the frontier of artificial intelligence</small></p>
-            <a href="index.html" class="back-link">← Back to Portal</a>
+            <div class="news-hero-content">
+                <div class="hero-badge pulse">Live Updates</div>
+                <h1>AI News Hub</h1>
+                <p class="hero-subtitle">Breaking stories from the frontier of artificial intelligence</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Stories</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Fresh Updates</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Sources</span>
+                    </div>
+                </div>
+                <a href="index.html" class="back-link">← Back to Portal</a>
+            </div>
         </div>
     </header>
 
-    <section id="openclaw" class="section">
+    <!-- Featured Breaking News -->
+    <section class="featured-news">
         <div class="container">
-            <h2 class="section-title">OpenClaw & Agentic AI</h2>
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🔥</span>
+                    Breaking Now
+                </h2>
+                <a href="#all-news" class="view-all">View All →</a>
+            </div>
             
-            <div class="news-grid">
-                <!-- MCP 97 Million Installs -->
-                <article class="news-card featured">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 28, 2026</span>
-                        <span class="news-tag breaking-tag">Breaking</span>
+            <div class="featured-grid">
+                <!-- MCP 97 Million Installs - Hero Feature -->
+                <article class="featured-card hero-feature">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop" alt="AI Network">
+                        <div class="image-overlay"></div>
+                        <span class="breaking-badge">BREAKING</span>
                     </div>
-                    <h3>MCP Hits 97 Million Installs, Becomes AI Industry Standard</h3>
-                    <p class="news-summary">Anthropic's Model Context Protocol has reached 97 million monthly SDK downloads. Now supported by OpenAI, Google, Microsoft, and every major AI provider, MCP has become the universal "USB-C for AI" integration standard.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">97M Installs</span>
-                        <span class="highlight">Universal Standard</span>
-                        <span class="highlight">4,750% Growth</span>
+                    <div class="featured-content">
+                        <div class="news-meta">
+                            <span class="news-date">Mar 28, 2026</span>
+                            <span class="news-tag anthropic">Anthropic</span>
+                        </div>
+                        <h3>MCP Hits 97 Million Installs, Becomes AI Industry Standard</h3>
+                        <p class="news-summary">Anthropic's Model Context Protocol has reached 97 million monthly SDK downloads. Now supported by OpenAI, Google, Microsoft, and every major AI provider, MCP has become the universal "USB-C for AI" integration standard with 4,750% growth in 16 months.</p>
+                        <div class="news-highlights">
+                            <span class="highlight">97M Installs</span>
+                            <span class="highlight">Universal Standard</span>
+                            <span class="highlight">4,750% Growth</span>
+                        </div>
+                        <a href="detail.html?model=mcp-97-million" class="read-more-btn">
+                            Read Full Story 
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
                     </div>
-                    <a href="detail.html?model=mcp-97-million" class="read-more">Read full story →</a>
                 </article>
 
-                <!-- OpenClaw v2026.3.22 Release -->
-                <article class="news-card featured">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 23, 2026</span>
-                        <span class="news-tag breaking-tag">Featured</span>
+                <!-- OpenAI Sora Discontinued - Secondary Feature -->
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1614726365723-49cfae92782f?w=600&h=350&fit=crop" alt="Video AI Discontinued">
+                        <div class="image-overlay"></div>
+                        <span class="breaking-badge danger">SHUTDOWN</span>
                     </div>
-                    <h3>OpenClaw v2026.3.22: Major Update with 45 New Features</h3>
-                    <p class="news-summary">OpenClaw released version 2026.3.22 with 45 new features, 13 breaking changes, and 82 bug fixes. The update introduces native ClawHub integration, default routing to GPT-5.4, SSH sandboxing, and support for Anthropic Vertex AI, MiniMax M2.7, and GLM-5.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">45 New Features</span>
-                        <span class="highlight">ClawHub Native</span>
-                        <span class="highlight">GPT-5.4 Default</span>
+                    <div class="featured-content">
+                        <div class="news-meta">
+                            <span class="news-date">Mar 24, 2026</span>
+                            <span class="news-tag openai">OpenAI</span>
+                        </div>
+                        <h3>OpenAI Shuts Down Sora After Just 6 Months</h3>
+                        <p class="news-summary">OpenAI is discontinuing its AI video generation platform. The move ends a $1 billion Disney partnership and signals a strategic pivot toward coding tools ahead of a potential IPO.</p>
+                        <div class="news-highlights">
+                            <span class="highlight danger">$1B Deal Lost</span>
+                            <span class="highlight">IPO Prep</span>
+                        </div>
+                        <a href="detail.html?model=openai-sora-discontinued" class="read-more">Read more →</a>
                     </div>
-                    <a href="detail.html?model=openclaw-v2026-3-22" class="read-more">Read full story →</a>
                 </article>
 
-                <!-- NVIDIA NemoClaw -->
-                <article class="news-card featured">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 16, 2026</span>
-                        <span class="news-tag">NVIDIA</span>
+                <!-- OpenClaw Update -->
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=350&fit=crop" alt="AI Agents">
+                        <div class="image-overlay"></div>
+                        <span class="featured-badge">FEATURED</span>
                     </div>
-                    <h3>NVIDIA Launches NemoClaw Built on OpenClaw at GTC 2026</h3>
-                    <p class="news-summary">At GTC 2026, Jensen Huang called OpenClaw "the most popular open source project in the history of humanity." NVIDIA announced NemoClaw, a secure enterprise agent runtime built on OpenClaw with native sandboxing, least-privilege model, and integrated privacy router.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Enterprise Runtime</span>
-                        <span class="highlight">Native Sandboxing</span>
-                        <span class="highlight">GTC 2026</span>
+                    <div class="featured-content">
+                        <div class="news-meta">
+                            <span class="news-date">Mar 23, 2026</span>
+                            <span class="news-tag openclaw">OpenClaw</span>
+                        </div>
+                        <h3>OpenClaw v2026.3.22: 45 New Features Released</h3>
+                        <p class="news-summary">Major update with native ClawHub integration, GPT-5.4 default routing, SSH sandboxing, and expanded model support including MiniMax M2.7 and GLM-5.</p>
+                        <div class="news-highlights">
+                            <span class="highlight">45 Features</span>
+                            <span class="highlight">GPT-5.4 Default</span>
+                        </div>
+                        <a href="detail.html?model=openclaw-v2026-3-22" class="read-more">Read more →</a>
                     </div>
-                    <a href="detail.html?model=nvidia-nemoclaw" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- NVIDIA Space Data Centers -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 16, 2026</span>
-                        <span class="news-tag">NVIDIA</span>
-                    </div>
-                    <h3>NVIDIA Planning AI Data Centers in Space</h3>
-                    <p class="news-summary">NVIDIA revealed Vera Rubin Space 1—a project to deploy orbital AI data centers. The company is developing novel cooling solutions for space where only radiation can dissipate heat, with no conduction or convection available.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Orbital Compute</span>
-                        <span class="highlight">Vera Rubin</span>
-                        <span class="highlight">Space AI</span>
-                    </div>
-                    <a href="detail.html?model=nvidia-space-datacenter" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- Tencent WeChat Integration -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 22, 2026</span>
-                        <span class="news-tag">Tencent</span>
-                    </div>
-                    <h3>Tencent Integrates OpenClaw into WeChat with ClawBot</h3>
-                    <p class="news-summary">Tencent plugged OpenClaw directly into WeChat via ClawBot, allowing 1+ billion users to interact with AI agents as easily as messaging a contact. The integration represents China's aggressive push into the AI agent race alongside Alibaba and Baidu.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">1B+ Users</span>
-                        <span class="highlight">WeChat Integration</span>
-                        <span class="highlight">China Agent Race</span>
-                    </div>
-                    <a href="detail.html?model=tencent-openclaw" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- OpenClaw GitHub Milestone -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 2026</span>
-                        <span class="news-tag">Open Source</span>
-                    </div>
-                    <h3>OpenClaw Surpasses 250,000 GitHub Stars</h3>
-                    <p class="news-summary">OpenClaw has become one of the fastest-growing open-source projects in history, surpassing 250,000 GitHub stars in March 2026. The project started with just 9,000 stars in November 2025 and has seen 136% growth, with 13,729+ community skills now available on ClawHub.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">250K+ Stars</span>
-                        <span class="highlight">136% Growth</span>
-                        <span class="highlight">13K+ Skills</span>
-                    </div>
-                    <a href="detail.html?model=openclaw-milestone" class="read-more">Read full story →</a>
                 </article>
             </div>
         </div>
     </section>
 
-    <section id="models" class="section section-alt">
+    <!-- Latest LLM Releases -->
+    <section class="news-section section-alt" id="all-news">
         <div class="container">
-            <h2 class="section-title">Latest LLM Releases</h2>
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🚀</span>
+                    Latest LLM Releases
+                </h2>
+            </div>
             
-            <div class="news-grid">
-                <!-- GPT-5.4 Release -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 5, 2026</span>
-                        <span class="news-tag">OpenAI</span>
+            <div class="news-masonry">
+                <!-- GPT-5.4 -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1675271591211-126ad94e495d?w=500&h=300&fit=crop" alt="GPT-5.4">
+                        <span class="card-tag openai">OpenAI</span>
                     </div>
-                    <h3>OpenAI Releases GPT-5.4 with Native Computer Use</h3>
-                    <p class="news-summary">OpenAI's GPT-5.4 introduces native computer use capabilities, allowing the model to control browsers and desktop applications autonomously. With a 1 million token context window, 83% success rate on professional tasks, and 33% fewer factual errors than GPT-5.2.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Native Computer Use</span>
-                        <span class="highlight">1M Context</span>
-                        <span class="highlight">83% GDPval</span>
+                    <div class="card-body">
+                        <span class="card-date">Mar 5, 2026</span>
+                        <h4>OpenAI Releases GPT-5.4 with Native Computer Use</h4>
+                        <p>Native computer use capabilities, 1M context window, 83% success rate on professional tasks.</p>
+                        <div class="card-stats">
+                            <span>1M Context</span>
+                            <span>83% GDPval</span>
+                        </div>
+                        <a href="detail.html?model=gpt-5-4" class="card-link">Read story →</a>
                     </div>
-                    <a href="detail.html?model=gpt-5-4" class="read-more">Read full story →</a>
                 </article>
 
-                <!-- Xiaomi MiMo-V2-Pro -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 20, 2026</span>
-                        <span class="news-tag">Xiaomi</span>
+                <!-- Xiaomi MiMo -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1535378437327-b71494669e9d?w=500&h=300&fit=crop" alt="Xiaomi AI">
+                        <span class="card-tag xiaomi">Xiaomi</span>
                     </div>
-                    <h3>Xiaomi's MiMo-V2-Pro Stealth Launch Shakes AI World</h3>
-                    <p class="news-summary">Xiaomi revealed MiMo-V2-Pro, a 1 trillion parameter model that secretly tested as "Hunter Alpha" on OpenRouter. The model processed over 1 trillion tokens during anonymous testing, ranked #8 globally, and caused Xiaomi's stock to surge 5.8%.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">1T Parameters</span>
-                        <span class="highlight">#8 Global</span>
-                        <span class="highlight">Stealth Launch</span>
+                    <div class="card-body">
+                        <span class="card-date">Mar 20, 2026</span>
+                        <h4>Xiaomi's MiMo-V2-Pro Stealth Launch Shakes AI World</h4>
+                        <p>1 trillion parameter model secretly tested as "Hunter Alpha," ranked #8 globally.</p>
+                        <div class="card-stats">
+                            <span>1T Parameters</span>
+                            <span>#8 Global</span>
+                        </div>
+                        <a href="detail.html?model=mimo-v2-pro" class="card-link">Read story →</a>
                     </div>
-                    <a href="detail.html?model=mimo-v2-pro" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- MiniMax M2.7 -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 18, 2026</span>
-                        <span class="news-tag">MiniMax</span>
-                    </div>
-                    <h3>MiniMax M2.7: Self-Evolving AI Model Debuts</h3>
-                    <p class="news-summary">MiniMax unveiled M2.7, featuring a revolutionary self-evolution training process with over 100 iterations. The Mixture-of-Experts model achieves top-tier performance in coding and reasoning while maintaining cost-effective pricing.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Self-Evolving</span>
-                        <span class="highlight">100+ Iterations</span>
-                        <span class="highlight">Top Coding Scores</span>
-                    </div>
-                    <a href="detail.html?model=minimax-m2-7" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- NVIDIA Nemotron 3 -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 11, 2026</span>
-                        <span class="news-tag">NVIDIA</span>
-                    </div>
-                    <h3>NVIDIA Releases Nemotron 3 Super Open Model</h3>
-                    <p class="news-summary">NVIDIA launched Nemotron 3 Super, a 120B parameter hybrid Mamba-Transformer MoE with only 12B active parameters. The model offers 2.2x throughput vs GPT-OSS-120B, 1M context window, and is fully open for enterprise deployment.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">120B MoE</span>
-                        <span class="highlight">12B Active</span>
-                        <span class="highlight">2.2x Throughput</span>
-                    </div>
-                    <a href="detail.html?model=nemotron-3" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- Mistral Small 4 -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 20, 2026</span>
-                        <span class="news-tag">Mistral</span>
-                    </div>
-                    <h3>Mistral Small 4: Efficient Apache 2.0 Model Released</h3>
-                    <p class="news-summary">Mistral AI released Small 4, a 119B parameter MoE model with only 6.5B active parameters per forward pass. Licensed under Apache 2.0, it supports image and text inputs with hybrid reasoning, designed for efficient self-hosting.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">119B MoE</span>
-                        <span class="highlight">6.5B Active</span>
-                        <span class="highlight">Apache 2.0</span>
-                    </div>
-                    <a href="detail.html?model=mistral-small-4" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- GPT-5.4 Mini & Nano -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 17, 2026</span>
-                        <span class="news-tag">OpenAI</span>
-                    </div>
-                    <h3>OpenAI Releases GPT-5.4 Mini and Nano Variants</h3>
-                    <p class="news-summary">OpenAI expanded the GPT-5.4 family with Mini and Nano variants. Mini is 2x faster than its predecessor with 400K context, while Nano starts at just $0.20 per million tokens—making frontier AI more accessible.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">2x Faster</span>
-                        <span class="highlight">400K Context</span>
-                        <span class="highlight">$0.20/M Tokens</span>
-                    </div>
-                    <a href="detail.html?model=gpt-5-4-mini" class="read-more">Read full story →</a>
                 </article>
 
                 <!-- Claude Opus 4.6 -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 14, 2026</span>
-                        <span class="news-tag">Anthropic</span>
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1676299081847-824916de030a?w=500&h=300&fit=crop" alt="Claude AI">
+                        <span class="card-tag anthropic">Anthropic</span>
                     </div>
-                    <h3>Claude Opus 4.6 1M Context Now Generally Available</h3>
-                    <p class="news-summary">Anthropic made Claude Opus 4.6's 1 million token context window generally available at standard pricing. It scores 78.3% on MRCR v2 benchmark at 1M tokens—the highest recall rate among frontier models, with no surcharge for long contexts.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">1M Context GA</span>
-                        <span class="highlight">78.3% MRCR</span>
-                        <span class="highlight">No Surcharge</span>
+                    <div class="card-body">
+                        <span class="card-date">Mar 14, 2026</span>
+                        <h4>Claude Opus 4.6 1M Context Now Generally Available</h4>
+                        <p>Highest recall rate among frontier models with no surcharge for long contexts.</p>
+                        <div class="card-stats">
+                            <span>78.3% MRCR</span>
+                            <span>No Surcharge</span>
+                        </div>
+                        <a href="detail.html?model=claude-opus-4-6" class="card-link">Read story →</a>
                     </div>
-                    <a href="detail.html?model=claude-opus-4-6" class="read-more">Read full story →</a>
+                </article>
+
+                <!-- MiniMax M2.7 -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&h=300&fit=crop" alt="AI Model">
+                        <span class="card-tag">MiniMax</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">Mar 18, 2026</span>
+                        <h4>MiniMax M2.7: Self-Evolving AI Model Debuts</h4>
+                        <p>Revolutionary self-evolution training with 100+ iterations. Top-tier coding performance.</p>
+                        <div class="card-stats">
+                            <span>100+ Iterations</span>
+                            <span>Top Coding</span>
+                        </div>
+                        <a href="detail.html?model=minimax-m2-7" class="card-link">Read story →</a>
+                    </div>
                 </article>
 
                 <!-- DeepSeek V4 -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 3, 2026</span>
-                        <span class="news-tag">DeepSeek</span>
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?w=500&h=300&fit=crop" alt="DeepSeek">
+                        <span class="card-tag deepseek">DeepSeek</span>
                     </div>
-                    <h3>DeepSeek V4 Launches with 1T Parameters, 40% Memory Cut</h3>
-                    <p class="news-summary">DeepSeek V4 introduced MODEL1 architecture with tiered KV cache storage, cutting memory use by 40%. The 1 trillion parameter model uses only 32 billion active parameters per token and achieves 1.8x inference speedup with sparse FP8 decoding.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">1T Parameters</span>
-                        <span class="highlight">40% Less Memory</span>
-                        <span class="highlight">1.8x Speedup</span>
+                    <div class="card-body">
+                        <span class="card-date">Mar 3, 2026</span>
+                        <h4>DeepSeek V4 Launches with 1T Parameters</h4>
+                        <p>MODEL1 architecture cuts memory use by 40% with 1.8x inference speedup.</p>
+                        <div class="card-stats">
+                            <span>1T Parameters</span>
+                            <span>40% Less Memory</span>
+                        </div>
+                        <a href="detail.html?model=deepseek-v4" class="card-link">Read story →</a>
                     </div>
-                    <a href="detail.html?model=deepseek-v4" class="read-more">Read full story →</a>
+                </article>
+
+                <!-- Mistral Small 4 -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop" alt="Mistral AI">
+                        <span class="card-tag mistral">Mistral</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">Mar 20, 2026</span>
+                        <h4>Mistral Small 4: Efficient Apache 2.0 Model Released</h4>
+                        <p>119B parameter MoE with only 6.5B active. Apache 2.0 licensed for self-hosting.</p>
+                        <div class="card-stats">
+                            <span>119B MoE</span>
+                            <span>Apache 2.0</span>
+                        </div>
+                        <a href="detail.html?model=mistral-small-4" class="card-link">Read story →</a>
+                    </div>
+                </article>
+
+                <!-- Nemotron 3 -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555664424-778a69022365?w=500&h=300&fit=crop" alt="NVIDIA AI">
+                        <span class="card-tag nvidia">NVIDIA</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">Mar 11, 2026</span>
+                        <h4>NVIDIA Nemotron 3 Super Open Model</h4>
+                        <p>120B hybrid Mamba-Transformer with 2.2x throughput vs competitors.</p>
+                        <div class="card-stats">
+                            <span>120B MoE</span>
+                            <span>2.2x Speed</span>
+                        </div>
+                        <a href="detail.html?model=nemotron-3" class="card-link">Read story →</a>
+                    </div>
                 </article>
 
                 <!-- Google TurboQuant -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 26, 2026</span>
-                        <span class="news-tag">Google</span>
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Google AI">
+                        <span class="card-tag google">Google</span>
                     </div>
-                    <h3>Google TurboQuant Slashes AI Memory Usage by 6x</h3>
-                    <p class="news-summary">Google's new TurboQuant compression algorithm reduces large language model memory requirements by at least six times with absolutely zero loss in accuracy. This breakthrough could enable 70B parameter models on consumer GPUs.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">6x Memory Reduction</span>
-                        <span class="highlight">Zero Accuracy Loss</span>
-                        <span class="highlight">Consumer GPU Ready</span>
+                    <div class="card-body">
+                        <span class="card-date">Mar 26, 2026</span>
+                        <h4>Google TurboQuant Slashes AI Memory Usage by 6x</h4>
+                        <p>Breakthrough compression enables 70B parameter models on consumer GPUs.</p>
+                        <div class="card-stats">
+                            <span>6x Reduction</span>
+                            <span>Zero Loss</span>
+                        </div>
+                        <a href="detail.html?model=google-turboquant" class="card-link">Read story →</a>
                     </div>
-                    <a href="detail.html?model=google-turboquant" class="read-more">Read full story →</a>
                 </article>
-
-                <!-- Apple Gemini Deal -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 26, 2026</span>
-                        <span class="news-tag">Apple</span>
-                    </div>
-                    <h3>Apple Gets Complete Gemini Access to Train On-Device AI</h3>
-                    <p class="news-summary">As part of their January 2026 deal, Apple now has complete access to Google's Gemini in its data centers. Apple is distilling 'student' AI models tuned for iPhones and Macs, with the first features expected in iOS 19.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Full Gemini Access</span>
-                        <span class="highlight">On-Device AI</span>
-                        <span class="highlight">iOS 19 Preview</span>
-                    </div>
-                    <a href="detail.html?model=apple-gemini-deal" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- Intel Arc Pro B70 -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 25, 2026</span>
-                        <span class="news-tag">Hardware</span>
-                    </div>
-                    <h3>Intel Arc Pro B70 'Big Battlemage' GPU for AI Under $1,000</h3>
-                    <p class="news-summary">Intel announced the Arc Pro B70 with 32GB VRAM and 32 Xe2 cores for $949. The 'Big Battlemage' GPU targets AI inference workloads, offering a cost-effective alternative to NVIDIA's professional cards for running large language models locally.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">32GB VRAM</span>
-                        <span class="highlight">$949 Price</span>
-                        <span class="highlight">AI Inference</span>
-                    </div>
-                    <a href="detail.html?model=intel-arc-pro-b70" class="read-more">Read full story →</a>
-                </article>
-
             </div>
         </div>
     </section>
 
-    <section id="industry" class="section">
+    <!-- OpenClaw & Agentic AI Section -->
+    <section class="news-section">
         <div class="container">
-            <h2 class="section-title">Industry Updates</h2>
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🦞</span>
+                    OpenClaw & Agentic AI
+                </h2>
+            </div>
             
-            <div class="news-grid">
-                <!-- OpenAI Discontinues Sora -->
-                <article class="news-card featured">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 24, 2026</span>
-                        <span class="news-tag breaking-tag">Breaking</span>
+            <div class="horizontal-scroll">
+                <article class="scroll-card">
+                    <div class="scroll-image">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop" alt="NVIDIA GTC">
                     </div>
-                    <h3>OpenAI Shuts Down Sora Video Platform After Just 6 Months</h3>
-                    <p class="news-summary">OpenAI is discontinuing Sora, its AI video generation app and API. The move ends a $1 billion Disney partnership and signals a strategic pivot toward coding tools and enterprise products ahead of a potential IPO.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Service Ending</span>
-                        <span class="highlight">$1B Disney Deal Lost</span>
-                        <span class="highlight">IPO Preparation</span>
+                    <div class="scroll-content">
+                        <span class="scroll-tag nvidia">NVIDIA</span>
+                        <h4>NVIDIA NemoClaw at GTC 2026</h4>
+                        <p>Enterprise agent runtime with native sandboxing. Jensen Huang calls OpenClaw "most popular open source project in history."</p>
+                        <span class="scroll-date">Mar 16, 2026</span>
                     </div>
-                    <a href="detail.html?model=openai-sora-discontinued" class="read-more">Read full story →</a>
                 </article>
 
+                <article class="scroll-card">
+                    <div class="scroll-image">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=250&fit=crop" alt="WeChat">
+                    </div>
+                    <div class="scroll-content">
+                        <span class="scroll-tag">Tencent</span>
+                        <h4>Tencent Integrates OpenClaw into WeChat</h4>
+                        <p>ClawBot brings AI agents to 1+ billion users in China's AI agent race.</p>
+                        <span class="scroll-date">Mar 22, 2026</span>
+                    </div>
+                </article>
+
+                <article class="scroll-card">
+                    <div class="scroll-image">
+                        <img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=400&h=250&fit=crop" alt="Space">
+                    </div>
+                    <div class="scroll-content">
+                        <span class="scroll-tag nvidia">NVIDIA</span>
+                        <h4>AI Data Centers in Space</h4>
+                        <p>Vera Rubin Space 1: orbital AI compute with radiation-only cooling.</p>
+                        <span class="scroll-date">Mar 16, 2026</span>
+                    </div>
+                </article>
+
+                <article class="scroll-card">
+                    <div class="scroll-image">
+                        <img src="https://images.unsplash.com/photo-1564865878688-9a244444042a?w=400&h=250&fit=crop" alt="GitHub">
+                    </div>
+                    <div class="scroll-content">
+                        <span class="scroll-tag openclaw">Open Source</span>
+                        <h4>OpenClaw Hits 250K GitHub Stars</h4>
+                        <p>Fastest-growing open-source project ever. 13,729+ skills on ClawHub.</p>
+                        <span class="scroll-date">Mar 2026</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Updates -->
+    <section class="news-section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🏢</span>
+                    Industry Updates
+                </h2>
+            </div>
+            
+            <div class="industry-grid">
                 <!-- OpenAI ChatGPT Ads -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 27, 2026</span>
-                        <span class="news-tag">OpenAI</span>
+                <article class="industry-card">
+                    <div class="industry-icon">💰</div>
+                    <div class="industry-content">
+                        <span class="industry-date">Mar 27, 2026</span>
+                        <h4>OpenAI Adds Ads to ChatGPT</h4>
+                        <p>Free users now see sponsored content. Travel queries trigger Booking.com ads, contradicting CEO's "I hate ads" stance.</p>
+                        <a href="detail.html?model=openai-chatgpt-ads">Read more →</a>
                     </div>
-                    <h3>OpenAI Adds Ads to ChatGPT for Free Users</h3>
-                    <p class="news-summary">OpenAI began testing ads in ChatGPT for free users, with travel queries triggering sponsored content from partners like Booking.com. The move contradicts CEO Sam Altman's previous statements that he "hates ads."</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Free Tier Only</span>
-                        <span class="highlight">Travel Ads First</span>
-                        <span class="highlight">Revenue Shift</span>
-                    </div>
-                    <a href="detail.html?model=openai-chatgpt-ads" class="read-more">Read full story →</a>
                 </article>
 
-                <!-- NVIDIA GTC 2026 -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 16-19, 2026</span>
-                        <span class="news-tag">NVIDIA</span>
+                <!-- NVIDIA GTC -->
+                <article class="industry-card">
+                    <div class="industry-icon">🎮</div>
+                    <div class="industry-content">
+                        <span class="industry-date">Mar 16-19, 2026</span>
+                        <h4>NVIDIA GTC 2026</h4>
+                        <p>Vera Rubin platform 3.3x faster than Blackwell. $1T+ in infrastructure orders announced.</p>
+                        <a href="detail.html?model=gtc-2026">Read more →</a>
                     </div>
-                    <h3>NVIDIA GTC 2026: Vera Rubin, Feynman, and AI Factories</h3>
-                    <p class="news-summary">NVIDIA's GTC 2026 unveiled the Vera Rubin platform (3.3x faster than Blackwell), Feynman chip architecture, NemoClaw for enterprise agents, and Isaac Sim for robotics. Jensen Huang announced $1T+ in infrastructure orders and $26B investment in open-weight models.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Vera Rubin</span>
-                        <span class="highlight">$1T+ Orders</span>
-                        <span class="highlight">Physical AI</span>
-                    </div>
-                    <a href="detail.html?model=gtc-2026" class="read-more">Read full story →</a>
                 </article>
 
-                <!-- Meta MTIA -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 11, 2026</span>
-                        <span class="news-tag">Meta</span>
+                <!-- Meta Chips -->
+                <article class="industry-card">
+                    <div class="industry-icon">🔷</div>
+                    <div class="industry-content">
+                        <span class="industry-date">Mar 11, 2026</span>
+                        <h4>Meta Unveils MTIA 300-500 Chips</h4>
+                        <p>Four new AI chip generations with 25x FLOPS increase. Reducing NVIDIA dependence.</p>
+                        <a href="detail.html?model=meta-mtia">Read more →</a>
                     </div>
-                    <h3>Meta Unveils MTIA 300-500 AI Chip Series</h3>
-                    <p class="news-summary">Meta revealed four new generations of custom AI chips with 25x FLOPS increase. MTIA 400 is already in testing with competitive performance, while 450/500 series target mass deployment by end of 2027 to reduce NVIDIA dependence.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">4 New Chips</span>
-                        <span class="highlight">25x FLOPS</span>
-                        <span class="highlight">2027 Deploy</span>
-                    </div>
-                    <a href="detail.html?model=meta-mtia" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- SoftBank OpenAI IPO -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 27, 2026</span>
-                        <span class="news-tag">Business</span>
-                    </div>
-                    <h3>SoftBank's $40B Loan Signals Imminent OpenAI IPO</h3>
-                    <p class="news-summary">JPMorgan and Goldman Sachs are extending a 12-month, $40 billion unsecured loan to SoftBank. The massive financing is widely seen as preparation for a landmark OpenAI IPO expected in 2026, potentially valuing the company at over $300 billion.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">$40B Loan</span>
-                        <span class="highlight">2026 IPO</span>
-                        <span class="highlight">$300B+ Value</span>
-                    </div>
-                    <a href="detail.html?model=openai-ipo" class="read-more">Read full story →</a>
                 </article>
 
                 <!-- Anthropic Market Share -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 19, 2026</span>
-                        <span class="news-tag">Business</span>
+                <article class="industry-card">
+                    <div class="industry-icon">📈</div>
+                    <div class="industry-content">
+                        <span class="industry-date">Mar 19, 2026</span>
+                        <h4>Anthropic Captures 25% Market Share</h4>
+                        <p>Business AI subscriptions shifting from OpenAI to Anthropic for safety focus.</p>
+                        <a href="detail.html?model=anthropic-market-share">Read more →</a>
                     </div>
-                    <h3>Anthropic Captures 25% of Business AI Market</h3>
-                    <p class="news-summary">Anthropic has captured nearly 25% of the business AI subscription market as OpenAI lost share. The shift is attributed to customer preference for Anthropic's stance against military applications and its focus on AI safety.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">25% Market Share</span>
-                        <span class="highlight">Enterprise Focus</span>
-                        <span class="highlight">Safety First</span>
-                    </div>
-                    <a href="detail.html?model=anthropic-market-share" class="read-more">Read full story →</a>
                 </article>
 
-                <!-- Trump AI Framework -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 20, 2026</span>
-                        <span class="news-tag">Policy</span>
+                <!-- SoftBank IPO -->
+                <article class="industry-card">
+                    <div class="industry-icon">💵</div>
+                    <div class="industry-content">
+                        <span class="industry-date">Mar 27, 2026</span>
+                        <h4>SoftBank's $40B OpenAI IPO Signal</h4>
+                        <p>Massive financing seen as preparation for landmark OpenAI IPO at $300B+ valuation.</p>
+                        <a href="detail.html?model=openai-ipo">Read more →</a>
                     </div>
-                    <h3>Trump Admin Releases National AI Legislative Framework</h3>
-                    <p class="news-summary">The framework calls for Congress to enact unified federal AI standards and preempt state regulations. It focuses on accelerating AI deployment, child safety, and data center energy consumption ahead of midterm elections.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Federal Standard</span>
-                        <span class="highlight">Preempts States</span>
-                        <span class="highlight">Energy Focus</span>
-                    </div>
-                    <a href="detail.html?model=trump-ai-framework" class="read-more">Read full story →</a>
                 </article>
 
-                <!-- xAI SpaceX -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Feb 2026</span>
-                        <span class="news-tag">SpaceX</span>
+                <!-- Samsung Investment -->
+                <article class="industry-card">
+                    <div class="industry-icon">💾</div>
+                    <div class="industry-content">
+                        <span class="industry-date">Mar 19, 2026</span>
+                        <h4>Samsung $73B AI Chip Investment</h4>
+                        <p>22% spending increase targeting HBM memory and advanced robotics development.</p>
+                        <a href="detail.html?model=samsung-ai-chip-expansion">Read more →</a>
                     </div>
-                    <h3>xAI Joins SpaceX for Orbital Data Centers</h3>
-                    <p class="news-summary">SpaceX officially acquired xAI to create a vertically integrated "innovation engine." The merger aims to deploy a constellation of one million solar-powered orbital data centers to overcome terrestrial power constraints.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">SpaceX Merger</span>
-                        <span class="highlight">Orbital Data Centers</span>
-                        <span class="highlight">1M Satellites</span>
-                    </div>
-                    <a href="detail.html?model=xai-spacex" class="read-more">Read full story →</a>
-                </article>
-
-                <!-- Samsung AI Investment -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 19, 2026</span>
-                        <span class="news-tag">Samsung</span>
-                    </div>
-                    <h3>Samsung Announces $73 Billion AI Chip Investment</h3>
-                    <p class="news-summary">Samsung will spend $73 billion on AI chip production and R&D in 2026—a 22% increase. The investment targets high-bandwidth memory for NVIDIA GPUs and advanced robotics, as Co-CEO Jun Young-hyun says agentic AI is driving a surge in orders.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">$73B Investment</span>
-                        <span class="highlight">22% Increase</span>
-                        <span class="highlight">HBM Memory</span>
-                    </div>
-                    <a href="detail.html?model=samsung-ai-chip-expansion" class="read-more">Read full story →</a>
                 </article>
 
                 <!-- Meta AI Moderation -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 20, 2026</span>
-                        <span class="news-tag">Meta</span>
+                <article class="industry-card">
+                    <div class="industry-icon">🤖</div>
+                    <div class="industry-content">
+                        <span class="industry-date">Mar 20, 2026</span>
+                        <h4>Meta Replaces Moderators with AI</h4>
+                        <p>AI systems to handle content moderation, replacing human contractors over next few years.</p>
+                        <a href="detail.html?model=meta-ai-moderation">Read more →</a>
                     </div>
-                    <h3>Meta to Replace Content Moderators with AI Systems</h3>
-                    <p class="news-summary">Meta announced its AI moderation systems will replace human contractors over the next few years. The company says AI will handle repetitive reviews of graphic content, drug sales, and scams, while humans focus on complex cases.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">AI Moderation</span>
-                        <span class="highlight">Contractor Cuts</span>
-                        <span class="highlight">FB + Instagram</span>
-                    </div>
-                    <a href="detail.html?model=meta-ai-moderation" class="read-more">Read full story →</a>
                 </article>
 
-                <!-- Meta Avocado Delay -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 13, 2026</span>
-                        <span class="news-tag">Meta</span>
+                <!-- Trump Framework -->
+                <article class="industry-card">
+                    <div class="industry-icon">🏛️</div>
+                    <div class="industry-content">
+                        <span class="industry-date">Mar 20, 2026</span>
+                        <h4>National AI Legislative Framework</h4>
+                        <p>Trump administration proposes federal AI governance to preempt state regulations.</p>
+                        <a href="detail.html?model=trump-ai-framework">Read more →</a>
                     </div>
-                    <h3>Meta Delays 'Avocado' AI Model to May 2026</h3>
-                    <p class="news-summary">Meta postponed its next-gen AI model codenamed 'Avocado' from March to at least May due to underperformance compared to Google and OpenAI. The delay is a setback for Meta's AI efforts led by ex-Scale CEO Alexandr Wang.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">Avocado Delayed</span>
-                        <span class="highlight">Performance Issues</span>
-                        <span class="highlight">May 2026</span>
-                    </div>
-                    <a href="detail.html?model=meta-avocado-delay" class="read-more">Read full story →</a>
                 </article>
+            </div>
+        </div>
+    </section>
 
-                <!-- Adobe CEO Departure -->
-                <article class="news-card">
-                    <div class="news-meta">
-                        <span class="news-date">Mar 12, 2026</span>
-                        <span class="news-tag">Adobe</span>
-                    </div>
-                    <h3>Adobe CEO Shantanu Narayen Steps Down After 18 Years</h3>
-                    <p class="news-summary">Adobe CEO Shantanu Narayen announced his departure after nearly two decades. In his farewell, he stated 'the next era of creativity is being written by AI' and highlighted Adobe's role in shaping AI-powered creative workflows.</p>
-                    <div class="news-highlights">
-                        <span class="highlight">CEO Departure</span>
-                        <span class="highlight">18 Years</span>
-                        <span class="highlight">AI Creativity Era</span>
-                    </div>
-                    <a href="detail.html?model=adobe-ceo-departure" class="read-more">Read full story →</a>
-                </article>
-
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <div class="newsletter-content">
+                    <h3>Stay Ahead of AI</h3>
+                    <p>Get the latest AI news, model releases, and industry insights delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>Data compiled from official sources, benchmark leaderboards, and independent evaluations.</p>
-            <p class="footer-update">Site auto-updates weekly. Last sync: March 31, 2026. | aipulse.buzz</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">◉</span>
+                        <span>AI Pulse.buzz</span>
+                    </a>
+                    <p>Your gateway to the AI revolution</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Sections</h4>
+                    <ul>
+                        <li><a href="ai-news.html">AI News</a></li>
+                        <li><a href="ai-models.html">Models</a></li>
+                        <li><a href="ai-benchmarks.html">Benchmarks</a></li>
+                        <li><a href="gaming.html">Gaming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-bottom">Last updated: March 31, 2026 | aipulse.buzz</p>
         </div>
     </footer>
 
