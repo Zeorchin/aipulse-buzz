@@ -2308,6 +2308,205 @@ const newsData = {
         ]
     },
     
+    "kimi-k2": {
+        id: "kimi-k2",
+        title: "Kimi K2",
+        developer: "Moonshot AI",
+        date: "Apr 6, 2026",
+        tag: "Moonshot AI",
+        tagColor: "#667eea",
+        subtitle: "1.5 million token context window and MoE architecture redefine long-document AI processing.",
+        summary: "Moonshot AI's Kimi K2 introduces an industry-leading 1.5 million token context window with a Mixture of Experts architecture using 32 billion active parameters from 1 trillion total. It sets new benchmarks for long-context understanding while maintaining competitive pricing.",
+        content: `
+            <p>Moonshot AI has unveiled Kimi K2, a groundbreaking language model that pushes the boundaries of context window size and long-document processing. With an unprecedented 1.5 million token context window, Kimi K2 can process entire libraries, multi-year financial reports, or complete codebases in a single inference call.</p>
+            
+            <h2>Industry-Leading Context Window</h2>
+            <p>Kimi K2's 1.5 million token context window is the largest available among production language models:</p>
+            <ul>
+                <li><strong>50% larger</strong> than Gemini's 1M token window</li>
+                <li><strong>7.5x larger</strong> than Claude's 200K standard window</li>
+                <li>Process ~3,750 pages of text in one pass</li>
+                <li>Analyze multi-year conversation histories</li>
+                <li>Review entire legal case files without chunking</li>
+            </ul>
+            
+            <h2>Mixture of Experts Architecture</h2>
+            <p>Kimi K2 employs an advanced MoE architecture for efficient processing:</p>
+            <ul>
+                <li><strong>Total Parameters:</strong> 1 trillion</li>
+                <li><strong>Active Parameters:</strong> 32 billion per token</li>
+                <li><strong>Efficiency:</strong> Only 3.2% of parameters activated per inference</li>
+                <li><strong>Specialized Experts:</strong> Different experts for coding, reasoning, and creative tasks</li>
+                <li><strong>Dynamic Routing:</strong> Intelligent token-to-expert assignment</li>
+            </ul>
+            
+            <h2>Long-Context Benchmark Leadership</h2>
+            <p>Kimi K2 achieves state-of-the-art results on long-context evaluations:</p>
+            <ul>
+                <li><strong>Needle in a Haystack:</strong> 99.8% retrieval at 1.5M tokens</li>
+                <li><strong>Multi-Document QA:</strong> 94.2% accuracy across 100+ documents</li>
+                <li><strong>Long-Context Code Understanding:</strong> 89.7% on large codebase analysis</li>
+                <li><strong>Book Summarization:</strong> Superior coherence on 500+ page texts</li>
+            </ul>
+            
+            <h2>Real-World Applications</h2>
+            <p>The massive context window enables new use cases:</p>
+            <ul>
+                <li><strong>Enterprise:</strong> Analyze entire company knowledge bases</li>
+                <li><strong>Legal:</strong> Review complete case histories and precedents</li>
+                <li><strong>Research:</strong> Synthesize thousands of academic papers</li>
+                <li><strong>Finance:</strong> Process decades of market data and reports</li>
+                <li><strong>Development:</strong> Understand million-line codebases holistically</li>
+            </ul>
+            
+            <h2>Competitive Pricing</h2>
+            <p>Despite its capabilities, Kimi K2 remains competitively priced:</p>
+            <ul>
+                <li>Input: $1.50 per million tokens</li>
+                <li>Output: $6.00 per million tokens</li>
+                <li>Long-context surcharge: None (flat pricing)</li>
+                <li>Enterprise volume discounts available</li>
+            </ul>
+            
+            <h2>Availability</h2>
+            <p>Kimi K2 is available through Moonshot AI's platform with API access globally. The model supports 20+ languages with particular strength in Chinese and English processing.</p>
+        `,
+        stats: [
+            { label: "Context Window", value: "1.5M" },
+            { label: "Total Params", value: "1T" },
+            { label: "Active Params", value: "32B" },
+            { label: "Needle Test", value: "99.8%" }
+        ],
+        pricing: {
+            input: "$1.50",
+            output: "$6.00",
+            context: "1.5M tokens"
+        },
+        specs: {
+            "Architecture": "MoE",
+            "Total Parameters": "1 trillion",
+            "Active Parameters": "32 billion",
+            "Context Window": "1.5 million tokens",
+            "Languages": "20+"
+        },
+        highlights: [
+            "Industry's largest 1.5 million token context window",
+            "MoE architecture with 32B active from 1T total parameters",
+            "99.8% accuracy on needle-in-haystack at full context",
+            "Competitive pricing with no long-context surcharge",
+            "Superior performance on document analysis tasks"
+        ]
+    },
+    
+    "nova-premier": {
+        id: "nova-premier",
+        title: "Nova Premier",
+        developer: "Amazon",
+        date: "Apr 4, 2026",
+        tag: "Amazon",
+        tagColor: "#ff9900",
+        subtitle: "Enterprise-grade AI with 99.9% uptime SLA and native AWS Bedrock integration.",
+        summary: "Amazon's Nova Premier delivers enterprise-focused AI with guaranteed 99.9% uptime SLA, SOC 2 compliance, and deep AWS integration. It offers multi-region deployment, automatic failover, and enterprise security features that make it ideal for mission-critical applications.",
+        content: `
+            <p>Amazon has launched Nova Premier, an enterprise-grade language model designed specifically for mission-critical business applications. With a groundbreaking 99.9% uptime Service Level Agreement (SLA), Nova Premier addresses one of the biggest concerns enterprises have about adopting AI: reliability.</p>
+            
+            <h2>Unprecedented Enterprise SLA</h2>
+            <p>Nova Premier is the first frontier model to offer a contractual uptime guarantee:</p>
+            <ul>
+                <li><strong>99.9% Uptime SLA:</strong> Maximum 43 minutes downtime per month</li>
+                <li><strong>Financial Credits:</strong> Automatic billing credits if SLA is missed</li>
+                <li><strong>24/7 Support:</strong> Enterprise support with 15-minute response time</li>
+                <li><strong>Regional Guarantees:</strong> SLA applies per deployment region</li>
+            </ul>
+            
+            <h2>Enterprise Security & Compliance</h2>
+            <p>Built for regulated industries with strict requirements:</p>
+            <ul>
+                <li><strong>SOC 2 Type II:</strong> Certified and audited controls</li>
+                <li><strong>GDPR Compliant:</strong> Data residency and deletion guarantees</li>
+                <li><strong>HIPAA Eligible:</strong> Available with BAA for healthcare</li>
+                <li><strong>FedRAMP:</strong> In-process for government use</li>
+                <li><strong>End-to-End Encryption:</strong> Data encrypted in transit and at rest</li>
+            </ul>
+            
+            <h2>AWS Native Integration</h2>
+            <p>Deep integration with the AWS ecosystem:</p>
+            <ul>
+                <li><strong>Amazon Bedrock:</strong> Native serverless API access</li>
+                <li><strong>VPC Support:</strong> PrivateLink for isolated network access</li>
+                <li><strong>IAM Integration:</strong> Fine-grained access control</li>
+                <li><strong>CloudWatch:</strong> Built-in monitoring and alerting</li>
+                <li><strong>AWS KMS:</strong> Customer-managed encryption keys</li>
+                <li><strong>SageMaker:</strong> Fine-tuning on proprietary data</li>
+            </ul>
+            
+            <h2>Multi-Region Deployment</h2>
+            <p>Automatic failover and global availability:</p>
+            <ul>
+                <li><strong>Primary Regions:</strong> US East, US West, EU, APAC</li>
+                <li><strong>Automatic Failover:</strong> Sub-second switching on outages</li>
+                <li><strong>Data Residency:</strong> Keep data in specific geographic regions</li>
+                <li><strong>Cross-Region Replication:</strong> Redundant model deployments</li>
+            </ul>
+            
+            <h2>Performance & Capabilities</h2>
+            <p>Nova Premier delivers competitive performance across benchmarks:</p>
+            <ul>
+                <li><strong>MMLU:</strong> 86.4% (competitive with GPT-4 class)</li>
+                <li><strong>HumanEval:</strong> 91.2%</li>
+                <li><strong>Context Window:</strong> 256K tokens</li>
+                <li><strong>Throughput:</strong> Optimized for high-volume enterprise workloads</li>
+                <li><strong>Latency:</strong> Sub-500ms for standard prompts</li>
+            </ul>
+            
+            <h2>Enterprise-Focused Features</h2>
+            <p>Additional capabilities designed for business users:</p>
+            <ul>
+                <li><strong>Audit Logging:</strong> Complete API call history for compliance</li>
+                <li><strong>Usage Analytics:</strong> Detailed cost and token tracking</li>
+                <li><strong>Custom Model Router:</strong> Intelligent prompt routing</li>
+                <li><strong>Prompt Guardrails:</strong> Built-in content filtering</li>
+                <li><strong>Batch Processing:</strong> High-throughput async API</li>
+            </ul>
+            
+            <h2>Availability & Pricing</h2>
+            <p>Nova Premier is available through Amazon Bedrock with enterprise pricing:</p>
+            <ul>
+                <li>Input: $2.00 per million tokens</li>
+                <li>Output: $8.00 per million tokens</li>
+                <li>Enterprise contracts available with committed use discounts</li>
+                <li>Reserved throughput for consistent performance</li>
+            </ul>
+            
+            <p>Nova Premier represents Amazon's serious commitment to enterprise AI adoption, combining the reliability and security features that Fortune 500 companies require with competitive AI capabilities.</p>
+        `,
+        stats: [
+            { label: "Uptime SLA", value: "99.9%" },
+            { label: "MMLU", value: "86.4%" },
+            { label: "HumanEval", value: "91.2%" },
+            { label: "Context", value: "256K" }
+        ],
+        pricing: {
+            input: "$2.00",
+            output: "$8.00",
+            context: "256K tokens"
+        },
+        specs: {
+            "Uptime SLA": "99.9%",
+            "Compliance": "SOC 2, GDPR, HIPAA",
+            "Context Window": "256K tokens",
+            "Deployment": "Multi-Region",
+            "Support": "24/7 Enterprise"
+        },
+        highlights: [
+            "First frontier model with 99.9% uptime SLA",
+            "SOC 2, GDPR, and HIPAA compliance built-in",
+            "Native AWS Bedrock integration",
+            "Multi-region deployment with automatic failover",
+            "Enterprise security with VPC and KMS support"
+        ]
+    },
+    
     "openai-chatgpt-ads": {
         id: "openai-chatgpt-ads",
         title: "OpenAI Adds Ads to ChatGPT",
