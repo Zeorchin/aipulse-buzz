@@ -2700,6 +2700,83 @@ const newsData = {
             "Follows Sora discontinuation in cost-cutting",
             "Targets multibillion-dollar search ad market"
         ]
+    },
+
+    "openai-ipo": {
+        id: "openai-ipo",
+        title: "OpenAI IPO Preparation",
+        developer: "OpenAI",
+        date: "Mar 27, 2026",
+        tag: "OpenAI",
+        tagColor: "#10a37f",
+        subtitle: "SoftBank's $40 billion financing signals imminent IPO at $300B+ valuation.",
+        summary: "Industry sources indicate OpenAI is preparing for a landmark IPO following SoftBank's massive $40 billion investment. The company is restructuring operations, cutting costs, and building revenue streams ahead of a potential $300+ billion valuation public offering.",
+        content: `
+            <p>The artificial intelligence world is buzzing with speculation about an impending OpenAI initial public offering. SoftBank's recent $40 billion investment in the company, alongside Microsoft's existing partnership, has fueled expectations that OpenAI is preparing to go public at a valuation exceeding $300 billion.</p>
+            
+            <h2>IPO Signals</h2>
+            <p>Several recent moves suggest OpenAI is IPO-readying:</p>
+            <ul>
+                <li><strong>Cost Cutting:</strong> Discontinuation of Sora video platform after just 6 months</li>
+                <li><strong>Revenue Focus:</strong> Introduction of ads in ChatGPT for free users</li>
+                <li><strong>Restructuring:</strong> Corporate structure changes to accommodate public markets</li>
+                <li><strong>Financial Reporting:</strong> Enhanced transparency and revenue tracking</li>
+            </ul>
+            
+            <h2>SoftBank's $40B Investment</h2>
+            <p>Masayoshi Son's massive bet on OpenAI signals strong institutional confidence:</p>
+            <ul>
+                <li>Largest single investment in AI history</li>
+                <li>Values OpenAI at $300+ billion pre-IPO</li>
+                <li>Part of SoftBank's $100B AI infrastructure commitment</li>
+                <li>Follows successful formula used with Alibaba IPO</li>
+            </ul>
+            
+            <h2>Market Timing</h2>
+            <p>Industry analysts see this as optimal timing:</p>
+            <ul>
+                <li>ChatGPT remains the most recognized AI brand globally</li>
+                <li>Enterprise adoption accelerating across Fortune 500</li>
+                <li>GPT-5.4 with native computer use gaining traction</li>
+                <li>AI market enthusiasm at all-time highs</li>
+            </ul>
+            
+            <h2>Risks and Challenges</h2>
+            <p>Despite the hype, challenges remain:</p>
+            <ul>
+                <li>Intense competition from Google, Anthropic, and open-source models</li>
+                <li>Massive compute costs affecting profitability</li>
+                <li>Regulatory scrutiny on AI safety and market power</li>
+                <li>Sam Altman's previous statements about "hating ads"</li>
+            </ul>
+            
+            <h2>Potential Timeline</h2>
+            <p>Sources suggest the IPO could come as early as late 2026 or early 2027, making it one of the most anticipated tech public offerings since Meta (then Facebook) in 2012.</p>
+        `,
+        stats: [
+            { label: "Valuation", value: "$300B+" },
+            { label: "SoftBank Investment", value: "$40B" },
+            { label: "Expected Timeline", value: "2026-27" },
+            { label: "Previous Round", value: "$157B" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Pre-IPO Valuation": "$300+ Billion",
+            "Lead Investor": "SoftBank",
+            "Previous Investor": "Microsoft",
+            "Expected Timeline": "Late 2026/Early 2027"
+        },
+        highlights: [
+            "SoftBank's $40B investment signals imminent IPO",
+            "Potential $300+ billion valuation",
+            "Cost-cutting measures including Sora shutdown",
+            "New revenue streams like ChatGPT ads",
+            "Most anticipated tech IPO since Meta 2012"
+        ]
     }
 };
 
