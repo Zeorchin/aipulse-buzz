@@ -6,39 +6,76 @@
     <title>AI Pulse | News Detail</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9041541077881789" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="additional-styles.css">
+    <link rel="stylesheet" href="news-styles.css">
     <link rel="stylesheet" href="detail.css">
     <link rel="stylesheet" href="ads.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="ai-news.html" class="logo">
                 <span class="logo-icon">◉</span>
                 <span>AI Pulse.buzz</span>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html#news">News</a></li>
-                <li><a href="index.html#leaderboard">Leaderboard</a></li>
-                <li><a href="index.html#models">Models</a></li>
-                <li><a href="index.html#pricing">Pricing</a></li>
+                <li><a href="ai-news.html" class="active">News</a></li>
+                <li><a href="ai-models.html">Models</a></li>
+                <li><a href="ai-benchmarks.html">Benchmarks</a></li>
+                <li><a href="ai-finance.html">Finance</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero Section with Dynamic Image -->
+    <header class="detail-hero" id="detail-hero">
+        <div class="detail-hero-bg"></div>
+        <div class="detail-hero-image" id="hero-image"></div>
+        <div class="detail-hero-overlay"></div>
+        <div class="container">
+            <div class="detail-hero-content">
+                <a href="ai-news.html" class="back-link">← Back to News</a>
+                <div id="hero-content">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </header>
+
     <main class="detail-page">
         <div class="container">
-            <a href="index.html#news" class="back-link">← Back to News</a>
-            
-            <article id="detail-content" class="detail-article">
-                <!-- Content loaded dynamically via JavaScript -->
-                <div class="loading">Loading article...</div>
-            </article>
+            <div class="detail-layout">
+                <article id="detail-content" class="detail-article">
+                    <!-- Content loaded dynamically via JavaScript -->
+                    <div class="loading">Loading article...</div>
+                </article>
+
+                <aside class="detail-sidebar">
+                    <div class="sidebar-sticky">
+                        <div id="sidebar-pricing">
+                            <!-- Pricing loaded dynamically -->
+                        </div>
+                        <div id="sidebar-specs">
+                            <!-- Specs loaded dynamically -->
+                        </div>
+                        <div class="sidebar-cta">
+                            <h4>Explore More</h4>
+                            <p>Discover the latest AI models and benchmarks.</p>
+                            <a href="ai-models.html" class="btn-primary">View All Models</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
 
             <section class="related-news">
-                <h3>More AI News</h3>
+                <div class="section-header">
+                    <h3 class="section-title">
+                        <span class="title-icon">📰</span>
+                        More AI News
+                    </h3>
+                    <a href="ai-news.html" class="view-all">View All →</a>
+                </div>
                 <div id="related-grid" class="related-grid">
                     <!-- Related articles loaded dynamically -->
                 </div>
@@ -49,7 +86,7 @@
     <footer class="footer">
         <div class="container">
             <p>Data compiled from official sources, benchmark leaderboards, and independent evaluations.</p>
-            <p class="footer-update">Site auto-updates weekly. Last sync: March 2026. | aipulse.buzz</p>
+            <p class="footer-update">Site auto-updates weekly. Last sync: April 2026. | aipulse.buzz</p>
         </div>
     </footer>
 
