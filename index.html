@@ -7,8 +7,8 @@
     <!-- Primary Meta Tags -->
     <title>AI Pulse | Latest AI News, Models & Benchmarks 2026</title>
     <meta name="title" content="AI Pulse | Latest AI News, Models & Benchmarks 2026">
-    <meta name="description" content="Stay ahead with AI Pulse - your source for the latest AI news, LLM model comparisons, benchmarks, and gaming guides. Covering OpenAI, Anthropic, Google, and more.">
-    <meta name="keywords" content="AI news, artificial intelligence, LLM models, GPT-5, Claude, Gemini, AI benchmarks, OpenAI, Anthropic, machine learning, AI gaming">
+    <meta name="description" content="Stay ahead with AI Pulse - your source for the latest AI news, LLM model comparisons, benchmarks, and expert articles. Covering OpenAI, Anthropic, Google, and more.">
+    <meta name="keywords" content="AI news, artificial intelligence, LLM models, GPT-5, Claude, Gemini, AI benchmarks, OpenAI, Anthropic, machine learning">
     <meta name="author" content="AI Pulse">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -21,7 +21,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://aipulse.buzz/">
     <meta property="og:title" content="AI Pulse | Latest AI News, Models & Benchmarks 2026">
-    <meta property="og:description" content="Stay ahead with AI Pulse - your source for the latest AI news, LLM model comparisons, benchmarks, and gaming guides.">
+    <meta property="og:description" content="Stay ahead with AI Pulse - your source for the latest AI news, LLM model comparisons, benchmarks, and expert articles.">
     <meta property="og:image" content="https://aipulse.buzz/images/og-image.jpg">
     <meta property="og:site_name" content="AI Pulse">
     
@@ -29,7 +29,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://aipulse.buzz/">
     <meta property="twitter:title" content="AI Pulse | Latest AI News, Models & Benchmarks 2026">
-    <meta property="twitter:description" content="Stay ahead with AI Pulse - your source for the latest AI news, LLM model comparisons, benchmarks, and gaming guides.">
+    <meta property="twitter:description" content="Stay ahead with AI Pulse - your source for the latest AI news, LLM model comparisons, benchmarks, and expert articles.">
     <meta property="twitter:image" content="https://aipulse.buzz/images/og-image.jpg">
     
     <!-- Favicon -->
@@ -42,7 +42,7 @@
         "@type": "WebSite",
         "name": "AI Pulse",
         "url": "https://aipulse.buzz/",
-        "description": "Your gateway to AI news, models, benchmarks, and gaming guides",
+        "description": "Your gateway to AI news, models, benchmarks, and expert articles",
         "publisher": {
             "@type": "Organization",
             "name": "AI Pulse",
@@ -55,118 +55,239 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="portal.css">
+    <link rel="stylesheet" href="news-styles.css">
     <link rel="stylesheet" href="ads.css">
+    <link rel="stylesheet" href="home-redesigned.css">
 </head>
-<body class="portal-page">
-    <nav class="navbar portal-navbar">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
                 <span class="logo-icon">◉</span>
                 <span>AI Pulse.buzz</span>
             </a>
+            <ul class="nav-links">
+                <li><a href="ai-news.html">News</a></li>
+                <li><a href="ai-models.html">Models</a></li>
+                <li><a href="ai-benchmarks.html">Benchmarks</a></li>
+                <li><a href="ai-finance.html">Finance</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header class="portal-hero">
+    <!-- Hero Section -->
+    <header class="news-hero home-hero">
+        <div class="news-hero-bg"></div>
         <div class="container">
-            <div class="hero-badge">Explore the Future</div>
-            <h1>Your Gateway to<br><span class="gradient-text">AI & Technology</span></h1>
-            <p class="hero-subtitle">Curated insights, benchmarks, and news across the AI landscape</p>
+            <div class="news-hero-content">
+                <div class="hero-badge pulse">◉ Your AI Intelligence Hub</div>
+                <h1>Track the Future of<br>Artificial Intelligence</h1>
+                <p class="hero-subtitle">Breaking news, model comparisons, benchmarks, and expert insights from across the AI landscape</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">24+</span>
+                        <span class="stat-label">AI Models</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">16</span>
+                        <span class="stat-label">Benchmarks</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">11</span>
+                        <span class="stat-label">Articles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Daily</span>
+                        <span class="stat-label">Updates</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="portal-grid-section">
+    <!-- Featured Section Cards -->
+    <section class="featured-news">
         <div class="container">
-            <div class="topics-grid">
-                <!-- AI News -->
-                <a href="ai-news.html" class="topic-card news-card">
-                    <div class="topic-image">
-                        <div class="topic-icon">📰</div>
-                        <div class="topic-glow news-glow"></div>
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🚀</span>
+                    Explore AI Pulse
+                </h2>
+            </div>
+            
+            <div class="featured-grid">
+                <!-- AI News - Hero Feature -->
+                <article class="featured-card hero-feature">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop" alt="AI News">
+                        <div class="image-overlay"></div>
+                        <span class="breaking-badge">LATEST</span>
                     </div>
-                    <div class="topic-content">
-                        <span class="topic-badge">Latest</span>
-                        <h2>AI News</h2>
-                        <p>Breaking updates on model releases, company announcements, and industry shifts</p>
-                        <div class="topic-arrow">→</div>
+                    <div class="featured-content">
+                        <div class="news-meta">
+                            <span class="news-date">Daily Updates</span>
+                            <span class="news-tag" style="background-color: #6366f1;">News</span>
+                        </div>
+                        <h3>AI News Hub</h3>
+                        <p class="news-summary">Breaking updates on model releases, company announcements, and industry shifts. From GPT-5.4 to Claude updates and OpenClaw developments.</p>
+                        <div class="news-highlights">
+                            <span class="highlight">Qwen 3.6 Plus</span>
+                            <span class="highlight">Kimi K2</span>
+                            <span class="highlight">Nova Premier</span>
+                        </div>
+                        <a href="ai-news.html" class="read-more-btn">
+                            Read Latest News
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
                     </div>
-                </a>
+                </article>
 
-                <!-- AI LLM Models -->
-                <a href="ai-models.html" class="topic-card models-card">
-                    <div class="topic-image">
-                        <div class="topic-icon">🧠</div>
-                        <div class="topic-glow models-glow"></div>
+                <!-- AI Models -->
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=350&fit=crop" alt="AI Models">
+                        <div class="image-overlay"></div>
+                        <span class="featured-badge">24+ MODELS</span>
                     </div>
-                    <div class="topic-content">
-                        <span class="topic-badge">24+ Models</span>
-                        <h2>AI LLM Models</h2>
-                        <p>Comprehensive database of language models, capabilities, and specifications</p>
-                        <div class="topic-arrow">→</div>
+                    <div class="featured-content">
+                        <div class="news-meta">
+                            <span class="news-date">Database</span>
+                            <span class="news-tag" style="background-color: #8b5cf6;">Models</span>
+                        </div>
+                        <h3>AI LLM Model Database</h3>
+                        <p class="news-summary">Comprehensive specs, pricing, and capabilities for GPT-5.4, Claude Opus 4.6, Gemini 3.1 Pro, and more.</p>
+                        <a href="ai-models.html" class="read-more">Explore Models →</a>
                     </div>
-                </a>
+                </article>
 
-                <!-- AI Benchmarks -->
-                <a href="ai-benchmarks.html" class="topic-card benchmarks-card">
-                    <div class="topic-image">
-                        <div class="topic-icon">📊</div>
-                        <div class="topic-glow benchmarks-glow"></div>
+                <!-- Benchmarks -->
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=350&fit=crop" alt="Benchmarks">
+                        <div class="image-overlay"></div>
+                        <span class="featured-badge">16 BENCHMARKS</span>
                     </div>
-                    <div class="topic-content">
-                        <span class="topic-badge">16 Benchmarks</span>
-                        <h2>AI Benchmarks</h2>
-                        <p>Performance rankings, test results, and comparative analysis</p>
-                        <div class="topic-arrow">→</div>
+                    <div class="featured-content">
+                        <div class="news-meta">
+                            <span class="news-date">Leaderboards</span>
+                            <span class="news-tag" style="background-color: #22c55e;">Data</span>
+                        </div>
+                        <h3>AI Benchmark Rankings</h3>
+                        <p class="news-summary">Performance comparisons across MMLU, HumanEval, SWE-bench, and more industry-standard tests.</p>
+                        <a href="ai-benchmarks.html" class="read-more">View Rankings →</a>
                     </div>
-                </a>
-
-                <!-- Gaming -->
-                <a href="gaming.html" class="topic-card gaming-card">
-                    <div class="topic-image">
-                        <div class="topic-icon">🎮</div>
-                        <div class="topic-glow gaming-glow"></div>
-                    </div>
-                    <div class="topic-content">
-                        <span class="topic-badge">New</span>
-                        <h2>Gaming</h2>
-                        <p>Game guides, reviews, walkthroughs, and gaming culture</p>
-                        <div class="topic-arrow">→</div>
-                    </div>
-                </a>
-
-                <!-- AI Finance -->
-                <a href="ai-finance.html" class="topic-card finance-card">
-                    <div class="topic-image">
-                        <div class="topic-icon">💰</div>
-                        <div class="topic-glow finance-glow"></div>
-                    </div>
-                    <div class="topic-content">
-                        <span class="topic-badge">Markets</span>
-                        <h2>AI Finance</h2>
-                        <p>AI stock analysis, market trends, and investment insights</p>
-                        <div class="topic-arrow">→</div>
-                    </div>
-                </a>
-
-                <!-- AI Articles -->
-                <a href="articles/index.html" class="topic-card articles-card">
-                    <div class="topic-image">
-                        <div class="topic-icon">📝</div>
-                        <div class="topic-glow articles-glow"></div>
-                    </div>
-                    <div class="topic-content">
-                        <span class="topic-badge articles-badge">New</span>
-                        <h2>AI Articles</h2>
-                        <p>Deep dives into AI technology, productivity tools, and the future of intelligent assistants</p>
-                        <div class="topic-arrow">→</div>
-                    </div>
-                </a>
+                </article>
             </div>
         </div>
-    </main>
+    </section>
 
-    <section class="portal-stats">
+    <!-- Categories Grid -->
+    <section class="news-section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">📂</span>
+                    All Categories
+                </h2>
+            </div>
+            
+            <div class="news-masonry">
+                <!-- AI Articles -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&h=300&fit=crop" alt="AI Articles">
+                        <span class="card-tag" style="background-color: #ff6b35;">Articles</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">11 Articles</span>
+                        <h4>AI Articles & Insights</h4>
+                        <p>Deep dives into AI technology, tool reviews, and expert perspectives on the future of artificial intelligence.</p>
+                        <div class="card-stats">
+                            <span>Qwen 3.6 Plus</span>
+                            <span>AI Agents</span>
+                        </div>
+                        <a href="articles/index.html" class="card-link">Read Articles →</a>
+                    </div>
+                </article>
+
+                <!-- AI Finance -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&h=300&fit=crop" alt="AI Finance">
+                        <span class="card-tag" style="background-color: #f59e0b;">Finance</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">Markets</span>
+                        <h4>AI Finance & Markets</h4>
+                        <p>Stock analysis, market trends, and investment insights on AI companies and the broader tech sector.</p>
+                        <div class="card-stats">
+                            <span>Stocks</span>
+                            <span>Trends</span>
+                        </div>
+                        <a href="ai-finance.html" class="card-link">View Finance →</a>
+                    </div>
+                </article>
+
+                <!-- Gaming -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=500&h=300&fit=crop" alt="Gaming">
+                        <span class="card-tag" style="background-color: #ec4899;">Gaming</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">Game Guides</span>
+                        <h4>Gaming Hub</h4>
+                        <p>Game guides, reviews, walkthroughs, and gaming culture coverage for your favorite titles.</p>
+                        <div class="card-stats">
+                            <span>Guides</span>
+                            <span>Reviews</span>
+                        </div>
+                        <a href="gaming.html" class="card-link">Explore Gaming →</a>
+                    </div>
+                </article>
+
+                <!-- Latest: Qwen 3.6 Plus -->
+                <article class="news-card-masonry highlight-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&h=300&fit=crop" alt="Qwen 3.6 Plus">
+                        <span class="card-tag" style="background-color: #ff6a00;">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">Just Added</span>
+                        <h4>Qwen 3.6 Plus: The Free AI Model</h4>
+                        <p>Alibaba's disruptive 1M context model that's 15-17x cheaper than competitors. Free preview available now.</p>
+                        <div class="card-stats">
+                            <span>Free Preview</span>
+                            <span>1M Context</span>
+                        </div>
+                        <a href="articles/qwen-3-6-plus-deep-dive.html" class="card-link">Read Deep Dive →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <div class="newsletter-content">
+                    <h3>🚀 Stay Ahead of AI</h3>
+                    <p>Get the latest AI news, model releases, and expert insights delivered to your inbox weekly.</p>
+                </div>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="portal-stats-redesigned">
         <div class="container">
             <div class="stats-row">
                 <div class="portal-stat">
@@ -178,32 +299,51 @@
                     <span class="stat-desc">Benchmarks Covered</span>
                 </div>
                 <div class="portal-stat">
-                    <span class="stat-number">Weekly</span>
-                    <span class="stat-desc">Content Updates</span>
+                    <span class="stat-number">11</span>
+                    <span class="stat-desc">Expert Articles</span>
                 </div>
                 <div class="portal-stat">
-                    <span class="stat-number">6</span>
-                    <span class="stat-desc">Topic Categories</span>
+                    <span class="stat-number">Daily</span>
+                    <span class="stat-desc">Content Updates</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="portal-footer">
+    <!-- Footer -->
+    <footer class="news-footer">
         <div class="container">
-            <div class="footer-brand">
-                <span class="logo-icon">◉</span>
-                <span>AI Pulse.buzz</span>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">◉</span>
+                    <span>AI Pulse.buzz</span>
+                    <p>Your daily dose of AI intelligence. Tracking the frontier of artificial intelligence.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Content</h4>
+                    <a href="ai-news.html">AI News</a>
+                    <a href="ai-models.html">AI Models</a>
+                    <a href="ai-benchmarks.html">Benchmarks</a>
+                    <a href="ai-finance.html">Finance</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="articles/index.html">Articles</a>
+                    <a href="gaming.html">Gaming</a>
+                    <a href="articles/qwen-3-6-plus-deep-dive.html">Qwen 3.6 Plus</a>
+                    <a href="articles/ai-agent-revolution-2026.html">AI Agents</a>
+                </div>
             </div>
-            <p class="footer-tagline">Your daily dose of AI intelligence</p>
-            <p class="footer-copyright">© 2026 AI Pulse. Data compiled from official sources.</p>
+            <div class="footer-bottom">
+                <p>© 2026 AI Pulse. Data compiled from official sources, benchmarks, and independent evaluations.</p>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Add entrance animation on load
         document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.topic-card');
+            // Animate cards on load
+            const cards = document.querySelectorAll('.news-card-masonry, .featured-card');
             cards.forEach((card, index) => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(30px)';
@@ -212,18 +352,6 @@
                     card.style.opacity = '1';
                     card.style.transform = 'translateY(0)';
                 }, index * 100);
-            });
-        });
-
-        // Add subtle parallax effect on mouse move
-        document.addEventListener('mousemove', (e) => {
-            const cards = document.querySelectorAll('.topic-glow');
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
-            
-            cards.forEach((glow, index) => {
-                const speed = (index + 1) * 10;
-                glow.style.transform = `translate(${(x - 0.5) * speed}px, ${(y - 0.5) * speed}px)`;
             });
         });
     </script>
