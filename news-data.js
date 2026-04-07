@@ -2398,6 +2398,125 @@ const newsData = {
         ]
     },
     
+    "qwen-3-6-plus": {
+        id: "qwen-3-6-plus",
+        title: "Qwen 3.6 Plus",
+        developer: "Alibaba",
+        date: "Mar 31, 2026",
+        tag: "Alibaba",
+        tagColor: "#ff6a00",
+        subtitle: "Free preview model with 1M context, 2-3x speed advantage, and disruptive pricing.",
+        summary: "Alibaba's Qwen 3.6 Plus launched with a free preview on OpenRouter, featuring a 1 million token context window, hybrid Linear Attention + Sparse MoE architecture, and speeds 2-3x faster than Claude Opus 4.6. At 15-17x cheaper than competitors, it challenges the pricing norms of frontier AI models while delivering competitive coding and agentic capabilities.",
+        content: `
+            <p>Alibaba has dropped a bombshell on the AI industry with Qwen 3.6 Plus, a frontier-class language model currently available for free during its preview period. Released on March 30-31, 2026, this model combines a massive 1 million token context window, a next-generation hybrid architecture, and aggressive pricing that undercuts Western competitors by an order of magnitude.</p>
+            
+            <h2>Free Preview Disrupts Market</h2>
+            <p>Qwen 3.6 Plus launched with an unprecedented offer — completely free access via OpenRouter during the preview period:</p>
+            <ul>
+                <li><strong>Zero Cost:</strong> Free tier available on OpenRouter (qwen/qwen3.6-plus-preview:free)</li>
+                <li><strong>No Rate Limits:</strong> Generous quotas for testing and development</li>
+                <li><strong>Data Collection:</strong> Preview collects prompts for model improvement</li>
+                <li><strong>Production Pricing:</strong> $0.29/M input, $1.65/M output tokens on Bailian</li>
+            </ul>
+            
+            <p>This pricing represents a 15-17x cost reduction compared to Claude Opus 4.6 ($5.00/M input, $25.00/M output) and roughly 9x cheaper than GPT-5.4 ($2.50/M input, $15.00/M output).</p>
+            
+            <h2>Hybrid Architecture for Speed</h2>
+            <p>Qwen 3.6 Plus introduces an advanced hybrid architecture combining Linear Attention with Sparse Mixture of Experts:</p>
+            <ul>
+                <li><strong>Linear Attention:</strong> Reduces computational complexity for longer contexts</li>
+                <li><strong>Sparse MoE:</strong> Only activates relevant experts per token</li>
+                <li><strong>Speed:</strong> ~158 tokens/second (2-3x faster than Claude Opus 4.6)</li>
+                <li><strong>Efficiency:</strong> Significantly reduced inference energy consumption</li>
+            </ul>
+            
+            <p>Early community testing confirms Qwen 3.6 Plus processes outputs at roughly 3x the speed of Claude Opus 4.6, making it ideal for latency-sensitive applications like coding assistants and interactive agents.</p>
+            
+            <h2>1 Million Token Context Window</h2>
+            <p>The 1M token context window enables entirely new workflows:</p>
+            <ul>
+                <li>Process ~2,000 pages of text in a single request</li>
+                <li>Analyze entire codebases without chunking</li>
+                <li>Review complete legal case files</li>
+                <li>Synthesize thousands of academic papers</li>
+                <li>Maintain multi-hour conversation histories</li>
+            </ul>
+            
+            <h2>Always-On Chain-of-Thought</h2>
+            <p>Unlike competitors with toggleable "thinking modes," Qwen 3.6 Plus features always-on chain-of-thought reasoning:</p>
+            <ul>
+                <li>No configuration required — reasoning happens automatically</li>
+                <li>More decisive than Qwen 3.5 (fixes overthinking issues)</li>
+                <li>Auditable decision-making for agentic workflows</li>
+                <li>Consistent behavior across prompts</li>
+            </ul>
+            
+            <h2>Agentic Coding Excellence</h2>
+            <p>Qwen 3.6 Plus targets the coding agent market with competitive capabilities:</p>
+            <ul>
+                <li><strong>Terminal-Bench 2.0:</strong> Competitive with Claude Opus 4.6 on autonomous DevOps</li>
+                <li><strong>SWE-bench:</strong> Performance in line with Anthropic models up to Claude 4.5 Opus</li>
+                <li><strong>Tool Calling:</strong> Improved MCPMark scores over Qwen 3.5</li>
+                <li><strong>Stability:</strong> Fewer retries needed in multi-step agent workflows</li>
+            </ul>
+            
+            <h2>Multimodal and Integration Features</h2>
+            <p>Beyond text, Qwen 3.6 Plus offers multimodal capabilities:</p>
+            <ul>
+                <li><strong>Visual Coding:</strong> Generate code from screenshots and diagrams</li>
+                <li><strong>Document Understanding:</strong> Strong OmniDocBench performance</li>
+                <li><strong>Physical World Analysis:</strong> Visual reasoning about real-world scenarios</li>
+                <li><strong>OpenClaw Compatible:</strong> Works with popular agent frameworks</li>
+                <li><strong>Anthropic API Protocol:</strong> Compatible with Claude Code</li>
+            </ul>
+            
+            <h2>Considerations</h2>
+            <p>While impressive, Qwen 3.6 Plus has some caveats:</p>
+            <ul>
+                <li><strong>Preview Status:</strong> No production SLA currently offered</li>
+                <li><strong>TTFT on Free Tier:</strong> Time-to-first-token averages 11.5 seconds</li>
+                <li><strong>Data Privacy:</strong> Preview collects prompts for training</li>
+                <li><strong>Fabrication Rate:</strong> Independent testing identified 26.5% fabrication on API claims</li>
+            </ul>
+            
+            <h2>Availability</h2>
+            <p>Qwen 3.6 Plus is available through:</p>
+            <ul>
+                <li><strong>OpenRouter:</strong> Free preview tier (qwen/qwen3.6-plus-preview:free)</li>
+                <li><strong>Alibaba Cloud Bailian:</strong> Production pricing at ¥2/M input, ¥12/M output</li>
+                <li><strong>API Access:</strong> Standard REST API with function calling support</li>
+            </ul>
+            
+            <p>Qwen 3.6 Plus represents a pivotal moment in the AI landscape — a Chinese lab has produced a model competitive with Western frontier systems at a fraction of the cost, challenging the pricing norms that have dominated the industry.</p>
+        `,
+        stats: [
+            { label: "Context Window", value: "1M" },
+            { label: "Speed", value: "~158 t/s" },
+            { label: "Input Price", value: "$0.29/M" },
+            { label: "vs Claude", value: "17x cheaper" }
+        ],
+        pricing: {
+            input: "$0.29",
+            output: "$1.65",
+            context: "1M tokens"
+        },
+        specs: {
+            "Architecture": "Hybrid Linear Attn + Sparse MoE",
+            "Context Window": "1 million tokens",
+            "Max Output": "65,536 tokens",
+            "Reasoning": "Always-on CoT",
+            "Preview Status": "Free on OpenRouter"
+        },
+        highlights: [
+            "FREE preview available on OpenRouter",
+            "1 million token context window",
+            "2-3x faster than Claude Opus 4.6 (~158 tok/s)",
+            "15-17x cheaper than competitors",
+            "Always-on chain-of-thought reasoning",
+            "OpenClaw and Claude Code compatible"
+        ]
+    },
+    
     "nova-premier": {
         id: "nova-premier",
         title: "Nova Premier",
