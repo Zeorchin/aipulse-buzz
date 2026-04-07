@@ -172,6 +172,59 @@
     }
 }
 
+/* Gaming Prominent Card Styling */
+.gaming-prominent {
+    position: relative;
+}
+
+.gaming-prominent::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #ec4899, #f97316, #ec4899);
+    border-radius: 18px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gaming-prominent:hover::before {
+    opacity: 1;
+}
+
+.gaming-prominent:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(236, 72, 153, 0.25);
+}
+
+/* Gaming Featured Card */
+.gaming-featured {
+    position: relative;
+}
+
+.gaming-featured .featured-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+/* Gaming highlight in news-highlights */
+.news-highlights .highlight {
+    transition: transform 0.2s ease;
+}
+
+.news-highlights .highlight:hover {
+    transform: translateY(-2px);
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     .newsletter-section {
