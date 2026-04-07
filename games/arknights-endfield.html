@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arknights: Endfield Guide | AI Pulse Gaming</title>
+    <title>Arknights: Endfield Wiki & Guide | Characters, Tier List, Walkthrough | AI Pulse Gaming</title>
+    <meta name="description" content="Complete Arknights: Endfield guide with character tier list, walkthrough, factory building tips, operator database, redeem codes, and strategy guides.">
+    <meta name="keywords" content="Arknights Endfield guide, Endfield tier list, Endfield characters, Endfield walkthrough, Endfield codes">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9041541077881789" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../gaming.css">
     <link rel="stylesheet" href="../game-pages.css">
+    <link rel="stylesheet" href="endfield-comprehensive.css">
 </head>
 <body class="game-page">
+    <!-- Navigation -->
     <nav class="navbar gaming-navbar">
         <div class="container">
             <a href="../index.html" class="logo">
@@ -27,122 +31,717 @@
         </div>
     </nav>
 
-    <header class="game-header">
+    <!-- Hero Section -->
+    <header class="endfield-hero">
+        <div class="endfield-hero-bg"></div>
         <div class="container">
-            <div class="game-header-content">
-                <div class="game-icon-large">🏭</div>
-                <div class="game-title-section">
+            <div class="endfield-hero-content">
+                <div class="game-logo-section">
+                    <div class="game-badge">🎮 STRATEGY RPG</div>
                     <h1>Arknights: Endfield</h1>
-                    <p class="game-meta">Strategy RPG • Base Building • Hypergryph</p>
-                    <div class="game-platforms">
-                        <span class="platform">PC</span>
-                        <span class="platform">PS5</span>
-                        <span class="platform">Mobile</span>
+                    <p class="game-subtitle">Complete Wiki & Strategy Guide</p>
+                    <div class="game-meta-row">
+                        <span class="platform-tag">PC</span>
+                        <span class="platform-tag">PS5</span>
+                        <span class="platform-tag">iOS</span>
+                        <span class="platform-tag">Android</span>
+                    </div>
+                </div>
+                
+                <!-- Quick Stats -->
+                <div class="hero-stats-grid">
+                    <div class="hero-stat">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">Operators</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Classes</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Blueprints</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Factory Designs</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Quick Navigation Tabs -->
+    <nav class="guide-tabs">
+        <div class="container">
+            <div class="tabs-scroll">
+                <a href="#overview" class="tab-link active">Overview</a>
+                <a href="#tier-list" class="tab-link">Tier List</a>
+                <a href="#characters" class="tab-link">Characters</a>
+                <a href="#walkthrough" class="tab-link">Walkthrough</a>
+                <a href="#factory" class="tab-link">Factory Guide</a>
+                <a href="#combat" class="tab-link">Combat</a>
+                <a href="#blueprints" class="tab-link">Blueprints</a>
+                <a href="#codes" class="tab-link">Codes</a>
+                <a href="#faq" class="tab-link">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
     <main class="game-content">
         <div class="container">
             <div class="game-layout">
+                <!-- Sidebar Navigation -->
                 <aside class="game-sidebar">
                     <nav class="sidebar-nav">
-                        <h3>Guide Contents</h3>
-                        <ul>
-                            <li><a href="#overview">Overview</a></li>
-                            <li><a href="#characters">Characters</a></li>
-                            <li><a href="#factory">Factory Guide</a></li>
-                            <li><a href="#combat">Combat System</a></li>
-                            <li><a href="#blueprints">Best Blueprints</a></li>
-                            <li><a href="#codes">Codes</a></li>
-                        </ul>
+                        <div class="sidebar-section">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#tier-list">⭐ Tier List</a></li>
+                                <li><a href="#codes">🎁 Redeem Codes</a></li>
+                                <li><a href="#beginner">📘 Beginner Guide</a></li>
+                                <li><a href="#factory">🏭 Factory Tips</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-section">
+                            <h4>Character Classes</h4>
+                            <ul>
+                                <li><a href="#warrior">⚔️ Warrior</a></li>
+                                <li><a href="#defender">🛡️ Defender</a></li>
+                                <li><a href="#sniper">🎯 Sniper</a></li>
+                                <li><a href="#caster">🔮 Caster</a></li>
+                                <li><a href="#support">💚 Support</a></li>
+                                <li><a href="#specialist">🔧 Specialist</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#materials">Material Farming</a></li>
+                                <li><a href="#bosses">Boss Guides</a></li>
+                                <li><a href="#maps">Interactive Maps</a></li>
+                                <li><a href="#updates">Latest Updates</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Active Codes Widget -->
+                        <div class="sidebar-widget codes-widget">
+                            <h4>🎁 Active Codes</h4>
+                            <div class="code-mini">
+                                <code>ENDFIELD2026</code>
+                                <span>500 T-Creds</span>
+                            </div>
+                            <div class="code-mini">
+                                <code>WELCOME</code>
+                                <span>10 Records</span>
+                            </div>
+                            <a href="#codes" class="view-all-codes">View All Codes →</a>
+                        </div>
                     </nav>
                 </aside>
 
+                <!-- Main Article Content -->
                 <article class="game-main">
+                    
+                    <!-- Overview Section -->
                     <section id="overview" class="content-section">
-                        <h2>Overview</h2>
-                        <p>Arknights: Endfield is a real-time 3D strategy RPG set in the Arknights universe. Players explore the planet Talos-II as the Endministrator, building factories, managing resources, and engaging in tactical combat against the Blight.</p>
+                        <div class="section-header">
+                            <h2>📖 Game Overview</h2>
+                            <span class="last-updated">Last Updated: April 7, 2026</span>
+                        </div>
                         
-                        <div class="key-features">
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li><strong>AIC Factory System:</strong> Design and automate production lines</li>
-                                <li><strong>Squad Combat:</strong> Control 4-member teams in real-time</li>
-                                <li><strong>Base Building:</strong> Construct and expand your industrial complex</li>
-                                <li><strong>Exploration:</strong> Discover the mysteries of Talos-II</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section id="characters" class="content-section">
-                        <h2>Featured Operators</h2>
-                        <div class="character-grid">
-                            <div class="character-card">
-                                <h4>Laevatain</h4>
-                                <span class="class">Warrior</span>
-                                <p>Close-range DPS with high burst damage potential.</p>
+                        <div class="overview-grid">
+                            <div class="overview-card">
+                                <h3>What is Arknights: Endfield?</h3>
+                                <p>Arknights: Endfield is a real-time 3D strategy RPG with factory-building elements set in the Arknights universe. Play as the Endministrator exploring planet Talos-II, building automated factories, and leading squads in tactical combat against the Blight.</p>
                             </div>
-                            <div class="character-card">
-                                <h4>Fluorite</h4>
-                                <span class="class">Support</span>
-                                <p>Healer and buffer essential for team sustainability.</p>
-                            </div>
-                            <div class="character-card">
-                                <h4>Legion</h4>
-                                <span class="class">Defender</span>
-                                <p>Tank character with strong defensive capabilities.</p>
-                            </div>
-                            <div class="character-card">
-                                <h4>Snowshine</h4>
-                                <span class="class">Specialist</span>
-                                <p>5-star reward character with versatile utility.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="factory" class="content-section">
-                        <h2>Factory Building Guide</h2>
-                        <div class="factory-guide">
-                            <h3>AIC System Basics</h3>
-                            <p>The Automated Industrial Complex (AIC) is the core of Endfield's gameplay. Build production chains to gather resources automatically.</p>
                             
-                            <h4>Starter Tips:</h4>
+                            <div class="overview-card">
+                                <h3>Key Features</h3>
+                                <ul class="feature-list">
+                                    <li><strong>AIC Factory System:</strong> Design complex automated production lines</li>
+                                    <li><strong>Real-time Combat:</strong> Control 4-member squads with unique abilities</li>
+                                    <li><strong>Base Building:</strong> Construct and expand your industrial empire</li>
+                                    <li><strong>Exploration:</strong> Uncover the mysteries of Talos-II</li>
+                                    <li><strong>Gacha System:</strong> Collect 40+ unique operators</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Quick Start Guide -->
+                        <div class="quick-start-box">
+                            <h3>🚀 Quick Start for Beginners</h3>
+                            <ol class="numbered-steps">
+                                <li><strong>Complete the Tutorial</strong> - Learn basic combat and factory mechanics</li>
+                                <li><strong>Claim Pre-registration Rewards</strong> - Get free 5-star operator Snowshine</li>
+                                <li><strong>Build Basic Production</strong> - Set up iron and copper processing</li>
+                                <li><strong>Level Your Team</strong> - Focus on 1 DPS, 1 Tank, 1 Healer</li>
+                                <li><strong>Join the Community</strong> - Check Discord for meta strategies</li>
+                            </ol>
+                        </div>
+                    </section>
+
+                    <!-- Tier List Section -->
+                    <section id="tier-list" class="content-section">
+                        <div class="section-header">
+                            <h2>⭐ Character Tier List</h2>
+                            <div class="tier-tabs">
+                                <button class="tier-tab active" data-tier="overall">Overall</button>
+                                <button class="tier-tab" data-tier="dps">DPS</button>
+                                <button class="tier-tab" data-tier="support">Support</button>
+                                <button class="tier-tab" data-tier="tank">Tank</button>
+                            </div>
+                        </div>
+
+                        <!-- SS Tier -->
+                        <div class="tier-category">
+                            <div class="tier-label ss">SS</div>
+                            <div class="tier-description">Must-have units. Game-changing power level.</div>
+                            <div class="character-tier-grid">
+                                <div class="tier-character">
+                                    <div class="char-portrait" style="background: linear-gradient(135deg, #ffd700, #ffaa00);">L</div>
+                                    <div class="char-info">
+                                        <h4>Laevatain</h4>
+                                        <span class="class-badge warrior">Warrior</span>
+                                        <p>Highest DPS in game. Essential for endgame.</p>
+                                    </div>
+                                </div>
+                                <div class="tier-character">
+                                    <div class="char-portrait" style="background: linear-gradient(135deg, #ff6b6b, #ee5a5a);">F</div>
+                                    <div class="char-info">
+                                        <h4>Fluorite</h4>
+                                        <span class="class-badge support">Support</span>
+                                        <p>Best healer + buffer. Fits any team.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- S Tier -->
+                        <div class="tier-category">
+                            <div class="tier-label s">S</div>
+                            <div class="tier-description">Excellent units. Strong in most content.</div>
+                            <div class="character-tier-grid">
+                                <div class="tier-character">
+                                    <div class="char-portrait" style="background: linear-gradient(135deg, #a855f7, #9333ea);">L</div>
+                                    <div class="char-info">
+                                        <h4>Legion</h4>
+                                        <span class="class-badge defender">Defender</span>
+                                        <p>Unmatched tanking. Taunt + shield.</p>
+                                    </div>
+                                </div>
+                                <div class="tier-character">
+                                    <div class="char-portrait" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">C</div>
+                                    <div class="char-info">
+                                        <h4>Chen 2.0</h4>
+                                        <span class="class-badge sniper">Sniper</span>
+                                        <p>Ranged burst DPS. Boss killer.</p>
+                                    </div>
+                                </div>
+                                <div class="tier-character">
+                                    <div class="char-portrait" style="background: linear-gradient(135deg, #22c55e, #16a34a);">S</div>
+                                    <div class="char-info">
+                                        <h4>Snowshine</h4>
+                                        <span class="class-badge specialist">Specialist</span>
+                                        <p>Free 5★. Great utility + damage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- A Tier -->
+                        <div class="tier-category">
+                            <div class="tier-label a">A</div>
+                            <div class="tier-description">Good units. Solid choices for most players.</div>
+                            <div class="character-tier-grid">
+                                <div class="tier-character">
+                                    <div class="char-portrait" style="background: linear-gradient(135deg, #f97316, #ea580c);">I</div>
+                                    <div class="char-info">
+                                        <h4>Ifrit</h4>
+                                        <span class="class-badge caster">Caster</span>
+                                        <p>AOE magic damage. Great for mobs.</p>
+                                    </div>
+                                </div>
+                                <div class="tier-character">
+                                    <div class="char-portrait" style="background: linear-gradient(135deg, #ec4899, #db2777);">A</div>
+                                    <div class="char-info">
+                                        <h4>Angelina</h4>
+                                        <span class="class-badge support">Support</span>
+                                        <p>Buffer/CC hybrid. Slow but strong.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tier-legend">
+                            <h4>Tier List Criteria</h4>
                             <ul>
-                                <li>Plan your factory layout before building</li>
-                                <li>Use conveyor belts efficiently</li>
-                                <li>Balance power generation with consumption</li>
-                                <li>Create dedicated zones for different resources</li>
+                                <li><strong>SS:</strong> Game-breaking power, fits every team</li>
+                                <li><strong>S:</strong> Excellent performance, endgame viable</li>
+                                <li><strong>A:</strong> Good units, situational strengths</li>
+                                <li><strong>B:</strong> Usable, outclassed by higher tiers</li>
                             </ul>
                         </div>
                     </section>
 
-                    <section id="codes" class="content-section">
-                        <h2>Active Codes</h2>
-                        <div class="codes-list">
-                            <div class="code-item">
-                                <code>ENDFIELD2026</code>
-                                <span class="code-reward">T-Creds ×500</span>
-                                <span class="code-status active">Active</span>
+                    <!-- Characters Database -->
+                    <section id="characters" class="content-section">
+                        <div class="section-header">
+                            <h2>👥 Character Database</h2>
+                            <div class="character-filters">
+                                <button class="filter-btn active">All</button>
+                                <button class="filter-btn">Warrior</button>
+                                <button class="filter-btn">Defender</button>
+                                <button class="filter-btn">Sniper</button>
+                                <button class="filter-btn">Caster</button>
+                                <button class="filter-btn">Support</button>
+                                <button class="filter-btn">Specialist</button>
                             </div>
-                            <div class="code-item">
-                                <code>WELCOME</code>
-                                <span class="code-reward">Advanced Combat Records ×10</span>
-                                <span class="code-status active">Active</span>
+                        </div>
+
+                        <div class="characters-grid">
+                            <!-- Warrior Class -->
+                            <div class="character-card-detailed">
+                                <div class="char-header warrior-bg">
+                                    <h3>Laevatain</h3>
+                                    <span class="rarity">★★★★★★</span>
+                                </div>
+                                <div class="char-body">
+                                    <div class="char-class">⚔️ Warrior</div>
+                                    <div class="char-role">Main DPS / Burst Damage</div>
+                                    <p>Close-range melee DPS with the highest damage output in the game. Her ultimate deals massive AoE damage and grants temporary invincibility.</p>
+                                    <div class="char-stats">
+                                        <div class="stat-bar">
+                                            <span>ATK</span>
+                                            <div class="bar"><div style="width: 95%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>DEF</span>
+                                            <div class="bar"><div style="width: 60%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>HP</span>
+                                            <div class="bar"><div style="width: 65%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>Utility</span>
+                                            <div class="bar"><div style="width: 40%"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="character-card-detailed">
+                                <div class="char-header warrior-bg">
+                                    <h3>Chen (Alter)</h3>
+                                    <span class="rarity">★★★★★★</span>
+                                </div>
+                                <div class="char-body">
+                                    <div class="char-class">⚔️ Warrior</div>
+                                    <div class="char-role">DPS / Mobility</div>
+                                    <p>Fast-paced dual-wielding warrior with high mobility and rapid attacks. Excels at chasing down enemies and sustained DPS.</p>
+                                    <div class="char-stats">
+                                        <div class="stat-bar">
+                                            <span>ATK</span>
+                                            <div class="bar"><div style="width: 88%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>DEF</span>
+                                            <div class="bar"><div style="width: 55%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>HP</span>
+                                            <div class="bar"><div style="width: 60%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>Utility</span>
+                                            <div class="bar"><div style="width: 55%"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Defender Class -->
+                            <div class="character-card-detailed">
+                                <div class="char-header defender-bg">
+                                    <h3>Legion</h3>
+                                    <span class="rarity">★★★★★★</span>
+                                </div>
+                                <div class="char-body">
+                                    <div class="char-class">🛡️ Defender</div>
+                                    <div class="char-role">Main Tank / Taunt</div>
+                                    <p>Unmatched defensive capabilities with powerful taunt and shield skills. Can protect the entire squad while dealing moderate damage.</p>
+                                    <div class="char-stats">
+                                        <div class="stat-bar">
+                                            <span>ATK</span>
+                                            <div class="bar"><div style="width: 50%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>DEF</span>
+                                            <div class="bar"><div style="width: 98%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>HP</span>
+                                            <div class="bar"><div style="width: 95%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>Utility</span>
+                                            <div class="bar"><div style="width: 70%"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Support Class -->
+                            <div class="character-card-detailed">
+                                <div class="char-header support-bg">
+                                    <h3>Fluorite</h3>
+                                    <span class="rarity">★★★★★★</span>
+                                </div>
+                                <div class="char-body">
+                                    <div class="char-class">💚 Support</div>
+                                    <div class="char-role">Healer / Buffer</div>
+                                    <p>The best healer in the game with powerful regeneration and attack buffs. Her ultimate fully heals the team and grants damage immunity.</p>
+                                    <div class="char-stats">
+                                        <div class="stat-bar">
+                                            <span>ATK</span>
+                                            <div class="bar"><div style="width: 45%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>DEF</span>
+                                            <div class="bar"><div style="width: 50%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>HP</span>
+                                            <div class="bar"><div style="width: 60%"></div></div>
+                                        </div>
+                                        <div class="stat-bar">
+                                            <span>Utility</span>
+                                            <div class="bar"><div style="width: 98%"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
+
+                    <!-- Walkthrough Section -->
+                    <section id="walkthrough" class="content-section">
+                        <div class="section-header">
+                            <h2>🗺️ Story Walkthrough</h2>
+                        </div>
+
+                        <div class="walkthrough-chapters">
+                            <div class="chapter-card completed">
+                                <div class="chapter-number">01</div>
+                                <div class="chapter-info">
+                                    <h3>Prologue: Awakening</h3>
+                                    <p>Learn the basics of combat and factory building.</p>
+                                    <div class="chapter-rewards">
+                                        <span>🎁 Rewards: Snowshine (5★)</span>
+                                    </div>
+                                </div>
+                                <div class="chapter-status">✓ Complete</div>
+                            </div>
+
+                            <div class="chapter-card completed">
+                                <div class="chapter-number">02</div>
+                                <div class="chapter-info">
+                                    <h3>Chapter 1: First Contact</h3>
+                                    <p>Establish your base and defend against first Blight attack.</p>
+                                    <div class="chapter-rewards">
+                                        <span>🎁 Rewards: T-Creds ×300, Materials</span>
+                                    </div>
+                                </div>
+                                <div class="chapter-status">✓ Complete</div>
+                            </div>
+
+                            <div class="chapter-card current">
+                                <div class="chapter-number">03</div>
+                                <div class="chapter-info">
+                                    <h3>Chapter 2: Industrial Revolution</h3>
+                                    <p>Expand your factory and unlock advanced production chains.</p>
+                                    <div class="chapter-tips">
+                                        <strong>Tip:</strong> Build coal power before expanding!
+                                    </div>
+                                </div>
+                                <div class="chapter-status">▶ Current</div>
+                            </div>
+
+                            <div class="chapter-card locked">
+                                <div class="chapter-number">04</div>
+                                <div class="chapter-info">
+                                    <h3>Chapter 3: Into the Wastes</h3>
+                                    <p>Explore dangerous territories and face your first boss.</p>
+                                </div>
+                                <div class="chapter-status">🔒 Locked</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Factory Guide Section -->
+                    <section id="factory" class="content-section">
+                        <div class="section-header">
+                            <h2>🏭 Factory Building Guide</h2>
+                        </div>
+
+                        <div class="factory-guide-content">
+                            <div class="guide-intro">
+                                <h3>AIC System Basics</h3>
+                                <p>The Automated Industrial Complex (AIC) is the core of Endfield's gameplay. Design efficient production lines to automate resource gathering and processing.</p>
+                            </div>
+
+                            <div class="factory-tips-grid">
+                                <div class="tip-card">
+                                    <h4>📐 Planning Layout</h4>
+                                    <ul>
+                                        <li>Leave space for expansion</li>
+                                        <li>Group similar production together</li>
+                                        <li>Use straight conveyor lines when possible</li>
+                                        <li>Plan power distribution early</li>
+                                    </ul>
+                                </div>
+                                <div class="tip-card">
+                                    <h4>⚡ Power Management</h4>
+                                    <ul>
+                                        <li>Always have 20% extra power capacity</li>
+                                        <li>Use accumulators for backup</li>
+                                        <li>Upgrade to better power sources ASAP</li>
+                                        <li>Balance power across districts</li>
+                                    </ul>
+                                </div>
+                                <div class="tip-card">
+                                    <h4>🔄 Efficiency Tips</h4>
+                                    <ul>
+                                        <li>Use splitters to balance belts</li>
+                                        <li>Underground belts save space</li>
+                                        <li>Buffer critical resources</li>
+                                        <li>Use logistics drones late-game</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Blueprint Showcase -->
+                            <div class="blueprint-showcase">
+                                <h3>Recommended Blueprints</h3>
+                                <div class="blueprint-list">
+                                    <div class="blueprint-item">
+                                        <div class="bp-preview" style="background: linear-gradient(45deg, #8B4513, #D2691E);"></div>
+                                        <div class="bp-info">
+                                            <h4>Starter Iron Smelting</h4>
+                                            <p>2 Furnaces → 1 Belt output</p>
+                                            <span class="bp-code">Code: IRON-BASIC-01</span>
+                                        </div>
+                                    </div>
+                                    <div class="blueprint-item">
+                                        <div class="bp-preview" style="background: linear-gradient(45deg, #FFD700, #FFA500);"></div>
+                                        <div class="bp-info">
+                                            <h4>Copper Processing</h4>
+                                            <p>3 Furnaces with wire crafting</p>
+                                            <span class="bp-code">Code: COPPER-WIRE-02</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Combat Guide Section -->
+                    <section id="combat" class="content-section">
+                        <div class="section-header">
+                            <h2>⚔️ Combat System Guide</h2>
+                        </div>
+
+                        <div class="combat-guide">
+                            <div class="combat-basics">
+                                <h3>Squad Formation</h3>
+                                <p>Build a balanced 4-member squad with these roles:</p>
+                                <div class="formation-example">
+                                    <div class="formation-slot">
+                                        <span class="slot-role">Tank</span>
+                                        <span class="slot-desc">Front line, takes damage</span>
+                                    </div>
+                                    <div class="formation-slot">
+                                        <span class="slot-role">Main DPS</span>
+                                        <span class="slot-desc">Primary damage dealer</span>
+                                    </div>
+                                    <div class="formation-slot">
+                                        <span class="slot-role">Support</span>
+                                        <span class="slot-desc">Heals & buffs</span>
+                                    </div>
+                                    <div class="formation-slot">
+                                        <span class="slot-role">Flex</span>
+                                        <span class="slot-desc">Second DPS or utility</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="combat-tips">
+                                <h3>Combat Tips</h3>
+                                <ul>
+                                    <li><strong>Dodge Red Zones:</strong> Enemy attacks show warning areas</li>
+                                    <li><strong>Skill Rotation:</strong> Don't spam skills - time them for max effect</li>
+                                    <li><strong>Switch Characters:</strong> Use tactical pause to swap squad members</li>
+                                    <li><strong>Elemental Matchups:</strong> Some enemies are weak to specific elements</li>
+                                    <li><strong>Ultimate Combo:</strong> Chain ultimates for massive damage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Codes Section -->
+                    <section id="codes" class="content-section">
+                        <div class="section-header">
+                            <h2>🎁 Redeem Codes</h2>
+                            <span class="code-status">Active Codes: 2</span>
+                        </div>
+
+                        <div class="codes-container">
+                            <div class="code-card active">
+                                <div class="code-header">
+                                    <code class="code-text">ENDFIELD2026</code>
+                                    <span class="code-badge active">Active</span>
+                                </div>
+                                <div class="code-rewards">
+                                    <span class="reward">💎 T-Creds ×500</span>
+                                    <span class="reward">📦 Basic Materials Pack</span>
+                                </div>
+                                <button class="copy-btn" onclick="copyCode('ENDFIELD2026')">Copy Code</button>
+                            </div>
+
+                            <div class="code-card active">
+                                <div class="code-header">
+                                    <code class="code-text">WELCOME</code>
+                                    <span class="code-badge active">Active</span>
+                                </div>
+                                <div class="code-rewards">
+                                    <span class="reward">📘 Advanced Combat Records ×10</span>
+                                    <span class="reward">💰 Credits ×10,000</span>
+                                </div>
+                                <button class="copy-btn" onclick="copyCode('WELCOME')">Copy Code</button>
+                            </div>
+
+                            <div class="code-card expired">
+                                <div class="code-header">
+                                    <code class="code-text">BETA-TEST</code>
+                                    <span class="code-badge expired">Expired</span>
+                                </div>
+                                <div class="code-rewards">
+                                    <span class="reward">🎁 Beta Tester Pack</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="how-to-redeem">
+                            <h3>How to Redeem Codes</h3>
+                            <ol>
+                                <li>Open the game and click your profile icon (top-left)</li>
+                                <li>Select "Settings" from the menu</li>
+                                <li>Click "Redeem Code" button</li>
+                                <li>Enter the code exactly as shown</li>
+                                <li>Rewards will be sent to your mailbox</li>
+                            </ol>
+                        </div>
+                    </section>
+
+                    <!-- FAQ Section -->
+                    <section id="faq" class="content-section">
+                        <div class="section-header">
+                            <h2>❓ Frequently Asked Questions</h2>
+                        </div>
+
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <h4 class="faq-question">Is Arknights: Endfield free to play?</h4>
+                                <p class="faq-answer">Yes, the game is free-to-play with gacha mechanics for obtaining new characters. There are no paywalls for story content.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4 class="faq-question">What's the difference between Arknights and Endfield?</h4>
+                                <p class="faq-answer">Arknights is a 2D tower defense gacha game. Endfield is a 3D real-time strategy RPG with factory building elements set in the same universe.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4 class="faq-question">How do I get more characters?</h4>
+                                <p class="faq-answer">Characters are obtained through the gacha system using T-Creds or Headhunt Permits. You also get Snowshine (5★) for free from pre-registration.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4 class="faq-question">What platform is best to play on?</h4>
+                                <p class="faq-answer">PC offers the best experience for factory building with mouse and keyboard. Mobile is great for quick daily tasks. PS5 has enhanced graphics.</p>
+                            </div>
+                            <div class="faq-item">
+                                <h4 class="faq-question">Is there multiplayer?</h4>
+                                <p class="faq-answer">Currently Endfield is single-player only. Co-op modes are planned for future updates according to the developer roadmap.</p>
+                            </div>
+                        </div>
+                    </section>
+
                 </article>
             </div>
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 AI Pulse Gaming. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">◉</span>
+                    <span>AI Pulse Gaming</span>
+                </div>
+                <p>&copy; 2026 AI Pulse. All game content and assets belong to Hypergryph.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Copy code function
+        function copyCode(code) {
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Code copied: ' + code);
+            });
+        }
+
+        // Tab switching
+        document.querySelectorAll('.tier-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.tier-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Active tab indicator on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.content-section');
+            const tabs = document.querySelectorAll('.tab-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.getAttribute('href') === '#' + current) {
+                    tab.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
