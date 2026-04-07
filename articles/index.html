@@ -48,216 +48,267 @@
     }
     </script>
     
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9041541077881789" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../portal.css">
-    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="../news-styles.css">
+    <link rel="stylesheet" href="../ads.css">
+    <link rel="stylesheet" href="articles-redesigned.css">
 </head>
-<body class="portal-page">
-    <nav class="navbar portal-navbar">
+<body>
+    <nav class="navbar">
         <div class="container">
             <a href="../index.html" class="logo">
                 <span class="logo-icon">◉</span>
                 <span>AI Pulse.buzz</span>
             </a>
-            <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../ai-news.html">News</a>
-                <a href="../ai-models.html">Models</a>
-                <a href="index.html" class="active">Articles</a>
-            </div>
+            <ul class="nav-links">
+                <li><a href="../ai-news.html">News</a></li>
+                <li><a href="../ai-models.html">Models</a></li>
+                <li><a href="../ai-benchmarks.html">Benchmarks</a></li>
+                <li><a href="../ai-finance.html">Finance</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header class="portal-hero articles-hero">
+    <header class="news-hero articles-hero">
+        <div class="news-hero-bg"></div>
         <div class="container">
-            <div class="hero-badge">Insights</div>
-            <h1>AI <span class="gradient-text">Articles</span></h1>
-            <p class="hero-subtitle">Deep dives into AI technology, productivity tools, and the future of intelligent assistants</p>
+            <div class="news-hero-content">
+                <div class="hero-badge">📝 Deep Dives</div>
+                <h1>AI Articles & Insights</h1>
+                <p class="hero-subtitle">In-depth analysis, tool reviews, and expert perspectives on artificial intelligence</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Articles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10min</span>
+                        <span class="stat-label">Avg Read</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Weekly</span>
+                        <span class="stat-label">New Content</span>
+                    </div>
+                </div>
+                <a href="../index.html" class="back-link">← Back to Portal</a>
+            </div>
         </div>
     </header>
 
-    <main class="articles-section">
+    <!-- Featured Article Section -->
+    <section class="featured-news">
         <div class="container">
-            <div class="articles-grid">
-                <!-- Featured Article: GPT-5.4 Computer Use -->
-                <article class="article-card featured">
-                    <a href="gpt-54-computer-use.html" class="article-image-link">
-                        <div class="article-image">
-                            <div style="background: linear-gradient(135deg, #10a37f 0%, #06b6d4 50%, #3b82f6 100%); height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <div style="font-size: 80px;">🖥️</div>
-                            </div>
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">⭐</span>
+                    Featured Article
+                </h2>
+            </div>
+            
+            <div class="featured-grid">
+                <article class="featured-card hero-feature">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop" alt="GPT-5.4 Computer Use">
+                        <div class="image-overlay"></div>
+                        <span class="breaking-badge">FEATURED</span>
+                    </div>
+                    <div class="featured-content">
+                        <div class="news-meta">
+                            <span class="news-date">April 2, 2026</span>
+                            <span class="news-tag" style="background-color: #10a37f;">AI Models</span>
                         </div>
-                    </a>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-category">AI Models</span>
-                            <span class="article-date">April 2, 2026</span>
+                        <h3>GPT-5.4 and the Dawn of True AI Agents</h3>
+                        <p class="news-summary">How native computer use capabilities are transforming AI from chatbots into autonomous digital workers that can control browsers, operate applications, and perform complex multi-step tasks.</p>
+                        <div class="news-highlights">
+                            <span class="highlight">Native Computer Use</span>
+                            <span class="highlight">1M Context</span>
+                            <span class="highlight">83% Success Rate</span>
                         </div>
-                        <h2><a href="gpt-54-computer-use.html">GPT-5.4 and the Dawn of True AI Agents</a></h2>
-                        <p class="article-excerpt">How native computer use capabilities are transforming AI from chatbots into autonomous digital workers that can control browsers, operate applications, and perform complex multi-step tasks.</p>
-                        <div class="article-footer">
-                            <span class="read-time">12 min read</span>
-                            <a href="gpt-54-computer-use.html" class="read-more">Read Article →</a>
-                        </div>
+                        <a href="gpt-54-computer-use.html" class="read-more-btn">
+                            Read Full Article
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
                     </div>
                 </article>
 
-                <!-- Article: Paperclip Tool -->
-                <article class="article-card">
-                    <a href="paperclip-tool.html" class="article-image-link">
-                        <div class="article-image">
-                            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #ffa95c 100%); height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <div style="font-size: 60px;">📎</div>
-                            </div>
+                <!-- Secondary Articles -->
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&h=350&fit=crop" alt="Paperclip Tool">
+                        <div class="image-overlay"></div>
+                        <span class="featured-badge">TOOLS</span>
+                    </div>
+                    <div class="featured-content">
+                        <div class="news-meta">
+                            <span class="news-date">April 2, 2026</span>
+                            <span class="news-tag" style="background-color: #f5576c;">Developer Tools</span>
                         </div>
-                    </a>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-category">Developer Tools</span>
-                            <span class="article-date">April 2, 2026</span>
-                        </div>
-                        <h2><a href="paperclip-tool.html">Paperclip: The AI Context Management Tool</a></h2>
-                        <p class="article-excerpt">How a simple clipboard utility became essential for developers working with AI coding assistants, solving the context window limitation problem.</p>
-                        <div class="article-footer">
-                            <span class="read-time">10 min read</span>
-                            <a href="paperclip-tool.html" class="read-more">Read Article →</a>
-                        </div>
+                        <h3>Paperclip: The AI Context Management Tool</h3>
+                        <p class="news-summary">How a simple clipboard utility became essential for developers working with AI coding assistants.</p>
+                        <a href="paperclip-tool.html" class="read-more">Read more →</a>
                     </div>
                 </article>
 
-                <!-- Article: Sora Shutdown Analysis -->
-                <article class="article-card">
-                    <a href="sora-shutdown-analysis.html" class="article-image-link">
-                        <div class="article-image">
-                            <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <div style="font-size: 60px;">🎬</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-category">Industry Analysis</span>
-                            <span class="article-date">April 2, 2026</span>
-                        </div>
-                        <h2><a href="sora-shutdown-analysis.html">Why OpenAI Killed Sora: Lessons Learned</a></h2>
-                        <p class="article-excerpt">The inside story of how a $15-million-per-day product became a cautionary tale about AI economics, retention problems, and the challenges of video generation.</p>
-                        <div class="article-footer">
-                            <span class="read-time">11 min read</span>
-                            <a href="sora-shutdown-analysis.html" class="read-more">Read Article →</a>
-                        </div>
+                <article class="featured-card">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=350&fit=crop" alt="Sora Shutdown">
+                        <div class="image-overlay"></div>
+                        <span class="featured-badge" style="background: linear-gradient(135deg, #dc2626, #991b1b);">ANALYSIS</span>
                     </div>
-                </article>
-
-                <!-- Article: MCP Industry Standard -->
-                <article class="article-card">
-                    <a href="mcp-industry-standard.html" class="article-image-link">
-                        <div class="article-image">
-                            <div style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%); height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <div style="font-size: 60px;">🔌</div>
-                            </div>
+                    <div class="featured-content">
+                        <div class="news-meta">
+                            <span class="news-date">April 2, 2026</span>
+                            <span class="news-tag" style="background-color: #6366f1;">Industry</span>
                         </div>
-                    </a>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-category">AI Infrastructure</span>
-                            <span class="article-date">April 2, 2026</span>
-                        </div>
-                        <h2><a href="mcp-industry-standard.html">MCP: 97 Million Installs and Industry Standard</a></h2>
-                        <p class="article-excerpt">How Anthropic's Model Context Protocol became the USB-C for AI in just 16 months, with support from OpenAI, Google, Microsoft, and every major AI provider.</p>
-                        <div class="article-footer">
-                            <span class="read-time">8 min read</span>
-                            <a href="mcp-industry-standard.html" class="read-more">Read Article →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article: OpenClaw -->
-                <article class="article-card">
-                    <a href="openclaw.html" class="article-image-link">
-                        <div class="article-image">
-                            <img src="../images/openclaw-lobster.webp" alt="OpenClaw AI Assistant">
-                            <div class="article-mascot">🦞</div>
-                        </div>
-                    </a>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-category">AI Assistants</span>
-                            <span class="article-date">March 28, 2026</span>
-                        </div>
-                        <h2><a href="openclaw.html">How OpenClaw Changes the Way We Work and Live</a></h2>
-                        <p class="article-excerpt">Discover how OpenClaw, the open-source AI assistant with its iconic lobster mascot, revolutionizes productivity by handling repetitive tasks and providing truly personal assistance.</p>
-                        <div class="article-footer">
-                            <span class="read-time">8 min read</span>
-                            <a href="openclaw.html" class="read-more">Read Article →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article: OpenCode -->
-                <article class="article-card">
-                    <a href="opencode.html" class="article-image-link">
-                        <div class="article-image">
-                            <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <div style="font-size: 60px;">💻</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-category">Development Tools</span>
-                            <span class="article-date">March 29, 2026</span>
-                        </div>
-                        <h2><a href="opencode.html">OpenCode: The Future of Open Source Development</a></h2>
-                        <p class="article-excerpt">Discover how open-source coding platforms are democratizing software development with AI-powered tools and transparent collaboration.</p>
-                        <div class="article-footer">
-                            <span class="read-time">10 min read</span>
-                            <a href="opencode.html" class="read-more">Read Article →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Article: Local LLM Use Cases -->
-                <article class="article-card">
-                    <a href="local-llm-use-cases.html" class="article-image-link">
-                        <div class="article-image">
-                            <div style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); height: 100%; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <div style="font-size: 60px;">🏠</div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="article-category">AI Infrastructure</span>
-                            <span class="article-date">March 29, 2026</span>
-                        </div>
-                        <h2><a href="local-llm-use-cases.html">Local LLM Use Cases: Running AI on Your Hardware</a></h2>
-                        <p class="article-excerpt">Practical applications for running large language models locally, from privacy-first personal assistants to secure code generation and offline document processing.</p>
-                        <div class="article-footer">
-                            <span class="read-time">12 min read</span>
-                            <a href="local-llm-use-cases.html" class="read-more">Read Article →</a>
-                        </div>
+                        <h3>Why OpenAI Killed Sora: Lessons Learned</h3>
+                        <p class="news-summary">The inside story of how a $15-million-per-day product became a cautionary tale about AI economics.</p>
+                        <a href="sora-shutdown-analysis.html" class="read-more">Read more →</a>
                     </div>
                 </article>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="portal-footer">
+    <!-- All Articles Grid -->
+    <section class="news-section section-alt" id="all-articles">
         <div class="container">
-            <div class="footer-brand">
-                <span class="logo-icon">◉</span>
-                <span>AI Pulse.buzz</span>
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">📚</span>
+                    All Articles
+                </h2>
             </div>
-            <p class="footer-tagline">Your daily dose of AI intelligence</p>
-            <p class="footer-copyright">2026 AI Pulse. All rights reserved.</p>
+            
+            <div class="news-masonry">
+                <!-- MCP Article -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&h=300&fit=crop" alt="MCP Protocol">
+                        <span class="card-tag" style="background-color: #8b5cf6;">Infrastructure</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">April 2, 2026</span>
+                        <h4>MCP: 97 Million Installs and Industry Standard</h4>
+                        <p>How Anthropic's Model Context Protocol became the USB-C for AI in just 16 months.</p>
+                        <div class="card-stats">
+                            <span>97M Installs</span>
+                            <span>4,750% Growth</span>
+                        </div>
+                        <a href="mcp-industry-standard.html" class="card-link">Read article →</a>
+                    </div>
+                </article>
+
+                <!-- OpenClaw Article -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="../images/openclaw-lobster.webp" alt="OpenClaw" onerror="this.src='https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&h=300&fit=crop'">
+                        <span class="card-tag" style="background-color: #ff6b35;">AI Assistants</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">March 28, 2026</span>
+                        <h4>How OpenClaw Changes the Way We Work</h4>
+                        <p>Discover how the open-source AI assistant with its iconic lobster mascot revolutionizes productivity.</p>
+                        <div class="card-stats">
+                            <span>Open Source</span>
+                            <span>250K Stars</span>
+                        </div>
+                        <a href="openclaw.html" class="card-link">Read article →</a>
+                    </div>
+                </article>
+
+                <!-- OpenCode Article -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop" alt="OpenCode">
+                        <span class="card-tag" style="background-color: #06b6d4;">Development</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">March 29, 2026</span>
+                        <h4>OpenCode: The Future of Open Source Development</h4>
+                        <p>How open-source coding platforms are democratizing software development with AI-powered tools.</p>
+                        <div class="card-stats">
+                            <span>AI-Powered</span>
+                            <span>Collaboration</span>
+                        </div>
+                        <a href="opencode.html" class="card-link">Read article →</a>
+                    </div>
+                </article>
+
+                <!-- Local LLM Article -->
+                <article class="news-card-masonry">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&h=300&fit=crop" alt="Local LLM">
+                        <span class="card-tag" style="background-color: #22c55e;">Privacy</span>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-date">March 29, 2026</span>
+                        <h4>Local LLM Use Cases: Running AI on Your Hardware</h4>
+                        <p>Practical applications for running large language models locally with privacy and security.</p>
+                        <div class="card-stats">
+                            <span>Privacy First</span>
+                            <span>Offline Capable</span>
+                        </div>
+                        <a href="local-llm-use-cases.html" class="card-link">Read article →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <div class="newsletter-content">
+                    <h3>🚀 Stay Updated</h3>
+                    <p>Get the latest AI articles and insights delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="news-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">◉</span>
+                    <span>AI Pulse.buzz</span>
+                    <p>Your daily dose of AI intelligence</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Sections</h4>
+                    <a href="../ai-news.html">AI News</a>
+                    <a href="../ai-models.html">Models</a>
+                    <a href="../ai-benchmarks.html">Benchmarks</a>
+                    <a href="../ai-finance.html">Finance</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Articles</h4>
+                    <a href="gpt-54-computer-use.html">GPT-5.4 Analysis</a>
+                    <a href="openclaw.html">OpenClaw</a>
+                    <a href="sora-shutdown-analysis.html">Sora Shutdown</a>
+                    <a href="mcp-industry-standard.html">MCP Protocol</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 AI Pulse. Data compiled from official sources.</p>
+            </div>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.article-card');
+            // Animate cards on load
+            const cards = document.querySelectorAll('.news-card-masonry');
             cards.forEach((card, index) => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(30px)';
@@ -265,7 +316,7 @@
                     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
                     card.style.opacity = '1';
                     card.style.transform = 'translateY(0)';
-                }, index * 150);
+                }, index * 100);
             });
         });
     </script>
