@@ -118,6 +118,39 @@
     cursor: not-allowed;
 }
 
+/* Featured Model Card with NEW Badge */
+.model-card.featured {
+    border: 2px solid var(--accent);
+    position: relative;
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, rgba(59, 130, 246, 0.05) 100%);
+}
+
+.model-card.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    border-radius: var(--radius);
+}
+
+.badge-new {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    background: linear-gradient(135deg, #ef4444, #f97316);
+    color: white;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+    animation: pulse 2s infinite;
+}
+
 /* Finance Grid */
 .finance-grid {
     display: grid;
