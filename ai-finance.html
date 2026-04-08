@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Finance | AI Pulse</title>
+    <title>AI Finance - AI Stock Market Data & Analysis | AI Pulse</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9041541077881789" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="additional-styles.css">
+    <link rel="stylesheet" href="finance-yahoo.css">
     <link rel="stylesheet" href="ads.css">
 </head>
-<body>
+<body class="finance-page">
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
@@ -27,431 +27,851 @@
         </div>
     </nav>
 
-    <header class="hero">
+    <!-- Market Header -->
+    <header class="market-header">
         <div class="container">
-            <div class="hero-badge">Markets & Investment</div>
-            <h1>AI Finance</h1>
-            <p class="hero-subtitle">AI stock analysis, market trends, and investment insights<br><small>Tracking the business of artificial intelligence - April 2026</small></p>
-            <a href="index.html" class="back-link">← Back to Portal</a>
+            <div class="market-index">
+                <div>
+                    <div class="index-name">AI Pulse Index <span class="index-symbol">(^AIPIX)</span></div>
+                    <div class="market-status">
+                        <span class="status-dot"></span>
+                        <span>Market Open • As of 4:00 PM EDT</span>
+                    </div>
+                </div>
+                <div style="text-align: right;">
+                    <div class="index-price">4,328.56</div>
+                    <div class="index-change negative">-52.34 (-1.19%)</div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="section">
+    <!-- Main Quote Cards -->
+    <section class="section" style="background: var(--yf-bg-secondary); padding: 24px 0;">
         <div class="container">
-            <h2 class="section-title">Market Overview</h2>
-            <p class="section-subtitle">Major AI companies and their market performance</p>
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title-yf">Major AI Stocks</h2>
+                    <p class="section-subtitle-yf">Leading companies in artificial intelligence</p>
+                </div>
+                <a href="#all-stocks" class="model-link" style="width: auto; padding: 8px 16px; font-size: 0.8125rem;">View All 50+ Stocks</a>
+            </div>
             
-            <div class="finance-grid">
+            <div class="quote-cards-grid">
                 <!-- NVIDIA -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">NVDA</div>
-                        <div class="company-info">
-                            <h3>NVIDIA</h3>
-                            <span class="company-sector">Semiconductors / AI Chips</span>
+                <div class="quote-card" onclick="toggleDetails('nvda')">
+                    <div class="quote-card-header">
+                        <div>
+                            <div class="quote-symbol">NVDA</div>
+                            <div class="quote-name">NVIDIA Corp</div>
+                            <span class="sector-tag sector-chips">Chips</span>
+                        </div>
+                        <div class="quote-price-section">
+                            <div class="quote-price">$177.39</div>
+                            <div class="quote-change negative">-2.50 (-1.39%)</div>
                         </div>
                     </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$178</span>
+                    <div class="quote-stats-row">
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Mkt Cap</div>
+                            <div class="quote-stat-value">$4.35T</div>
                         </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value negative">-14%</span>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Volume</div>
+                            <div class="quote-stat-value">285.3M</div>
+                        </div>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">P/E</div>
+                            <div class="quote-stat-value">56.2</div>
                         </div>
                     </div>
-                    <p class="finance-desc">Dominant AI chip manufacturer with 85% GPU market share. Rubin Ultra architecture coming. 41 Buy ratings from analysts.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 95%"></div></div>
-                        <span class="exposure-text">95%</span>
+                    <div class="range-bar-container">
+                        <div class="range-labels">
+                            <span>52W Low: $130.00</span>
+                            <span>52W High: $195.00</span>
+                        </div>
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 65%;"></div>
+                            <div class="range-marker" style="left: 65%;"></div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Microsoft -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">MSFT</div>
-                        <div class="company-info">
-                            <h3>Microsoft</h3>
-                            <span class="company-sector">Cloud / AI Services</span>
+                <div class="quote-card" onclick="toggleDetails('msft')">
+                    <div class="quote-card-header">
+                        <div>
+                            <div class="quote-symbol">MSFT</div>
+                            <div class="quote-name">Microsoft Corp</div>
+                            <span class="sector-tag sector-cloud">Cloud</span>
+                        </div>
+                        <div class="quote-price-section">
+                            <div class="quote-price">$373.46</div>
+                            <div class="quote-change negative">-4.21 (-1.11%)</div>
                         </div>
                     </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$373</span>
+                    <div class="quote-stats-row">
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Mkt Cap</div>
+                            <div class="quote-stat-value">$2.77T</div>
                         </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value negative">-18%</span>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Volume</div>
+                            <div class="quote-stat-value">18.5M</div>
+                        </div>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">P/E</div>
+                            <div class="quote-stat-value">32.4</div>
                         </div>
                     </div>
-                    <p class="finance-desc">Major OpenAI investor ($50B+ committed). Azure AI growing 39%. Cloud reached $50B quarterly revenue milestone.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 65%"></div></div>
-                        <span class="exposure-text">65%</span>
+                    <div class="range-bar-container">
+                        <div class="range-labels">
+                            <span>52W Low: $362.00</span>
+                            <span>52W High: $468.00</span>
+                        </div>
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 12%;"></div>
+                            <div class="range-marker" style="left: 12%;"></div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Alphabet/Google -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">GOOGL</div>
-                        <div class="company-info">
-                            <h3>Alphabet</h3>
-                            <span class="company-sector">Search / AI Research</span>
+                <!-- Alphabet -->
+                <div class="quote-card" onclick="toggleDetails('googl')">
+                    <div class="quote-card-header">
+                        <div>
+                            <div class="quote-symbol">GOOGL</div>
+                            <div class="quote-name">Alphabet Inc</div>
+                            <span class="sector-tag sector-cloud">Cloud</span>
+                        </div>
+                        <div class="quote-price-section">
+                            <div class="quote-price">$305.46</div>
+                            <div class="quote-change positive">+5.47 (+1.82%)</div>
                         </div>
                     </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$305</span>
+                    <div class="quote-stats-row">
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Mkt Cap</div>
+                            <div class="quote-stat-value">$1.88T</div>
                         </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value negative">-8%</span>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Volume</div>
+                            <div class="quote-stat-value">22.1M</div>
+                        </div>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">P/E</div>
+                            <div class="quote-stat-value">22.1</div>
                         </div>
                     </div>
-                    <p class="finance-desc">DeepMind research and Gemini 3.1 Pro. Google Cloud AI $13.6B quarterly. $185B AI investment commitment.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 75%"></div></div>
-                        <span class="exposure-text">75%</span>
+                    <div class="range-bar-container">
+                        <div class="range-labels">
+                            <span>52W Low: $225.00</span>
+                            <span>52W High: $365.00</span>
+                        </div>
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 62%;"></div>
+                            <div class="range-marker" style="left: 62%;"></div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Meta -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">META</div>
-                        <div class="company-info">
-                            <h3>Meta</h3>
-                            <span class="company-sector">Social / Open Source AI</span>
+                <div class="quote-card" onclick="toggleDetails('meta')">
+                    <div class="quote-card-header">
+                        <div>
+                            <div class="quote-symbol">META</div>
+                            <div class="quote-name">Meta Platforms</div>
+                            <span class="sector-tag sector-ai">AI</span>
+                        </div>
+                        <div class="quote-price-section">
+                            <div class="quote-price">$574.46</div>
+                            <div class="quote-change positive">+4.20 (+0.74%)</div>
                         </div>
                     </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$574</span>
+                    <div class="quote-stats-row">
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Mkt Cap</div>
+                            <div class="quote-stat-value">$1.46T</div>
                         </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value negative">-5%</span>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Volume</div>
+                            <div class="quote-stat-value">15.2M</div>
                         </div>
-                    </div>
-                    <p class="finance-desc">Llama open-source models. 3.5B daily users. CapEx $115-135B for 2026 (73% increase). Cheapest Mag 7 at 22x P/E.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 60%"></div></div>
-                        <span class="exposure-text">60%</span>
-                    </div>
-                </div>
-
-                <!-- Tesla -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">TSLA</div>
-                        <div class="company-info">
-                            <h3>Tesla</h3>
-                            <span class="company-sector">EV / Autonomous Driving</span>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">P/E</div>
+                            <div class="quote-stat-value">24.8</div>
                         </div>
                     </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$240</span>
+                    <div class="range-bar-container">
+                        <div class="range-labels">
+                            <span>52W Low: $425.00</span>
+                            <span>52W High: $740.00</span>
                         </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value negative">-15%</span>
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 48%;"></div>
+                            <div class="range-marker" style="left: 48%;"></div>
                         </div>
-                    </div>
-                    <p class="finance-desc">Dojo supercomputer for AI training. Robotaxi development. First revenue decline reported. Energy business growing.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 45%"></div></div>
-                        <span class="exposure-text">45%</span>
-                    </div>
-                </div>
-
-                <!-- AMD -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">AMD</div>
-                        <div class="company-info">
-                            <h3>AMD</h3>
-                            <span class="company-sector">Semiconductors</span>
-                        </div>
-                    </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$218</span>
-                        </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value positive">+12%</span>
-                        </div>
-                    </div>
-                    <p class="finance-desc">MI450 AI accelerators competing with NVIDIA. MI300X ramping. Strong data center growth. Price target $205.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 55%"></div></div>
-                        <span class="exposure-text">55%</span>
-                    </div>
-                </div>
-
-                <!-- Amazon -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">AMZN</div>
-                        <div class="company-info">
-                            <h3>Amazon</h3>
-                            <span class="company-sector">Cloud / E-commerce</span>
-                        </div>
-                    </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$213</span>
-                        </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value negative">-10%</span>
-                        </div>
-                    </div>
-                    <p class="finance-desc">AWS Bedrock AI services. $200B AI infrastructure investment. Amazon Bedrock for enterprise AI deployment.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 50%"></div></div>
-                        <span class="exposure-text">50%</span>
                     </div>
                 </div>
 
                 <!-- Palantir -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">PLTR</div>
-                        <div class="company-info">
-                            <h3>Palantir</h3>
-                            <span class="company-sector">AI Platform / Defense</span>
+                <div class="quote-card" onclick="toggleDetails('pltr')">
+                    <div class="quote-card-header">
+                        <div>
+                            <div class="quote-symbol">PLTR</div>
+                            <div class="quote-name">Palantir Tech</div>
+                            <span class="sector-tag sector-ai">AI</span>
+                        </div>
+                        <div class="quote-price-section">
+                            <div class="quote-price">$148.46</div>
+                            <div class="quote-change positive">+1.96 (+1.32%)</div>
                         </div>
                     </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$149</span>
+                    <div class="quote-stats-row">
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Mkt Cap</div>
+                            <div class="quote-stat-value">$328B</div>
                         </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value positive">+45%</span>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Volume</div>
+                            <div class="quote-stat-value">42.8M</div>
                         </div>
-                    </div>
-                    <p class="finance-desc">AIP platform driving 61% revenue growth. $10B Army contract. Government and commercial AI solutions.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 90%"></div></div>
-                        <span class="exposure-text">90%</span>
-                    </div>
-                </div>
-
-                <!-- Broadcom -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">AVGO</div>
-                        <div class="company-info">
-                            <h3>Broadcom</h3>
-                            <span class="company-sector">Custom AI Chips</span>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">P/E</div>
+                            <div class="quote-stat-value">385</div>
                         </div>
                     </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$315</span>
+                    <div class="range-bar-container">
+                        <div class="range-labels">
+                            <span>52W Low: $65.00</span>
+                            <span>52W High: $185.00</span>
                         </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value positive">+35%</span>
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 70%;"></div>
+                            <div class="range-marker" style="left: 70%;"></div>
                         </div>
-                    </div>
-                    <p class="finance-desc">Custom AI chip design for hyperscalers. $73B backlog. 42% EPS growth. Strong AI data center exposure.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 70%"></div></div>
-                        <span class="exposure-text">70%</span>
                     </div>
                 </div>
 
-                <!-- TSMC -->
-                <div class="finance-card">
-                    <div class="finance-header">
-                        <div class="company-logo">TSM</div>
-                        <div class="company-info">
-                            <h3>TSMC</h3>
-                            <span class="company-sector">Semiconductor Manufacturing</span>
+                <!-- AMD -->
+                <div class="quote-card" onclick="toggleDetails('amd')">
+                    <div class="quote-card-header">
+                        <div>
+                            <div class="quote-symbol">AMD</div>
+                            <div class="quote-name">AMD Inc</div>
+                            <span class="sector-tag sector-chips">Chips</span>
+                        </div>
+                        <div class="quote-price-section">
+                            <div class="quote-price">$217.50</div>
+                            <div class="quote-change positive">+2.68 (+1.25%)</div>
                         </div>
                     </div>
-                    <div class="finance-stats">
-                        <div class="finance-stat">
-                            <span class="stat-label">Stock Price</span>
-                            <span class="stat-value">$339</span>
+                    <div class="quote-stats-row">
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Mkt Cap</div>
+                            <div class="quote-stat-value">$351B</div>
                         </div>
-                        <div class="finance-stat">
-                            <span class="stat-label">YTD 2026</span>
-                            <span class="stat-value positive">+22%</span>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">Volume</div>
+                            <div class="quote-stat-value">38.2M</div>
+                        </div>
+                        <div class="quote-stat">
+                            <div class="quote-stat-label">P/E</div>
+                            <div class="quote-stat-value">118</div>
                         </div>
                     </div>
-                    <p class="finance-desc">74% advanced node market share. Manufactures AI chips for NVIDIA, AMD, Apple. 30%+ revenue growth.</p>
-                    <div class="ai-exposure">
-                        <span class="exposure-label">AI Exposure</span>
-                        <div class="exposure-bar"><div class="exposure-fill" style="width: 65%"></div></div>
-                        <span class="exposure-text">65%</span>
+                    <div class="range-bar-container">
+                        <div class="range-labels">
+                            <span>52W Low: $145.00</span>
+                            <span>52W High: $250.00</span>
+                        </div>
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 65%;"></div>
+                            <div class="range-marker" style="left: 65%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section section-alt">
+    <!-- Top Movers Section -->
+    <section class="section" style="background: var(--yf-bg); padding: 32px 0;">
         <div class="container">
-            <h2 class="section-title">AI Investment Trends</h2>
-            <p class="section-subtitle">Key developments shaping AI investment landscape</p>
+            <div class="section-header">
+                <h2 class="section-title-yf">Top Movers</h2>
+                <p class="section-subtitle-yf">Real-time AI stock performance</p>
+            </div>
             
-            <div class="trends-grid">
-                <div class="trend-card">
-                    <div class="trend-icon">📈</div>
-                    <h3>Infrastructure Boom</h3>
-                    <p>Hyperscalers investing $527B+ in data centers by 2026. AI spending on track for $1.5 trillion globally.</p>
+            <div class="movers-grid">
+                <!-- Top Gainers -->
+                <div class="mover-card">
+                    <div class="mover-header positive">
+                        <span>📈</span> Top Gainers
+                    </div>
+                    <div class="mover-list">
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">CRWV</span>
+                                <span class="mover-name">CoreWeave</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$82.24</div>
+                                <div class="mover-percent positive">+8.45%</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">SMCI</span>
+                                <span class="mover-name">Super Micro</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$38.42</div>
+                                <div class="mover-percent positive">+6.28%</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">PLTR</span>
+                                <span class="mover-name">Palantir</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$148.46</div>
+                                <div class="mover-percent positive">+1.32%</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">GOOGL</span>
+                                <span class="mover-name">Alphabet</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$305.46</div>
+                                <div class="mover-percent positive">+1.82%</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">AMD</span>
+                                <span class="mover-name">AMD</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$217.50</div>
+                                <div class="mover-percent positive">+1.25%</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="trend-card">
-                    <div class="trend-icon">🚀</div>
-                    <h3>IPO Pipeline 2026</h3>
-                    <p>$3T+ in potential IPOs: SpaceX-xAI ($1.5T), OpenAI ($1T), Anthropic, Databricks. Historic year ahead.</p>
+
+                <!-- Top Losers -->
+                <div class="mover-card">
+                    <div class="mover-header negative">
+                        <span>📉</span> Top Losers
+                    </div>
+                    <div class="mover-list">
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">TSLA</span>
+                                <span class="mover-name">Tesla</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$239.43</div>
+                                <div class="mover-percent negative">-4.85%</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">NVDA</span>
+                                <span class="mover-name">NVIDIA</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$177.39</div>
+                                <div class="mover-percent negative">-1.39%</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">MSFT</span>
+                                <span class="mover-name">Microsoft</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$373.46</div>
+                                <div class="mover-percent negative">-1.11%</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">AMZN</span>
+                                <span class="mover-name">Amazon</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$209.77</div>
+                                <div class="mover-percent negative">-2.19%</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">AVGO</span>
+                                <span class="mover-name">Broadcom</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$314.55</div>
+                                <div class="mover-percent negative">-0.85%</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="trend-card">
-                    <div class="trend-icon">💰</div>
-                    <h3>Mega Funding Rounds</h3>
-                    <p>February 2026: $189B raised (largest month ever). OpenAI $110B, Anthropic $30B, Waymo $16B.</p>
-                </div>
-                <div class="trend-card">
-                    <div class="trend-icon">⚠️</div>
-                    <h3>Market Correction</h3>
-                    <p>Nasdaq down 13% from October high. Mag 7 lost $2T+ market cap. AI stocks facing valuation reset.</p>
-                </div>
-                <div class="trend-card">
-                    <div class="trend-icon">🤖</div>
-                    <h3>Humanoid Robotics</h3>
-                    <p>Figure AI's Amazon deal validated commercial deployment. Sector projected at $20B+ funding in 2026.</p>
-                </div>
-                <div class="trend-card">
-                    <div class="trend-icon">🎙️</div>
-                    <h3>Voice AI Explosion</h3>
-                    <p>ElevenLabs tripled to $11B valuation. Voice AI emerging as core enterprise infrastructure.</p>
-                </div>
-                <div class="trend-card">
-                    <div class="trend-icon">⚡</div>
-                    <h3>Power Constraints</h3>
-                    <p>Nuclear partnerships accelerating. Microsoft, Google, Amazon securing 24/7 clean energy for AI.</p>
-                </div>
-                <div class="trend-card">
-                    <div class="trend-icon">🏢</div>
-                    <h3>Enterprise AI Shift</h3>
-                    <p>Fortune 500 moving from pilots to production. Claude Code alone generates $2.5B ARR for Anthropic.</p>
+
+                <!-- Most Active -->
+                <div class="mover-card">
+                    <div class="mover-header" style="border-left: 3px solid var(--yf-blue);">
+                        <span>🔥</span> Most Active
+                    </div>
+                    <div class="mover-list">
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">NVDA</span>
+                                <span class="mover-name">NVIDIA</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$177.39</div>
+                                <div class="mover-percent" style="color: var(--yf-text-muted);">285.3M</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">PLTR</span>
+                                <span class="mover-name">Palantir</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$148.46</div>
+                                <div class="mover-percent" style="color: var(--yf-text-muted);">42.8M</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">AMD</span>
+                                <span class="mover-name">AMD</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$217.50</div>
+                                <div class="mover-percent" style="color: var(--yf-text-muted);">38.2M</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">TSLA</span>
+                                <span class="mover-name">Tesla</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$239.43</div>
+                                <div class="mover-percent" style="color: var(--yf-text-muted);">85.4M</div>
+                            </div>
+                        </div>
+                        <div class="mover-item">
+                            <div class="mover-info">
+                                <span class="mover-symbol">INTC</span>
+                                <span class="mover-name">Intel</span>
+                            </div>
+                            <div class="mover-change">
+                                <div class="mover-price">$19.84</div>
+                                <div class="mover-percent" style="color: var(--yf-text-muted);">52.1M</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section">
+    <!-- Key Statistics -->
+    <section class="section" style="background: var(--yf-bg-secondary); padding: 32px 0;">
         <div class="container">
-            <h2 class="section-title">Private AI Companies</h2>
-            <p class="section-subtitle">Unicorn startups and their valuations</p>
+            <div class="section-header">
+                <h2 class="section-title-yf">AI Market Statistics</h2>
+                <p class="section-subtitle-yf">Key metrics for the AI sector</p>
+            </div>
             
-            <div class="startup-list">
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>SpaceX-xAI (Merged)</h4>
-                        <span class="startup-focus">Grok, Starlink, Rockets • IPO Target: June 2026</span>
-                    </div>
-                    <div class="startup-valuation">$1.25T</div>
+            <div class="key-stats-grid">
+                <div class="key-stat-card">
+                    <div class="key-stat-label">Total AI Market Cap</div>
+                    <div class="key-stat-value">$14.2T</div>
+                    <div class="key-stat-sub">Top 20 AI companies</div>
                 </div>
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>OpenAI</h4>
-                        <span class="startup-focus">GPT-5, ChatGPT, $20B+ ARR • $110B raised Feb 2026</span>
-                    </div>
-                    <div class="startup-valuation">$840B</div>
+                <div class="key-stat-card">
+                    <div class="key-stat-label">Avg P/E Ratio</div>
+                    <div class="key-stat-value">45.8x</div>
+                    <div class="key-stat-sub">vs S&P 500: 22x</div>
                 </div>
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>Anthropic</h4>
-                        <span class="startup-focus">Claude 4.6, $19B ARR • $30B raised Feb 2026</span>
-                    </div>
-                    <div class="startup-valuation">$380B</div>
+                <div class="key-stat-card">
+                    <div class="key-stat-label">Daily Volume</div>
+                    <div class="key-stat-value">2.4B</div>
+                    <div class="key-stat-sub">Shares traded today</div>
                 </div>
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>Databricks</h4>
-                        <span class="startup-focus">Data + AI Platform • IPO: Q2 2026</span>
-                    </div>
-                    <div class="startup-valuation">$105B</div>
+                <div class="key-stat-card">
+                    <div class="key-stat-label">YTD Performance</div>
+                    <div class="key-stat-value" style="color: var(--yf-red);">-8.5%</div>
+                    <div class="key-stat-sub">AI Index YTD</div>
                 </div>
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>Waymo</h4>
-                        <span class="startup-focus">Autonomous Vehicles • $16B raised</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full AI Stocks Table -->
+    <section id="all-stocks" class="section" style="background: var(--yf-bg); padding: 32px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-yf">All AI Stocks</h2>
+                <p class="section-subtitle-yf">Comprehensive list of artificial intelligence companies</p>
+            </div>
+            
+            <div class="data-table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Name</th>
+                            <th class="numeric">Price</th>
+                            <th class="numeric">Change %</th>
+                            <th class="numeric">Market Cap</th>
+                            <th class="numeric">P/E</th>
+                            <th class="numeric">Volume</th>
+                            <th>Analyst Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="symbol-cell">NVDA</td>
+                            <td><div class="company-name">NVIDIA Corporation</div></td>
+                            <td class="numeric">$177.39</td>
+                            <td class="numeric negative">-1.39%</td>
+                            <td class="numeric">$4.35T</td>
+                            <td class="numeric">56.2</td>
+                            <td class="numeric">285.3M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Strong Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">MSFT</td>
+                            <td><div class="company-name">Microsoft Corporation</div></td>
+                            <td class="numeric">$373.46</td>
+                            <td class="numeric negative">-1.11%</td>
+                            <td class="numeric">$2.77T</td>
+                            <td class="numeric">32.4</td>
+                            <td class="numeric">18.5M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Strong Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">GOOGL</td>
+                            <td><div class="company-name">Alphabet Inc</div></td>
+                            <td class="numeric">$305.46</td>
+                            <td class="numeric positive">+1.82%</td>
+                            <td class="numeric">$1.88T</td>
+                            <td class="numeric">22.1</td>
+                            <td class="numeric">22.1M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">META</td>
+                            <td><div class="company-name">Meta Platforms</div></td>
+                            <td class="numeric">$574.46</td>
+                            <td class="numeric positive">+0.74%</td>
+                            <td class="numeric">$1.46T</td>
+                            <td class="numeric">24.8</td>
+                            <td class="numeric">15.2M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Strong Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">AVGO</td>
+                            <td><div class="company-name">Broadcom Inc</div></td>
+                            <td class="numeric">$314.55</td>
+                            <td class="numeric negative">-0.85%</td>
+                            <td class="numeric">$1.47T</td>
+                            <td class="numeric">72.4</td>
+                            <td class="numeric">12.8M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">TSM</td>
+                            <td><div class="company-name">TSMC</div></td>
+                            <td class="numeric">$339.04</td>
+                            <td class="numeric positive">+0.32%</td>
+                            <td class="numeric">$1.76T</td>
+                            <td class="numeric">28.5</td>
+                            <td class="numeric">8.5M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Strong Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">AMZN</td>
+                            <td><div class="company-name">Amazon.com Inc</div></td>
+                            <td class="numeric">$209.77</td>
+                            <td class="numeric negative">-2.19%</td>
+                            <td class="numeric">$2.20T</td>
+                            <td class="numeric">58.2</td>
+                            <td class="numeric">32.1M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">PLTR</td>
+                            <td><div class="company-name">Palantir Technologies</div></td>
+                            <td class="numeric">$148.46</td>
+                            <td class="numeric positive">+1.32%</td>
+                            <td class="numeric">$328B</td>
+                            <td class="numeric">385</td>
+                            <td class="numeric">42.8M</td>
+                            <td><span style="color: var(--yf-text-secondary); font-weight: 600;">Hold</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">AMD</td>
+                            <td><div class="company-name">Advanced Micro Devices</div></td>
+                            <td class="numeric">$217.50</td>
+                            <td class="numeric positive">+1.25%</td>
+                            <td class="numeric">$351B</td>
+                            <td class="numeric">118</td>
+                            <td class="numeric">38.2M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">TSLA</td>
+                            <td><div class="company-name">Tesla Inc</div></td>
+                            <td class="numeric">$239.43</td>
+                            <td class="numeric negative">-4.85%</td>
+                            <td class="numeric">$768B</td>
+                            <td class="numeric">168</td>
+                            <td class="numeric">85.4M</td>
+                            <td><span style="color: var(--yf-text-secondary); font-weight: 600;">Hold</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">MU</td>
+                            <td><div class="company-name">Micron Technology</div></td>
+                            <td class="numeric">$366.24</td>
+                            <td class="numeric positive">+0.45%</td>
+                            <td class="numeric">$408B</td>
+                            <td class="numeric">32.8</td>
+                            <td class="numeric">15.2M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Strong Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">CRM</td>
+                            <td><div class="company-name">Salesforce Inc</div></td>
+                            <td class="numeric">$274.42</td>
+                            <td class="numeric negative">-0.54%</td>
+                            <td class="numeric">$265B</td>
+                            <td class="numeric">42.5</td>
+                            <td class="numeric">6.8M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">NOW</td>
+                            <td><div class="company-name">ServiceNow Inc</div></td>
+                            <td class="numeric">$1,042.65</td>
+                            <td class="numeric positive">+0.82%</td>
+                            <td class="numeric">$214B</td>
+                            <td class="numeric">125</td>
+                            <td class="numeric">1.2M</td>
+                            <td><span style="color: var(--yf-green); font-weight: 600;">Strong Buy</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">SNOW</td>
+                            <td><div class="company-name">Snowflake Inc</div></td>
+                            <td class="numeric">$175.28</td>
+                            <td class="numeric negative">-1.42%</td>
+                            <td class="numeric">$58B</td>
+                            <td class="numeric">--</td>
+                            <td class="numeric">4.5M</td>
+                            <td><span style="color: var(--yf-text-secondary); font-weight: 600;">Hold</span></td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">AI</td>
+                            <td><div class="company-name">C3.ai Inc</div></td>
+                            <td class="numeric">$8.64</td>
+                            <td class="numeric positive">+2.01%</td>
+                            <td class="numeric">$1.26B</td>
+                            <td class="numeric">--</td>
+                            <td class="numeric">3.3M</td>
+                            <td><span style="color: var(--yf-text-secondary); font-weight: 600;">Hold</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analyst Ratings Section -->
+    <section class="section" style="background: var(--yf-bg-secondary); padding: 32px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-yf">Analyst Ratings</h2>
+                <p class="section-subtitle-yf">Consensus recommendations for AI sector</p>
+            </div>
+            
+            <div class="analyst-section">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                    <div>
+                        <div style="font-size: 0.8125rem; color: var(--yf-text-muted);">Average Rating</div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--yf-green);">Buy</div>
                     </div>
-                    <div class="startup-valuation">$126B</div>
-                </div>
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>Perplexity</h4>
-                        <span class="startup-focus">AI Search • 1B+ queries/month</span>
+                    <div style="text-align: right;">
+                        <div style="font-size: 0.8125rem; color: var(--yf-text-muted);">Price Target</div>
+                        <div style="font-size: 1.5rem; font-weight: 700; color: var(--yf-text);">$245.80</div>
+                        <div style="font-size: 0.75rem; color: var(--yf-green);">+18.5% upside</div>
                     </div>
-                    <div class="startup-valuation">$24B</div>
                 </div>
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>CoreWeave</h4>
-                        <span class="startup-focus">GPU Cloud • IPO Target: Q2 2026</span>
+                
+                <div class="ratings-bar">
+                    <div class="rating-segment rating-strong-buy" style="width: 35%;">35%</div>
+                    <div class="rating-segment rating-buy" style="width: 28%;">28%</div>
+                    <div class="rating-segment rating-hold" style="width: 25%;">25%</div>
+                    <div class="rating-segment rating-sell" style="width: 10%;">10%</div>
+                    <div class="rating-segment rating-strong-sell" style="width: 2%;">2%</div>
+                </div>
+                
+                <div class="ratings-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #15803d;"></div>
+                        <span>Strong Buy (35%)</span>
                     </div>
-                    <div class="startup-valuation">$28B</div>
-                </div>
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>Figure AI</h4>
-                        <span class="startup-focus">Humanoid Robots • Amazon deal</span>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #22c55e;"></div>
+                        <span>Buy (28%)</span>
                     </div>
-                    <div class="startup-valuation">$48B</div>
-                </div>
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>ElevenLabs</h4>
-                        <span class="startup-focus">Voice AI • $330M ARR</span>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #f59e0b;"></div>
+                        <span>Hold (25%)</span>
                     </div>
-                    <div class="startup-valuation">$11B</div>
-                </div>
-                <div class="startup-item">
-                    <div class="startup-info">
-                        <h4>Cohere</h4>
-                        <span class="startup-focus">Enterprise LLMs</span>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ef4444;"></div>
+                        <span>Sell (10%)</span>
                     </div>
-                    <div class="startup-valuation">$5.5B</div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #991b1b;"></div>
+                        <span>Strong Sell (2%)</span>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Companies -->
+    <section class="section" style="background: var(--yf-bg); padding: 32px 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title-yf">Private AI Companies</h2>
+                <p class="section-subtitle-yf">Pre-IPO valuations and funding rounds</p>
+            </div>
+            
+            <div class="data-table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Focus</th>
+                            <th class="numeric">Valuation</th>
+                            <th class="numeric">Total Funding</th>
+                            <th class="numeric">Revenue (ARR)</th>
+                            <th>IPO Target</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="symbol-cell">SpaceX-xAI</td>
+                            <td><div class="company-name">AI, Space, Social Media</div></td>
+                            <td class="numeric">$1.25T</td>
+                            <td class="numeric">$52B+</td>
+                            <td class="numeric">$15.5B</td>
+                            <td>June 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">OpenAI</td>
+                            <td><div class="company-name">Foundation Models (GPT)</div></td>
+                            <td class="numeric">$840B</td>
+                            <td class="numeric">$174B+</td>
+                            <td class="numeric">$25B</td>
+                            <td>Q4 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">Anthropic</td>
+                            <td><div class="company-name">Foundation Models (Claude)</div></td>
+                            <td class="numeric">$380B</td>
+                            <td class="numeric">$69B+</td>
+                            <td class="numeric">$19B</td>
+                            <td>2026</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">Databricks</td>
+                            <td><div class="company-name">Data + AI Platform</div></td>
+                            <td class="numeric">$105B</td>
+                            <td class="numeric">$4.2B</td>
+                            <td class="numeric">$4.5B</td>
+                            <td>Q2 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">Waymo</td>
+                            <td><div class="company-name">Autonomous Vehicles</div></td>
+                            <td class="numeric">$126B</td>
+                            <td class="numeric">$31B+</td>
+                            <td class="numeric">$500M</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">CoreWeave</td>
+                            <td><div class="company-name">GPU Cloud</div></td>
+                            <td class="numeric">$28B</td>
+                            <td class="numeric">$3.5B+</td>
+                            <td class="numeric">$2.3B</td>
+                            <td>Q2 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">Figure AI</td>
+                            <td><div class="company-name">Humanoid Robotics</div></td>
+                            <td class="numeric">$48B</td>
+                            <td class="numeric">$3.2B</td>
+                            <td class="numeric">Pre-revenue</td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol-cell">Perplexity</td>
+                            <td><div class="company-name">AI Search Engine</div></td>
+                            <td class="numeric">$24B</td>
+                            <td class="numeric">$2.6B</td>
+                            <td class="numeric">$150M</td>
+                            <td>TBD</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>Financial data for informational purposes only. Not investment advice.</p>
-            <p class="footer-update">Data as of April 2026. Markets are volatile. Not investment advice. | aipulse.buzz</p>
+            <p>Market data delayed by 15 minutes. Not investment advice.</p>
+            <p class="footer-update">Data as of April 8, 2026 | aipulse.buzz</p>
         </div>
     </footer>
 
     <script src="app.js"></script>
+    <script>
+        // Toggle stock details (placeholder for future expansion)
+        function toggleDetails(symbol) {
+            console.log('Toggle details for:', symbol);
+            // Future: expand card to show detailed statistics
+        }
+        
+        // Update timestamp
+        function updateTimestamp() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', { 
+                hour: '2-digit', 
+                minute: '2-digit',
+                timeZoneName: 'short'
+            });
+            document.querySelector('.market-status span:last-child').textContent = 
+                `Market Open • As of ${timeString}`;
+        }
+        
+        // Update every minute
+        setInterval(updateTimestamp, 60000);
+        updateTimestamp();
+    </script>
 </body>
 </html>
