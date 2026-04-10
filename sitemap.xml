@@ -80,11 +80,12 @@
   </url>
   
   <!-- Other Game Pages -->
+  <!-- Arknights Endfield - Comprehensive Guide -->
   <url>
     <loc>https://aipulse.buzz/games/arknights-endfield.html</loc>
     <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.75</priority>
   </url>
   
   <url>

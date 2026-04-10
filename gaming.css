@@ -99,6 +99,35 @@
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+.game-card.featured {
+    border: 3px solid #f59e0b;
+    position: relative;
+}
+
+.game-card.featured::before {
+    content: '⭐ FEATURED';
+    position: absolute;
+    top: 12px;
+    right: -40px;
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    color: white;
+    padding: 4px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    transform: rotate(45deg);
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.game-placeholder-logo {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
 .game-image {
     height: 160px;
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
