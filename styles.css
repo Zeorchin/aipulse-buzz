@@ -553,7 +553,35 @@ body {
         grid-column: span 1;
     }
     
+    .navbar .container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 0;
+    }
+    
     .nav-links {
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        width: 100%;
+        padding-top: 12px;
+        margin-top: 8px;
+        border-top: 1px solid var(--border);
+    }
+    
+    .nav-links::-webkit-scrollbar {
         display: none;
+    }
+    
+    .nav-links li {
+        flex-shrink: 0;
+    }
+    
+    .nav-links a {
+        font-size: 0.8rem;
+        white-space: nowrap;
     }
 }
