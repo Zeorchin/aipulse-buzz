@@ -2777,6 +2777,301 @@ const newsData = {
             "New revenue streams like ChatGPT ads",
             "Most anticipated tech IPO since Meta 2012"
         ]
+    },
+    
+    "gemma-4": {
+        id: "gemma-4",
+        title: "Google Gemma 4",
+        developer: "Google",
+        date: "Apr 1, 2026",
+        tag: "Google",
+        tagColor: "#4285f4",
+        subtitle: "Multimodal open-source models family with text, image, and audio capabilities.",
+        summary: "Google released Gemma 4, a family of open-source multimodal models under Apache 2.0 license. Four variants available: 27B dense, 26B-A4B MoE, and edge-optimized E2B/E4B. All handle text, images, and audio natively.",
+        content: `
+            <p>Google has released Gemma 4, its most capable open-source model family to date. Available under the permissive Apache 2.0 license, these multimodal models can process text, images, and audio natively.</p>
+            
+            <h2>Four Variants for Different Use Cases</h2>
+            <ul>
+                <li><strong>Gemma 4 27B:</strong> Dense model for high-performance applications</li>
+                <li><strong>Gemma 4 26B-A4B:</strong> Mixture of Experts (MoE) variant</li>
+                <li><strong>Gemma 4 E2B:</strong> Edge-optimized 2B parameter model</li>
+                <li><strong>Gemma 4 E4B:</strong> Edge-optimized 4B parameter model</li>
+            </ul>
+            
+            <h2>Key Features</h2>
+            <ul>
+                <li>Native multimodal: text, image, and audio processing</li>
+                <li>Apache 2.0 license for commercial use</li>
+                <li>Optimized for edge devices (E2B/E4B variants)</li>
+                <li>Competitive performance with models 2-3x larger</li>
+            </ul>
+        `,
+        stats: [
+            { label: "Variants", value: "4" },
+            { label: "License", value: "Apache 2.0" },
+            { label: "Max Params", value: "27B" },
+            { label: "Modalities", value: "3" }
+        ],
+        pricing: {
+            input: "Free",
+            output: "Free",
+            context: "Varies"
+        },
+        specs: {
+            "License": "Apache 2.0",
+            "Variants": "27B, 26B-A4B, E2B, E4B",
+            "Modalities": "Text, Image, Audio",
+            "Edge Support": "Yes (E2B/E4B)"
+        },
+        highlights: [
+            "Most capable open models from Google",
+            "Apache 2.0 license for full commercial use",
+            "Native multimodal capabilities",
+            "Edge-optimized variants for mobile devices",
+            "Competitive with larger closed-source models"
+        ]
+    },
+    
+    "microsoft-mai": {
+        id: "microsoft-mai",
+        title: "Microsoft MAI Foundation Models",
+        developer: "Microsoft",
+        date: "Apr 2, 2026",
+        tag: "Microsoft",
+        tagColor: "#00a4ef",
+        subtitle: "Three specialized models for speech, voice, and image generation.",
+        summary: "Microsoft unveiled three MAI foundation models: MAI-Transcribe-1 for speech-to-text, MAI-Voice-1 for voice generation, and MAI-Image-2 for image/video generation. Available through Azure and Microsoft Foundry.",
+        content: `
+            <p>Microsoft has entered the multimodal AI space with three specialized foundation models under the MAI (Microsoft AI) brand, targeting enterprise voice, speech, and media generation workflows.</p>
+            
+            <h2>The Three MAI Models</h2>
+            <ul>
+                <li><strong>MAI-Transcribe-1:</strong> Fast multilingual speech-to-text</li>
+                <li><strong>MAI-Voice-1:</strong> Custom voice generation with emotion control</li>
+                <li><strong>MAI-Image-2:</strong> Image and video generation for enterprises</li>
+            </ul>
+            
+            <h2>Enterprise Integration</h2>
+            <p>All three models are available through Azure AI Services and Microsoft Foundry, enabling seamless integration with existing Microsoft enterprise infrastructure.</p>
+        `,
+        stats: [
+            { label: "Models", value: "3" },
+            { label: "Languages", value: "100+" },
+            { label: "Platform", value: "Azure" }
+        ],
+        pricing: {
+            input: "Azure",
+            output: "Azure",
+            context: "N/A"
+        },
+        specs: {
+            "Platform": "Azure / Foundry",
+            "Transcription": "100+ languages",
+            "Voice": "Custom clones",
+            "Media": "Image + Video"
+        },
+        highlights: [
+            "Enterprise-focused multimodal AI",
+            "Native Azure integration",
+            "Custom voice generation",
+            "Fast multilingual transcription",
+            "Enterprise-grade security and compliance"
+        ]
+    },
+    
+    "q1-funding-record": {
+        id: "q1-funding-record",
+        title: "Record $267.2B AI Venture Funding in Q1 2026",
+        developer: "Industry",
+        date: "Apr 7, 2026",
+        tag: "Industry",
+        tagColor: "#10b981",
+        subtitle: "Q1 2026 saw more than double the previous quarterly record for AI funding.",
+        summary: "The first quarter of 2026 shattered all records with $267.2 billion in AI venture funding. Major deals include OpenAI ($122B), Anthropic ($30B), and SpaceX/xAI acquisition ($250B).",
+        content: `
+            <p>The AI industry has reached unprecedented investment levels in Q1 2026, with venture funding totaling $267.2 billion—more than double the previous quarterly record.</p>
+            
+            <h2>Major Deals</h2>
+            <ul>
+                <li><strong>OpenAI:</strong> $122 billion (Amazon $50B, NVIDIA $30B, SoftBank $30B)</li>
+                <li><strong>Anthropic:</strong> $30 billion Series G</li>
+                <li><strong>SpaceX/xAI:</strong> $250 billion acquisition</li>
+            </ul>
+            
+            <h2>What This Means</h2>
+            <p>This concentration of capital indicates a transition toward planetary-scale compute clusters and vertical integration of AI with physical infrastructure.</p>
+        `,
+        stats: [
+            { label: "Total Funding", value: "$267.2B" },
+            { label: "Growth", value: "2x+" },
+            { label: "Major Deals", value: "3" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Record": "$267.2B Q1 2026",
+            "Previous Record": "~$100B",
+            "Top Deal": "SpaceX/xAI $250B",
+            "OpenAI": "$122B raised"
+        },
+        highlights: [
+            "More than double previous quarterly record",
+            "Concentration among top 3 players",
+            "Shift to infrastructure and compute",
+            "OpenAI now at $25B+ annualized revenue",
+            "xAI/SpaceX creates $1.25T entity"
+        ]
+    },
+    
+    "spacex-xai-deal": {
+        id: "spacex-xai-deal",
+        title: "SpaceX Acquires xAI for $250 Billion",
+        developer: "SpaceX / xAI",
+        date: "Apr 7, 2026",
+        tag: "SpaceX",
+        tagColor: "#f59e0b",
+        subtitle: "Elon Musk combines SpaceX and xAI into a $1.25 trillion AI powerhouse.",
+        summary: "SpaceX acquired xAI for $250 billion, creating a combined $1.25 trillion entity. Tesla converted its stake. The 'galactic AI' vision combines Starlink, Tesla robotics, and xAI's Grok models.",
+        content: `
+            <p>In the largest AI transaction to date, SpaceX has acquired xAI for $250 billion, creating a combined entity valued at $1.25 trillion. The deal represents a vision of vertically integrated AI spanning space, vehicles, and robotics.</p>
+            
+            <h2>The Combined Entity</h2>
+            <ul>
+                <li><strong>SpaceX:</strong> Starlink satellite network for global connectivity</li>
+                <li><strong>xAI:</strong> Grok models and AI capabilities</li>
+                <li><strong>Tesla:</strong> Converted stake in combined entity</li>
+            </ul>
+            
+            <h2>Strategic Vision</h2>
+            <p>The combined entity aims to leverage Starlink's satellite network for low-latency global AI distribution and Tesla's robotics expertise for physical AI deployment.</p>
+        `,
+        stats: [
+            { label: "Deal Value", value: "$250B" },
+            { label: "Combined Value", value: "$1.25T" },
+            { label: "Tesla Stake", value: "Converted" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Acquisition": "$250 billion",
+            "Combined Valuation": "$1.25 trillion",
+            "Starlink": "Global distribution",
+            "Tesla": "Robotics integration"
+        },
+        highlights: [
+            "Largest AI acquisition in history",
+            "Creates $1.25 trillion entity",
+            "Vertical integration: space + AI + robotics",
+            "Starlink for global AI distribution",
+            "Tesla robotics for physical AI"
+        ]
+    },
+    
+    "openai-122b": {
+        id: "openai-122b",
+        title: "OpenAI Raises $122 Billion",
+        developer: "OpenAI",
+        date: "Apr 2026",
+        tag: "OpenAI",
+        tagColor: "#10a37f",
+        subtitle: "Led by Amazon, NVIDIA, and SoftBank. OpenAI now at $25B+ annualized revenue.",
+        summary: "OpenAI raised $122 billion in new funding led by Amazon ($50B), NVIDIA ($30B), and SoftBank ($30B). The company is now at $25 billion in annualized revenue and reportedly preparing for IPO.",
+        content: `
+            <p>OpenAI has closed a historic $122 billion funding round, cementing its position as the most valuable AI company. The round was led by major tech giants betting on AI infrastructure.</p>
+            
+            <h2>Funding Breakdown</h2>
+            <ul>
+                <li><strong>Amazon:</strong> $50 billion</li>
+                <li><strong>NVIDIA:</strong> $30 billion</li>
+                <li><strong>SoftBank:</strong> $30 billion</li>
+                <li><strong>Others:</strong> $12 billion</li>
+            </ul>
+            
+            <h2>Growth Metrics</h2>
+            <ul>
+                <li>Annualized revenue: $25+ billion</li>
+                <li>Reportedly preparing for IPO</li>
+                <li>Potential $300+ billion valuation</li>
+            </ul>
+        `,
+        stats: [
+            { label: "Raised", value: "$122B" },
+            { label: "Revenue", value: "$25B+" },
+            { label: "Valuation", value: "$300B+" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Amazon": "$50B investment",
+            "NVIDIA": "$30B investment",
+            "SoftBank": "$30B investment",
+            "Annual Revenue": "$25+ billion"
+        },
+        highlights: [
+            "Largest single AI funding round",
+            "Led by Amazon, NVIDIA, SoftBank",
+            "$25B+ annualized revenue",
+            "IPO preparation underway",
+            "Potential $300B+ valuation"
+        ]
+    },
+    
+    "anthropic-30b": {
+        id: "anthropic-30b",
+        title: "Anthropic Closes $30 Billion Series G",
+        developer: "Anthropic",
+        date: "Apr 2026",
+        tag: "Anthropic",
+        tagColor: "#d946ef",
+        subtitle: "Approaching $19B annualized revenue. MCP protocol hits 97 million installs.",
+        summary: "Anthropic raised $30 billion in Series G funding, approaching $19 billion in annualized revenue. The company's MCP protocol has reached 97 million installs, becoming an industry standard.",
+        content: `
+            <p>Anthropic has secured $30 billion in Series G funding, validating its safety-focused approach to AI development. The company continues to gain market share against OpenAI.</p>
+            
+            <h2>Key Metrics</h2>
+            <ul>
+                <li>Series G: $30 billion</li>
+                <li>Annualized revenue: ~$19 billion</li>
+                <li>MCP protocol: 97 million installs</li>
+                <li>Market share: 25% and growing</li>
+            </ul>
+            
+            <h2>MCP Industry Standard</h2>
+            <p>Anthropic's Model Context Protocol (MCP) has become the de facto standard for AI-tool integration, with 4,750% growth in 16 months.</p>
+        `,
+        stats: [
+            { label: "Series G", value: "$30B" },
+            { label: "Revenue", value: "$19B" },
+            { label: "MCP Installs", value: "97M" }
+        ],
+        pricing: {
+            input: "N/A",
+            output: "N/A",
+            context: "N/A"
+        },
+        specs: {
+            "Funding": "$30B Series G",
+            "Revenue": "$19B annualized",
+            "MCP Installs": "97 million",
+            "Market Share": "25%"
+        },
+        highlights: [
+            "$30B Series G funding",
+            "$19B annualized revenue",
+            "MCP hits 97M installs",
+            "25% market share achieved",
+            "Safety-focused differentiation"
+        ]
     }
 };
 
