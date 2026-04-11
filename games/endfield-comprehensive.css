@@ -173,17 +173,6 @@
     margin-bottom: 0;
 }
 
-.sidebar-section h4 {
-    color: #f1f5f9;
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 12px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #334155;
-}
-
 .sidebar-section ul {
     list-style: none;
     padding: 0;
@@ -194,18 +183,11 @@
 }
 
 .sidebar-section a {
-    color: #94a3b8;
     text-decoration: none;
-    font-size: 0.9375rem;
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 6px 0;
-    transition: color 0.2s;
-}
-
-.sidebar-section a:hover {
-    color: #60a5fa;
 }
 
 /* Codes Widget */
@@ -1106,23 +1088,89 @@
    ============================================ */
 
 /* Ensure sidebar text is readable on dark background */
+.sidebar-section h4 {
+    color: #ffffff !important;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #475569;
+}
+
 .sidebar-section a {
-    color: #cbd5e1;
+    color: #e2e8f0 !important;
     font-weight: 500;
+    font-size: 0.9375rem;
+    transition: all 0.2s;
 }
 
 .sidebar-section a:hover {
-    color: #60a5fa;
+    color: #38bdf8 !important;
+    transform: translateX(4px);
 }
 
 /* Featured section in sidebar - make it pop */
 .sidebar-section.featured-section h4 {
-    color: #fbbf24;
+    color: #fbbf24 !important;
     border-bottom-color: #fbbf24;
 }
 
 .sidebar-section.featured-section a {
+    color: #fcd34d !important;
+    font-weight: 600;
+}
+
+.sidebar-section.featured-section a:hover {
+    color: #fbbf24 !important;
+}
+
+/* Class list count badges */
+.class-list .count {
+    background: #334155;
+    color: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+/* Tips widget text */
+.tips-widget .tip-item p {
+    color: #e2e8f0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.tips-widget .tip-icon {
     color: #fbbf24;
+    font-size: 1.1rem;
+}
+
+/* Codes widget */
+.codes-widget h4 {
+    color: #ffffff;
+}
+
+.codes-widget code {
+    background: #334155;
+    color: #fbbf24;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+}
+
+.code-reward {
+    color: #4ade80;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.view-all-codes {
+    color: #60a5fa !important;
     font-weight: 600;
 }
 
