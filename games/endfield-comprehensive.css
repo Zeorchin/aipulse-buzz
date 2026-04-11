@@ -3,10 +3,11 @@
 /* Hero Section */
 .endfield-hero {
     position: relative;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    padding: 100px 0 60px;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(22, 33, 62, 0.9) 100%),
+                url('https://endfield.hypergryph.com/img/BG.1f8b69f9.webp') center/cover no-repeat;
+    padding: 60px 0 40px;
     overflow: hidden;
-    min-height: 500px;
+    min-height: 280px;
     display: flex;
     align-items: center;
 }
@@ -18,16 +19,15 @@
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 80%, rgba(79, 172, 254, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(0, 242, 254, 0.1) 0%, transparent 40%);
+        radial-gradient(circle at 20% 80%, rgba(79, 172, 254, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 242, 254, 0.15) 0%, transparent 40%);
 }
 
 .endfield-hero-content {
     position: relative;
     z-index: 2;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 60px;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -37,30 +37,32 @@
 
 .game-badge {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 6px 12px;
     background: linear-gradient(135deg, #ff6b6b, #feca57);
     border-radius: 20px;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .endfield-hero h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     background: linear-gradient(135deg, #fff 0%, #a8edea 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .game-subtitle {
-    font-size: 1.5rem;
-    color: rgba(255,255,255,0.8);
-    margin-bottom: 24px;
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 16px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
 .game-meta-row {
@@ -70,45 +72,13 @@
 }
 
 .platform-tag {
-    padding: 6px 14px;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    font-size: 0.875rem;
-    color: rgba(255,255,255,0.9);
-}
-
-/* Hero Stats */
-.hero-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.hero-stat {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    padding: 4px 10px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
     border-radius: 16px;
-    padding: 24px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-}
-
-.hero-stat .stat-number {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.hero-stat .stat-label {
-    display: block;
-    color: rgba(255,255,255,0.7);
-    font-size: 0.875rem;
-    margin-top: 4px;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.95);
+    font-weight: 500;
 }
 
 /* Guide Tabs */
@@ -1003,12 +973,9 @@
 /* Responsive */
 @media (max-width: 1024px) {
     .endfield-hero-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    .hero-stats-grid {
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
     
     .overview-grid,
@@ -1020,11 +987,7 @@
 
 @media (max-width: 768px) {
     .endfield-hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-stats-grid {
-        grid-template-columns: repeat(2, 1fr);
+        font-size: 2rem;
     }
     
     .section-header {
@@ -1212,4 +1175,29 @@
 .game-main th {
     color: #111827;
     font-weight: 700;
+}
+
+
+/* Game Version - Compact Style */
+.game-version {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+/* Responsive adjustments for smaller hero */
+@media (max-width: 768px) {
+    .endfield-hero {
+        padding: 40px 0 30px;
+        min-height: 220px;
+    }
+    
+    .endfield-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .game-subtitle {
+        font-size: 1rem;
+    }
 }
