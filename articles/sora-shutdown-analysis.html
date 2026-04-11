@@ -4,201 +4,491 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why OpenAI Killed Sora: Lessons from AI's Most Expensive Experiment | AI Pulse</title>
+    <meta name="description" content="The inside story of how OpenAI's Sora became a $15-million-per-day cautionary tale about AI economics and product-market fit.">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://aipulse.buzz/articles/sora-shutdown-analysis.html">
+    <meta property="og:title" content="Why OpenAI Killed Sora: Lessons from AI's Most Expensive Experiment">
+    <meta property="og:description" content="The inside story of how a $15-million-per-day product became a cautionary tale about AI economics">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=1200&h=630&fit=crop">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aipulse.buzz/articles/sora-shutdown-analysis.html">
+    <meta property="twitter:title" content="Why OpenAI Killed Sora: Lessons from AI's Most Expensive Experiment">
+    <meta property="twitter:description" content="The inside story of how a $15-million-per-day product became a cautionary tale about AI economics">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=1200&h=630&fit=crop">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../portal.css">
-    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="articles-detailed.css">
 </head>
-<body class="portal-page article-page">
-    <nav class="navbar portal-navbar">
-        <div class="container">
-            <a href="../index.html" class="logo">
-                <span class="logo-icon">◉</span>
+<body class="article-detailed">
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress-container">
+        <div class="reading-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; height: 70px;">
+            <a href="../index.html" class="logo" style="display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; font-size: 1.25rem;">
+                <span style="font-size: 1.5rem;">◉</span>
                 <span>AI Pulse.buzz</span>
             </a>
-            <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../ai-news.html">News</a>
-                <a href="../ai-models.html">Models</a>
-                <a href="index.html" class="active">Articles</a>
+            <div class="nav-links" style="display: flex; gap: 32px;">
+                <a href="../index.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">Home</a>
+                <a href="../ai-news.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">News</a>
+                <a href="../ai-models.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">Models</a>
+                <a href="index.html" style="color: #6366f1; text-decoration: none; font-weight: 600;">Articles</a>
             </div>
         </div>
     </nav>
 
-    <article class="full-article">
+    <!-- Article Header -->
+    <header class="article-header-enhanced" style="margin-top: 70px;">
         <div class="container">
-            <header class="article-header">
-                <div class="breadcrumbs">
-                    <a href="../index.html">Home</a> / <a href="index.html">Articles</a> / <span>Sora Analysis</span>
+            <div class="article-header-content">
+                <!-- Breadcrumbs -->
+                <nav class="article-breadcrumbs">
+                    <a href="../index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="index.html">Articles</a>
+                    <span class="separator">/</span>
+                    <span class="current">Sora Analysis</span>
+                </nav>
+
+                <!-- Meta -->
+                <div class="article-meta-bar">
+                    <span class="article-category-badge breaking">📊 Industry Analysis</span>
+                    <span class="article-date-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        April 2, 2026
+                    </span>
+                    <span class="article-reading-time">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        15 min read
+                    </span>
                 </div>
-                <div class="article-meta-top">
-                    <span class="article-category">Industry Analysis</span>
-                    <span class="article-date">April 2, 2026</span>
-                </div>
-                <h1>Why OpenAI Killed Sora: Lessons from AI's Most Expensive Experiment</h1>
+
+                <!-- Title -->
+                <h1 class="article-title">Why OpenAI Killed Sora: Lessons from AI's Most Expensive Experiment</h1>
                 <p class="article-subtitle">The inside story of how a $15-million-per-day product became a cautionary tale about AI economics</p>
-            </header>
 
-            <div class="article-hero-image">
-                <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 16px;">
-                    <div style="font-size: 120px;">🎬</div>
+                <!-- Author Bar -->
+                <div class="article-author-bar">
+                    <div class="author-avatar">AP</div>
+                    <div class="author-info">
+                        <div class="author-name">AI Pulse Editorial</div>
+                        <div class="author-title">Industry Analysis Team</div>
+                    </div>
+                    <div class="article-actions">
+                        <button class="action-btn" title="Save article">🔖</button>
+                        <button class="action-btn" title="Share">📤</button>
+                    </div>
                 </div>
             </div>
-
-            <div class="article-body">
-                <p class="lead">On March 24, 2026, OpenAI announced it was shutting down Sora—its much-hyped AI video generation platform—just six months after launch. The decision marked the end of a $1 billion Disney partnership and one of the most expensive failed experiments in AI history. What went wrong? And what does Sora's failure teach us about the economics of generative AI?</p>
-
-                <h2>The Promise and the Hype</h2>
-                <p>When OpenAI first demonstrated Sora in February 2024, the AI community was stunned. The videos—up to 60 seconds of coherent, high-quality footage generated from simple text prompts—were unlike anything that had come before. Landscapes, characters, camera movements, and physics simulations all appeared remarkably realistic.</p>
-
-                <p>The hype was immediate and intense. Filmmakers speculated about AI-generated movies. Content creators dreamed of unlimited video production. Investors saw the future of entertainment. OpenAI leaned into the excitement, launching Sora as a consumer product in September 2025 with a TikTok-like social interface.</p>
-
-                <blockquote>
-                    <p>"Sora represented everything we thought AI video could be. The demos were magical. The reality... wasn't." — Jason Miller, Digital Content Producer</p>
-                </blockquote>
-
-                <h2>The Economics of Video Generation</h2>
-                <p>The fundamental problem with Sora wasn't the technology—it was the economics. Video generation is extraordinarily compute-intensive. While generating a text response might cost fractions of a cent, generating a 60-second video cost dollars.</p>
-
-                <p>According to reports from The Information, Sora was "melting GPUs" at a cost of approximately $15 million per day in inference expenses alone. This doesn't include the costs of training the model, engineering salaries, infrastructure, or the billion-dollar Disney partnership.</p>
-
-                <p>To put this in perspective:</p>
-                <ul>
-                    <li>Each 60-second video cost roughly $10-20 to generate</li>
-                    <li>Users were generating millions of videos daily</li>
-                    <li>Revenue from subscriptions and the Disney deal didn't come close to covering costs</li>
-                    <li>Even at maximum pricing, Sora was losing money on every video</li>
-                </ul>
-
-                <h2>The Retention Problem</h2>
-
-                <p>Even more damning than the costs was the user retention data. According to third-party analytics, Sora's retention rate was less than 8% after 30 days. This meant 92% of users who tried the product stopped using it within a month.</p>
-
-                <p>Several factors contributed to this disengagement:</p>
-
-                <h3>1. Novelty vs. Utility</h3>
-                <p>Generating AI videos was fun—for the first few times. Users created surreal landscapes, impossible scenarios, and bizarre mashups. But once the novelty wore off, most users struggled to find practical applications. Sora was impressive technology in search of a use case.</p>
-
-                <h3>2. Quality Inconsistencies</h3>
-                <p>While Sora could produce stunning results, it was unpredictable. The same prompt might generate a masterpiece or a glitchy mess. For professional use, this inconsistency was a dealbreaker. Creators couldn't rely on Sora for client work.</p>
-
-                <h3>3. Limited Control</h3>
-                <p>Filmmakers and video professionals require precise control over their content—camera angles, lighting, timing, character actions. Sora offered none of this. You typed a description and hoped for the best. This "prompt and pray" approach frustrated professionals who needed reliability.</p>
-
-                <h2>The Competition Heats Up</h2>
-
-                <p>While Sora struggled with economics, competitors were catching up—often with better products. Google launched Veo 3.1 with superior temporal coherence and fewer physics glitches. Chinese startup Kling released version 2.5 with more consistent character generation. Even smaller players like Runway and Pika Labs offered tools with more control and lower prices.</p>
-
-                <p>By early 2026, Sora was no longer the best option—it was just the most expensive one. And with OpenAI charging premium prices to offset their costs, users had every incentive to switch.</p>
-
-                <h2>The Disney Deal Collapse</h2>
-
-                <p>In December 2025, OpenAI announced a landmark $1 billion partnership with Disney that would bring over 200 Disney characters—including Mickey Mouse, Marvel heroes, and Star Wars icons—into the Sora ecosystem. It was meant to be a game-changer.</p>
-
-                <p>The partnership fell apart within months. Disney executives reportedly became frustrated with Sora's inability to maintain character consistency and the platform's safety limitations. When OpenAI announced the shutdown, Disney terminated the agreement within 30 minutes.</p>
-
-                <p>The failed partnership highlights a critical challenge for AI video: intellectual property holders demand control that generative models struggle to provide. Disney characters have specific looks, behaviors, and storylines. Sora couldn't guarantee adherence to these standards.</p>
-
-                <h2>OpenAI's Strategic Pivot</h2>
-
-                <p>Sora's shutdown isn't just about one failed product—it's about OpenAI's broader strategy shift. With rumors of an IPO circulating and pressure to demonstrate profitability, the company is cutting "experimental" products to focus on core revenue drivers.</p>
-
-                <p>According to internal sources, OpenAI is redirecting Sora resources to:</p>
-                <ul>
-                    <li><strong>Codex</strong> – The AI coding assistant, which has clear enterprise value</li>
-                    <li><strong>Project "Spud"</strong> – A rumored desktop "superapp" combining ChatGPT, Codex, and other tools</li>
-                    <li><strong>Robotics</strong> – Physical AI systems that could leverage world-modeling technology</li>
-                    <li><strong>Enterprise APIs</strong> – The bread-and-butter business with clear unit economics</li>
-                </ul>
-
-                <p>Sam Altman's "Code Red" memo in late 2025 signaled this shift explicitly: OpenAI needed to move from "experimental side quests" to "mission-critical AGI." Sora, however impressive, was a side quest.</p>
-
-                <h2>Lessons for the AI Industry</h2>
-
-                <p>Sora's failure offers several important lessons for the broader AI industry:</p>
-
-                <h3>1. Technology ≠ Product</h3>
-                <p>Impressive demos don't make sustainable products. Sora wowed the world with its technical capabilities but never found product-market fit. The lesson: start with user problems, not technological capabilities.</p>
-
-                <h3>2. Unit Economics Matter</h3>
-                <p>In the VC-fueled AI boom, it's easy to ignore unit economics in pursuit of growth. Sora proves this isn't sustainable. Even with OpenAI's resources, a product losing $15 million daily can't survive.</p>
-
-                <h3>3. Novelty Fades Quickly</h3>
-                <p>The 8% retention rate shows that "cool" isn't enough. Products need to solve real problems with reliable results. Sora was cool, but it wasn't consistently useful.</p>
-
-                <h3>4. Competition is Fierce</h3>
-                <p>OpenAI's first-mover advantage in video generation lasted less than a year. In AI, technical moats are shallow. Execution, distribution, and economics matter more than raw capability.</p>
-
-                <h3>5. The Importance of Control</h3>
-                <p>Creative professionals need control. Sora's "prompt and generate" approach was too random for serious work. Future AI video tools must offer precise, reliable control over outputs.</p>
-
-                <h2>What's Next for AI Video?</h2>
-
-                <p>Sora's failure doesn't mean AI video is dead—it means the first wave of naive approaches is ending. The future likely includes:</p>
-
-                <ul>
-                    <li><strong>Hybrid workflows</strong> where AI assists human creators rather than replacing them</li>
-                    <li><strong>Specialized tools</strong> for specific use cases (effects, backgrounds, character animation) rather than general-purpose generation</li>
-                    <li><strong>Better control interfaces</strong> allowing precise manipulation of AI-generated content</li>
-                    <li><strong>More efficient models</strong> that don't require massive compute for every second of video</li>
-                </ul>
-
-                <p>Companies like Runway, which focus on professional workflows and hybrid AI-human creation, may ultimately prove more successful than pure-generation approaches.</p>
-
-                <h2>The Broader Implications</h2>
-
-                <p>Sora's shutdown has implications beyond video generation. It signals that the AI industry is entering a new phase—one where raw capability matters less than sustainable business models.</p>
-
-                <p>Investors and companies are increasingly asking: not "what can AI do?" but "what can AI do profitably?" This shift will likely mean fewer flashy demos and more focus on practical applications with clear value and viable economics.</p>
-
-                <p>For users, it's a reminder that today's cutting-edge AI features may not be tomorrow's. Betting your workflow on any single AI product carries risks—especially products from companies under pressure to demonstrate profitability.</p>
-
-                <h2>Conclusion</h2>
-
-                <p>Sora was, in many ways, a victim of its own ambition. It aimed to leapfrog years of development and deliver Hollywood-quality video generation to everyone. The technology was remarkable. The economics were impossible.</p>
-
-                <p>Its failure teaches us that in AI, as in any industry, sustainable business models matter. Impressive technology without product-market fit and viable unit economics is just an expensive experiment.</p>
-
-                <p>For the creators who built their workflows around Sora, the shutdown is a harsh lesson in vendor risk. For the rest of the industry, it's a reminder that the AI revolution will be built on sustainable products, not just impressive demos.</p>
-
-                <p>Sora may be gone, but the quest for AI-generated video continues—hopefully with better economics next time.</p>
-
-                <p class="conclusion">Sora's API and apps will cease operation on September 24, 2026. Users are advised to export their content before that date.</p>
-            </div>
-
-            <footer class="article-footer-section">
-                <a href="index.html" class="back-to-articles">← Back to Articles</a>
-                <div class="article-share">
-                    <span>Share:</span>
-                    <a href="#" onclick="shareTwitter()">𝕏</a>
-                    <a href="#" onclick="shareLinkedIn()">in</a>
-                </div>
-            </footer>
         </div>
-    </article>
+    </header>
 
-    <footer class="portal-footer">
-        <div class="container">
-            <div class="footer-brand">
-                <span class="logo-icon">◉</span>
-                <span>AI Pulse.buzz</span>
+    <!-- Hero Image -->
+    <div class="article-hero-enhanced">
+        <div class="article-hero-wrapper">
+            <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=1200&h=500&fit=crop" alt="Sora AI Video Generation Shutdown Analysis">
+            <div class="article-hero-caption">
+                <div class="image-credit">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <path d="M21 15l-5-5L5 21"></path>
+                    </svg>
+                    Sora's shutdown signals a shift from capability demonstrations to sustainable business models
+                </div>
             </div>
-            <p class="footer-tagline">Your daily dose of AI intelligence</p>
-            <p class="footer-copyright">© 2026 AI Pulse. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="article-main-layout">
+        <article class="article-body-enhanced">
+            <p class="article-lead">On March 24, 2026, OpenAI announced it was shutting down Sora—its much-hyped AI video generation platform—just six months after launch. The decision marked the end of a $1 billion Disney partnership and one of the most expensive failed experiments in AI history. What went wrong? And what does Sora's failure teach us about the economics of generative AI?</p>
+
+            <!-- Quick Stats -->
+            <div class="quick-stats-grid">
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">$15M</span>
+                    <span class="quick-stat-label">Daily Cost</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">8%</span>
+                    <span class="quick-stat-label">30-Day Retention</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">$1B</span>
+                    <span class="quick-stat-label">Disney Deal</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">6</span>
+                    <span class="quick-stat-label">Months Live</span>
+                </div>
+            </div>
+
+            <h2 id="promise">The Promise and the Hype</h2>
+            <p>When OpenAI first demonstrated Sora in February 2024, the AI community was stunned. The videos—up to 60 seconds of coherent, high-quality footage generated from simple text prompts—were unlike anything that had come before. Landscapes, characters, camera movements, and physics simulations all appeared remarkably realistic.</p>
+
+            <p>The hype was immediate and intense. Filmmakers speculated about AI-generated movies. Content creators dreamed of unlimited video production. Investors saw the future of entertainment. OpenAI leaned into the excitement, launching Sora as a consumer product in September 2025 with a TikTok-like social interface.</p>
+
+            <!-- Key Takeaways -->
+            <div class="key-takeaways">
+                <h4>Key Lessons</h4>
+                <ul>
+                    <li>Impressive technology doesn't guarantee product-market fit</li>
+                    <li>Video generation costs $10-20 per 60 seconds—unsustainable at scale</li>
+                    <li>92% of users stopped using Sora within 30 days</li>
+                    <li>Creative professionals need control, not just generation capability</li>
+                </ul>
+            </div>
+
+            <h2 id="economics">The Economics of Video Generation</h2>
+            <p>The fundamental problem with Sora wasn't the technology—it was the economics. Video generation is extraordinarily compute-intensive. While generating a text response might cost fractions of a cent, generating a 60-second video cost dollars.</p>
+
+            <p>According to reports from The Information, Sora was "melting GPUs" at a cost of approximately $15 million per day in inference expenses alone. This doesn't include the costs of training the model, engineering salaries, infrastructure, or the billion-dollar Disney partnership.</p>
+
+            <p>To put this in perspective:</p>
+            <ul class="checklist">
+                <li>Each 60-second video cost roughly $10-20 to generate</li>
+                <li>Users were generating millions of videos daily</li>
+                <li>Revenue from subscriptions and the Disney deal didn't come close to covering costs</li>
+                <li>Even at maximum pricing, Sora was losing money on every video</li>
+            </ul>
+
+            <h2 id="retention">The Retention Problem</h2>
+            <p>Even more damning than the costs was the user retention data. According to third-party analytics, Sora's retention rate was less than 8% after 30 days. This meant 92% of users who tried the product stopped using it within a month.</p>
+
+            <p>Several factors contributed to this disengagement:</p>
+
+            <h3>1. Novelty vs. Utility</h3>
+            <p>Generating AI videos was fun—for the first few times. Users created surreal landscapes, impossible scenarios, and bizarre mashups. But once the novelty wore off, most users struggled to find practical applications. Sora was impressive technology in search of a use case.</p>
+
+            <h3>2. Quality Inconsistencies</h3>
+            <p>While Sora could produce stunning results, it was unpredictable. The same prompt might generate a masterpiece or a glitchy mess. For professional use, this inconsistency was a dealbreaker. Creators couldn't rely on Sora for client work.</p>
+
+            <h3>3. Limited Control</h3>
+            <p>Filmmakers and video professionals require precise control over their content—camera angles, lighting, timing, character actions. Sora offered none of this. You typed a description and hoped for the best. This "prompt and pray" approach frustrated professionals who needed reliability.</p>
+
+            <blockquote>
+                <p>"Sora represented everything we thought AI video could be. The demos were magical. The reality... wasn't."</p>
+                <cite>— Jason Miller, Digital Content Producer</cite>
+            </blockquote>
+
+            <h2 id="competition">The Competition Heats Up</h2>
+            <p>While Sora struggled with economics, competitors were catching up—often with better products. Google launched Veo 3.1 with superior temporal coherence and fewer physics glitches. Chinese startup Kling released version 2.5 with more consistent character generation. Even smaller players like Runway and Pika Labs offered tools with more control and lower prices.</p>
+
+            <p>By early 2026, Sora was no longer the best option—it was just the most expensive one. And with OpenAI charging premium prices to offset their costs, users had every incentive to switch.</p>
+
+            <!-- Comparison Table -->
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>Control Level</th>
+                            <th>Price</th>
+                            <th>Consistency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sora</td>
+                            <td>Low (prompt only)</td>
+                            <td>Premium</td>
+                            <td>Inconsistent</td>
+                        </tr>
+                        <tr>
+                            <td>Veo 3.1</td>
+                            <td>Medium</td>
+                            <td>Competitive</td>
+                            <td><span class="highlight-winner">High</span></td>
+                        </tr>
+                        <tr>
+                            <td>Runway</td>
+                            <td><span class="highlight-winner">High</span></td>
+                            <td><span class="highlight-winner">Lower</span></td>
+                            <td>Good</td>
+                        </tr>
+                        <tr>
+                            <td>Kling 2.5</td>
+                            <td>Medium</td>
+                            <td><span class="highlight-winner">Lower</span></td>
+                            <td>Good</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 id="disney">The Disney Deal Collapse</h2>
+            <p>In December 2025, OpenAI announced a landmark $1 billion partnership with Disney that would bring over 200 Disney characters—including Mickey Mouse, Marvel heroes, and Star Wars icons—into the Sora ecosystem. It was meant to be a game-changer.</p>
+
+            <p>The partnership fell apart within months. Disney executives reportedly became frustrated with Sora's inability to maintain character consistency and the platform's safety limitations. When OpenAI announced the shutdown, Disney terminated the agreement within 30 minutes.</p>
+
+            <!-- Warning Box -->
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ The IP Challenge</div>
+                <p>The failed partnership highlights a critical challenge for AI video: intellectual property holders demand control that generative models struggle to provide. Disney characters have specific looks, behaviors, and storylines. Sora couldn't guarantee adherence to these standards.</p>
+            </div>
+
+            <h2 id="pivot">OpenAI's Strategic Pivot</h2>
+            <p>Sora's shutdown isn't just about one failed product—it's about OpenAI's broader strategy shift. With rumors of an IPO circulating and pressure to demonstrate profitability, the company is cutting "experimental" products to focus on core revenue drivers.</p>
+
+            <p>According to internal sources, OpenAI is redirecting Sora resources to:</p>
+            <ul class="checklist">
+                <li><strong>Codex</strong> – The AI coding assistant, which has clear enterprise value</li>
+                <li><strong>Project "Spud"</strong> – A rumored desktop "superapp" combining ChatGPT, Codex, and other tools</li>
+                <li><strong>Robotics</strong> – Physical AI systems that could leverage world-modeling technology</li>
+                <li><strong>Enterprise APIs</strong> – The bread-and-butter business with clear unit economics</li>
+            </ul>
+
+            <p>Sam Altman's "Code Red" memo in late 2025 signaled this shift explicitly: OpenAI needed to move from "experimental side quests" to "mission-critical AGI." Sora, however impressive, was a side quest.</p>
+
+            <h2 id="lessons">Lessons for the AI Industry</h2>
+            <p>Sora's failure offers several important lessons for the broader AI industry:</p>
+
+            <h3>1. Technology ≠ Product</h3>
+            <p>Impressive demos don't make sustainable products. Sora wowed the world with its technical capabilities but never found product-market fit. The lesson: start with user problems, not technological capabilities.</p>
+
+            <h3>2. Unit Economics Matter</h3>
+            <p>In the VC-fueled AI boom, it's easy to ignore unit economics in pursuit of growth. Sora proves this isn't sustainable. Even with OpenAI's resources, a product losing $15 million daily can't survive.</p>
+
+            <h3>3. Novelty Fades Quickly</h3>
+            <p>The 8% retention rate shows that "cool" isn't enough. Products need to solve real problems with reliable results. Sora was cool, but it wasn't consistently useful.</p>
+
+            <h3>4. Competition is Fierce</h3>
+            <p>OpenAI's first-mover advantage in video generation lasted less than a year. In AI, technical moats are shallow. Execution, distribution, and economics matter more than raw capability.</p>
+
+            <h3>5. The Importance of Control</h3>
+            <p>Creative professionals need control. Sora's "prompt and generate" approach was too random for serious work. Future AI video tools must offer precise, reliable control over outputs.</p>
+
+            <h2 id="future">What's Next for AI Video?</h2>
+            <p>Sora's failure doesn't mean AI video is dead—it means the first wave of naive approaches is ending. The future likely includes:</p>
+
+            <ul class="checklist">
+                <li><strong>Hybrid workflows</strong> where AI assists human creators rather than replacing them</li>
+                <li><strong>Specialized tools</strong> for specific use cases (effects, backgrounds, character animation) rather than general-purpose generation</li>
+                <li><strong>Better control interfaces</strong> allowing precise manipulation of AI-generated content</li>
+                <li><strong>More efficient models</strong> that don't require massive compute for every second of video</li>
+            </ul>
+
+            <p>Companies like Runway, which focus on professional workflows and hybrid AI-human creation, may ultimately prove more successful than pure-generation approaches.</p>
+
+            <h2 id="implications">The Broader Implications</h2>
+            <p>Sora's shutdown has implications beyond video generation. It signals that the AI industry is entering a new phase—one where raw capability matters less than sustainable business models.</p>
+
+            <p>Investors and companies are increasingly asking: not "what can AI do?" but "what can AI do profitably?" This shift will likely mean fewer flashy demos and more focus on practical applications with clear value and viable economics.</p>
+
+            <p>For users, it's a reminder that today's cutting-edge AI features may not be tomorrow's. Betting your workflow on any single AI product carries risks—especially products from companies under pressure to demonstrate profitability.</p>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p>Sora was, in many ways, a victim of its own ambition. It aimed to leapfrog years of development and deliver Hollywood-quality video generation to everyone. The technology was remarkable. The economics were impossible.</p>
+
+            <p>Its failure teaches us that in AI, as in any industry, sustainable business models matter. Impressive technology without product-market fit and viable unit economics is just an expensive experiment.</p>
+
+            <p>For the creators who built their workflows around Sora, the shutdown is a harsh lesson in vendor risk. For the rest of the industry, it's a reminder that the AI revolution will be built on sustainable products, not just impressive demos.</p>
+
+            <div class="info-box danger" style="margin-top: 40px;">
+                <div class="info-box-title">⛔ Important Notice</div>
+                <p>Sora's API and apps will cease operation on September 24, 2026. Users are advised to export their content before that date. For the rest of the industry, Sora's story serves as a cautionary tale: the AI revolution will be built on sustainable products, not just impressive demos.</p>
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+            <div class="sidebar-sticky-wrapper">
+                <!-- Table of Contents -->
+                <div class="toc-card">
+                    <h4 class="toc-title">📑 In This Article</h4>
+                    <ul class="toc-list">
+                        <li><a href="#promise">Promise & Hype</a></li>
+                        <li><a href="#economics">The Economics</a></li>
+                        <li><a href="#retention">Retention Problem</a></li>
+                        <li><a href="#competition">Competition</a></li>
+                        <li><a href="#disney">Disney Deal</a></li>
+                        <li><a href="#pivot">Strategic Pivot</a></li>
+                        <li><a href="#lessons">Key Lessons</a></li>
+                        <li><a href="#future">Future of AI Video</a></li>
+                        <li><a href="#implications">Broader Implications</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ul>
+                </div>
+
+                <!-- At a Glance -->
+                <div class="glance-card">
+                    <h4 class="glance-title">⚡ At a Glance</h4>
+                    <div class="glance-item">
+                        <span class="glance-label">Company</span>
+                        <span class="glance-value">OpenAI</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Daily Cost</span>
+                        <span class="glance-value highlight">$15 Million</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">30-Day Retention</span>
+                        <span class="glance-value">8%</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Disney Deal</span>
+                        <span class="glance-value">$1 Billion</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Launch Date</span>
+                        <span class="glance-value">Sept 2025</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Shutdown Date</span>
+                        <span class="glance-value">March 2026</span>
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="tags-card">
+                    <h4 class="toc-title">🏷️ Tags</h4>
+                    <div class="tags-list">
+                        <a href="#" class="tag-pill">OpenAI</a>
+                        <a href="#" class="tag-pill">Sora</a>
+                        <a href="#" class="tag-pill">AI Video</a>
+                        <a href="#" class="tag-pill">Industry Analysis</a>
+                        <a href="#" class="tag-pill">Product Strategy</a>
+                        <a href="#" class="tag-pill">Economics</a>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="sidebar-cta-enhanced">
+                    <h4>🚀 Stay Updated</h4>
+                    <p>Get the latest AI industry analysis and insights delivered to your inbox.</p>
+                    <a href="../index.html#newsletter" class="btn-cta">Subscribe</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Article Footer -->
+    <div class="article-footer">
+        <div class="article-footer-actions">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                </svg>
+                Back to Articles
+            </a>
+            <div class="share-section">
+                <span class="share-label">Share this article:</span>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn" title="Twitter">𝕏</a>
+                    <a href="#" class="share-btn" title="LinkedIn">in</a>
+                    <a href="#" class="share-btn" title="Copy Link">📋</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Articles -->
+    <section class="related-section">
+        <div class="related-section-header">
+            <h3 class="related-section-title">
+                <span>📰</span>
+                More Industry Analysis
+            </h3>
+            <a href="index.html" class="view-all-link">
+                View All Articles
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="related-grid-enhanced">
+            <a href="claude-mythos-reveal.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #ec4899, #f97316);">AI Safety</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">April 10, 2026</div>
+                    <h4 class="related-card-title">Claude Mythos: The 10 Trillion Parameter Model Too Powerful to Release</h4>
+                    <p class="related-card-desc">Why Anthropic built their most capable AI ever and decided the world isn't ready for it</p>
+                </div>
+            </a>
+            <a href="context-window-wars.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">Analysis</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">April 5, 2026</div>
+                    <h4 class="related-card-title">The Context Window Wars</h4>
+                    <p class="related-card-desc">Why 1 million+ token contexts are changing how we build AI applications</p>
+                </div>
+            </a>
+            <a href="ai-agent-revolution-2026.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #ec4899, #f97316);">Trends</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">March 28, 2026</div>
+                    <h4 class="related-card-title">The AI Agent Revolution of 2026</h4>
+                    <p class="related-card-desc">From chatbots to autonomous agents: how AI is learning to act on our behalf</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer style="background: #0f172a; color: #fff; padding: 60px 0 30px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                <span style="font-size: 2rem;">◉</span>
+                <span style="font-size: 1.5rem; font-weight: 700;">AI Pulse.buzz</span>
+            </div>
+            <p style="color: rgba(255,255,255,0.6); margin-bottom: 30px;">Your daily dose of AI intelligence. Tracking the frontier of artificial intelligence.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">© 2026 AI Pulse. All rights reserved.</p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="../index.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Home</a>
+                    <a href="../ai-news.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">News</a>
+                    <a href="../ai-models.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Models</a>
+                    <a href="index.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Articles</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Reading Progress Script -->
     <script>
-        function shareTwitter() {
-            const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent('Why OpenAI Killed Sora: Lessons from AI\'s Most Expensive Experiment');
-            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
-        }
-        function shareLinkedIn() {
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
-        }
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc-list a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
     </script>
 </body>
 </html>

@@ -4,151 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paperclip: The AI Context Management Tool Revolutionizing Development | AI Pulse</title>
+    <meta name="description" content="How Paperclip became essential for developers working with AI coding assistants - smart context compression, persistent memory, and multi-model support.">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://aipulse.buzz/articles/paperclip-tool.html">
+    <meta property="og:title" content="Paperclip: The AI Context Management Tool Revolutionizing Development">
+    <meta property="og:description" content="How a simple clipboard utility became essential for developers working with AI coding assistants">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aipulse.buzz/articles/paperclip-tool.html">
+    <meta property="twitter:title" content="Paperclip: The AI Context Management Tool Revolutionizing Development">
+    <meta property="twitter:description" content="How a simple clipboard utility became essential for developers working with AI coding assistants">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../portal.css">
-    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="articles-detailed.css">
 </head>
-<body class="portal-page article-page">
-    <nav class="navbar portal-navbar">
-        <div class="container">
-            <a href="../index.html" class="logo">
-                <span class="logo-icon">◉</span>
+<body class="article-detailed">
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress-container">
+        <div class="reading-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; height: 70px;">
+            <a href="../index.html" class="logo" style="display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; font-size: 1.25rem;">
+                <span style="font-size: 1.5rem;">◉</span>
                 <span>AI Pulse.buzz</span>
             </a>
-            <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../ai-news.html">News</a>
-                <a href="../ai-models.html">Models</a>
-                <a href="index.html" class="active">Articles</a>
+            <div class="nav-links" style="display: flex; gap: 32px;">
+                <a href="../index.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">Home</a>
+                <a href="../ai-news.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">News</a>
+                <a href="../ai-models.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">Models</a>
+                <a href="index.html" style="color: #6366f1; text-decoration: none; font-weight: 600;">Articles</a>
             </div>
         </div>
     </nav>
 
-    <article class="full-article">
+    <!-- Article Header -->
+    <header class="article-header-enhanced" style="margin-top: 70px;">
         <div class="container">
-            <!-- Article Header -->
-            <header class="article-header">
-                <div class="breadcrumbs">
-                    <a href="../index.html">Home</a> / <a href="index.html">Articles</a> / <span>Paperclip</span>
-                </div>
-                <div class="article-meta-top">
-                    <span class="article-category">Developer Tools</span>
-                    <span class="article-date">April 2, 2026</span>
-                </div>
-                <h1>Paperclip: The AI Context Management Tool Revolutionizing Development</h1>
-                <p class="article-subtitle">How a simple clipboard utility became essential for developers working with AI coding assistants</p>
-            </header>
+            <div class="article-header-content">
+                <!-- Breadcrumbs -->
+                <nav class="article-breadcrumbs">
+                    <a href="../index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="index.html">Articles</a>
+                    <span class="separator">/</span>
+                    <span class="current">Paperclip</span>
+                </nav>
 
-            <!-- Featured Image -->
-            <div class="article-hero-image">
-                <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #ffa95c 100%); height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 16px;">
-                    <div style="font-size: 120px;">📎</div>
+                <!-- Meta -->
+                <div class="article-meta-bar">
+                    <span class="article-category-badge">🛠️ Developer Tools</span>
+                    <span class="article-date-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        April 2, 2026
+                    </span>
+                    <span class="article-reading-time">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        12 min read
+                    </span>
+                </div>
+
+                <!-- Title -->
+                <h1 class="article-title">Paperclip: The AI Context Management Tool Revolutionizing Development</h1>
+                <p class="article-subtitle">How a simple clipboard utility became essential for developers working with AI coding assistants</p>
+
+                <!-- Author Bar -->
+                <div class="article-author-bar">
+                    <div class="author-avatar">AP</div>
+                    <div class="author-info">
+                        <div class="author-name">AI Pulse Editorial</div>
+                        <div class="author-title">Developer Tools & Productivity Team</div>
+                    </div>
+                    <div class="article-actions">
+                        <button class="action-btn" title="Save article">🔖</button>
+                        <button class="action-btn" title="Share">📤</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <div class="article-hero-enhanced">
+        <div class="article-hero-wrapper">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=500&fit=crop" alt="Paperclip AI Context Management Tool">
+            <div class="article-hero-caption">
+                <div class="image-credit">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <path d="M21 15l-5-5L5 21"></path>
+                    </svg>
+                    Paperclip bridges the gap between raw AI capability and practical utility
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="article-main-layout">
+        <article class="article-body-enhanced">
+            <p class="article-lead">Every developer who has worked with AI coding assistants knows the frustration: you're in the middle of a complex refactoring task, the AI has the perfect context about your codebase, and then—poof—the context window fills up, and the model forgets everything. Paperclip is the open-source tool that's solving this problem, one clipboard at a time.</p>
+
+            <!-- Quick Stats -->
+            <div class="quick-stats-grid">
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">45K</span>
+                    <span class="quick-stat-label">GitHub Stars</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">60%</span>
+                    <span class="quick-stat-label">Time Reduction</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">3x</span>
+                    <span class="quick-stat-label">Faster Onboarding</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">MIT</span>
+                    <span class="quick-stat-label">License</span>
                 </div>
             </div>
 
-            <!-- Article Content -->
-            <div class="article-body">
-                <p class="lead">Every developer who has worked with AI coding assistants knows the frustration: you're in the middle of a complex refactoring task, the AI has the perfect context about your codebase, and then—poof—the context window fills up, and the model forgets everything. Paperclip is the open-source tool that's solving this problem, one clipboard at a time.</p>
+            <h2 id="context-problem">The Context Problem in AI Development</h2>
+            <p>Modern AI coding assistants like Claude, GPT-4, and Gemini have transformed software development. They can write boilerplate, debug errors, explain legacy code, and even architect entire systems. But they all share a critical limitation: finite context windows.</p>
 
-                <h2>The Context Problem in AI Development</h2>
-                <p>Modern AI coding assistants like Claude, GPT-4, and Gemini have transformed software development. They can write boilerplate, debug errors, explain legacy code, and even architect entire systems. But they all share a critical limitation: finite context windows.</p>
+            <p>When you're working on a large codebase, even the most generous context windows (up to 1 million tokens in some models) can fill up quickly. The moment the context limit is reached, the model starts forgetting earlier parts of the conversation. For complex tasks that require understanding multiple files, APIs, and architectural patterns, this is devastating.</p>
 
-                <p>When you're working on a large codebase, even the most generous context windows (up to 1 million tokens in some models) can fill up quickly. The moment the context limit is reached, the model starts forgetting earlier parts of the conversation. For complex tasks that require understanding multiple files, APIs, and architectural patterns, this is devastating.</p>
-
-                <blockquote>
-                    <p>"I was spending more time re-explaining my codebase to the AI than actually coding. It felt like Groundhog Day—every few messages, I'd have to start from scratch." — Sarah Chen, Senior Developer at TechFlow</p>
-                </blockquote>
-
-                <h2>What is Paperclip?</h2>
-                <p>Paperclip is an open-source context management tool that sits between you and your AI assistant. Think of it as a smart clipboard that understands code structure, maintains persistent memory across sessions, and optimizes what information gets sent to the AI.</p>
-
-                <p>Created by developer Alex Rivera and released on GitHub in late 2025, Paperclip has quickly become an essential tool in the modern developer's toolkit. Within six months, it has garnered over 45,000 GitHub stars and is now used by engineering teams at companies like Stripe, Notion, and Linear.</p>
-
-                <h2>Key Features That Make Paperclip Essential</h2>
-
-                <h3>Smart Context Compression</h3>
-                <p>Paperclip doesn't just dump your entire codebase into the AI's context window. It intelligently analyzes which files, functions, and patterns are relevant to your current task. Using embeddings and semantic search, it compresses your codebase into the most compact representation that preserves meaning.</p>
-
-                <p>For example, if you're working on an authentication feature, Paperclip automatically identifies and includes:</p>
+            <!-- Key Takeaways -->
+            <div class="key-takeaways">
+                <h4>Key Points</h4>
                 <ul>
-                    <li>Your user model and database schema</li>
-                    <li>Existing authentication middleware</li>
-                    <li>API endpoint definitions</li>
-                    <li>Related test files</li>
-                    <li>Environment configuration</li>
+                    <li>Paperclip solves the context window limitation for AI coding assistants</li>
+                    <li>Smart compression reduces context by identifying relevant code only</li>
+                    <li>Persistent memory eliminates repetitive codebase explanations</li>
+                    <li>Multi-model support works with Claude, GPT-4, Gemini, and local models</li>
                 </ul>
+            </div>
 
-                <p>While excluding irrelevant assets like frontend components, documentation, or unrelated microservices.</p>
+            <h2 id="what-is">What is Paperclip?</h2>
+            <p>Paperclip is an open-source context management tool that sits between you and your AI assistant. Think of it as a smart clipboard that understands code structure, maintains persistent memory across sessions, and optimizes what information gets sent to the AI.</p>
 
-                <h3>Persistent Project Memory</h3>
-                <p>One of Paperclip's most powerful features is its persistent memory system. As you work with your AI assistant, Paperclip learns about your codebase, your coding patterns, and your architectural decisions. This memory persists across sessions, meaning you don't have to re-explain your tech stack every time you start a new conversation.</p>
+            <p>Created by developer Alex Rivera and released on GitHub in late 2025, Paperclip has quickly become an essential tool in the modern developer's toolkit. Within six months, it has garnered over 45,000 GitHub stars and is now used by engineering teams at companies like Stripe, Notion, and Linear.</p>
 
-                <p>The memory system stores:</p>
-                <ul>
-                    <li>Project structure and dependencies</li>
-                    <li>Coding conventions and style preferences</li>
-                    <li>Common patterns and abstractions</li>
-                    <li>Previous decisions and their rationale</li>
-                    <li>Known issues and workarounds</li>
-                </ul>
+            <h2 id="features">Key Features That Make Paperclip Essential</h2>
 
-                <h3>Multi-Model Support</h3>
-                <p>Paperclip isn't tied to any single AI provider. It works with Claude, GPT-4, Gemini, Codex, and even local models like Llama and Mistral. This flexibility means you can use the best model for each task—Claude for architecture discussions, GPT-4 for quick implementations, local models for sensitive code—without losing context.</p>
+            <h3>Smart Context Compression</h3>
+            <p>Paperclip doesn't just dump your entire codebase into the AI's context window. It intelligently analyzes which files, functions, and patterns are relevant to your current task. Using embeddings and semantic search, it compresses your codebase into the most compact representation that preserves meaning.</p>
 
-                <h3>Team Collaboration Features</h3>
+            <p>For example, if you're working on an authentication feature, Paperclip automatically identifies and includes:</p>
+            <ul class="checklist">
+                <li>Your user model and database schema</li>
+                <li>Existing authentication middleware</li>
+                <li>API endpoint definitions</li>
+                <li>Related test files</li>
+                <li>Environment configuration</li>
+            </ul>
+
+            <p>While excluding irrelevant assets like frontend components, documentation, or unrelated microservices.</p>
+
+            <h3>Persistent Project Memory</h3>
+            <p>One of Paperclip's most powerful features is its persistent memory system. As you work with your AI assistant, Paperclip learns about your codebase, your coding patterns, and your architectural decisions. This memory persists across sessions, meaning you don't have to re-explain your tech stack every time you start a new conversation.</p>
+
+            <p>The memory system stores:</p>
+            <ul class="checklist">
+                <li>Project structure and dependencies</li>
+                <li>Coding conventions and style preferences</li>
+                <li>Common patterns and abstractions</li>
+                <li>Previous decisions and their rationale</li>
+                <li>Known issues and workarinders</li>
+            </ul>
+
+            <h3>Multi-Model Support</h3>
+            <p>Paperclip isn't tied to any single AI provider. It works with Claude, GPT-4, Gemini, Codex, and even local models like Llama and Mistral. This flexibility means you can use the best model for each task—Claude for architecture discussions, GPT-4 for quick implementations, local models for sensitive code—without losing context.</p>
+
+            <blockquote>
+                <p>"I was spending more time re-explaining my codebase to the AI than actually coding. It felt like Groundhog Day—every few messages, I'd have to start from scratch."</p>
+                <cite>— Sarah Chen, Senior Developer at TechFlow</cite>
+            </blockquote>
+
+            <h2 id="how-it-works">How Paperclip Works Under the Hood</h2>
+
+            <p>Paperclip combines several sophisticated technologies to manage context effectively:</p>
+
+            <h3>Tree-sitter Integration</h3>
+            <p>Paperclip uses Tree-sitter parsers to build abstract syntax trees (ASTs) of your code. This allows it to understand code structure at a semantic level—not just as text, but as meaningful programming constructs. It knows which functions call which, how classes relate, and where dependencies flow.</p>
+
+            <h3>Vector Embeddings</h3>
+            <p>Your codebase is embedded into a vector space using models like CodeBERT or OpenAI's embedding API. This enables semantic search: you can ask Paperclip to "find code related to user authentication" and it will return the most semantically relevant files, even if they don't contain those exact keywords.</p>
+
+            <h3>Hierarchical Context Management</h3>
+            <p>Paperclip organizes context hierarchically:</p>
+            <ul>
+                <li><strong>Global context:</strong> Project structure, tech stack, conventions</li>
+                <li><strong>Module context:</strong> Specific directories or services</li>
+                <li><strong>Task context:</strong> Your current focus and recent changes</li>
+                <li><strong>Conversation context:</strong> Current chat history</li>
+            </ul>
+
+            <p>This hierarchy allows Paperclip to make intelligent decisions about what to include and what to summarize.</p>
+
+            <h2 id="impact">Real-World Impact</h2>
+
+            <p>Development teams using Paperclip report significant productivity gains:</p>
+
+            <ul class="checklist">
+                <li><strong>60% reduction</strong> in time spent explaining codebase to AI</li>
+                <li><strong>40% improvement</strong> in AI-generated code quality</li>
+                <li><strong>3x faster</strong> onboarding for new developers</li>
+                <li><strong>25% decrease</strong> in context-related errors</li>
+            </ul>
+
+            <blockquote>
+                <p>"Paperclip transformed how our team uses AI. Before, we were constantly fighting with context limits. Now, it feels like the AI actually understands our codebase. It's like having a senior engineer who's memorized every line of code."</p>
+                <cite>— Marcus Johnson, Engineering Lead at DataSync</cite>
+            </blockquote>
+
+            <!-- Info Box -->
+            <div class="info-box info">
+                <div class="info-box-title">📋 Team Collaboration Features</div>
                 <p>For teams, Paperclip offers shared context spaces. When multiple developers work on the same project, they can share Paperclip's understanding of the codebase. This means if one developer teaches Paperclip about a complex business rule, every other team member benefits from that knowledge.</p>
+            </div>
 
-                <p>Team features include:</p>
-                <ul>
-                    <li>Shared project knowledge bases</li>
-                    <li>Annotated code explanations</li>
-                    <li>Decision logs with reasoning</li>
-                    <li>Onboarding guides generated from context</li>
-                </ul>
+            <h2 id="getting-started">Getting Started with Paperclip</h2>
 
-                <h2>How Paperclip Works Under the Hood</h2>
+            <p>Paperclip is available as a CLI tool, VS Code extension, and JetBrains plugin. Installation is straightforward:</p>
 
-                <p>Paperclip combines several sophisticated technologies to manage context effectively:</p>
-
-                <h3>Tree-sitter Integration</h3>
-                <p>Paperclip uses Tree-sitter parsers to build abstract syntax trees (ASTs) of your code. This allows it to understand code structure at a semantic level—not just as text, but as meaningful programming constructs. It knows which functions call which, how classes relate, and where dependencies flow.</p>
-
-                <h3>Vector Embeddings</h3>
-                <p>Your codebase is embedded into a vector space using models like CodeBERT or OpenAI's embedding API. This enables semantic search: you can ask Paperclip to "find code related to user authentication" and it will return the most semantically relevant files, even if they don't contain those exact keywords.</p>
-
-                <h3>Hierarchical Context Management</h3>
-                <p>Paperclip organizes context hierarchically:</p>
-                <ul>
-                    <li><strong>Global context:</strong> Project structure, tech stack, conventions</li>
-                    <li><strong>Module context:</strong> Specific directories or services</li>
-                    <li><strong>Task context:</strong> Your current focus and recent changes</li>
-                    <li><strong>Conversation context:</strong> Current chat history</li>
-                </ul>
-
-                <p>This hierarchy allows Paperclip to make intelligent decisions about what to include and what to summarize.</p>
-
-                <h2>Real-World Impact</h2>
-
-                <p>Development teams using Paperclip report significant productivity gains:</p>
-
-                <ul>
-                    <li><strong>60% reduction</strong> in time spent explaining codebase to AI</li>
-                    <li><strong>40% improvement</strong> in AI-generated code quality</li>
-                    <li><strong>3x faster</strong> onboarding for new developers</li>
-                    <li><strong>25% decrease</strong> in context-related errors</li>
-                </ul>
-
-                <blockquote>
-                    <p>"Paperclip transformed how our team uses AI. Before, we were constantly fighting with context limits. Now, it feels like the AI actually understands our codebase. It's like having a senior engineer who's memorized every line of code." — Marcus Johnson, Engineering Lead at DataSync</p>
-                </blockquote>
-
-                <h2>Getting Started with Paperclip</h2>
-
-                <p>Paperclip is available as a CLI tool, VS Code extension, and JetBrains plugin. Installation is straightforward:</p>
-
-                <pre><code># Install via npm
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 24px; border-radius: 12px; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;"><code># Install via npm
 npm install -g @paperclip/cli
 
 # Or download the binary
@@ -158,65 +257,212 @@ curl -fsSL https://paperclip.dev/install.sh | bash
 cd your-project
 paperclip init</code></pre>
 
-                <p>Once initialized, Paperclip indexes your codebase and starts learning. Integration with your AI assistant is seamless—Paperclip acts as a middleware layer, optimizing context before it reaches the model.</p>
+            <p>Once initialized, Paperclip indexes your codebase and starts learning. Integration with your AI assistant is seamless—Paperclip acts as a middleware layer, optimizing context before it reaches the model.</p>
 
-                <h2>The Future of Context Management</h2>
+            <h2 id="future">The Future of Context Management</h2>
 
-                <p>Paperclip represents just the beginning of a new category of developer tools. As AI coding assistants become more capable, the limiting factor increasingly becomes not the models themselves, but how effectively we can communicate our intentions and context to them.</p>
+            <p>Paperclip represents just the beginning of a new category of developer tools. As AI coding assistants become more capable, the limiting factor increasingly becomes not the models themselves, but how effectively we can communicate our intentions and context to them.</p>
 
-                <p>Rivera and the Paperclip team are working on several exciting features:</p>
+            <p>Rivera and the Paperclip team are working on several exciting features:</p>
 
-                <ul>
-                    <li><strong>Automatic documentation generation</strong> from context understanding</li>
-                    <li><strong>Cross-project learning</strong> to apply patterns from one project to another</li>
-                    <li><strong>Voice interface</strong> for hands-free context queries</li>
-                    <li><strong>Integration with CI/CD</strong> to understand deployment contexts</li>
-                </ul>
+            <ul>
+                <li><strong>Automatic documentation generation</strong> from context understanding</li>
+                <li><strong>Cross-project learning</strong> to apply patterns from one project to another</li>
+                <li><strong>Voice interface</strong> for hands-free context queries</li>
+                <li><strong>Integration with CI/CD</strong> to understand deployment contexts</li>
+            </ul>
 
-                <h2>Conclusion</h2>
+            <h2 id="conclusion">Conclusion</h2>
 
-                <p>In the rapidly evolving landscape of AI-assisted development, Paperclip solves a fundamental problem that every developer faces: how do you fit an entire codebase into a limited context window? By intelligently managing context, compressing information, and maintaining persistent memory, Paperclip makes AI coding assistants truly useful for real-world projects.</p>
+            <p>In the rapidly evolving landscape of AI-assisted development, Paperclip solves a fundamental problem that every developer faces: how do you fit an entire codebase into a limited context window? By intelligently managing context, compressing information, and maintaining persistent memory, Paperclip makes AI coding assistants truly useful for real-world projects.</p>
 
-                <p>As context windows continue to grow—Anthropic's Claude now supports 1 million tokens—tools like Paperclip will remain essential. They bridge the gap between raw AI capability and practical utility, turning impressive demos into productive workflows.</p>
+            <p>As context windows continue to grow—Anthropic's Claude now supports 1 million tokens—tools like Paperclip will remain essential. They bridge the gap between raw AI capability and practical utility, turning impressive demos into productive workflows.</p>
 
-                <p>For developers looking to get the most out of AI coding assistants, Paperclip isn't just a nice-to-have—it's becoming as essential as your IDE.</p>
+            <p>For developers looking to get the most out of AI coding assistants, Paperclip isn't just a nice-to-have—it's becoming as essential as your IDE.</p>
 
-                <p class="conclusion">📎 Paperclip is available at <a href="https://github.com/paperclip-ai/paperclip" target="_blank">github.com/paperclip-ai/paperclip</a> under the MIT license.</p>
+            <div class="info-box success" style="margin-top: 40px;">
+                <div class="info-box-title">✓ Bottom Line</div>
+                <p>Paperclip is available at <a href="https://github.com/paperclip-ai/paperclip" target="_blank" style="color: #166534; font-weight: 600;">github.com/paperclip-ai/paperclip</a> under the MIT license. For developers looking to maximize their AI coding assistant productivity, Paperclip is quickly becoming an essential tool in the modern development workflow.</p>
             </div>
+        </article>
 
-            <!-- Article Footer -->
-            <footer class="article-footer-section">
-                <a href="index.html" class="back-to-articles">← Back to Articles</a>
-                <div class="article-share">
-                    <span>Share:</span>
-                    <a href="#" onclick="shareTwitter()">𝕏</a>
-                    <a href="#" onclick="shareLinkedIn()">in</a>
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+            <div class="sidebar-sticky-wrapper">
+                <!-- Table of Contents -->
+                <div class="toc-card">
+                    <h4 class="toc-title">📑 In This Article</h4>
+                    <ul class="toc-list">
+                        <li><a href="#context-problem">The Context Problem</a></li>
+                        <li><a href="#what-is">What is Paperclip?</a></li>
+                        <li><a href="#features">Key Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#impact">Real-World Impact</a></li>
+                        <li><a href="#getting-started">Getting Started</a></li>
+                        <li><a href="#future">The Future</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ul>
                 </div>
-            </footer>
-        </div>
-    </article>
 
-    <footer class="portal-footer">
-        <div class="container">
-            <div class="footer-brand">
-                <span class="logo-icon">◉</span>
-                <span>AI Pulse.buzz</span>
+                <!-- At a Glance -->
+                <div class="glance-card">
+                    <h4 class="glance-title">⚡ At a Glance</h4>
+                    <div class="glance-item">
+                        <span class="glance-label">Type</span>
+                        <span class="glance-value">Developer Tool</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">License</span>
+                        <span class="glance-value highlight">MIT (Open Source)</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">GitHub Stars</span>
+                        <span class="glance-value">45,000+</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Creator</span>
+                        <span class="glance-value">Alex Rivera</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Launched</span>
+                        <span class="glance-value">Late 2025</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Platforms</span>
+                        <span class="glance-value">CLI, VS Code, JetBrains</span>
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="tags-card">
+                    <h4 class="toc-title">🏷️ Tags</h4>
+                    <div class="tags-list">
+                        <a href="#" class="tag-pill">Developer Tools</a>
+                        <a href="#" class="tag-pill">AI Assistants</a>
+                        <a href="#" class="tag-pill">Context Management</a>
+                        <a href="#" class="tag-pill">Open Source</a>
+                        <a href="#" class="tag-pill">Productivity</a>
+                        <a href="#" class="tag-pill">Code Intelligence</a>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="sidebar-cta-enhanced">
+                    <h4>🚀 Stay Updated</h4>
+                    <p>Get the latest AI developer tools and productivity tips delivered to your inbox.</p>
+                    <a href="../index.html#newsletter" class="btn-cta">Subscribe</a>
+                </div>
             </div>
-            <p class="footer-tagline">Your daily dose of AI intelligence</p>
-            <p class="footer-copyright">© 2026 AI Pulse. All rights reserved.</p>
+        </aside>
+    </div>
+
+    <!-- Article Footer -->
+    <div class="article-footer">
+        <div class="article-footer-actions">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                </svg>
+                Back to Articles
+            </a>
+            <div class="share-section">
+                <span class="share-label">Share this article:</span>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn" title="Twitter">𝕏</a>
+                    <a href="#" class="share-btn" title="LinkedIn">in</a>
+                    <a href="#" class="share-btn" title="Copy Link">📋</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Articles -->
+    <section class="related-section">
+        <div class="related-section-header">
+            <h3 class="related-section-title">
+                <span>📰</span>
+                More on Developer Tools
+            </h3>
+            <a href="index.html" class="view-all-link">
+                View All Articles
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="related-grid-enhanced">
+            <a href="qwen-3-6-plus-deep-dive.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">Models</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">April 7, 2026</div>
+                    <h4 class="related-card-title">Qwen 3.6 Plus: The Free AI Model Disrupting the Industry</h4>
+                    <p class="related-card-desc">How Alibaba's 1M context, 2-3x faster model is challenging the pricing norms of frontier AI</p>
+                </div>
+            </a>
+            <a href="claude-mythos-reveal.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #ec4899, #f97316);">AI Safety</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">April 10, 2026</div>
+                    <h4 class="related-card-title">Claude Mythos: The 10 Trillion Parameter Model Too Powerful to Release</h4>
+                    <p class="related-card-desc">Why Anthropic built their most capable AI ever and decided the world isn't ready for it</p>
+                </div>
+            </a>
+            <a href="sora-shutdown-analysis.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1536240478700-b869070f9279?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">Analysis</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">April 2, 2026</div>
+                    <h4 class="related-card-title">Why OpenAI Killed Sora: Lessons from AI's Most Expensive Experiment</h4>
+                    <p class="related-card-desc">The inside story of how a $15-million-per-day product became a cautionary tale about AI economics</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer style="background: #0f172a; color: #fff; padding: 60px 0 30px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                <span style="font-size: 2rem;">◉</span>
+                <span style="font-size: 1.5rem; font-weight: 700;">AI Pulse.buzz</span>
+            </div>
+            <p style="color: rgba(255,255,255,0.6); margin-bottom: 30px;">Your daily dose of AI intelligence. Tracking the frontier of artificial intelligence.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">© 2026 AI Pulse. All rights reserved.</p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="../index.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Home</a>
+                    <a href="../ai-news.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">News</a>
+                    <a href="../ai-models.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Models</a>
+                    <a href="index.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Articles</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Reading Progress Script -->
     <script>
-        function shareTwitter() {
-            const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent('Paperclip: The AI Context Management Tool Revolutionizing Development');
-            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
-        }
-        function shareLinkedIn() {
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
-        }
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc-list a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
     </script>
 </body>
 </html>

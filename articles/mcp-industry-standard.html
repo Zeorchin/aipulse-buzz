@@ -4,122 +4,484 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCP: The 97 Million Install Milestone That Changed AI Forever | AI Pulse</title>
+    <meta name="description" content="How Anthropic's Model Context Protocol became the USB-C for AI in just 16 months, transforming how AI systems connect to the world.">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://aipulse.buzz/articles/mcp-industry-standard.html">
+    <meta property="og:title" content="MCP: The 97 Million Install Milestone That Changed AI Forever">
+    <meta property="og:description" content="How Anthropic's Model Context Protocol became the USB-C for AI in just 16 months">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aipulse.buzz/articles/mcp-industry-standard.html">
+    <meta property="twitter:title" content="MCP: The 97 Million Install Milestone That Changed AI Forever">
+    <meta property="twitter:description" content="How Anthropic's Model Context Protocol became the USB-C for AI in just 16 months">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=630&fit=crop">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../portal.css">
-    <link rel="stylesheet" href="articles.css">
+    <link rel="stylesheet" href="articles-detailed.css">
 </head>
-<body class="portal-page article-page">
-    <nav class="navbar portal-navbar">
-        <div class="container">
-            <a href="../index.html" class="logo">
-                <span class="logo-icon">◉</span>
+<body class="article-detailed">
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress-container">
+        <div class="reading-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; height: 70px;">
+            <a href="../index.html" class="logo" style="display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; font-size: 1.25rem;">
+                <span style="font-size: 1.5rem;">◉</span>
                 <span>AI Pulse.buzz</span>
             </a>
-            <div class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../ai-news.html">News</a>
-                <a href="../ai-models.html">Models</a>
-                <a href="index.html" class="active">Articles</a>
+            <div class="nav-links" style="display: flex; gap: 32px;">
+                <a href="../index.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">Home</a>
+                <a href="../ai-news.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">News</a>
+                <a href="../ai-models.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">Models</a>
+                <a href="index.html" style="color: #6366f1; text-decoration: none; font-weight: 600;">Articles</a>
             </div>
         </div>
     </nav>
 
-    <article class="full-article">
+    <!-- Article Header -->
+    <header class="article-header-enhanced" style="margin-top: 70px;">
         <div class="container">
-            <header class="article-header">
-                <div class="breadcrumbs">
-                    <a href="../index.html">Home</a> / <a href="index.html">Articles</a> / <span>MCP</span>
+            <div class="article-header-content">
+                <!-- Breadcrumbs -->
+                <nav class="article-breadcrumbs">
+                    <a href="../index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="index.html">Articles</a>
+                    <span class="separator">/</span>
+                    <span class="current">MCP</span>
+                </nav>
+
+                <!-- Meta -->
+                <div class="article-meta-bar">
+                    <span class="article-category-badge infrastructure">🏗️ Infrastructure</span>
+                    <span class="article-date-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        April 2, 2026
+                    </span>
+                    <span class="article-reading-time">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        10 min read
+                    </span>
                 </div>
-                <div class="article-meta-top">
-                    <span class="article-category">AI Infrastructure</span>
-                    <span class="article-date">April 2, 2026</span>
-                </div>
-                <h1>MCP: The 97 Million Install Milestone That Changed AI Forever</h1>
+
+                <!-- Title -->
+                <h1 class="article-title">MCP: The 97 Million Install Milestone That Changed AI Forever</h1>
                 <p class="article-subtitle">How Anthropic's Model Context Protocol became the USB-C for AI in just 16 months</p>
-            </header>
 
-            <div class="article-hero-image">
-                <div style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%); height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 16px;">
-                    <div style="font-size: 120px;">🔌</div>
+                <!-- Author Bar -->
+                <div class="article-author-bar">
+                    <div class="author-avatar">AP</div>
+                    <div class="author-info">
+                        <div class="author-name">AI Pulse Editorial</div>
+                        <div class="author-title">AI Research & Analysis Team</div>
+                    </div>
+                    <div class="article-actions">
+                        <button class="action-btn" title="Save article">🔖</button>
+                        <button class="action-btn" title="Share">📤</button>
+                    </div>
                 </div>
             </div>
-
-            <div class="article-body">
-                <p class="lead">In March 2026, a quiet milestone passed largely unnoticed by the general public, but it may prove more significant than any single AI model release. The Model Context Protocol (MCP) reached 97 million monthly SDK downloads, cementing its status as the de facto standard for AI-tool integration.</p>
-
-                <h2>The N Times M Problem</h2>
-                <p>Before MCP, integrating AI with external tools was a nightmare. If you had N AI applications and M tools, you needed N times M custom integrations. Each had its own authentication, data format, and error handling. It was fragile and expensive.</p>
-
-                <blockquote>
-                    <p>We were drowning in integration work. Every new tool meant weeks of development. MCP changed everything. Now it is days, sometimes hours. - Priya Sharma, Lead AI Engineer</p>
-                </blockquote>
-
-                <h2>Birth of a Standard</h2>
-                <p>MCP was born in November 2024 at Anthropic. The solution was elegantly simple: a universal protocol that any AI application could use to talk to any tool. Build an MCP server once, and any MCP-compatible client can use it.</p>
-
-                <h2>The Adoption Explosion</h2>
-                <p>MCP's growth has been unprecedented: from 2 million installs at launch to 97 million in March 2026. That is 4,750% growth in 16 months.</p>
-
-                <h2>Universal Industry Support</h2>
-                <p>By March 2026, virtually every major AI provider supports MCP: Anthropic, OpenAI, Google DeepMind, Microsoft, Amazon, xAI, Mistral, and Cohere.</p>
-
-                <h2>The Ecosystem Today</h2>
-                <ul>
-                    <li>5,800+ publicly available MCP servers</li>
-                    <li>10,000+ active MCP servers in production</li>
-                    <li>300+ MCP clients</li>
-                    <li>4,000+ published servers covering major SaaS platforms</li>
-                </ul>
-
-                <h2>How MCP Works</h2>
-                <p>Think of MCP as USB-C for AI - a universal connector. It operates on three layers: Transport (communication), Protocol (message formats), and Application (tool implementations).</p>
-
-                <h2>Real-World Impact</h2>
-                <p>For developers, MCP means building AI workflows in hours instead of weeks. For enterprises, it means no vendor lock-in. For AI vendors, it means thousands of connectors for free.</p>
-
-                <h2>The Linux Foundation Move</h2>
-                <p>In December 2025, Anthropic donated MCP to the Agentic AI Foundation under the Linux Foundation. This ensures vendor neutrality and long-term stability.</p>
-
-                <h2>Conclusion</h2>
-                <p>MCP has become foundational infrastructure for the AI era. The 97 million install milestone proves it is not just an experiment - it is the standard that will define how AI systems connect to the world for years to come.</p>
-
-                <p class="conclusion">MCP is available at github.com/modelcontextprotocol under the MIT license.</p>
-            </div>
-
-            <footer class="article-footer-section">
-                <a href="index.html" class="back-to-articles">Back to Articles</a>
-                <div class="article-share">
-                    <span>Share:</span>
-                    <a href="#" onclick="shareTwitter()">X</a>
-                    <a href="#" onclick="shareLinkedIn()">in</a>
-                </div>
-            </footer>
         </div>
-    </article>
+    </header>
 
-    <footer class="portal-footer">
-        <div class="container">
-            <div class="footer-brand">
-                <span class="logo-icon">◉</span>
-                <span>AI Pulse.buzz</span>
+    <!-- Hero Image -->
+    <div class="article-hero-enhanced">
+        <div class="article-hero-wrapper">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=500&fit=crop" alt="MCP Infrastructure">
+            <div class="article-hero-caption">
+                <div class="image-credit">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <path d="M21 15l-5-5L5 21"></path>
+                    </svg>
+                    MCP has become the universal connector for AI applications and tools
+                </div>
             </div>
-            <p class="footer-tagline">Your daily dose of AI intelligence</p>
-            <p class="footer-copyright">2026 AI Pulse. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="article-main-layout">
+        <article class="article-body-enhanced">
+            <p class="article-lead">In March 2026, a quiet milestone passed largely unnoticed by the general public, but it may prove more significant than any single AI model release. The Model Context Protocol (MCP) reached 97 million monthly SDK downloads, cementing its status as the de facto standard for AI-tool integration.</p>
+
+            <!-- Quick Stats -->
+            <div class="quick-stats-grid">
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">97M</span>
+                    <span class="quick-stat-label">Monthly Downloads</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">16</span>
+                    <span class="quick-stat-label">Months Since Launch</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">5,800+</span>
+                    <span class="quick-stat-label">Public Servers</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">4,750%</span>
+                    <span class="quick-stat-label">Growth Rate</span>
+                </div>
+            </div>
+
+            <h2 id="problem">The N Times M Problem</h2>
+            <p>Before MCP, integrating AI with external tools was a nightmare. If you had N AI applications and M tools, you needed N times M custom integrations. Each had its own authentication, data format, and error handling. It was fragile and expensive.</p>
+
+            <blockquote>
+                <p>We were drowning in integration work. Every new tool meant weeks of development. MCP changed everything. Now it is days, sometimes hours.</p>
+                <cite>— Priya Sharma, Lead AI Engineer</cite>
+            </blockquote>
+
+            <!-- Key Takeaways -->
+            <div class="key-takeaways">
+                <h4>Key Points</h4>
+                <ul>
+                    <li>MCP reached 97 million monthly SDK downloads in March 2026</li>
+                    <li>5,800+ publicly available MCP servers in the ecosystem</li>
+                    <li>Universal support across all major AI providers</li>
+                    <li>Donated to the Linux Foundation for vendor neutrality</li>
+                </ul>
+            </div>
+
+            <h2 id="birth">Birth of a Standard</h2>
+            <p>MCP was born in November 2024 at Anthropic. The solution was elegantly simple: a universal protocol that any AI application could use to talk to any tool. Build an MCP server once, and any MCP-compatible client can use it.</p>
+
+            <p>The brilliance of MCP lies in its three-layer architecture:</p>
+
+            <ul class="checklist">
+                <li><strong>Transport Layer:</strong> Handles communication between client and server (stdio, HTTP, WebSockets)</li>
+                <li><strong>Protocol Layer:</strong> Defines message formats, capabilities negotiation, and lifecycle management</li>
+                <li><strong>Application Layer:</strong> Tool implementations that expose specific functionality</li>
+            </ul>
+
+            <h2 id="adoption">The Adoption Explosion</h2>
+            <p>MCP's growth has been unprecedented. From 2 million installs at launch to 97 million in March 2026—that's 4,750% growth in just 16 months. No other AI infrastructure protocol has achieved this velocity.</p>
+
+            <!-- Comparison Table -->
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Nov 2024</th>
+                            <th>Mar 2026</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monthly Installs</td>
+                            <td>2 million</td>
+                            <td><span class="highlight-winner">97 million</span></td>
+                        </tr>
+                        <tr>
+                            <td>Public Servers</td>
+                            <td>150</td>
+                            <td><span class="highlight-winner">5,800+</span></td>
+                        </tr>
+                        <tr>
+                            <td>MCP Clients</td>
+                            <td>12</td>
+                            <td><span class="highlight-winner">300+</span></td>
+                        </tr>
+                        <tr>
+                            <td>Enterprise Adopters</td>
+                            <td>50</td>
+                            <td><span class="highlight-winner">2,500+</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 id="industry">Universal Industry Support</h2>
+            <p>By March 2026, virtually every major AI provider supports MCP. The list reads like a who's who of the AI industry:</p>
+
+            <ul>
+                <li>Anthropic (creators)</li>
+                <li>OpenAI</li>
+                <li>Google DeepMind</li>
+                <li>Microsoft</li>
+                <li>Amazon</li>
+                <li>xAI</li>
+                <li>Mistral</li>
+                <li>Cohere</li>
+            </ul>
+
+            <!-- Info Box -->
+            <div class="info-box info">
+                <div class="info-box-title">📋 What Makes MCP Different?</div>
+                <p>Unlike previous attempts at AI-tool integration, MCP is <strong>bidirectional</strong> and <strong>stateful</strong>. It doesn't just send commands—it maintains context, handles authentication, and manages the entire conversation lifecycle between AI and tools.</p>
+            </div>
+
+            <h2 id="ecosystem">The Ecosystem Today</h2>
+            <p>The MCP ecosystem has evolved into a thriving marketplace of connectors:</p>
+
+            <ul class="checklist">
+                <li><strong>5,800+</strong> publicly available MCP servers</li>
+                <li><strong>10,000+</strong> active MCP servers in production</li>
+                <li><strong>300+</strong> MCP clients (applications that consume MCP servers)</li>
+                <li><strong>4,000+</strong> published servers covering major SaaS platforms</li>
+            </ul>
+
+            <h2 id="how-it-works">How MCP Works</h2>
+            <p>Think of MCP as USB-C for AI—a universal connector that just works. Here's how the integration flows:</p>
+
+            <ol>
+                <li><strong>Discovery:</strong> AI client queries available MCP servers</li>
+                <li><strong>Capability Negotiation:</strong> Client and server agree on supported features</li>
+                <li><strong>Tool Exposure:</strong> Server exposes available tools with schemas</li>
+                <li><strong>Execution:</strong> AI calls tools with parameters, receives results</li>
+                <li><strong>Context Management:</strong> State maintained across interactions</li>
+            </ol>
+
+            <h2 id="impact">Real-World Impact</h2>
+            <p>The impact of MCP extends across the entire AI landscape:</p>
+
+            <p><strong>For Developers:</strong> MCP means building AI workflows in hours instead of weeks. A developer can integrate with Slack, GitHub, and a vector database in an afternoon—work that previously took a team weeks.</p>
+
+            <p><strong>For Enterprises:</strong> No more vendor lock-in. Switch AI providers without rebuilding integrations. Standardize on one protocol across the organization.</p>
+
+            <p><strong>For AI Vendors:</strong> Instant access to thousands of connectors. Your users can integrate with their existing tools on day one.</p>
+
+            <blockquote>
+                <p>MCP is the most important infrastructure development in AI this year. It solved the integration problem that was holding back adoption.</p>
+                <cite>— Tech Industry Analyst</cite>
+            </blockquote>
+
+            <h2 id="linux-foundation">The Linux Foundation Move</h2>
+            <p>In December 2025, Anthropic donated MCP to the Agentic AI Foundation under the Linux Foundation. This move was crucial for long-term stability:</p>
+
+            <ul>
+                <li><strong>Vendor Neutrality:</strong> No single company controls the protocol</li>
+                <li><strong>Open Governance:</strong> Community-driven roadmap and decisions</li>
+                <li><strong>Enterprise Confidence:</strong> Guarantees against sudden changes or abandonment</li>
+                <li><strong>Standardization:</strong> Path toward official industry standards</li>
+            </ul>
+
+            <!-- Info Box -->
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Competitive Implications</div>
+                <p>MCP's dominance creates a moat for AI applications that adopt it early. New entrants must support MCP to be competitive, while legacy integration approaches face rapid obsolescence.</p>
+            </div>
+
+            <h2 id="future">Looking Ahead</h2>
+            <p>What's next for MCP? The roadmap includes:</p>
+
+            <ul>
+                <li><strong>Federated MCP:</strong> Chains of MCP servers working together</li>
+                <li><strong>Enhanced Security:</strong> Built-in encryption and audit logging</li>
+                <li><strong>Streaming Support:</strong> Real-time tool execution for live applications</li>
+                <li><strong>Standardized UI:</strong> Common interfaces for tool configuration</li>
+            </ul>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p>MCP has become foundational infrastructure for the AI era. The 97 million install milestone proves it's not just an experiment—it's the standard that will define how AI systems connect to the world for years to come.</p>
+
+            <p>Like HTTP for the web or SQL for databases, MCP is becoming invisible infrastructure that just works. Developers won't think about it—they'll just build on it. And that ubiquity is the ultimate sign of success.</p>
+
+            <div class="info-box success" style="margin-top: 40px;">
+                <div class="info-box-title">✓ Bottom Line</div>
+                <p>MCP is available at <strong>github.com/modelcontextprotocol</strong> under the MIT license. Whether you're building AI applications or connecting existing tools, MCP is the standard you can't afford to ignore. 🔌</p>
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+            <div class="sidebar-sticky-wrapper">
+                <!-- Table of Contents -->
+                <div class="toc-card">
+                    <h4 class="toc-title">📑 In This Article</h4>
+                    <ul class="toc-list">
+                        <li><a href="#problem">The N Times M Problem</a></li>
+                        <li><a href="#birth">Birth of a Standard</a></li>
+                        <li><a href="#adoption">Adoption Explosion</a></li>
+                        <li><a href="#industry">Industry Support</a></li>
+                        <li><a href="#ecosystem">Ecosystem Today</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#impact">Real-World Impact</a></li>
+                        <li><a href="#linux-foundation">Linux Foundation</a></li>
+                        <li><a href="#future">Looking Ahead</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ul>
+                </div>
+
+                <!-- At a Glance -->
+                <div class="glance-card">
+                    <h4 class="glance-title">⚡ At a Glance</h4>
+                    <div class="glance-item">
+                        <span class="glance-label">Developer</span>
+                        <span class="glance-value">Anthropic</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Downloads</span>
+                        <span class="glance-value highlight">97M/month</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Public Servers</span>
+                        <span class="glance-value">5,800+</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Clients</span>
+                        <span class="glance-value">300+</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">License</span>
+                        <span class="glance-value">MIT</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Governance</span>
+                        <span class="glance-value">Linux Foundation</span>
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="tags-card">
+                    <h4 class="toc-title">🏷️ Tags</h4>
+                    <div class="tags-list">
+                        <a href="#" class="tag-pill">MCP</a>
+                        <a href="#" class="tag-pill">Anthropic</a>
+                        <a href="#" class="tag-pill">Protocol</a>
+                        <a href="#" class="tag-pill">Integration</a>
+                        <a href="#" class="tag-pill">AI Tools</a>
+                        <a href="#" class="tag-pill">Open Source</a>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="sidebar-cta-enhanced">
+                    <h4>🚀 Stay Updated</h4>
+                    <p>Get the latest AI news and model releases delivered to your inbox.</p>
+                    <a href="../index.html#newsletter" class="btn-cta">Subscribe</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Article Footer -->
+    <div class="article-footer">
+        <div class="article-footer-actions">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                </svg>
+                Back to Articles
+            </a>
+            <div class="share-section">
+                <span class="share-label">Share this article:</span>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn" title="Twitter">𝕏</a>
+                    <a href="#" class="share-btn" title="LinkedIn">in</a>
+                    <a href="#" class="share-btn" title="Copy Link">📋</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Articles -->
+    <section class="related-section">
+        <div class="related-section-header">
+            <h3 class="related-section-title">
+                <span>📰</span>
+                More on AI Infrastructure
+            </h3>
+            <a href="index.html" class="view-all-link">
+                View All Articles
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="related-grid-enhanced">
+            <a href="local-llm-use-cases.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">Infrastructure</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">March 29, 2026</div>
+                    <h4 class="related-card-title">Local LLM Use Cases: Running AI on Your Own Hardware</h4>
+                    <p class="related-card-desc">Practical applications for running large language models locally—from privacy-first assistants to offline code generation</p>
+                </div>
+            </a>
+            <a href="claude-mythos-reveal.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #ec4899, #f97316);">AI Safety</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">April 10, 2026</div>
+                    <h4 class="related-card-title">Claude Mythos: The 10 Trillion Parameter Model Too Powerful to Release</h4>
+                    <p class="related-card-desc">Why Anthropic built their most capable AI ever and decided the world isn't ready for it</p>
+                </div>
+            </a>
+            <a href="opencode.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #22c55e, #16a34a);">Development</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">March 29, 2026</div>
+                    <h4 class="related-card-title">OpenCode: The Future of Open Source Development</h4>
+                    <p class="related-card-desc">How open-source coding platforms are democratizing software development</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer style="background: #0f172a; color: #fff; padding: 60px 0 30px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                <span style="font-size: 2rem;">◉</span>
+                <span style="font-size: 1.5rem; font-weight: 700;">AI Pulse.buzz</span>
+            </div>
+            <p style="color: rgba(255,255,255,0.6); margin-bottom: 30px;">Your daily dose of AI intelligence. Tracking the frontier of artificial intelligence.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">© 2026 AI Pulse. All rights reserved.</p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="../index.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Home</a>
+                    <a href="../ai-news.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">News</a>
+                    <a href="../ai-models.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Models</a>
+                    <a href="index.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Articles</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Reading Progress Script -->
     <script>
-        function shareTwitter() {
-            const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent('MCP: The 97 Million Install Milestone That Changed AI Forever');
-            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
-        }
-        function shareLinkedIn() {
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
-        }
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc-list a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
     </script>
 </body>
 </html>
