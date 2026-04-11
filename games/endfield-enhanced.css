@@ -1599,3 +1599,164 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ============================================
+   LAYOUT FIXES - Sidebar & Text Colors
+   ============================================ */
+
+/* Featured Guides Bar (replaces ugly overview) */
+.featured-guides-bar {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border: 1px solid #fbbf24;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 32px;
+}
+
+.featured-guides-bar h3 {
+    color: #92400e;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.featured-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.featured-link {
+    background: white;
+    color: #1f2937;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.featured-link:hover {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+/* Fix Sidebar Positioning - Push to edge */
+.game-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.game-sidebar {
+    position: sticky;
+    top: 80px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+/* Fix text colors for better readability */
+.game-main h2 {
+    color: #111827;
+    font-weight: 800;
+}
+
+.game-main h3 {
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.game-main p {
+    color: #374151;
+    line-height: 1.7;
+}
+
+.feature-card h4 {
+    color: #111827;
+}
+
+.feature-card p {
+    color: #4b5563;
+}
+
+/* Sidebar improvements */
+.sidebar-nav {
+    padding-right: 0;
+}
+
+.sidebar-section h4 {
+    color: #111827;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-section ul li a {
+    color: #374151;
+    font-weight: 500;
+}
+
+.sidebar-section ul li a:hover {
+    color: #2563eb;
+}
+
+/* Code widget improvements */
+.codes-widget code {
+    color: #111827;
+    background: #f3f4f6;
+}
+
+.code-reward {
+    color: #059669;
+    font-weight: 600;
+}
+
+/* Tips widget */
+.tip-item p {
+    color: #374151;
+}
+
+/* Responsive fixes */
+@media (max-width: 1024px) {
+    .game-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .game-sidebar {
+        position: relative;
+        top: 0;
+        order: -1;
+        max-height: none;
+    }
+    
+    .sidebar-nav {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-links {
+        justify-content: center;
+    }
+    
+    .key-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .key-features-grid {
+        grid-template-columns: 1fr;
+    }
+}

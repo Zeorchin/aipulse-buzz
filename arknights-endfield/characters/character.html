@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Details - Arknights: Endfield Guide</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/character.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏭</text></svg>">
+</head>
+<body>
+    <!-- Simple Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="site-logo">🎮 Game Guides</a>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="../../gaming.html">All Games</a>
+                <a href="../../wuthering-waves-guide/index.html">Wuthering Waves</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Game Navigation -->
+    <nav class="game-nav">
+        <div class="container">
+            <div class="game-nav-brand">
+                <span class="game-icon">🏭</span>
+                <span>Arknights: Endfield</span>
+            </div>
+            <ul class="game-nav-links">
+                <li><a href="../index.html">Wiki Front</a></li>
+                <li><a href="../index.html#operators" class="active">Operators</a></li>
+                <li><a href="../index.html#tier-list">Tier List</a></li>
+                <li><a href="../index.html#teams">Teams</a></li>
+                <li><a href="../index.html#aic">AIC/Factory</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <!-- Left Sidebar -->
+        <aside class="sidebar-left">
+            <div class="sidebar-box">
+                <div class="sidebar-header">📖 Quick Links</div>
+                <ul class="sidebar-list">
+                    <li><a href="../index.html#operators">All Operators</a></li>
+                    <li><a href="../index.html#tier-list">Tier List</a></li>
+                    <li><a href="../index.html#teams">Team Building</a></li>
+                    <li><a href="../index.html#elements">Element Guide</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box">
+                <div class="sidebar-header">🔥 Popular Now</div>
+                <ul class="sidebar-list">
+                    <li><a href="character.html?char=rossi">Rossi Build</a></li>
+                    <li><a href="character.html?char=avywenna">Avywenna Guide</a></li>
+                    <li><a href="character.html?char=laevatain">Laevatain Build</a></li>
+                    <li><a href="character.html?char=ardelia">Ardelia Support</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box">
+                <div class="sidebar-header">⭐ S-Tier Units</div>
+                <ul class="sidebar-list">
+                    <li><a href="character.html?char=rossi">⭐⭐⭐⭐⭐⭐ Rossi</a></li>
+                    <li><a href="character.html?char=avywenna">⭐⭐⭐⭐⭐⭐ Avywenna</a></li>
+                    <li><a href="character.html?char=laevatain">⭐⭐⭐⭐⭐⭐ Laevatain</a></li>
+                    <li><a href="character.html?char=ardelia">⭐⭐⭐⭐⭐⭐ Ardelia</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Article -->
+        <main class="article-content" id="character-content">
+            <div class="loading">Loading operator data...</div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <div class="sidebar-box">
+                <div class="sidebar-header">🎮 Game Info</div>
+                <div class="game-info-content">
+                    <div class="game-info-item">
+                        <span class="label">Release Date</span>
+                        <span class="value">Jan 22, 2026</span>
+                    </div>
+                    <div class="game-info-item">
+                        <span class="label">Developer</span>
+                        <span class="value">Hypergryph</span>
+                    </div>
+                    <div class="game-info-item">
+                        <span class="label">Platforms</span>
+                        <span class="value">PC, Mobile, PS5</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-box">
+                <div class="sidebar-header">🔗 Related Games</div>
+                <ul class="sidebar-list">
+                    <li><a href="../../gaming.html">🎮 Gaming Hub</a></li>
+                    <li><a href="../../wuthering-waves-guide/index.html">🌊 Wuthering Waves</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Arknights: Endfield Guide & Wiki - Not affiliated with Hypergryph or Gryphline.</p>
+        </div>
+    </footer>
+
+    <script src="../js/character-data.js"></script>
+    <script>
+        const elementColors = {
+            'Physical': '#e2e8f0',
+            'Fire': '#fef2f2',
+            'Ice': '#eff6ff',
+            'Electric': '#fefce8',
+            'Originium': '#f3e8ff'
+        };
+
+        function getOperatorFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('char') || 'rossi';
+        }
+
+        function renderOperator(charKey) {
+            const char = operators[charKey];
+            const content = document.getElementById('character-content');
+            
+            if (!char) {
+                content.innerHTML = `
+                    <div class="error">
+                        <h2>Operator not found</h2>
+                        <p>The operator you're looking for doesn't exist in our database.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            document.title = `${char.name} Build - Arknights: Endfield Guide`;
+            
+            const stars = '★'.repeat(char.rarity);
+            
+            content.innerHTML = `
+                <div class="page-header">
+                    <h1>${char.name} Build Guide</h1>
+                    <p class="page-subtitle">${stars} ${char.rarity}-Star ${char.class} | Element: ${char.element} | Weapon: ${char.weapon}</p>
+                </div>
+
+                <div class="char-profile">
+                    <div class="char-image-large">
+                        <img src="${char.image}" alt="${char.name}">
+                    </div>
+                    <div class="char-info-box">
+                        <h3>Operator Info</h3>
+                        <table class="info-table">
+                            <tr><td>Rarity</td><td>${stars}</td></tr>
+                            <tr><td>Class</td><td>${char.class}</td></tr>
+                            <tr><td>Element</td><td><span class="element-tag element-${char.element.toLowerCase()}">${char.element}</span></td></tr>
+                            <tr><td>Weapon</td><td>${char.weapon}</td></tr>
+                            ${char.faction ? `<tr><td>Faction</td><td>${char.faction}</td></tr>` : ''}
+                        </table>
+                    </div>
+                </div>
+
+                <div class="char-description">
+                    <h2>Overview</h2>
+                    <p>${char.description}</p>
+                </div>
+
+                <h2>Base Stats (Level 60)</h2>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Stat</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>HP</td><td>${char.stats.hp.toLocaleString()}</td></tr>
+                        <tr><td>ATK</td><td>${char.stats.atk}</td></tr>
+                        <tr><td>DEF</td><td>${char.stats.def}</td></tr>
+                        <tr><td>CRIT Rate</td><td>${char.stats.critRate}%</td></tr>
+                        <tr><td>CRIT DMG</td><td>${char.stats.critDmg}%</td></tr>
+                    </tbody>
+                </table>
+
+                <h2>Skills</h2>
+                ${char.skills.map(skill => `
+                    <div class="skill-box">
+                        <div class="skill-header">
+                            <h3>${skill.name}</h3>
+                            <span class="skill-type">${skill.type}</span>
+                            ${skill.cost ? `<span class="skill-cost">${skill.cost} SP</span>` : ''}
+                        </div>
+                        <p>${skill.description}</p>
+                    </div>
+                `).join('')}
+
+                <h2>Recommended Build</h2>
+                
+                <h3>Weapon</h3>
+                <div class="weapon-box">
+                    <div class="weapon-header">
+                        <h4>${char.bestWeapon.name}</h4>
+                        <span class="rarity-badge">${'★'.repeat(char.bestWeapon.rarity)}</span>
+                    </div>
+                    <p>${char.bestWeapon.description}</p>
+                </div>
+
+                <h3>Modules</h3>
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Module</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${char.modules.map(m => `
+                            <tr><td>${m.name}</td><td>Stat enhancement module</td></tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+
+                <h2>Team Compositions</h2>
+                ${char.teams.map((team, i) => `
+                    <div class="team-box">
+                        <h3>${team.name}</h3>
+                        <div class="team-members">
+                            ${team.members.map(m => `
+                                <div class="team-member">
+                                    <img src="${m.icon}" alt="${m.name}">
+                                    <span>${m.name}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <p>${team.description}</p>
+                    </div>
+                `).join('')}
+            `;
+        }
+
+        const charKey = getOperatorFromURL();
+        renderOperator(charKey);
+    </script>
+</body>
+</html>

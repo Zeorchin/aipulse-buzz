@@ -1,0 +1,264 @@
+/* Character Detail Page Styles */
+
+.loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-muted);
+}
+
+.error {
+    text-align: center;
+    padding: 3rem;
+}
+
+.error h2 {
+    color: var(--primary);
+}
+
+/* Character Profile Section */
+.char-profile {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    background: var(--bg-sidebar);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.char-image-large {
+    background: var(--bg-white);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.char-image-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.char-info-box {
+    background: var(--bg-white);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid var(--border);
+}
+
+.char-info-box h3 {
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table td {
+    padding: 0.6rem 0.5rem;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.9rem;
+}
+
+.info-table td:first-child {
+    color: var(--text-muted);
+    width: 100px;
+}
+
+.info-table td:last-child {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.info-table tr:last-child td {
+    border-bottom: none;
+}
+
+.char-description {
+    margin: 1.5rem 0;
+}
+
+.char-description p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* Skill Boxes */
+.skill-box {
+    background: var(--bg-sidebar);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--primary);
+    border: 1px solid var(--border);
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.skill-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.skill-type {
+    background: var(--primary);
+    color: white;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.skill-cost {
+    background: var(--accent);
+    color: white;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.skill-box p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Weapon Box */
+.weapon-box {
+    background: var(--bg-sidebar);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border);
+}
+
+.weapon-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.weapon-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.rarity-badge {
+    color: #f59e0b;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.weapon-box p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Team Box */
+.team-box {
+    background: var(--bg-sidebar);
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border);
+}
+
+.team-box h3 {
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.team-members {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    text-align: center;
+}
+
+.team-member img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: var(--bg-white);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.team-member span {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.team-box > p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .char-profile {
+        grid-template-columns: 1fr;
+    }
+    
+    .char-image-large {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .skill-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .skill-cost {
+        margin-left: 0;
+    }
+    
+    .weapon-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .team-members {
+        justify-content: center;
+    }
+}
