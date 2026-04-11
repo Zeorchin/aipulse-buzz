@@ -8,7 +8,7 @@ const operators = {
         weapon: 'Sword',
         faction: 'Rhodes Island',
         description: 'A free 5-star Guard operator obtained early in the game. Chen Qianyu excels at dealing physical damage and lifting enemies, making her a solid choice for early-game teams.',
-        image: 'https://endfield.wiki.gg/images/thumb/f/fc/Chen_Qianyu_Icon.png/300px-Chen_Qianyu_Icon.png',
+        image: 'https://www.prydwen.gg/static/b5f4f9e0769b3fd2d4551171e9b9c84d/60b4d/Chen_Qianyu_icon.webp',
         stats: {
             hp: 9850,
             atk: 485,
@@ -120,7 +120,7 @@ const operators = {
         weapon: 'Sword',
         faction: 'Wolf Pack',
         description: 'Rossina Wulfperl Luppino, younger sister of Wulfgard and the Pearl of the Pack. A 6-star Physical Guard with exceptional burst damage capabilities.',
-        image: 'https://endfield.wiki.gg/images/thumb/4/42/Rossi_Icon.png/300px-Rossi_Icon.png',
+        image: 'https://www.prydwen.gg/static/35757e812a398610ac4ba824fe6b6cfb/60b4d/rossi_s.webp',
         stats: {
             hp: 11200,
             atk: 580,
@@ -176,7 +176,7 @@ const operators = {
         weapon: 'Sword',
         faction: 'Endfield Industries',
         description: 'The player character and Administrator of Endfield Industries. A versatile 6-star Striker who can adapt to various combat situations.',
-        image: 'https://endfield.wiki.gg/images/thumb/e/e3/Endministrator_%28Female%29_Icon.png/300px-Endministrator_%28Female%29_Icon.png',
+        image: 'https://www.prydwen.gg/static/023920d03faaf3d3a27d57abd409f016/60b4d/Endministrator_icon.webp',
         stats: {
             hp: 10800,
             atk: 565,
@@ -232,7 +232,7 @@ const operators = {
         weapon: 'Handcannon',
         faction: 'Rhodes Island',
         description: 'A 5-star Ice Supporter who specializes in crowd control and applying solidification to enemies.',
-        image: 'https://endfield.wiki.gg/images/thumb/a/a2/Gilberta_Icon.png/300px-Gilberta_Icon.png',
+        image: 'https://www.prydwen.gg/static/e9ccbf17fde837b08c8af24883e5f2c2/60b4d/Gilberta_icon.webp',
         stats: {
             hp: 8200,
             atk: 495,
@@ -344,7 +344,7 @@ const operators = {
         weapon: 'Handcannon',
         faction: 'Endfield Industries',
         description: 'A 6-star Fire Caster with exceptional area damage and the ability to apply powerful burn effects.',
-        image: 'https://endfield.wiki.gg/images/thumb/3/3a/Avywenna_Icon.png/300px-Avywenna_Icon.png',
+        image: 'https://www.prydwen.gg/static/a49365dddc97dff2d6ae31e8139ff663/60b4d/Avywenna_icon.webp',
         stats: {
             hp: 8900,
             atk: 620,
@@ -456,7 +456,7 @@ const operators = {
         weapon: 'Sword',
         faction: 'Wolf Pack',
         description: 'Leader of the Wolf Pack and a powerful 6-star Vanguard. Wulfgard excels at generating SP for the team and dealing consistent physical damage.',
-        image: 'https://endfield.wiki.gg/images/thumb/5/58/Wulfgard_Icon.png/300px-Wulfgard_Icon.png',
+        image: 'https://www.prydwen.gg/static/d95cc31b8e326622aa75b9477d1223da/60b4d/Wulfguard_icon.webp',
         stats: {
             hp: 10800,
             atk: 545,
@@ -512,7 +512,7 @@ const operators = {
         weapon: 'Sword',
         faction: 'Endfield Industries',
         description: 'A 5-star Fire Guard who combines physical attacks with fire damage for a hybrid playstyle.',
-        image: 'https://endfield.wiki.gg/images/thumb/7/71/Xaihi_Icon.png/300px-Xaihi_Icon.png',
+        image: 'https://www.prydwen.gg/static/42cee416854261a105cb5df69c66c663/60b4d/Xaihi_icon.webp',
         stats: {
             hp: 9600,
             atk: 490,
@@ -568,7 +568,7 @@ const operators = {
         weapon: 'Handcannon',
         faction: 'Endfield Industries',
         description: 'A 4-star Ice Caster who excels at supporting the team by consuming elemental stacks for bonus effects.',
-        image: 'https://endfield.wiki.gg/images/thumb/4/41/Alesh_Icon.png/300px-Alesh_Icon.png',
+        image: 'https://www.prydwen.gg/static/0b189aa0c08151df3af68645f32b0bf2/60b4d/alesh.webp',
         stats: {
             hp: 7800,
             atk: 445,
@@ -624,7 +624,7 @@ const operators = {
         weapon: 'Handcannon',
         faction: 'Endfield Industries',
         description: 'A 4-star Physical Supporter who provides buffs and debuffs to control the battlefield.',
-        image: 'https://endfield.wiki.gg/images/thumb/8/86/Catcher_Icon.png/300px-Catcher_Icon.png',
+        image: 'https://www.prydwen.gg/static/f6236f7c665c84fda60b5b93f5934097/60b4d/catcher_sm.webp',
         stats: {
             hp: 8200,
             atk: 410,
@@ -680,7 +680,7 @@ const operators = {
         weapon: 'Sword',
         faction: 'Wolf Pack',
         description: 'A 6-star Fire Striker known as the Combustion Queen. Laevatain dominates AoE scenarios with her ultimate ability that creates sustained damage zones across enemy waves.',
-        image: 'https://endfield.wiki.gg/images/thumb/a/a3/Laevatain_Icon.png/300px-Laevatain_Icon.png',
+        image: 'https://www.prydwen.gg/static/a7ef28fdf47027491cad40746b1e733e/60b4d/Laevatain_icon.webp',
         stats: {
             hp: 10200,
             atk: 610,
@@ -736,7 +736,7 @@ const operators = {
         weapon: 'Orbiter',
         faction: 'Endfield Industries',
         description: 'A 6-star Support operator and the only character capable of applying both Physical and Arts Susceptibility simultaneously. Ardelia fits into virtually any team composition and provides excellent healing.',
-        image: 'https://endfield.wiki.gg/images/thumb/e/e0/Ardelia_Icon.png/300px-Ardelia_Icon.png',
+        image: 'https://www.prydwen.gg/static/8574831d6cafcabda682c72486766a38/60b4d/ardelia_icon.webp',
         stats: {
             hp: 9200,
             atk: 480,
@@ -792,7 +792,7 @@ const operators = {
         weapon: 'Greatsword',
         faction: 'Endfield Industries',
         description: 'A 6-star Heat Defender who provides exceptional defensive utility including damage reduction, healing, shields, and Vulnerability application. She frequently appears in Physical team compositions despite her Heat element.',
-        image: 'https://endfield.wiki.gg/images/thumb/d/dc/Ember_Icon.png/300px-Ember_Icon.png',
+        image: 'https://www.prydwen.gg/static/28918f510e618ffca5b384460ac0336a/60b4d/ember_icon.webp',
         stats: {
             hp: 12800,
             atk: 395,
@@ -848,7 +848,7 @@ const operators = {
         weapon: 'Handcannon',
         faction: 'Endfield Industries',
         description: 'A 5-star Fire Caster who specializes in elemental amplification. Antal provides dual Susceptibility application and damage amplification buffs for Heat and Electric teams.',
-        image: 'https://endfield.wiki.gg/images/thumb/9/9e/Antal_Icon.png/300px-Antal_Icon.png',
+        image: 'https://www.prydwen.gg/static/e1dfc699651c2d822d2a69a5f6de154b/60b4d/antal_sm.webp',
         stats: {
             hp: 8450,
             atk: 535,
