@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Agent: The Self-Evolving AI That Learns From Every Task | AI Pulse</title>
+    <meta name="description" content="Hermes Agent by Nous Research is redefining what AI agents can do. Discover how its self-evolving architecture stacks up against OpenClaw and Claude Cowork—and why it might be the smartest choice for developers and researchers.">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://aipulse.buzz/articles/hermes-agent-vs-openclaw-claude-cowork.html">
+    <meta property="og:title" content="Hermes Agent: The Self-Evolving AI That Learns From Every Task">
+    <meta property="og:description" content="How Hermes Agent's self-evolving architecture compares to OpenClaw and Claude Cowork">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=630&fit=crop">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://aipulse.buzz/articles/hermes-agent-vs-openclaw-claude-cowork.html">
+    <meta property="twitter:title" content="Hermes Agent: The Self-Evolving AI That Learns From Every Task">
+    <meta property="twitter:description" content="How Hermes Agent's self-evolving architecture compares to OpenClaw and Claude Cowork">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=630&fit=crop">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="articles-detailed.css">
+</head>
+<body class="article-detailed">
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress-container">
+        <div class="reading-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; height: 70px;">
+            <a href="../index.html" class="logo" style="display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; font-size: 1.25rem;">
+                <span style="font-size: 1.5rem;">◉</span>
+                <span>AI Pulse.buzz</span>
+            </a>
+            <div class="nav-links" style="display: flex; gap: 32px;">
+                <a href="../index.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">Home</a>
+                <a href="../ai-news.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">News</a>
+                <a href="../ai-models.html" style="color: rgba(255,255,255,0.7); text-decoration: none; font-weight: 500; transition: color 0.2s;">Models</a>
+                <a href="index.html" style="color: #6366f1; text-decoration: none; font-weight: 600;">Articles</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header-enhanced" style="margin-top: 70px;">
+        <div class="container">
+            <div class="article-header-content">
+                <!-- Breadcrumbs -->
+                <nav class="article-breadcrumbs">
+                    <a href="../index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="index.html">Articles</a>
+                    <span class="separator">/</span>
+                    <span class="current">Hermes Agent</span>
+                </nav>
+
+                <!-- Meta -->
+                <div class="article-meta-bar">
+                    <span class="article-category-badge ai-assistants">🤖 AI Agents</span>
+                    <span class="article-date-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        April 22, 2026
+                    </span>
+                    <span class="article-reading-time">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        14 min read
+                    </span>
+                </div>
+
+                <!-- Title -->
+                <h1 class="article-title">Hermes Agent: The Self-Evolving AI That Learns From Every Task</h1>
+                <p class="article-subtitle">How Nous Research's agent framework stacks up against OpenClaw and Claude Cowork—and why "learning loops" might be the killer feature of 2026</p>
+
+                <!-- Author Bar -->
+                <div class="article-author-bar">
+                    <div class="author-avatar">AP</div>
+                    <div class="author-info">
+                        <div class="author-name">AI Pulse Editorial</div>
+                        <div class="author-title">AI Research & Analysis Team</div>
+                    </div>
+                    <div class="article-actions">
+                        <button class="action-btn" title="Save article">🔖</button>
+                        <button class="action-btn" title="Share">📤</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <div class="article-hero-enhanced">
+        <div class="article-hero-wrapper">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=500&fit=crop" alt="Hermes Agent AI">
+            <div class="article-hero-caption">
+                <div class="image-credit">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <path d="M21 15l-5-5L5 21"></path>
+                    </svg>
+                    Hermes Agent: The agent that grows with you
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="article-main-layout">
+        <article class="article-body-enhanced">
+            <p class="article-lead">In March 2026, two AI agent frameworks exploded onto the scene. OpenClaw, the gateway-first personal assistant, crossed 350,000 GitHub stars. And Hermes Agent, a research lab experiment from Nous Research, racked up 46,000 stars in just two weeks. By April, Hermes had nearly doubled that. Something was happening—and it wasn't just hype.</p>
+
+            <!-- Quick Stats -->
+            <div class="quick-stats-grid">
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">95K+</span>
+                    <span class="quick-stat-label">GitHub Stars</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">0</span>
+                    <span class="quick-stat-label">CVEs Disclosed</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">Self</span>
+                    <span class="quick-stat-label">Evolving</span>
+                </div>
+                <div class="quick-stat-card">
+                    <span class="quick-stat-value">$5</span>
+                    <span class="quick-stat-label">VPS to Run</span>
+                </div>
+            </div>
+
+            <h2 id="what-is">What Is Hermes Agent?</h2>
+            <p>Hermes Agent is an open-source AI agent framework built by <strong>Nous Research</strong>, the same team behind the influential Nous-Hermes model series. Its official tagline is simple: <em>"The agent that grows with you."</em> But that growth isn't marketing speak—it's baked into the architecture.</p>
+
+            <p>Unlike traditional agents that execute pre-defined skills, Hermes Agent features a built-in <strong>learning loop</strong>. After completing a task, it analyzes whether the workflow could be reused, prompts you to save it as a named skill, and refines that skill over time. The second time you face a similar problem, the agent doesn't just remember what you did—it skips the planning phase entirely and executes the cached skill directly.</p>
+
+            <p>This is a fundamental departure from how OpenClaw and Claude Cowork operate. Both are powerful, but neither learns autonomously in the same way. OpenClaw requires manual skill installation from its marketplace. Claude Cowork relies on pre-built plugins. Hermes Agent writes its own playbook as it goes.</p>
+
+            <!-- Key Takeaways -->
+            <div class="key-takeaways">
+                <h4>Key Points</h4>
+                <ul>
+                    <li>Hermes Agent auto-creates and refines skills from every completed task</li>
+                    <li>Built by Nous Research (Nous-Hermes models), released February 2026</li>
+                    <li>MIT licensed, Python-based, model-agnostic (200+ models via OpenRouter)</li>
+                    <li>Zero CVEs to date versus OpenClaw's 9 disclosed vulnerabilities</li>
+                    <li>Research-ready: exports training trajectories for fine-tuning LLMs</li>
+                </ul>
+            </div>
+
+            <h2 id="learning-loop">The Learning Loop: Hermes Agent's Killer Feature</h2>
+            <p>The defining innovation of Hermes Agent is its <strong>runtime self-evolution</strong>. Here's how it works in practice:</p>
+
+            <p>You ask Hermes to analyze a CSV and generate a visualization report. It plans the steps, executes them, and delivers the output. Then it pauses and asks: <em>"I detected a reusable pattern. Save this as skill 'csv-analysis'?"</em> If you confirm, the workflow is codified as a Markdown skill document in <code>~/.hermes/skills/</code>. The next time you drop a CSV into the chat, Hermes doesn't plan—it <em>knows</em>.</p>
+
+            <p>For high-repetition workflows—weekly reports, code reviews, data cleaning—this compounds into serious time savings. OpenClaw can approximate this through its skills marketplace, but every skill is manually authored or installed. Claude Cowork offers plugins, but they're built by Anthropic or third parties, not generated from your actual work patterns.</p>
+
+            <blockquote>
+                <p>The difference is stark: OpenClaw gives you a store. Claude Cowork gives you a toolkit. Hermes Agent gives you an apprentice that gets better the longer it works with you.</p>
+                <cite>— AI Pulse Analysis</cite>
+            </blockquote>
+
+            <h2 id="memory">Cross-Session Memory That Actually Remembers</h2>
+            <p>Most AI agents treat every conversation as a blank slate. Hermes Agent doesn't. It uses an <strong>FTS5 full-text search engine</strong> to store session summaries, making your entire conversation history semantically searchable.</p>
+
+            <p>Want to reference a database migration plan from three months ago? Type: <code>hermes memory search "database migration plan from March"</code> and Hermes returns the relevant session summaries with timestamps. It isn't grep-ing logs—it's retrieving curated memories.</p>
+
+            <p>The memory system is deliberately bounded to prevent bloat. <code>MEMORY.md</code> stores the agent's personal notes (environment facts, project conventions, tool quirks) capped at 2,200 characters. <code>USER.md</code> stores what the agent has learned about <em>you</em>—preferences, communication style, workflow habits—capped at 1,375 characters. When limits are reached, the agent prioritizes and prunes automatically. This design forces the agent to distill what matters rather than hoarding everything.</p>
+
+            <p>OpenClaw's Active Memory is experimental and limited. Claude Cowork explicitly <strong>lacks session memory</strong> between conversations—a major complaint from power users who have to re-explain their preferences every time.</p>
+
+            <h2 id="parallel">Parallel Sub-Agents: Divide and Conquer</h2>
+            <p>Complex tasks don't have to run sequentially. Hermes Agent can spawn <strong>parallel sub-agents</strong> that tackle different branches of a problem simultaneously:</p>
+
+            <pre style="background: #1e293b; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;"><code>hermes "Simultaneously: 1. Analyze Q1 sales data 2. Update product docs 3. Generate investor update"</code></pre>
+
+            <p>Each sub-agent gets a fresh conversation context, an independent iteration budget, and a restricted toolset. They're isolated from each other to prevent cross-contamination, with a maximum delegation depth of 2 to stop runaway recursion. Batch mode runs up to 3 sub-agents in parallel, displaying progress through a tree-shaped CLI view.</p>
+
+            <p>OpenClaw supports sub-agents primarily for channel routing—sending messages to different platforms. Claude Cowork runs tasks in a single sandboxed VM, one at a time. Neither matches Hermes Agent's native parallel decomposition.</p>
+
+            <h2 id="comparison">Head-to-Head: Hermes Agent vs. OpenClaw vs. Claude Cowork</h2>
+
+            <div class="info-box info">
+                <div class="info-box-title">📊 Comparison Matrix (April 2026)</div>
+                <table style="width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.95rem;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid #e2e8f0;">
+                            <th style="text-align: left; padding: 8px;">Feature</th>
+                            <th style="text-align: left; padding: 8px;">Hermes Agent</th>
+                            <th style="text-align: left; padding: 8px;">OpenClaw</th>
+                            <th style="text-align: left; padding: 8px;">Claude Cowork</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px; font-weight: 600;">License</td>
+                            <td style="padding: 8px;">MIT</td>
+                            <td style="padding: 8px;">MIT</td>
+                            <td style="padding: 8px;">Proprietary</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px; font-weight: 600;">Cost</td>
+                            <td style="padding: 8px;">Free + model API</td>
+                            <td style="padding: 8px;">Free + model API</td>
+                            <td style="padding: 8px;">$20–$200/mo</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px; font-weight: 600;">Self-Evolving Skills</td>
+                            <td style="padding: 8px;">✅ Auto-create</td>
+                            <td style="padding: 8px;">❌ Manual install</td>
+                            <td style="padding: 8px;">❌ Pre-built plugins</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px; font-weight: 600;">Cross-Session Memory</td>
+                            <td style="padding: 8px;">✅ FTS5 + semantic</td>
+                            <td style="padding: 8px;">⚠️ Experimental</td>
+                            <td style="padding: 8px;">❌ None</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px; font-weight: 600;">Parallel Sub-Agents</td>
+                            <td style="padding: 8px;">✅ Native (3 max)</td>
+                            <td style="padding: 8px;">⚠️ Routing only</td>
+                            <td style="padding: 8px;">❌ Sequential</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px; font-weight: 600;">Platform Channels</td>
+                            <td style="padding: 8px;">7 (CLI-first)</td>
+                            <td style="padding: 8px;">25+</td>
+                            <td style="padding: 8px;">Desktop only</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px; font-weight: 600;">Security (CVEs)</td>
+                            <td style="padding: 8px;">0 disclosed</td>
+                            <td style="padding: 8px;">9 (CVSS 9.9)</td>
+                            <td style="padding: 8px;">Sandboxed VM</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px; font-weight: 600;">Container Sandbox</td>
+                            <td style="padding: 8px;">✅ 6 backends</td>
+                            <td style="padding: 8px;">❌</td>
+                            <td style="padding: 8px;">✅ Apple VZ VM</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #f1f5f9;">
+                            <td style="padding: 8px; font-weight: 600;">Training Data Export</td>
+                            <td style="padding: 8px;">✅ JSONL trajectories</td>
+                            <td style="padding: 8px;">❌</td>
+                            <td style="padding: 8px;">❌</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px; font-weight: 600;">Best For</td>
+                            <td style="padding: 8px;">Developers / Researchers</td>
+                            <td style="padding: 8px;">Power users / Enterprise</td>
+                            <td style="padding: 8px;">Knowledge workers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 id="advantages-hermes">Where Hermes Agent Wins</h2>
+
+            <h3 id="advantage-learning">1. It Gets Smarter Without Human Intervention</h3>
+            <p>This is the headline advantage. OpenClaw and Claude Cowork are static toolkits. They do exactly what they're configured to do—no more, no less. Hermes Agent is a <em>dynamic</em> system that expands its own capabilities through use. For teams running repetitive workflows, this compounds into a genuine competitive advantage.</p>
+
+            <h3 id="advantage-security">2. A Clean Security Record</h3>
+            <p>In March 2026, OpenClaw suffered a severe security crisis: <strong>9 CVEs disclosed in 4 days</strong>, including one with a CVSS score of 9.9. Cisco researchers found third-party skills leaking data, and over 135,000 instances were publicly exposed across 82 countries. The Chinese government restricted state agencies from using it.</p>
+
+            <p>Hermes Agent has <strong>zero disclosed CVEs</strong>. Its smaller attack surface (7 platforms vs. 25+) and research-lab development culture contribute to this. For security-conscious organizations, this isn't a minor footnote—it's a deciding factor.</p>
+
+            <h3 id="advantage-research">3. Research-Ready Architecture</h3>
+            <p>Hermes Agent isn't just a consumer of AI—it's a <em>producer</em> of training data. Its batch trajectory generation collects complete interaction logs (system prompts, reasoning chains, tool calls, results) and exports them as JSONL files ready for supervised fine-tuning or reinforcement learning.</p>
+
+            <p>For AI labs and enterprises building custom models, this is transformative. You can turn your team's actual workflows into training data. OpenClaw and Claude Cowork offer no equivalent capability.</p>
+
+            <h3 id="advantage-cost">4. Runs on a $5 VPS</h3>
+            <p>Hermes Agent's minimum requirements are modest: 2GB RAM, Python, and an API key. It can run comfortably on the cheapest cloud instances. Claude Cowork starts at $20/month and scales to $200/month for heavy users. OpenClaw is free but typically needs a dedicated server for 24/7 operation. For solo developers and small teams, Hermes Agent is the clear cost winner.</p>
+
+            <h2 id="advantages-others">Where OpenClaw and Claude Cowork Still Lead</h2>
+
+            <h3 id="openclaw-channels">OpenClaw: The Channel King</h3>
+            <p>If you need your AI assistant on WeChat, Feishu, iMessage, Microsoft Teams, and 20+ other platforms simultaneously, OpenClaw is unmatched. Hermes Agent's 7 supported channels (CLI, Telegram, Discord, Slack, WhatsApp, Signal, Email) cover the basics but can't touch OpenClaw's ubiquity. OpenClaw also wins on consumer polish: voice wake words, Live Canvas, device control, and browser automation are features Hermes simply doesn't have.</p>
+
+            <h3 id="cowork-ease">Claude Cowork: The User Experience Champion</h3>
+            <p>For non-technical knowledge workers, Claude Cowork is still the easiest entry point into agentic AI. Its visual interface requires zero command-line knowledge. The plugin marketplace offers pre-built solutions for sales, legal, finance, and HR. Enterprise connectors for Google Drive, Salesforce, and Slack work out of the box. You pay for convenience—and for many businesses, that's worth it.</p>
+
+            <!-- Info Box -->
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ The Trade-Offs</div>
+                <p>Hermes Agent is CLI-first and requires comfort with terminal workflows. OpenClaw needs self-hosting expertise and carries recent security baggage. Claude Cowork is proprietary, expensive for heavy use, and lacks session memory. No agent is perfect—choose based on your priorities.</p>
+            </div>
+
+            <h2 id="when-to-choose">Which Agent Should You Choose?</h2>
+
+            <h3 id="choose-hermes">Choose Hermes Agent If...</h3>
+            <ul class="checklist">
+                <li><strong>You run repetitive workflows</strong>—weekly reports, data pipelines, code reviews—that could benefit from auto-generated skills.</li>
+                <li><strong>You're an AI researcher or ML engineer</strong> who needs trajectory data for model training and agent algorithm experiments.</li>
+                <li><strong>Security is non-negotiable</strong> and you want the cleanest CVE record in the agent space.</li>
+                <li><strong>You prefer CLI power over GUI polish</strong> and don't mind configuring Python environments.</li>
+                <li><strong>You're budget-conscious</strong> and want maximum capability per dollar spent.</li>
+            </ul>
+
+            <h3 id="choose-openclaw">Choose OpenClaw If...</h3>
+            <ul class="checklist">
+                <li><strong>You need omnichannel presence</strong>—the same bot on Slack, Discord, WeChat, and email simultaneously.</li>
+                <li><strong>Consumer features matter</strong>—voice mode, mobile apps, Live Canvas, and browser control are must-haves.</li>
+                <li><strong>You want a product, not a framework</strong>—something that works out of the box with minimal configuration.</li>
+            </ul>
+
+            <h3 id="choose-cowork">Choose Claude Cowork If...</h3>
+            <ul class="checklist">
+                <li><strong>You're a non-technical knowledge worker</strong> who wants agentic AI without touching a terminal.</li>
+                <li><strong>Enterprise integrations are critical</strong>—Salesforce, DocuSign, FactSet, and 50+ connectors.</li>
+                <li><strong>Budget isn't a constraint</strong> and you value Anthropic's safety research and model quality.</li>
+            </ul>
+
+            <h2 id="future">The Future of Self-Evolving Agents</h2>
+            <p>Hermes Agent represents something larger than itself: the shift from <em>configured</em> AI to <em>learning</em> AI. Today's agents are elaborate prompt engineering wrapped around API calls. Tomorrow's agents will observe, adapt, and improve without human micromanagement.</p>
+
+            <p>Nous Research has positioned Hermes Agent as both a tool and a research platform. The trajectory export feature isn't an afterthought—it's a bet that the next generation of frontier models will be trained, in part, on the behavioral logs of agents like Hermes. If that bet pays off, using Hermes Agent today means contributing to the foundation models of tomorrow.</p>
+
+            <p>OpenClaw and Claude Cowork aren't going anywhere. They serve different needs and different users. But if the defining question of 2026 is <em>"Can your agent learn?"</em>—Hermes Agent is currently the only one of the three that answers with a confident yes.</p>
+
+            <div class="info-box success" style="margin-top: 40px;">
+                <div class="info-box-title">✓ Bottom Line</div>
+                <p>Hermes Agent trades polish for power. It won't replace OpenClaw's channel ubiquity or Claude Cowork's user-friendly interface. But for developers, researchers, and security-conscious teams who want an agent that genuinely improves with use, it's the most interesting project in AI right now. And at $5 per month on a VPS, it's the cheapest experiment you can run. 🧠</p>
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+            <div class="sidebar-sticky-wrapper">
+                <!-- Table of Contents -->
+                <div class="toc-card">
+                    <h4 class="toc-title">📑 In This Article</h4>
+                    <ul class="toc-list">
+                        <li><a href="#what-is">What Is Hermes Agent?</a></li>
+                        <li><a href="#learning-loop">The Learning Loop</a></li>
+                        <li><a href="#memory">Cross-Session Memory</a></li>
+                        <li><a href="#parallel">Parallel Sub-Agents</a></li>
+                        <li><a href="#comparison">Head-to-Head Comparison</a></li>
+                        <li><a href="#advantages-hermes">Where Hermes Wins</a></li>
+                        <li><a href="#advantages-others">Where Others Lead</a></li>
+                        <li><a href="#when-to-choose">Which to Choose</a></li>
+                        <li><a href="#future">Future of Agents</a></li>
+                    </ul>
+                </div>
+
+                <!-- At a Glance -->
+                <div class="glance-card">
+                    <h4 class="glance-title">⚡ At a Glance</h4>
+                    <div class="glance-item">
+                        <span class="glance-label">Developer</span>
+                        <span class="glance-value">Nous Research</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">License</span>
+                        <span class="glance-value highlight">MIT (Open Source)</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Latest Version</span>
+                        <span class="glance-value">v0.10.0 (Apr 2026)</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">GitHub Stars</span>
+                        <span class="glance-value">95,600+</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Language</span>
+                        <span class="glance-value">Python (93.6%)</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Key Differentiator</span>
+                        <span class="glance-value">Self-Evolving Skills</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">Min. Hardware</span>
+                        <span class="glance-value">2GB RAM</span>
+                    </div>
+                    <div class="glance-item">
+                        <span class="glance-label">CVEs</span>
+                        <span class="glance-value highlight">0</span>
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="tags-card">
+                    <h4 class="toc-title">🏷️ Tags</h4>
+                    <div class="tags-list">
+                        <a href="#" class="tag-pill">Hermes Agent</a>
+                        <a href="#" class="tag-pill">OpenClaw</a>
+                        <a href="#" class="tag-pill">Claude Cowork</a>
+                        <a href="#" class="tag-pill">AI Agents</a>
+                        <a href="#" class="tag-pill">Open Source</a>
+                        <a href="#" class="tag-pill">Nous Research</a>
+                        <a href="#" class="tag-pill">Automation</a>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="sidebar-cta-enhanced">
+                    <h4>🚀 Stay Updated</h4>
+                    <p>Get the latest AI news and model releases delivered to your inbox.</p>
+                    <a href="../index.html#newsletter" class="btn-cta">Subscribe</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Article Footer -->
+    <div class="article-footer">
+        <div class="article-footer-actions">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"></path>
+                </svg>
+                Back to Articles
+            </a>
+            <div class="share-section">
+                <span class="share-label">Share this article:</span>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn" title="Twitter">𝕏</a>
+                    <a href="#" class="share-btn" title="LinkedIn">in</a>
+                    <a href="#" class="share-btn" title="Copy Link">📋</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Articles -->
+    <section class="related-section">
+        <div class="related-section-header">
+            <h3 class="related-section-title">
+                <span>📰</span>
+                More on AI Agents
+            </h3>
+            <a href="index.html" class="view-all-link">
+                View All Articles
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="related-grid-enhanced">
+            <a href="openclaw.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #ff6b35, #f5576c);">AI Assistants</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">March 28, 2026</div>
+                    <h4 class="related-card-title">How OpenClaw Changes the Way We Work and Live</h4>
+                    <p class="related-card-desc">The open-source AI assistant that's revolutionizing productivity with its iconic lobster mascot</p>
+                </div>
+            </a>
+            <a href="ai-agent-revolution-2026.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">Industry</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">April 11, 2026</div>
+                    <h4 class="related-card-title">The AI Agent Revolution of 2026</h4>
+                    <p class="related-card-desc">Why this year marks the transition from chatbots to autonomous agents that actually do work</p>
+                </div>
+            </a>
+            <a href="mcp-industry-standard.html" class="related-card-enhanced">
+                <div class="related-card-image" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop');">
+                    <span class="related-card-tag" style="background: linear-gradient(135deg, #8b5cf6, #a855f7);">Infrastructure</span>
+                </div>
+                <div class="related-card-content">
+                    <div class="related-card-date">April 2, 2026</div>
+                    <h4 class="related-card-title">MCP: 97 Million Installs and Counting</h4>
+                    <p class="related-card-desc">How Anthropic's Model Context Protocol became the USB-C for AI in just 16 months</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer style="background: #0f172a; color: #fff; padding: 60px 0 30px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                <span style="font-size: 2rem;">◉</span>
+                <span style="font-size: 1.5rem; font-weight: 700;">AI Pulse.buzz</span>
+            </div>
+            <p style="color: rgba(255,255,255,0.6); margin-bottom: 30px;">Your daily dose of AI intelligence. Tracking the frontier of artificial intelligence.</p>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">© 2026 AI Pulse. All rights reserved.</p>
+                <div style="display: flex; gap: 24px;">
+                    <a href="../index.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Home</a>
+                    <a href="../ai-news.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">News</a>
+                    <a href="../ai-models.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Models</a>
+                    <a href="index.html" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem;">Articles</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reading Progress Script -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc-list a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
